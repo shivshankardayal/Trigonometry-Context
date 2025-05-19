@@ -1,5 +1,9 @@
-\startenvironment trigonometry_env.mkiv
-
+% -*- mode: context; -*-
+\startenvironment trigonometry_env.tex
+\setupbackend
+  [format=PDF/X-4p,
+   intent={ISO Coated v2 (ECI)},
+   profile={sRGB.icc,default_gray.icc}]
   %\mainlanguage[en] % Main language = English
   \definefallbackfamily [mainface] [rm] [Lohit Devanagari] [range=devanagari]
   \definefontfamily     [mainface] [rm] [Latine Modern Roman]
@@ -24,7 +28,7 @@
   \usemodule[amsl]
   \setuppapersize[B5]
   \setupexternalfigures [directory=images, location=global] % Image directory
-
+  \setupitemize[symalign=left, distance=5pt, color=maincolor]
   \setupwhitespace[big] % Larger vertical space
 
   \def\startequation{%

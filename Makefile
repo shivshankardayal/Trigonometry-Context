@@ -1,2 +1,2 @@
-trigonometry.pdf: *.mkiv
-	context trigonometry.mkiv
+trigonometry.pdf: *.tex 
+	context trigonometry.tex

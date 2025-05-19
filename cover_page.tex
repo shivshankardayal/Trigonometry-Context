@@ -1,0 +1,129 @@
+\environment ../algebra_env.lmtx
+
+\startcomponent cover_page.lmtx
+
+  \setvariables
+    [document]
+    [titleA=An Angle in Trigonometry,
+    titleB=A problem-oriented approach,
+    author=Shiv Shankar Dayal]
+
+  \startpagemakeup
+
+    \startMPcode
+
+      StartPage ;
+
+        %fill Page enlarged 10mm withcolor white;
+      draw anchored.lrt(image(draw textext("\getvariable{document}{titleA}")  xsized(.70PaperWidth)      withcolor \MPcolor{purple}),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/3.5));
+      draw (0, PaperWidth/3.6)--(PaperHeight, PaperWidth/3.6) withcolor \MPcolor{purple} withpen pencircle scaled 2pt;
+      draw anchored.lrt(image(draw textext("\getvariable{document}{titleB}")  xsized(.60PaperWidth)      withcolor \MPcolor{purple}),(lrcorner Page) shifted (-PaperWidth/18, PaperWidth/4.5)) ;
+      %       draw anchored.lrt(image(draw textext("\getvariable{document}{titleC}")  xsized(.750PaperWidth)      withcolor white),(lrcorner Page) shifted (-PaperWidth/20, PaperWidth/5)) ;
+      draw anchored.urt(image(draw textext("\getvariable{document}{author}")   xsized(.27PaperWidth) rotated 270 withcolor \MPcolor{purple}),(urcorner Page) shifted (-PaperWidth/20,-PaperWidth/20)) ;
+
+        setbounds currentpicture to Page ;
+        fill fullcircle scaled 12cm shifted (.5PaperWidth, .5PaperHeight) withcolor \MPcolor{purple};
+        pair z, x, xn, y, yn;
+        z := (.5PaperWidth, .5PaperHeight);
+        x := z + (6cm, 0);
+        xn := z - (6cm, 0);
+        y := z + (0, 6cm);
+        yn := z - (0, 6cm);
+        drawdblarrow x--xn withcolor white;
+        drawdblarrow y--yn withcolor white;
+        draw function(2,"x","sin(x)",-6,6,.1) xyscaled(1cm, 1cm) shifted z withcolor white;
+        draw function(2,"x","cos(x)",-6,6,.1) xyscaled(1cm, 1cm) shifted z withcolor white;
+        draw function(2,"x","tan(x)",-1.5,-0.001,.1) xyscaled(1cm, 1cm) shifted z withcolor white;
+        draw function(2,"x","tan(x)",.001,1.5,.1) xyscaled(1cm, 1cm) shifted z withcolor white;
+        label("$y = sin x$", z + (2.8cm, 1.1cm)) withcolor white;
+        label("$y = cos x$", z + (3.8cm, -1.2cm)) withcolor white;
+        label("$y = tan x$", z + (2.2cm, 3cm)) withcolor white;
+
+      StopPage ;
+
+    \stopMPcode
+
+  \stoppagemakeup
+
+  {
+    \setupbodyfont[9pt,rm, mf] % The document's main (body) font
+    \page[yes]
+    \page[blank]\parindent0pt
+    \ \vfill
+
+    {\bf An Angle in Trigonometry}\\
+    {\color[red]{Early Draft}} [\RevisionDate]\\
+    \blank
+
+    Copyright, \copyright~ Shiv Shankar Dayashru, 2025. All rights reserved.\\\\
+    Permission is granted to copy, distribute and/or modify this document under the
+    terms of the GNU Free Documentation License, Version 1.3 or any later version
+    published by the Free Software Foundation; with no Invariant Sections, no
+    Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included
+    in the section entitled \quotation{GNU Free Documentation License}.
+
+  }
+  {
+      \setupbodyfont[9pt,rm, mf] % The document's main (body) font
+      \page[yes]
+    \page[blank]\parindent0pt
+    ~~~
+    \blank[4*big]
+    \vskip 3cm
+    \startalignment [middle]
+    {\bigskip\it Dedicated to my wife, Binita}
+    \stopalignment
+  }
+
+%   % Table of contents
+  \setupbodyfont[9pt,rm, mf] % The document's main (body) font
+
+  \starttitle
+    [title={Table of Contents}]
+
+    \setcounter[userpage][1]
+
+    % Format of entries in the ToC
+    \setuplist
+      [part]
+      [
+        before={\blank[2*big]},
+        after={\blank[big]},
+        style=\bfa,
+        aligntitle=yes,
+      ]
+
+    \setuplist
+      [chapter]
+      [
+        before=\blank,
+        style=\bf,
+        margin=.5cm,
+        aligntitle=yes
+      ]
+
+    \setuplist
+      [section]
+      [
+        aligntitle=yes,
+        %style=\tfx,
+        margin=1.5cm
+      ]
+
+    % Let us define our list (called a Toc)
+    \definecombinedlist
+      [Toc]
+      [part, chapter, section]
+      [level=subsection, alternative=c]
+
+    % and insert it in the context of smaller interline space
+    \start
+      \setupwhitespace[none]
+      \switchtobodyfont[10pt]
+      \setupinterlinespace[small]
+      \placeToc
+    \stop
+
+  \stoptitle
+
+\stopcomponent
