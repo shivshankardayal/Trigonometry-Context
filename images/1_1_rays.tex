@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+\draw[>=latex,<->] (0, 0) -- (3, 0);
+\draw (.5, -.1) -- (.5, .1);
+\draw (.5,0) node[anchor=north] {$A'$};
+\draw (2.5, -.1) -- (2.5, .1);
+\draw (2.5,0) node[anchor=north] {$A$};
+\draw (1.5, -.1) -- (1.5, .1);
+\draw (1.5,0) node[anchor=north] {$O$};
+\end{tikzpicture}
+\end{document}

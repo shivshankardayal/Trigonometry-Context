@@ -1,0 +1,21 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+\draw (0, 0) -- (2, 0);
+\draw (0, 0) -- (2, 2);
+\draw (2, 2) -- (2, 0);
+\draw [blue] (0,0) node[anchor=north east] {$O$};
+\draw [blue] (2,0) node[anchor=north] {$M$};
+\draw [blue] (2,2) node[anchor=south] {$P$};
+\draw (0, 0) -- (0.5, 0) arc[start angle=0, end angle=45, radius=0.5];
+\draw [black!60!green] (0.3, 0.1) node[anchor=south west] {$45^\circ$} ;
+\draw [black!60!green] (1, 0) node[anchor=north] {$a\sqrt{2}$};
+\draw [black!60!green] (2, 1) node[anchor=west] {$a\sqrt{2}$};
+\draw [black!60!green] (1, 1) node[anchor=south east] {$2a$};
+\end{tikzpicture}
+\end{document}

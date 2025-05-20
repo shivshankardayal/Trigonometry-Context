@@ -1,0 +1,66 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+\draw (0, 0) -- (2, 0);
+\draw (0, 0) -- (2, 2);
+\draw (2, 0) -- (2, 2);
+\draw [blue] (0, 0) node[anchor=south] {$O$};
+\draw [blue] (2, 0) node[anchor=north] {$M$};
+\draw [blue] (2, 2) node[anchor=south] {$P$};
+\draw (0, 0) -- (0.5, 0) arc[start angle=0, end angle=45, radius=0.5];
+x\draw (0, 0) -- (-2, 0);
+\draw (0, 0) -- (-2, 2);
+\draw (-2, 0) -- (-2, 2);
+\draw [blue] (-2, 0) node[anchor=north] {$M'$};
+\draw [blue] (-2, 2) node[anchor=south] {$P'$};
+\draw (0, 0) -- (-0.5, 0) arc[start angle=180, end angle=135, radius=0.5];
+
+\draw (6, 0) -- (8, 0);
+\draw (6, 0) -- (8, 2);
+\draw (8, 0) -- (8, 2);
+\draw [blue] (6, 0) node[anchor=south] {$O$};
+\draw [blue] (8, 0) node[anchor=north] {$M'$};
+\draw [blue] (8, 2) node[anchor=south] {$P'$};
+\draw (6, 0) -- (6.5, 0) arc[start angle=0, end angle=135, radius=0.5];
+x\draw (6, 0) -- (4, 0);
+\draw (6, 0) -- (4, 2);
+\draw (4, 0) -- (4, 2);
+\draw [blue] (4, 0) node[anchor=north] {$M$};
+\draw [blue] (4, 2) node[anchor=south] {$P$};
+\draw (6, 0) -- (5.3, 0) arc[start angle=180, end angle=45, radius=0.7];
+
+\draw (0, -1) -- (2, -1);
+\draw (2, -1) -- (2, -3);
+\draw (0, -1) -- (2, -3);
+\draw [blue] (0, -1) node[anchor=south] {$O$};
+\draw [blue] (2, -1) node[anchor=south] {$M'$};
+\draw [blue] (2, -3) node[anchor=north] {$P'$};
+\draw (0, -1) -- (0.5, -1) arc[start angle=0, end angle=225, radius=0.5];
+\draw (0, -1) -- (-2, -1);
+\draw (0, -1) -- (-2, -3);
+\draw (-2, -1) -- (-2, -3);
+\draw [blue] (-2, -1) node[anchor=south] {$M$};
+\draw [blue] (-2, -3) node[anchor=north] {$P$};
+\draw (0, -1) -- (0.5, -1.5) arc[start angle=315, end angle=540, radius=0.7];
+
+\draw (6, -1) -- (8, -1);
+\draw (6, -1) -- (8, -3);
+\draw (8, -1) -- (8, -3);
+\draw [blue] (6, -1) node[anchor=south] {$O$};
+\draw [blue] (8, -1) node[anchor=south] {$M$};
+\draw [blue] (8, -3) node[anchor=north] {$P$};
+\draw (6, -1) -- (6.5, -1) arc[start angle=0, end angle=315, radius=0.5];
+x\draw (6, -1) -- (4, -1);
+\draw (6, -1) -- (4, -3);
+\draw (4, -1) -- (4, -3);
+\draw [blue] (4, -1) node[anchor=south] {$M'$};
+\draw [blue] (4, -3) node[anchor=north] {$P'$};
+\draw (6, -1) -- (5.5, -1.5) arc[start angle=225, end angle=540, radius=0.7];
+
+\end{tikzpicture}
+\end{document}

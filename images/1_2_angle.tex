@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+   \draw[->, >=stealth] (0,0) -- (2,0);
+   \draw[->, >=stealth] (0,0) -- (1, 1.732);
+   \draw (0.3, 0) arc [start angle=0, end angle=60, radius=0.3];
+   \draw (2, 0) node[anchor=north] {$A$};
+   \draw (1, 1.732) node[anchor=north west] {$B$};
+   \draw (0, 0) node[anchor=north] {$O$};
+\end{tikzpicture}
+\end{document}

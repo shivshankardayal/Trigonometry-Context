@@ -1,0 +1,17 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+\draw[>=latex,<->] (0, 0) -- (3, 0);
+\draw (0,0) node[anchor=north] {$X'$};
+\draw (3,0) node[anchor=north] {$X$};
+\draw (1.5,0) node[anchor=north east] {$O$};
+\draw[>=latex,<->] (1.5, -1.5) -- (1.5, 1.5);
+\draw (1.5, -1.5) node[anchor=west] {$Y'$};
+\draw (1.5, 1.5) node[anchor=west] {$Y$};
+\end{tikzpicture}
+\end{document}

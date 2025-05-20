@@ -1,0 +1,1 @@
+convert -density 96 colorspace RGB input_file output_file

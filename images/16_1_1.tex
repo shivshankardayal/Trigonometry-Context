@@ -1,0 +1,26 @@
+\documentclass[tikz]{standalone}
+\usetikzlibrary{calc,patterns,angles,quotes}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}
+  \draw (-2,0) -- (2, 0) -- (0, 3) -- cycle;
+  \draw [blue] (-2, 0) node[anchor=north east] {$B$};
+  \draw [blue] (2, 0) node[anchor=north west] {$C$};
+  \draw [blue] (0, 3) node[anchor=south] {$A$};
+  \draw [dashed] (0, 3) -- (0, 0);
+  \coordinate (A) at (0, 3);
+  \coordinate (B) at (-2, 0);
+  \coordinate (C) at (2, 0);
+  \coordinate (B1) at (-2, -.5);
+  \coordinate (C1) at (2, -.5);
+  \draw [<->] (B1) -- (C1);
+  \draw [blue] (0, 0) node[anchor=north] {$D$};
+  \node [label={[black!60!green]below:$a$}] at ( $ (B1)!0.5!(C1) $ ) () {};
+  \node [label={[black!60!green]above left:$c$}] at ( $ (A)!0.5!(B) $ ) () {};
+  \node [label={[black!60!green]above right:$b$}] at ( $ (A)!0.5!(C) $ ) () {};
+\end{tikzpicture}
+\end{document}

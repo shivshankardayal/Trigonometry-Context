@@ -120,3 +120,433 @@ $\sin\sin^{-1}x = x$. Other formulae can be proved similarly.
   For $-1\leq x < 0$ $\sin^{-1}x$ will be negative angle while $\cos^{-1}\sqrt{1 - x^2}$ will be positive
   angle. Hence to balance that we need to use a negative sign for this.
 \stopproof
+
+\starttheorem
+  \startitemize[n]
+    \item $\sin^{-1}(-x) = -\sin^{-1}x$
+
+    \item $\cos^{-1}(-x) = \pi - \cos^{-1}x$
+
+    \item $\tan^{-1}(x) = -\tan^{-1}x$
+
+    \item $\cot^{-1}x = \pi - \cot^{-1}x$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  Let $\cos^{-1}(-x) = \theta$ then $\cos\theta = -x$
+
+  $-\cos\theta = x \Rightarrow \cos(\pi - \theta) = x$
+
+  $\therefore \theta = \pi - \cos^{-1}x$
+
+  Note: $\cos(\pi + \theta)$ is also equal to $-\cos\theta$ but this will make principal value greater than $\pi.$
+
+  Similarly other results can be proven.
+\stopproof
+
+\starttheorem
+  \startitemize[n]
+  \item $\tan^{-1}x + \tan^{-1}y = \tan^{-1}\frac{x + y}{1 - xy}$ where $x, y > 0$ and $xy < 1$
+
+  \item $\tan^{-1}x + \tan^{-1}y = \pi + \tan^{-1}\frac{x + y}{1 - xy}$ where $x, y > 0$ and $xy > 1$
+
+  \item $\tan^{-1}x + \tan^{-1}y = -\pi + \tan^{-1}\frac{x + y}{1 - xy}$ where $x, y , 0$ and $xy > 1$
+
+  \item $\tan^{-1}x - \tan^{-1}y = \tan^{-1}\frac{x - y}{1 + xy}$ where $xy > 1$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  Let $\tan^{-1}x = \alpha$ and $\tan^{-1}y = \beta$ then
+
+  $\tan\alpha = x$ and $\tan\beta = y$
+
+  $\tan(\alpha + \beta) = \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha\tan\beta} = \frac{x + y}{1 - xy}$
+
+  $\Rightarrow \alpha +\beta = \tan^{-1}\frac{x + y}{1 = xy}$
+
+  $\Rightarrow \tan^{-1}x + \tan^{-1}y = \tan^{-1}\frac{x + y}{1 - xy}$
+
+  {\bf Case I.} When $x, y > 0$ and $xy < 1, \tan^{-1}\frac{x + y}{1 - xy} > 0$
+
+  therefore $\tan^{-1}\frac{x + y}{1 - xy}$ will be a positive angle.
+
+  {\bf Case II.} When $x, y >0$ and $xy > 1$ $\tan^{-1}\frac{x + y}{1 - xy}$ will be a negative angle.
+
+  $\therefore \tan^{-1}x + \tan^{-1}y = \pi + \tan^{-1}\frac{x + y}{1 - xy}$
+
+  {\bf Case III.} When $x, y< 0$ and $xy > 1$, $\tan^{-1}x + \tan^{-1}y$ will be a negative angle and
+  $\tan^{-1}\frac{x + y}{1 - xy}$ will be a positive angle.
+
+  To balance it we will need to add $-\pi$
+
+  $\therefore \tan^{-1}x + \tan^{-1}y = -\pi + \tan^{-1}\frac{x + y}{1 - xy}$
+
+  Similarly other result can be proven.
+\stopproof
+
+$\tan^{-1}x + \tan^{-1}y + \tan^{-1}z = \frac{x + y + z - xyz}{1 - xy - yz - xz}$ can be proven similarly.
+
+\starttheorem
+  \startitemize[n]
+  \item $\sin^{-1}x + \sin^{-1}y = \sin^{-1}[x\sqrt{1 - y^2} + y\sqrt{1 - x^2}]$ if $-1\leq x, y\leq 1$ and $x^2 +
+    y^2\leq 1$ or if $xy < 0$ and $x^2 + y^2 > 1$
+
+  \item $\sin^{-1}x - \sin^{-1}y = \sin^{-1}[x\sqrt{1 - y^2} - y\sqrt{1 - x^2}]$ if $-1\leq x, y\leq 1$ and $x^2 +
+    y^2\leq 1$ or if $xy > 0$ and $x^2 + y^2 > 1$
+  \stopitemize
+ \stoptheorem
+
+ \startproof
+   Let $\sin^{-1}x = \alpha$ and $\sin^{-1}y = \beta$ then $\sin\alpha = x, \sin\beta = y.$
+
+   Now $\sin(\alpha + \beta) = \sin\alpha\cos\beta + \sin\beta\cos\alpha$
+
+   $= \sin\alpha\sqrt{1 - \sin^2\beta} + \sin\beta\sqrt{1 - \sin^2\alpha}$
+
+   $= x\sqrt{1 - y^2} + y\sqrt{1 - x^2}$
+
+   $\alpha + \beta = \sin^{-1}[x\sqrt{1 - y^2} + y\sqrt{1 - x^2}]$
+
+   Similarly we can prove that $\sin^{-1}x - \sin^{-1}y = \sin^{-1}[x\sqrt{1 - y^2} - y\sqrt{1 - x^2}]$
+ \stopproof
+
+\starttheorem
+  \startitemize[n]
+  \item $2\tan^{-1}x = \sin^{-1}\frac{2x}{1 + x^2},$ where $|x|< 1$
+
+  \item $2\tan^{-1}x = \cos^{-1}\frac{1 - x^2}{1 + x^2},$ where $x\geq 0$
+
+  \item $2\tan^{-1}x = \tan^{-1}\frac{2x}{1 - x^2},$ where $|x| < 1$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  \startitemize[n]
+  \item Let $\tan^{-1}x = \theta$ then $\tan\theta = x$
+
+   $\sin2\theta = \frac{2\tan\theta}{1 + \tan^2x\theta} = \frac{2x}{1 + x^2}$
+
+   $\Rightarrow 2\theta = \sin^{-1}\frac{2x}{1 + x^2}\Rightarrow 2\tan^{-1}x = \sin^{-1}\frac{2x}{1 + x^2}$
+
+   Here, $-\frac{\pi}{2}\leq \sin^{-1} \leq \frac{\pi}{2}$
+
+   $\Rightarrow -\frac{\pi}{2}\leq 2\tan^{-1}x\leq \frac{\pi}{2}$
+
+   $\Rightarrow -\frac{\pi}{4}\leq \tan^{-1}x\leq \frac{\pi}{4}$
+
+   $\Rightarrow -1\leq x\leq 1 \Rightarrow |x| < 1$
+
+ \item $\cos2\theta = \frac{1 - \tan^2\theta}{1 + \tan^2\theta} = \frac{1 - x^2}{1 + x^2}$
+
+   $\Rightarrow 2\theta = \cos^{-1}\left(\frac{1 - x^2}{1 + x^2}\right)$
+
+   $\Rightarrow 2\tan^{-1}x = \cos^{-1}\frac{1 - x^2}{1 + x^2}$
+
+   For $x \geq 0$ both sides will be balanced.
+
+   For $x<0, 2\tan^{-1}x$ will represent a negative angle where R.H.S. will always lie between $0$ and $\pi.$
+   Hence two sides cannot be equal.
+
+ \item $\tan2\theta = \frac{2\tan\theta}{1 - \tan^2\theta} = \frac{2x}{1 - x^2}\Rightarrow 2\theta = \tan^{-1}\frac{2x}{1 - x^2}$
+
+   $2\tan^{-1}x = \tan^{-1}\frac{2x}{1 - x^2}$ which holds good for $|x|< 1$
+ \stopitemize
+\stopproof
+
+\starttheorem
+  \startitemize[n]
+    \item $2\sin^{-1}x = \sin^{-1}[2x\sqrt{1 - x^2}]$ if $-\frac{1}{\sqrt{2}}\leq x\leq \frac{1}{\sqrt{2}}$
+
+    \item $2\cos^{-1}x = \cos^{-1}(2x^2 - 1)$ where $0\leq x \leq 1$
+  \stopitemize
+\stoptheorem
+
+These can be proven like $\sin^{-1}x + \sin^{-1}y$
+
+\starttheorem
+  \startitemize[n]
+  \item $3\sin^{-1}x = \sin^{-1}(3x - 4x^3)$ where $-\frac{1}{2}\leq x\leq \frac{1}{2}$
+
+  \item $3\cos^{-1}x = \cos^{-1}(4x^3 - 3x)$ where $\frac{1}{2}\leq x\leq 1$
+
+  \item $3\tan^{-1}x = \tan^{-1}\frac{3x - x^3}{1 - 3x^2}$ where $-\frac{1}{\sqrt{3}}< x < \frac{1}{\sqrt{3}}$
+\stopitemize
+\stoptheorem
+
+These can be proven like previous proof.
+
+\section{Graph of Important Inverse Trigonometric Functions}
+\startitemize[n]
+\item $y = \sin^{-1}x, -1\leq x\leq 1$
+  \startplacefigure[title={}]
+    \externalfigure[25_1.pdf]
+  \stopplacefigure
+
+   From this graph we observer following:
+   \startitemize[n]
+   \item Domain is $-1\leq x\leq 1$
+
+   \item Range is $-\frac{\pi}{2}\leq y \leq \frac{\pi}{2}$
+
+   \item $\because \sin^{-1}x = -\sin^{-1}x \therefore y = \sin^{-1}x$ is an odd function.
+
+   \item It is a non-periodic function
+
+   \item It passes through origin i.e. when $x = 0, y = 0$
+   \stopitemize
+ \item $y = \cos^{-1}x, -1\leq x\leq 1$
+  \startplacefigure[title={}]
+    \externalfigure[25_2.pdf]
+  \stopplacefigure
+
+   Follwing points can be observed from the graph:
+   \startitemize[n]
+   \item Domain is $-1\leq x\leq 1$
+
+   \item Range is $0\leq x\leq \pi$
+
+   \item $\because \cos^{-1}(-x) = \pi - \cos^{-1}x$
+
+     $\Rightarrow y = \cos^{-1}x$ is neither odd nor even.
+
+   \item It is a non-periodic function
+   \stopitemize
+
+ \item $y = \tan^{-1}x, -\infty< x <\infty$
+  \startplacefigure[title={}]
+    \externalfigure[25_3.pdf]
+  \stopplacefigure
+
+   From the graph follwing points can be observed:
+   \startitemize[n]
+   \item Domain is $-\infty < x < \infty$
+
+   \item Range is $-\frac{\pi}{2} < x < \frac{\pi}{2}$
+
+   \item $y = \tan^{-1}x$ is an odd function
+
+   \item It is a non-periodic function.
+
+   \item It passes through origin.
+   \stopitemize
+ \item $y = \cot^{-1}x, -\infty< x <\infty$
+  \startplacefigure[title={}]
+    \externalfigure[25_4.pdf]
+  \stopplacefigure
+
+   From the graph follwing points can be observed:
+   \startitemize[n]
+   \item Domain is $-\infty < x < \infty$
+
+   \item Range is $0<y<\pi$
+
+   \item The function is neither odd nor even.
+
+   \item It is a non-periodic function
+   \stopitemize
+\stopitemize
+
+\section{Problems}
+Evaluate the following:
+\startitemize[n, 1*broad]
+\item $\tan^{-1}(-1)$
+\item $\cot^{-1}(-1)$
+\item $\sin^{-1}\left(-\frac{\sqrt{3}}{2}\right)$
+
+Find the value of the following:
+
+\item $\sin\left[\frac{\pi}{3} - \sin^{-1}\frac{-1}{2}\right]$
+\item $\sin\left[\cos^{-1}\frac{-1}{2}\right]$
+\item $\sin\left[\tan^{-1}(-\sqrt{3}) + \cos^{-1}\frac{-\sqrt{3}}{2}\right]$
+\item Evaluate $\tan\left[\frac{1}{2}\cos^{-1}\frac{\sqrt{5}}{3}\right]$
+\item Find the angle $\sin^{-1}\left(\sin\frac{2\pi}{3}\right)$
+
+Find the value of the following:
+
+\item $\sin^{-1}\frac{\sqrt{3}}{2}$
+\item $\tan^{-1}\frac{-1}{\sqrt{3}}$
+\item $\cot^{-1}(-\sqrt{3})$
+\item $\cot^{-1}\cot\frac{5\pi}{4}$
+\item $\tan^{-1}\left(\tan\frac{3\pi}{4}\right)$
+\item $\sin^{-1}\frac{1}{2} + \cos^{-1}\frac{1}{2}$
+\item $\cos\left[\tan^{-1}\left(\frac{3}{4}\right)\right]$
+\item $\cos\left[\cos^{-1}\left(\frac{\sqrt{3}}{2}\right) + \frac{\pi}{6}\right]$
+
+\item Prove that $2\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} = \frac{\pi}{4}$
+\item Prove that $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{5} + \tan^{-1}\frac{1}{7} + \tan^{-1}\frac{1}{8} = \frac{\pi}{4}$
+\item Prove that $\sin^{-1}\frac{4}{5} + \sin^{-1}\frac{5}{13} + \sin^{-1}\frac{16}{65} = \frac{\pi}{2}$
+\item Prove that $4\tan^{-1}\frac{1}{5} - \tan^{-1}\frac{1}{70} + \tan^{-1}\frac{1}{99} = \frac{\pi}{4}$
+\item Prove that $\cot^{-1}9 + \rm cosec^{-1}\frac{\sqrt{41}}{4} = \frac{\pi}{4}$
+\item Prove that $4(\cot^{-1}3 + \rm cosec^{-1}\sqrt{5}) = \pi$
+\item Prove that $\tan^{-1}x = 2\tan^{-1}[\rm cosec\tan^{-1}x - \tan\cot^{-1}x]$
+\item Prove that $2\tan^{-1}\left[\sqrt{\frac{a - b}{a + b}}\tan\frac{x}{2}\right] = \cos^{-1}\left[\frac{b + a\cos x}{a +
+    b\cos x}\right]$ for $0<b\leq a,$ and $x\geq 0.$
+\item Prove that $\tan^{-1}\frac{x - y}{1 + xy} + \tan^{-1}\frac{y - z}{1 + yz} + \tan^{-1}\frac{z - x}{1 + zx} =
+    \tan^{-1}\left(\frac{x^2 - y^2}{1 + x^2y^2}\right) + \tan^{-1}\left(\frac{y^2 - z^2}{1 + y^2z^2}\right) +
+    \tan^{-1}\left(\frac{z^2 - x^2}{1 + z^2x^2}\right)$
+\item Prove that $\sin\cot^{-1}\tan\cos^{-1}x = x$
+\item Prove that $\tan^{-1}\left(\frac{1}{2}\tan 2x\right) + \tan^{-1}(\cot x) +\tan^{-1}(\cot^3x) = 0$ if
+    $\frac{\pi}{4}< x < \frac{\pi}{2}, = \pi$ if $0<x<\pi$
+\item Prove that $\tan^{-1}\frac{1}{2} + \tan^{-1}\frac{1}{3} = \tan^{-1}\frac{3}{5} + \tan^{-1}\frac{1}{4} = \frac{\pi}{4}$
+\item Prove that $\tan^{-1}\frac{2a - b}{\sqrt{3}b} + \tan^{-1}\frac{2b - a}{\sqrt{3}a} = \frac{\pi}{3}$
+\item Prove that $\tan^{-1}\frac{2}{5} + \tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{12} = \frac{\pi}{4}$
+\item Prove that $2\tan^{-1}\frac{1}{5} + \tan^{-1}\frac{1}{4} = \tan^{-1}\frac{32}{43}$
+\item Prove that $\tan^{-1}1 + \tan^{-1}2 + \tan^{-1}3 = \pi = 2\left(\tan^{-1}1 + \tan^{-1}\frac{1}{2} +
+    \tan^{-1}\frac{1}{3}\right)$
+\item Prove that $\tan^{-1}x + \cot^{-1}y = \tan^{-1}\frac{xy + 1}{y - x}$
+\item Prove that $\tan^{-1}\frac{1}{x + y} + \tan^{-1}\frac{y}{x^2 + xy + 1} = \cot^{-1}x$
+\item Prove that $2\cot^{-1}5 + \cot^{-1}7 + 2\cot^{-1}8 = \pi/4$
+\item Prove that $\tan^{-1}\frac{a - b}{1 + ab} + \tan^{-1}\frac{b - c}{1 + bc} + \tan^{-1}\frac{c - a}{1 + ca} = 0$
+\item Prove that $\tan^{-1}\frac{a^3 - b^3}{1 + a^3b^3} + \tan^{-1}\frac{b^3 - c^3}{1 + b^3c^3} + \tan^{-1}\frac{c^3 - a^3}{1 +
+    c^3a^3} = 0$
+\item Prove that $\cot^{-1}\frac{xy + 1}{y - x} + \cot^{-1}\frac{yz + 1}{z - y} + \cot^{-1}z = \tan^{-1}\frac{1}{x}$
+\item Prove that $\cos^{-1}\left(\frac{\cos\theta + \cos\phi}{1 + \cos\theta\cos\phi}\right) =
+    2\tan^{-1}\left(\tan\frac{\theta}{2}\tan\frac{\phi}{2}\right)$
+\item Prove that $\sin^{-1}\frac{3}{5} + \sin^{-1}\frac{8}{17} = \sin^{-1}\frac{77}{85}$
+\item Prove that $\cos^{-1}\frac{3}{5} + \cos^{-1}\frac{12}{13} + \cos^{-1}\frac{63}{65} = \frac{\pi}{2}$
+\item Prove that $\sin^{-1}x + \sin^{-1}y = \cos^{-1}\left(\sqrt{1 - x^2}\sqrt{1 - y^2} - xy\right)$ where $x, y \in[0,
+    1]$
+\item Prove that $4\left(\sin^{-1}\frac{1}{\sqrt{10}} + \cos^{-1}\frac{2}{\sqrt{5}}\right) =\pi$
+\item Prove that $\cos(2\sin^{-1}x) = 1 - 2x^2$
+\item Prove that $\frac{1}{2}\cos^{-1}x = \sin^{-1}\sqrt{\frac{1 - x}{2}} = \cos^{-1}\sqrt{\frac{1 + x}{2}} =
+    \tan^{-1}\frac{\sqrt{1 - x^2}}{1 + x}$
+\item Prove that $\sin^{-1}x + \cos^{-1}y = \tan^{-1}\frac{xy + \sqrt{(1 - x^2)(1 - y^2)}}{y\sqrt{1 - x^2} - x\sqrt{1 - y^2}}$
+\item Prove that $\tan^{-1}x + \tan^{-1}y = \frac{1}{2}\sin^{-1}\frac{2(x + y)(1 - xy)}{(1 + x^2)(1 + y^2)}$
+\item Prove that $2\tan^{-1}(\rm cosec\tan^{-1}x - \tan\cot^{-1}x) = \tan^{-1}x$
+\item Prove that $\cos\tan^{-1}\sin\cot^{-1}x = \sqrt{\frac{x^2 + 1}{x^2 + 2}}$
+\item In any $\triangle ABC$ if $A = \tan^{-1}2$ and $B = \tan^{-1}3,$ prove that $C = \frac{\pi}{4}$
+\item If $\cos^{-1}x + \cos^{-1}y + \cos^{-1}z = \pi$ then prove that $x^2 + y^2 + z^2 + 2xyz = 1$
+\item If $\cos^{-1}\frac{x}{2}+ \cos^{-1}\frac{y}{3} = \theta,$ prove that $9x^2 - 12xy\cos\theta + 4y^2 =
+    36\sin^2\theta$
+\item If $r = x + y + z$ then prove that $\tan^{-1}\sqrt{\frac{xr}{yz}} + \tan^{-1}\sqrt{\frac{yr}{xz}} +
+    \tan^{-1}\sqrt{\frac{zr}{xy}} = \pi$
+\item If $u = \cot^{-1}\sqrt{\cos2\theta} - \tan^{-1}\sqrt{\cos2\theta}$ then prove that $\sin u = \tan^2\theta$
+\item Solve $\cos^{-1}x\sqrt{3} + \cos^{-1}x = \frac{\pi}{2}$
+\item Solve $\sin^{-1}x + \sin^{-1}2x = \frac{\pi}{3}$
+\item If $\tan^{-1}x + \tan^{-1}y + \tan^{-1}z= \frac{\pi}{2},$ prove that $xy + yz + zx = 1$
+\item If $\tan^{-1}x + \tan^{-1}y + \tan^{-1}z= \pi,$ prove that $x + y + z = xyz$
+\item If $\sin^{-1}x + \sin^{-1}y = \frac{\pi}{2},$ prove that $x\sqrt{1 - y^2} + y\sqrt{1 - x^2} = 1$
+\item If $\sin^{-1}x + \sin^{-1}y + \sin^{-1}z = \pi,$ prove that $x\sqrt{1 - x^2} + y\sqrt{1 - y^2} + z\sqrt{1 - z^2} =
+    2xyz$
+\item Establish the relationship between $\tan^{-1}x, \tan^{-1}y, \tan^{-1}z$ are in A.P. and if further $x, y, z$ are
+    also in A.P. then prove that $x = y = z.$
+\item Solve for $x, \cot^{-1}x + \sin^{-1}\frac{1}{\sqrt{5}} = \frac{\pi}{4}$
+\item Solve $\tan^{-1}2x + \tan^{-1}3x = \frac{\pi}{4}$
+\item Solve $\tan^{-1} x + \tan^{-1}\frac{2x}{1 - x^2} = \frac{\pi}{3}$
+\item Solve $\tan^{-1}\frac{1}{2} = \cot^{-1}x + \tan^{-1}\frac{1}{7}$
+\item Solve $\tan^{-1}(x - 1) + \tan^{-1}x + \tan^{-1}(x + 1) = \tan^{-1}3x$
+\item Solve $\tan^{-1}\frac{x + 1}{x - 1} + \tan^{-1}\frac{x - 1}{x} = \pi + \tan^{-1}(-7)$
+\item Solve $\cot^{-1}(a - 1) = \cot^{-1}x + \cot^{-1}(a^2 - x + 1)$
+\item Solve $\sin^{-1}\frac{2\alpha}{1 + \alpha^2} + \sin^{-1}\frac{2\beta}{1 + \beta^2} = 2\tan^{-1}x$
+\item Solve $\cos^{-1}\frac{x^2 - 1}{x^2 + 1} + \tan^{-1}\frac{2x}{x^2 - 1} = \frac{2\pi}{3}$
+\item Solve $\sin^{-1}\frac{2a}{1 + a^2} + \cos^{-1}\frac{1 - b^2}{1 + b^2} = 2\tan^{-1}x$
+\item Solve $\sin^{-1}x + \sin^{-1}(1 - x) = \cos^{-1}x$
+\item Solve $\tan^{-1}ax + \frac{1}{2}\sec^{-1}bx = \frac{\pi}{4}$
+\item Solve $\tan(\cos^{-1}x) = \sin(\tan^{-1}2)$
+\item Solve $\tan\left(\sec^{-1}\frac{1}{x}\right) = \sin\cos^{-1}\frac{1}{\sqrt{5}}$
+\item Find the values of $x$ and $y$ satisfying $\sin^{-1}x + \sin^{-1}y = \frac{2\pi}{3}$ and $\cos^{-1}x -
+    \cos^{-1}y = \frac{\pi}{3}$
+\item Find the angle $\sin^{-1}(\sin10)$
+\item Using principal values, express the following as a single angle $3\tan^{-1}\frac{1}{2} + 2\tan^{-1}\frac{1}{5} +
+    \sin^{-1}\frac{142}{65\sqrt{5}}$
+\item Find the value of $2\cos^{-1}x + \sin^{-1}x$ at $x = \frac{1}{5}$ where $0\leq \cos^{-1}x\leq \pi$ and
+    $-\frac{\pi}{2}\leq \sin^{-1}x \leq \frac{\pi}{2}$.
+\item Show that $\frac{1}{2}\cos^{-1}\frac{3}{5} = \tan^{-1}\frac{1}{2} = \frac{\pi}{4} - \frac{1}{2}\cos^{-1}\frac{4}{5}$
+\item Find the greater angle between $2\tan^{-1}(2\sqrt{2} - 1)$ and $3\sin^{-1}\frac{1}{3} + \sin^{-1}\frac{3}{5}$
+\item Prove that $\tan^{-1}\left(\frac{a_1x - y}{x + a_1y}\right) + \tan{-1}\left(\frac{a_2 - a_1}{1 + a_2a_1}\right) +
+    \tan^{-1}\left(\frac{a3 - a_2}{1 + a_3a_2}\right) + \ldots + \tan^{-1}\left(\frac{a_n - a_{n - 1}}{1 + a_na_{n - 1}}\right) +
+    \tan^{-1}\frac{1}{a_n} = \tan^{-1}\frac{x}{y}$
+\item Find the sum $\cot^{-1}2 + \cot^{-1}8 + \cot^{-1}18 + \ldots +$ to $\infty$
+\item Show that the function $y = 2\tan^{-1}x + \sin^{-1}\frac{2x}{1 + x^2}$ is constant for $x\geq 1.$ Find the value of
+    this constant.
+\item Prove the relations $\cos^{-1}x_0 = \frac{\sqrt{1 - x_0^2}}{x_1x_2x_3\ldots\text{~to~}\infty}$ where the successive
+    quantities $x_r$ are connected by the relation $x_{r + 1} = \sqrt{\frac{1 + x_r}{2}}$ where $0\leq
+    \cos^{-1}x_0\leq \pi$.
+\item If $a, b$ are positive quantities and if $a_1 = \frac{a + b}{2}, b_1 = \sqrt{a_1b}, a_2 = \frac{a_1 + b_1}{2}, b_2
+    = \sqrt{a_2b_1}$ and so on then show that $\lim_{n\to \infty}a_n\lim_{n\to\infty}b_n = \frac{\sqrt{b^2 - a^2}}{\cos^{-1}\frac{a}{b}}$
+\item Using Mathematical Induction prove that $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} + \ldots + \tan^{-1}\frac{1}{n^2 + n
+    + 1} = \tan^{-1}\frac{n}{n + 2}$
+\item If $x_1, x_2, x_3, x_4$ are the roots of the equation $x^4 - x^3\sin2\beta + x^2\cos2\beta - x\cos\beta - \sin\beta
+    = 0$ then prove that $\tan^{-1}x_1 + \tan^{-1}x_2 + \tan^{1}x_3 + \tan^{-1}x_4 = n\pi + \frac{\pi}{2} - \beta$
+\item Find theh value of $\cot^{-1}\left(\cot \frac{5\pi}{4}\right)$
+\item Find the value of $\sin^{-1}(\sin 5)$
+\item Find the value of $\cos^{-1}\cos\frac{5\pi}{4}$
+\item Find the value of $\cos^{-1}(\cos 10)$
+\item Evaluate $\sin\left(2\tan^{-1}\frac{1}{3}\right) + \cos\tan^{-1}2\sqrt{2}$
+\item Evaluate $\cot[\cot^{-1}7 + \cot^{-1}8 + \cot^{-1}18]$
+\item Prove that $\sin^{-1}\frac{3}{5} + \cos^{-1}\frac{12}{13} + \cot^{-1}\frac{56}{33} = \frac{\pi}{2}$
+\item Prove that $2\cot^{-1}5 + \cot^{-1}7 + 2\cot^{-1}8 = \frac{\pi}{4}$
+\item Prove that $\tan^{-1}1 + \tan^{-1}2 + \tan^{-1}3 = 2\left(\tan^{-1}1 + \tan^{-1}\frac{1}{2} +
+    \tan^{-1}\frac{1}{3}\right).$
+\item If $A = \tan^{-1}\frac{1}{7}$ and $B = \tan^{-1}\frac{1}{3}$ then prove that $\cos 2A = \sin 4B.$
+\item Find the sum $\tan^{-1}\frac{x}{1 + 1.2x^2} + \tan^{-1}\frac{x}{1 + 2.3x^2} + \ldots + \tan^{-1}\frac{1}{1 + n(n +
+    1)x^2}, x> 0.$
+\item Find the sum $\tan^{-1}\frac{d}{1 + a_1a_2} + \tan^{-1}\frac{d}{1 + a_2a_3} + \ldots + \tan^{-1}\frac{d}{1 + a_na_{n +
+     1}}$ if $a_1, a_2, \ldots, a_{n + 1}$ form an arithmetic progression with a common difference of $d$ and $d
+     > 0, a_i>0$ for $i = 1,2,3,\ldots, n + 1.$
+\item For what value of $x,$ the equality $\sin^{-1}(\sin 5) > x^2 - 4x$ holds.
+\item If $\tan^{-1}y = 5\tan^{-1}x,$ express $y$ as an algebraic function of $x$ and hence show that
+     $18^\circ$ is a root of $5u^4 - 10u^2 + 1 = 0.$
+\item If $\cos^{-1}x + \cos^{-1}y + \cos^{-1}z = \pi$ and $x + y + z = \frac{3}{2},$ then prove that $x = y = z.$
+\item If $\sin^{-1}x + \sin^{-1}y + \sin^{-1}z = \pi,$ prove that $x^4 + y^4 + z^4 + 4x^2y^2z^2 = 2(x^2y^2 + y^2z^2 +
+     z^2x^2).$
+\item Prove that $\frac{\alpha^3}{2}\rm cosec^2\left(\frac{1}{2}\tan^{-1}\frac{\alpha}{\beta}\right) +
+     \frac{\beta^3}{2}\sec^2\left(\frac{1}{2}\tan^{-1}\frac{\beta}{\alpha}\right) = (\alpha + \beta)(\alpha^2 + \beta^2).$
+\item Prove that $2\tan^{-1}\left[\tan\frac{\alpha}{2}\tan\left(\frac{\pi}{4} - \frac{\beta}{2}\right)\right] =
+     \tan^{-1}\left[\frac{\sin\alpha\cos\beta}{\sin\beta + \cos\alpha}\right].$
+\item Prove that $\tan^{-1}\left[\frac{1}{2}\cos2\alpha\sec2\beta + \frac{1}{2}\cos2\beta\sec2\alpha\right] = \tan^{-1}[\tan^2(\alpha +
+     \beta)\tan^2(\alpha -\beta)] + \frac{\pi}{4}.$
+\item Express $\cot^{-1}\left(\frac{y}{\sqrt{1 - x^2 - y^2}}\right) = 2\tan^{-1}\sqrt{\frac{3 - 4x^2}{4x^2}} -
+     \tan^{-1}\sqrt{\frac{3 - 4x^2}{x^2}}$ as a rational integral equation in $x$ and $y.$
+\item If $\frac{m\tan(\alpha - \theta)}{\cos^2\theta} = \frac{n\tan\theta}{\cos^2(\alpha - \theta)}$ then prove that
+     $\theta = \frac{1}{2}\left[\alpha - \tan^{-1}\left(\frac{n - m}{n + m}\right)\tan\alpha\right].$
+\item If $\sin^{-1}\frac{x}{a} + \sin^{-1}\frac{y}{b} = \sin^{-1}\frac{c^2}{ab}$ then prove that $b^2x^2 +
+     2xy\sqrt{a^2b^2 - c^4} = c^4 - a^2y^2.$
+\item Prove that $\tan^{-1}t + \tan^{-1}\frac{2t}{1 - t^2} = \tan^{-1}\frac{3t - t^3}{1 - 3t^2},$ if
+     $-\frac{1}{\sqrt{3}} < x < \frac{1}{\sqrt{3}}.$
+\item Prove that $\cos^{-1}\sqrt{\frac{a - x}{a - b}} = \sin^{-1}\sqrt{\frac{x - b}{a - b}}$ if $a > x> b$ or $a <
+     x < b.$
+\item Find all values of $p$ and $q$ such that $\cos^{-1}\sqrt{p} + \cos^{-1}\sqrt{1 - p} + \cos^{-1}\sqrt{1 - q}
+     = \frac{3\pi}{4}.$
+\item Find all positive integral solution of the equation $\tan^{-1}x + \cot^{-1}y = \tan^{-1}3.$
+\item Solve $\sin^{-1}\frac{ax}{c} + \sin^{-1}\frac{bx}{c} = \sin^{-1}x$ where $a^2 + b^2 = c^2, c\neq 0.$
+\item Convert the trigonometric function $\sin[2\cos^{-1}\{\cot(2\tan^{-1}x)\}]$ into an algebraic function $f(x).$ Then
+     from the algebraic function find all the values of $x$ for which $f(x)$ is zero. Express the value of $x$ in
+     the form of $a\pm\sqrt{b}$ where $a$ and $b$ are rational numbers.
+\item Solve the equation $\theta = \tan^{-1}(2\tan^2\theta) - \frac{1}{2}\sin^{-1}\left(\frac{3\sin2\theta}{5 +
+     4\cos2\theta}\right).$
+\item Solve $\tan^{-1}2x + \tan^{-1}3x = \frac{\pi}{4}.$
+\item If $\sin^{-1}\left(x - \frac{x^2}{2} + \frac{x^3}{4} - \ldots\right) + \cos^{-1}\left(x^2 - \frac{x^4}{2} +
+     \frac{x^6}{4} + \ldots\right) = \frac{\pi}{2}~\forall~0<|x|<\sqrt{2}$ then find $x.$
+\item Find the number of real solutions for $\tan^{-1}\sqrt{x(x + 1)} + \sin^{-1}\sqrt{x^2 + x + 1} = \frac{\pi}{2}.$
+\item Solve $\sin^{-1}\frac{3x}{5} + \cos^{-1}\frac{4x}{5} = \sin^{-1}x.$
+\item Solve $\sin^{-1}(1 - x) - 2\sin^{-1}x = \frac{\pi}{2}.$
+\item If $k$ be a positive integer, show that the equation $\tan^{-1}x + \tan^{-1}y = \tan^{-1}k$ has no positive
+     integral solution.
+\item Solve $\tan^{-1}\frac{x + 1}{x - 1} + \tan^{-1}\frac{x - 1}{x} = \tan^{-1}(-7).$
+\item Solve $\tan^{-1}\frac{1}{a - 1} = \tan^{-1}\frac{1}{x} + \tan^{-1}\frac{1}{a^2 - x + 1}.$
+\item Solve $\cos^{-1}\frac{x^2 - 1}{x^2 + 1} + \tan^{-1}\frac{2x}{x^2 - 1} = \frac{2\pi}{3}.$
+\item If $\theta = \tan^{-1}\frac{x\sqrt{3}}{2k - x}$ and $\phi = \tan^{-1}\frac{2x - k}{k\sqrt{3}},$ show that one
+     value of $\theta - \phi$ is $\pi/6.$
+\item Find all positive integral solutions of the equation $\tan^{-1}x + \cos^{-1}\frac{y}{\sqrt{1 + y^2}} =
+     \sin^{-1}\frac{3}{\sqrt{10}}$.
+
+\item Solve the equation $2\cos^{-1}x = \sin^{-1}2x\sqrt{1 - x^2}$
+\item Solve $\sin^{-1}\frac{x}{\sqrt{1 + x^2}} - \sin^{-1}\frac{1}{\sqrt{1 + x^2}} = \sin^{-1}\frac{1 + x}{1 + x^2}$
+\item Show that the function $y = 2\tan^{-1}\left[\sqrt{\frac{a - b}{a + b}}\tan\frac{x}{2}\right] - \cos^{-1}\left[\frac{b +
+     a\cos x}{a + b\cos x}\right]$ is a constant for $0 < b \leq a,$ find the value of this constant for $x\geq 0.$
+\item Find the sum $\sum_{i = 1}^n\tan^{-1}\frac{2i}{2 + i^2 + i^4}.$
+\item Find the sum of infinite terms of the series $\cot^{-1}\left(1^2 + \frac{3}{4}\right) + \cot^{-1}\left(2^2 +
+     \frac{3}{4}\right) + \cot^{-1}\left(3^3 + \frac{3}{4}\right) +\ldots$
+\item Solve for $x$ the equation $(\tan^{-1}x)^2 + (\cot^{-1}x)^2 = \frac{5\pi^2}{8}$
+\item Show that the greatest and the least values of $(\sin^{-1}x)^3 + (\cos^{-1}x)^3$ are $\frac{7\pi^3}{8}$ and
+     $\frac{\pi^2}{32}$ respectively.
+\item Obtain the integral values of $p$ for which the following system of equations possesses real solution
+     $\cos^{-1}x + (\sin^{-1}y)^2 = \frac{p\pi^2}{4}$ and $(\cos^{-1}x)(\sin^{-1}y)^2 = \frac{\pi^2}{16}.$
+\item If $\tan^{-1}x, \tan^{-1}y, \tan^{-1}z$ be in A.P., find the algebraic relation between $x, y$ and $z$.
+     If $x, y, z$ be in A.P. prove that $x = y = z$.
+\item Show that for $x > 0, \tan^{-1}\frac{x}{1 + 1.2x^2} + \tan^{-1}\frac{x}{1 + 2.3x^2} + \ldots +
+     \tan^{-1}\frac{x}{1 + n(n + 1)x^2} = \tan^{-1}\frac{nx}{1 + (n + 1)x^2}$
+\stopitemize

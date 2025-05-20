@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+ymin=0,ymax=8,
+xmin=0,xmax=2,
+%clip=false,
+xtick=\empty,
+ytick=\empty,
+extra x ticks={1.5708},
+extra x tick labels={$\frac{\pi}{2}$},
+extra y ticks={1, 2, 3, 4, 5, 6, 7, 8},
+extra y tick labels={$1$, $2$, $3$, $4$, $5$, $6$, $7$, $8$},
+every extra x tick/.style={
+    xticklabel style={anchor=north west},
+    grid=major,
+    major grid style={very thin,dashed,black}
+},
+axis lines = center,
+xlabel=$x$,ylabel=$y$,
+domain=0:.5*pi,
+samples=200,
+]
+\addplot [black] {tan(deg(x))};
+\addplot [black] {1};
+\node at (axis cs:0.2, -0.28) {$O$} ;
+\end{axis}
+\end{tikzpicture}
+\end{document}

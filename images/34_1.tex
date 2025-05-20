@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usetikzlibrary {datavisualization.formats.functions}
+\pagestyle{empty}
+\def\mytypesetter#1{%
+  \pgfmathparse{#1/pi}%
+  \pgfmathprintnumber{\pgfmathresult}$\pi$%
+}
+\begin{document}
+%\begin{tikzpicture}
+\tikz \datavisualization
+      [scientific axes, all axes={grid, unit length=0.75cm},
+        x axis={ticks={step=(0.5*pi), tick typesetter/.code=\mytypesetter{##1}}},
+        y axis={include value={-1,1}},
+        visualize as smooth line]
+      data [format=function] {
+        var x : interval [-pi:2*pi];
+        func y = sin(\value x r);
+      };
+%\end{tikzpicture}
+\end{document}

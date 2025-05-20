@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+ymin=-2,ymax=2,
+xmin=0,xmax=4,
+%clip=false,
+xtick=\empty,
+ytick=\empty,
+extra x ticks={1.5708, 3.1416},
+extra x tick labels={$\frac{\pi}{2}$, $\pi$},
+extra y ticks={-2, -1, 1, 2},
+extra y tick labels={$-2$, $-1$, $1$, $2$},
+every extra x tick/.style={
+    xticklabel style={anchor=north west},
+    grid=major,
+    major grid style={very thin,dashed,black}
+},
+axis lines = center,
+xlabel=$x$,ylabel=$y$,
+domain=0:pi,
+samples=200,
+]
+\addplot [black] {cos(deg(x))};
+\addplot [black] {sin(deg(x))*sin(deg(x))};
+\node at (axis cs:0.2, -0.28) {$O$} ;
+\end{axis}
+\end{tikzpicture}
+\end{document}

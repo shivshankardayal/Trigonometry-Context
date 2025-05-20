@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+ymin=-1,ymax=2,
+xmin=-4,xmax=7,
+%clip=false,
+xtick=\empty,
+ytick=\empty,
+extra x ticks={-3.1416, -1.5708, 1.5708, 3.1416, 4.71239, 6.2832},
+extra x tick labels={$-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+extra y ticks={-2, -1, 1, 2},
+extra y tick labels={$-2$, $-1$, $1$, $2$},
+every extra x tick/.style={
+    xticklabel style={anchor=north west},
+    grid=major,
+    major grid style={very thin,dashed,black}
+},
+axis lines = center,
+xlabel=$x$,ylabel=$y$,
+domain=-pi:2*pi,
+samples=200,
+]
+\addplot [black] {abs(cos(deg(x)))};
+\node at (axis cs:0.2, -0.28) {$O$} ;
+\end{axis}
+\end{tikzpicture}
+\end{document}
