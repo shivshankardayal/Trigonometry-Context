@@ -1,0 +1,122 @@
+% -*- mode: context; -*-
+\chapter{Inverse Circular Functions}
+Inverse functions related to trigonometric ratios are called inverse trigonometric functions. The definition of different
+inverse trigonometric functions is given below:
+
+If $\sin\theta = x$, then $\theta = \sin^{-1}x$, provided $-1\leq x\leq 1$ and $-\frac{\pi}{2}\leq\theta\leq\frac{\pi}{2}$.
+
+If $\cos\theta = x$, then $\theta = \cos^{-1}x$, provided $-1\leq x\leq 1$ and $0\leq\theta\leq\pi$.
+
+If $\tan\theta = x$, then $\theta = \tan^{-1}x$, provided $-\infty<x<\infty$ and $-\frac{\pi}{2}<\theta<\frac{\pi}{2}$.
+
+If $\cot\theta = x$, then $\theta = \cot^{-1}x$, provided $-\infty<x<\infty$ and $0<\theta<\pi$.
+
+If $\sec\theta = x$, then $\theta = \sec^{-1}x$, provided $x\leq -1$ or $x\geq 1$ and $0\leq \theta\leq
+\pi,\theta\neq\frac{\pi}{2}$.
+
+If ${\rm cosec}\theta = x$, then $\theta = {\rm cosec}^{-1}x$, provided $x\leq -1$ or $x\geq 1$ and $-\frac{\pi}{2}\leq\theta\leq
+\frac{\pi}{2}, \theta\neq0$.
+
+{\bf Note:} In the above definition, restrictions on $\theta$ are due to the consideration of principal values of inverse
+terms. If these restrictions are removed, the terms will represent inverse trigonometric relations and not functions.
+
+{\bf Notations: I.} ${\rm Arc}\sin x$ denotes the sine inverse of $x$ [General value]. $\arcsin x$ denotes the principal value
+of sine inverse of $x$.
+
+{\bf II.} $\sin^{-1}x$ denotes the principal value of sine inverse $x$. From the above notations three important results follow;
+\startitemize[n]
+\item $\sin^{-1}x = \theta \Rightarrow \sin\theta = x$ and $\theta$ is the principal value.
+\item $\sin^{-1}x = \arcsin x, \cos^{-1}x = \arccos x$.
+\item From the definition of the inverse functions, we know that if $y = f(x)$ is a function then for $f^{-1}$ to be a function,
+  $f$ must be one-to-one and onto mapping.
+\stopitemize
+
+When we consider $y = {\rm Arc}\sin x$, for any $x\in[-1, 1]$ infinite number of values of $y$ are obtained and hence it does not
+represent inverse functions. When $y = \arcsin x$ or $\sin^{-1}x$, corresponding to one value of $x\in[-1, 1]$, one value of $y$ is
+obtained and hence it represents the inverse trigonometric function.
+
+Hence, for inverse trigonometric functions, consideration of principal values is essential.
+
+\section{Principal Value}
+Numerically smallest angle is known as the principal value.
+
+Since inverse trigonometric terms are in fact angles, definitions of principal value of inverse trigonometric term is the same as
+the definition of the principal values of angles.
+
+Suppose we have to find the principal value of $\sin^{-1}\frac{1}{2}$. Let $\sin^{-1}\frac{1}{2} = \theta$, then $\sin\theta =
+\frac{1}{2} \Rightarrow \theta = \ldots, -\frac{11\pi}{6}, -\frac{7\pi}{6}, \frac{\pi}{6}, \frac{5\pi}{6}, \ldots$. Among all these
+angles $\frac{\pi}{6}$ is the numerically smalles angles satisfying $\sin\theta = \frac{1}{2}$ and hence it is the principal value.
+
+\section{Important Formulae}
+\starttheorem
+  \startitemize[n]
+  \item $\sin\sin^{-1}x = x, -1\leq x\leq 1$
+  \item $\cos\cos^{-1}x = x, -1\leq x\leq 1$
+  \item $\tan\tan^{-1}x = x, -\infty < x\leq\infty$
+  \item $\cot\cot^{-1}x = x, -\infty < x\leq\infty$
+  \item $\sec\sec^{-1}x = x, x\leq -1$ or $x\geq 1$
+  \item ${\rm cosec\,cosec}^{-1}x = x, x\leq -1$ or $x\geq 1$
+  \stopitemize
+\stoptheorem
+
+\startproof
+Let $\sin^{-1}x = \theta$ then $\sin\theta = x$. Putting the value of $\theta$ from first equation in second
+$\sin\sin^{-1}x = x$. Other formulae can be proved similarly.
+\stopproof
+
+\starttheorem
+  \startitemize[n]
+  \item $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}\,\forall -1\leq x\leq 1$
+  \item $\tan^{-1}x + \cot^{-1}x = \frac{\pi}{2}\,\forall x\in\mathbb{R}$
+  \item $\sec^{-1}x + {\rm cosec}^{-1}x = \frac{\pi}{2}\,\forall x\leq -1$ or $x\geq 1$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  Let $\sin^{-1}x = \theta$, then $\sin\theta = x \Rightarrow \cos\left(\frac{\pi}{2} - \theta\right) = x \Rightarrow \frac{\pi}{2}
+  - \theta = \cos^{-1}x$
+
+  $\Rightarrow \cos^{-1}x + \theta = \frac{\pi}{2} \Rightarrow \sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$.
+
+  Similarly other results can be proven.
+\stopproof
+
+\starttheorem
+  \startitemize[n]
+  \item $\sin^{-1}x = {\rm cosec}^{-1}\frac{1}{x}, -1\leq x\leq 1$
+  \item ${\rm cosec^{-1}x} = \sin^{-1}\frac{1}{x}, x\leq -1$ or $x > 1$
+  \item $\cos^{-1}x = \sec^{-1}\frac{1}{x}, -1\leq x\leq 1$
+  \item $\sec^{-1}x = \cos^{-1}\frac{1}{x}, x\leq -1$ or $x\geq 1$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  Let $\sin^{-1}x = \theta$ then $\sin\theta = x \Rightarrow \rm cosec\theta = \frac{1}{x}$
+
+  $\Rightarrow \theta = \rm cosec^{-1}\frac{1}{x} \Rightarrow \sin^{-1}x = \rm cosec^{-1}\frac{1}{x}$
+
+  Other results can be proven similarly.
+\stopproof
+
+\starttheorem
+  \startitemize[n]
+    \item $\sin^{-1}x = \cos^{-1}\sqrt{1 - x^2}, \,\forall\,0\leq x\leq 1$
+
+    \item $\sin^{-1}x = -\cos^{-1}\sqrt{1 - x^2}\,\forall\,-1\leq x< 0$
+  \stopitemize
+\stoptheorem
+
+\startproof
+  Let $\sin^{-1}x = \theta$ then $\sin\theta = x$
+
+  $\Rightarrow \cos^2\theta = 1 - x^2 \Rightarrow \cos\theta = \pm\sqrt{1 - x^2}$
+
+  Principal values of $\sin^{-1}x$ lies between $-\frac{\pi}{2}$ and $\frac{\pi}{2}$.
+
+  In this interval $\cos\theta$ is $+$ve.
+
+  $\Rightarrow \sin^{-1}x = \cos^{-1}\sqrt{1 - x^2}$
+
+  For $-1\leq x < 0$ $\sin^{-1}x$ will be negative angle while $\cos^{-1}\sqrt{1 - x^2}$ will be positive
+  angle. Hence to balance that we need to use a negative sign for this.
+\stopproof

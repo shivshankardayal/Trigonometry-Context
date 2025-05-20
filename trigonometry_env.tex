@@ -25,6 +25,7 @@
     ]
 
   \usemodule[tikz]
+  \usetikzlibrary{shapes, arrows, calc, patterns,angles,quotes,intersections,positioning,decorations.markings}
   \usemodule[amsl]
   \setuppapersize[B5]
   \setupexternalfigures [directory=images, location=global] % Image directory
@@ -35,7 +36,7 @@
     \placeformula
     \startformula}
   \def\stopequation{%
-    \stopformula}
+  \stopformula}
 
   \expandafter\def\csname startequation*\endcsname{%
     \placeformula[-]
