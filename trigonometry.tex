@@ -12,95 +12,124 @@
   \component preface.tex
   % First Part: What is ConTeXt
   \startpart
-     [title=Theory and Problems]
-  \setupuserpagenumber[numberconversion=n]
-  %% defining matrix with brackets
-  \definemathmatrix[bmatrix]
+    [title=Theory and Problems]
+    \setupuserpagenumber[numberconversion=n]
+    %% defining matrix with brackets
+    \definemathmatrix[bmatrix]
   	                 [matrix:brackets]
   	                 [simplecommand=bmatrix]
 
-  % defining determinant with bars
-  \definemathmatrix[determinant]
-                   [matrix:bars]
-                   [simplecommand=thedeterminant]'
+    % defining determinant with bars
+    \definemathmatrix[determinant]
+                     [matrix:bars]
+                     [simplecommand=thedeterminant]'
 
-  \setupenumerations
-    [ before={\blank[big]},
-      after={\blank[big]},
-      location=serried,
-      width=broad,
-      distance=0.5em,
-      headstyle=bold,
-      titlestyle=bold,
-      way=bytext,
-      conversion=numbers]
-  \defineenumeration
-    [theorem]
-    [ text=Theorem,
-      title=yes,
-      style=italic,
-      list=all,
-      listtext={Theorem }]
-  \defineenumeration
-    [lemma]
-    [ text=Lemma,
-      title=yes,
-      style=italic,
-      list=all,
-      listtext={Lemma }]
-  \defineenumeration
-    [proposition]
-    [ text=Proposition,
-      title=yes,
-      style=italic,
-      list=all,
-      listtext={Proposition }]
-  \defineenumeration
-    [corollary]
-    [ text=Corollary,
-      title=yes,
-      style=italic,
-      list=all,
-      listtext={Corollary }]
-  \defineenumeration
-    [proof]
-    [ text=Proof:,
-      number=no,
-      headstyle=italic,
-      title=no, %this is the default
-      closesymbol={\mathematics{\square}},
-      style=normal]
-  \defineenumeration
-    [remark]
-    [ text=Remark,
-      number=no,
-      headstyle=italic,
-      title=no, %this is the default
-      style=normal]
-  %% We begin by setting the headers and footers for this part
+    \setupenumerations
+      [ before={\blank[big]},
+        after={\blank[big]},
+        location=serried,
+        width=broad,
+        distance=0.5em,
+        headstyle=bold,
+        titlestyle=bold,
+        way=bytext,
+        conversion=numbers]
+    \defineenumeration
+      [theorem]
+      [ text=Theorem,
+        title=yes,
+        style=italic,
+        list=all,
+        listtext={Theorem }]
+    \defineenumeration
+      [lemma]
+      [ text=Lemma,
+        title=yes,
+        style=italic,
+        list=all,
+        listtext={Lemma }]
+    \defineenumeration
+      [proposition]
+      [ text=Proposition,
+        title=yes,
+        style=italic,
+        list=all,
+        listtext={Proposition }]
+    \defineenumeration
+      [corollary]
+      [ text=Corollary,
+        title=yes,
+        style=italic,
+        list=all,
+        listtext={Corollary }]
+    \defineenumeration
+      [proof]
+      [ text=Proof:,
+        number=no,
+        headstyle=italic,
+        title=no, %this is the default
+        closesymbol={\mathematics{\square}},
+        style=normal]
+    \defineenumeration
+      [remark]
+      [ text=Remark,
+        number=no,
+        headstyle=italic,
+        title=no, %this is the default
+        style=normal]
+    %% We begin by setting the headers and footers for this part
 
-  \setupheadertexts
-     [{\tfx\getmarking[chapter]}]
+    \setupheadertexts
+      [{\tfx\getmarking[chapter]}]
 
-  \setupheadertexts
-    []
-    [{\tfx\hbox to 2em{\hss\pagenumber}}]
+    \setupheadertexts
+      []
+      [{\tfx\hbox to 2em{\hss\pagenumber}}]
 
-  %     % We set chapter counter to zero.
-  \setupheadnumber[chapter][0]
+    %     % We set chapter counter to zero.
+    \setupheadnumber[chapter][0]
 
-       % Chapters making up this part
-  \component measurement-of-angles.tex
-  \component trigonometric-ratios.tex
-  \component trigonometric-ratios-any-angle-sign.tex
-  \component compound-angles.tex
-  \component transformation-formulae.tex
-  \component multiple-submultiple-angles.tex
-  \component trigonometric-identities.tex
-  \component properties-of-triangles.tex
-  \component inverse-circular-functions.tex
-  \component trigonometric-equations.tex
-  \component height-and-distance.tex
+    % Chapters making up this part
+    \component measurement-of-angles.tex
+    \component trigonometric-ratios.tex
+    %\component trigonometric-ratios-any-angle-sign.tex
+    %\component compound-angles.tex
+    %\component transformation-formulae.tex
+    %\component multiple-submultiple-angles.tex
+    %\component trigonometric-identities.tex
+    %\component properties-of-triangles.tex
+    %\component inverse-circular-functions.tex
+    %\component trigonometric-equations.tex
+    %\component height-and-distance.tex
+    %\component periodicity-trigonometric-functions.tex
+    %\component graph-trigonometric-functions.tex
+  \stoppart
+  \startpart
+    [title=Answers]
+
+    % Readjust the headers
+
+    \setupheadertexts
+      [{\tfx Answers of \getmarking[chapter]}]
+    \setupheadertexts
+      []
+      [{\tfx\hbox to 2em{\hss\pagenumber}}]
+
+    \setuplabeltext[en][chapter=Answers of Chapter ]
+
+    \component measurement-of-angles-solutions.tex
+    \component trigonometric-ratios-solutions.tex
+  \stoppart
+  \startpart
+    [title=License]
+    \setupheadertexts
+      [{\tfx\getmarking[chapter]}]
+    \setupheadertexts
+      [{}]
+      [{\tfx\hbox to 2em{\hss\pagenumber}}]
+    \setuplabeltext[en][Chapter=Appendix]
+
+    \component fdl-1.3.tex
   \stoppart
 
 \stopproduct
