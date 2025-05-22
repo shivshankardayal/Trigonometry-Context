@@ -1,8 +1,8 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(6cm);
 
 int p=7; // how many points/sides are in the polygon
 real r=330; // radius of circle/polygon
@@ -30,19 +30,19 @@ while(a<p)
     ++a;
     real d=(a*b+c);
     pair y=dir(d)*r;
-    draw( y--z, 0.7*green);
+    draw( y--z);
   }
-draw(a0 -- a1, 0.5*green+0.8*blue);
-draw(a0 -- a2, 0.5*green+0.8*blue);
-draw(a0 -- a3, 0.5*green+0.8*blue);
+draw(a0 -- a1);
+draw(a0 -- a2);
+draw(a0 -- a3);
 pair o = (0, 0);
-draw(o -- a0, 0.5*green+0.8*blue);
-draw(o -- a1, 0.5*green+0.8*blue);
-draw(o -- a2, 0.5*green+0.8*blue);
-draw(o -- a3, 0.5*green+0.8*blue);
-label("$O$", o, align=S, 0.7*green);
-label("$A_1$", a0, align=E, 0.7*green);
-label("$A_2$", a1, align=SE, 0.7*green);
-label("$A_3$", a2, align=N, 0.7*green);
-label("$A_4$", a3, align=SW, 0.7*green);
-markangle("$\frac{2\pi}{7}$", radius=10, a0,o,a1, 0.7*green);
+draw(o -- a0);
+draw(o -- a1);
+draw(o -- a2);
+draw(o -- a3);
+label("$O$", o, align=S);
+label("$A_1$", a0, align=E);
+label("$A_2$", a1, align=SE);
+label("$A_3$", a2, align=N);
+label("$A_4$", a3, align=SW);
+markangle("$\frac{2\pi}{7}$", radius=10, a0,o,a1);

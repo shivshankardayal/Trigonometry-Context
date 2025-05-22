@@ -1,24 +1,24 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(5cm);
 
 pair A = (0,2);
 pair B = (-1,0);
 pair C = (2,0);
-show(triangle(A, B, C), bp+0.5*green);
+show(triangle(A, B, C));
 pair D = midpoint(segment(B, C));
 pair E = midpoint(segment(A, C));
 pair F = midpoint(segment(A, B));
-draw(A -- D, bp+0.5*blue);
-draw(B -- E, bp+0.5*blue);
-draw(C -- F, bp+0.5*blue);
-label("$D$", D + (0.2,-0.2), bp+0.5*green);
-label("$E$", E + (0.2,0), bp+0.5*green);
-label("$F$", F - (0.2,0), bp+0.5*green);
+draw(A -- D);
+draw(B -- E);
+draw(C -- F);
+label("$D$", D + (0.2,-0.2));
+label("$E$", E + (0.2,0));
+label("$F$", F - (0.2,0));
 pair O = intersectionpoint(line(A, D), line(B, E));
-label("$O$", O + (-0.2, -0.3), bp+0.5*blue);
-markangle("$\alpha$", radius=10, B, O, C, bp+0.5*blue);
-markangle("$\beta$", radius=20, C, O, A, bp+0.5*blue);
-markangle("$\gamma$", radius=30, A, O, B, bp+0.5*blue);
+label("$O$", O + (-0.2, -0.3));
+markangle("$\alpha$", radius=10, B, O, C);
+markangle("$\beta$", radius=12, C, O, A);
+markangle("$\gamma$", radius=15, A, O, B);

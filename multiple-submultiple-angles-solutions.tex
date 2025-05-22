@@ -1,0 +1,1420 @@
+% -*- mode: context; -*-
+\chapter{Multiple and Submultiple Angles}
+\startitemize[n, 1*broad]
+\item Let us solve these one by one.
+  \startitemize[i]
+    i. Given, $\cos A = \frac{3}{5}$
+
+    $\Rightarrow \sin A = \sqrt{1 - \cos^2A} = \sqrt{1 - \frac{9}{25}} = \sqrt{\frac{16}{25}} = \frac{4}{5}$
+
+    $\sin 2A = 2\sin A\cos A = 2.\frac{4}{5}.\frac{3}{5} = \frac{24}{25}$
+
+    ii. Given, $\sin A = \frac{12}{13}$
+
+    $\Rightarrow \cos A = \sqrt{1 - \sin^2A} = \sqrt{1 - \frac{144}{169}} = \sqrt{\frac{25}{169}} = \frac{5}{13}$
+
+    $\sin 2A = 2\sin A\cos A = 2.\frac{12}{13}.\frac{5}{13} = \frac{120}{169}$
+
+    iii. Given, $\tan A = \frac{16}{63} = \frac{\text{perpendicular}}{\text{base}}$
+
+    $\text{hypotenuse} = \sqrt{p^2 + b^2} = \sqrt{16^2 + 63^2} = 65$
+
+    $\sin A = \frac{16}{65}, \cos A = \frac{63}{65}$
+
+    $\sin 2A = 2\sin A\cos A = 2.\frac{16}{65}.\frac{63}{65} = \frac{2016}{4225}$
+  \stopitemize
+\item Let us solve these one by one.
+  \startitemize[i]
+
+    i. Given, $\cos A = \frac{15}{17}$
+
+    $\Rightarrow \sin A = \sqrt{1 - \cos^2A}$ $= \sqrt{1 - \frac{225}{289}} = \sqrt{\frac{64}{289}} = \frac{8}{17}$
+
+    $\cos 2A = \cos^2A - \sin^2A = \frac{225 - 64}{289} = \frac{161}{289}$
+
+    ii. Given, $\sin A = \frac{4}{5}$
+
+    $\Rightarrow \cos A = \sqrt{1 - \sin^2A}$ $= \sqrt{1 - \frac{16}{25}} = \frac{3}{5}$
+
+    $\cos2A = \cos^2A - \sin^2A = \frac{9 - 16}{25} = -\frac{7}{25}$
+
+    iii. Give, $\tan A = \frac{5}{12} = \frac{\text{perpendicular}}{\text{base}}$
+
+    $\text{hypotenuse} = \sqrt{p^2 + b^2} = \sqrt{25 + 144} = 13$
+
+    $\sin A = \frac{5}{13}, \cos A = \frac{12}{13}$
+
+    $\cos^2A = \cos^2A - \sin^2A = \frac{119}{169}$
+  \stopitemize
+\item Given, $\tan A = \frac{b}{a},$ thus $\text{hypotenuse} = \sqrt{b^2 + a^2}$
+
+  $a\cos 2A+ b\sin 2A = a(\cos^2A - \sin^2A) + 2b\sin A\cos A$
+
+  $= a\left(\frac{a^2}{a^2 + b^2} - \frac{b^2}{a^2 + b^2}\right) + 2b.\frac{ab}{a^2 + b^2}$
+
+  $= a\left(\frac{a^2 - b^2 + 2b^2}{a^2 + b^2}\right) = a$
+
+\item We have to prove that $\frac{\sin 2A}{1 + \cos 2A} = \tan A$
+
+  L.H.S. $= \frac{\sin 2A}{1 + \cos 2A} = \frac{2\sin A\cos A}{1 + \cos^2A - \sin^2A}$
+
+  $= \frac{2\sin A\cos A}{2\cos^2A}[\because 1 - \sin^2A = \cos^2A]$
+
+  $= \tan A =$ R.H.S.
+
+\item We have to prove that $\frac{\sin 2A}{1 - \cos 2A} = \cot A$
+
+  L.H.S. $= \frac{\sin 2A}{1 - \cos 2A} = \frac{2\sin A\cos A}{1 -(\cos^2A - \sin^2A)}$
+
+  $= \frac{2\sin A\cos A}{2\sin^2A} = \cot A =$ R.H.S.
+
+\item We have to prove that $\frac{1 - \cos 2A}{1 + \cos 2A} = \tan^2A$
+
+  L.H.S. $= \frac{1 - (\cos^2A - \sin^2A)}{1 + \cos^2A - \sin^2A}$
+
+  $= \frac{2\sin^2A}{2\cos^2A} = \tan^2A =$ R.H.S.
+
+\item We have to prove that $\tan A + \cot A = 2\csc 2A$
+
+  L.H.S. $= \frac{\sin A}{\cos A} + \frac{\cos A}{\sin A} = \frac{\sin^2A + \cos^2A}{\sin A\cos A}$
+
+  $= \frac{2}{2\sin A\cos A} = \frac{2}{\sin 2A} = 2\csc 2A =$ R.H.S.
+
+\item We have to prove that $\tan A - \cot A = -2\cot2A$
+
+  L.H.S. $= \frac{\sin A}{\cos A} - \frac{\cos A}{\sin A} = \frac{\sin^2A - \cos^2A}{\sin A\cos A}$
+
+  $= \frac{-\cos2A}{\frac{\sin2A}{2}} = -2\cot2A =$ R.H.S.
+
+\item We have to prove that $\csc 2A + \cot 2A = \cot A$
+
+  L.H.S. $= \frac{1}{\sin 2A} + \frac{\cos 2A}{\sin 2A} = \frac{1 + \cos 2A}{\sin 2A} = \frac{2\cos^2A}{2\sin A\cos A}$
+
+  $= \cot A =$ R.H.S.
+
+\item We have to prove that $\frac{1 - \cos A + \cos B - \cos(A + B)}{1 + \cos A - \cos B - \cos(A + B)} =
+  \tan\frac{A}{2}\cot\frac{B}{2}$
+
+  L.H.S. $= \frac{1 - \cos A + \cos B - \cos(A + B)}{1 + \cos A - \cos B - \cos(A + B)}$
+
+  $= \frac{2\sin^2\frac{A}{2} + 2\sin\frac{A}{2}\sin\left(\frac{A}{2} + B\right)}{2\cos^2\frac{A}{2} -
+    2\cos\frac{A}{2}\cos\left(\frac{A}{2} + B\right)}$
+
+  $= \frac{\sin\frac{A}{2}\left(\sin\frac{A}{2} + \sin \left(\frac{A}{2} +
+    B\right)\right)}{\cos\frac{A}{2}\left(\cos\frac{A}{2} - \cos\left(\frac{A}{2} + B\right)\right)}$
+
+  $= \frac{\tan\frac{A}{2}\left(2\sin\left(\frac{A + B}{2}\right)\cos\frac{B}{2}\right)}{2\sin\left(\frac{A +
+      B}{2}\right)\sin\frac{B}{2}}$
+
+  $= \tan\frac{A}{2}\cot\frac{B}{2}$
+
+\item We have to prove that $\frac{\cos A}{1 \mp \sin A} = \tan\left(45^\circ \pm \frac{A}{2}\right)$
+
+  First considering $-$ sign on L.H.S.,
+
+  L.H.S. $= \frac{\cos A}{1 - \sin A} = \frac{\cos^2\frac{A}{2} - \sin^2\frac{A}{2}}{\left(\cos\frac{A}{2} -
+    \sin\frac{A}{2}\right)^2}$
+
+  Dividing numerator and denomiator by $\cos^2\frac{A}{2}$
+
+  $= \frac{1 - \tan^2\frac{A}{2}}{\left(1 - \tan\frac{A}{2}\right)^2}$
+
+  $= \frac{1 + \tan\frac{A}{2}}{1 - \tan\frac{A}{2}}$
+
+  $= \frac{\tan45^\circ + \tan\frac{A}{2}}{1 - \tan45^\circ\tan\frac{A}{2}} = \tan\left(45^\circ + \frac{A}{2}\right)$
+
+  Similarly by considering the $+$ sign we can prove the other sign.
+
+\item We have to prove that $\frac{\sec 8A - 1}{\sec 4A - 1} = \frac{\tan 8A}{\tan 2A}$
+
+  L.H.S. $= \frac{\sec 8A - 1}{\sec 4A - 1} = \frac{1 - \cos 8A}{1 - \cos 4A}.\frac{\cos4A}{\cos8A}$
+
+  $= \frac{2\sin^24A}{2\sin^22A}.\frac{\cos 4A}{\cos8A} = \frac{(2\sin4A\cos4A).\sin4A}{2\sin^22A.\cos8A}$
+
+  $= \frac{\sin8A}{\cos8A}.\frac{\sin4A}{2\sin^22A} = \frac{\tan8A. 2\sin2A\cos2A}{2\sin^22A} = \frac{\tan8A}{\tan2A} =$
+  R.H.S.
+
+\item We have to prove that $\frac{1 + \tan^2(45^\circ - A)}{1 - \tan^2(45^\circ - A)} = \csc 2A$
+
+  L.H.S. $= \frac{1 + \tan^2(45^\circ - A)}{1 - \tan^2(45^\circ - A)}$
+
+  $= \frac{\cos^2(45^\circ - A) + \sin^2(45^\circ - A)}{\cos^2(45^\circ - A) - \sin^2(45^\circ - A)}$
+
+  $= \frac{1}{\cos(90^\circ - 2A)} = \frac{1}{\sin2A} = \csc2A =$ R.H.S.
+
+\item We have to prove that $\frac{\sin A + \sin B}{\sin A - \sin B} = \frac{\tan \frac{A + B}{2}}{\tan \frac{A - B}{2}}$
+
+  L.H.S. $= \frac{\sin A + \sin B}{\sin A - \sin B} = \frac{2\sin\frac{A + B}{2}\cos\frac{A - B}{2}}{2\cos\frac{A +
+      B}{2}\sin\frac{A - B}{2}}$
+
+  $= \frac{\tan \frac{A + B}{2}}{\tan \frac{A - B}{2}} =$ R.H.S.
+
+\item We have to prove that $\frac{\sin^2A - \sin^2B}{\sin A\cos A - \sin B\cos B} = \tan(A + B)$
+
+  L.H.S. $= \frac{2(\cos^2B - \cos^2A)}{\sin2A - \sin2B} = \frac{\cos2B - \cos2A}{\sin2A - \sin2B}$
+
+  $= \frac{\sin(A + B)\sin(A - B)}{\cos(A + B)\sin(A - B)} = \tan(A + B) =$ R.H.S.
+
+\item We have to prove that $\tan\left(\frac{\pi}{4} + A\right) - \tan\left(\frac{\pi}{4} - A\right) = 2\tan 2A$
+
+  L.H.S. $= \frac{1 + \tan A}{1 - \tan A} - \frac{1 - \tan A}{1 + \tan A}$
+
+  $= \frac{(1 + \tan A)^2 - (1 - \tan A)^2}{1 - \tan^2A} = \frac{4\tan A}{1 - \tan^2A}$
+
+  $= \frac{4\sin A}{\cos A}. \frac{\cos^2A}{\cos^2A - \sin^2A} = \frac{2\sin2A}{\cos2A} = 2\tan2A =$ R.H.S.
+
+\item We have to prove that $\frac{\cos A + \sin A}{\cos A - \sin A} - \frac{\cos A - \sin A}{\cos A + \sin A} = 2\tan 2A$
+
+  L.H.S. $= \frac{(\cos A + \sin A)^2 - (\cos A - \sin A)^2}{\cos^2A - \sin^2A}$
+
+  $= \frac{4\cos A\sin A}{\cos 2A} = \frac{2\sin 2A}{\cos 2A} = 2\tan2A =$ R.H.S.
+
+\item We have to prove that $\cot (A + 15^\circ) - \tan(A - 15^\circ) = \frac{4\cos 2A}{1 + 2\sin 2A}$
+
+  L.H.S. $= \frac{1 - \tan(A + 15^\circ)\tan(A - 15^\circ)}{\tan(A + 15^\circ)}$
+
+  $= \frac{\cos(A + 15^\circ)\cos(A - 15^\circ) - \sin(A + 15^\circ)\sin(A - 15^\circ)}{\cos(A + 15^\circ)\cos(A -
+    15^\circ)}.\frac{\cos(A + 15^\circ)}{\sin(A + 15^\circ)}$
+
+  $= \frac{\cos 2A}{\sin(A + 15^\circ)\cos(A - 15^\circ)} = \frac{2\cos 2A}{2\sin(A + 15^\circ)\cos(A - 15^\circ)}$
+
+  $= \frac{2\cos 2A}{\sin2A + \sin30^\circ} = \frac{4\cos 2A}{1 + \sin 2A} =$ R.H.S.
+
+\item We have to prove that $\frac{\sin A + \sin2A}{1 + \cos A + \cos 2A} = \tan A$
+
+  L.H.S. $= \frac{\sin A + 2\sin A\cos A}{\cos A + 2\cos^2A} = \frac{\sin A(1 + 2\cos A)}{\cos A(1 + 2\cos A)}$
+
+  $= \tan A =$ R.H.S.
+
+\item We have to prove that $\frac{1 + \sin A - \cos A }{1 + \sin A + cos A} = \tan \frac{A}{2}$
+
+  L.H.S. $= \frac{2\sin^2\frac{A}{2} + 2\sin\frac{A}{2}\cos\frac{A}{2}}{2\cos^2\frac{A}{2} + 2\sin\frac{A}{2}\cos\frac{A}{2}}$
+
+  $= \frac{\sin\frac{A}{2}(\sin\frac{A}{2} + \cos\frac{A}{2})}{\cos\frac{A}{2}(\sin\frac{A}{2} + \cos\frac{A}{2})}$
+
+  $= \tan\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\frac{\sin(n + 1)A - \sin(n - 1)A}{\cos(n + 1)A + 2\cos nA + \cos(n - 1)A} = \tan \frac{A}{2}$
+
+  L.H.S. $= \frac{2\cos nA \sin A}{2\cos nA \cos A + 2\cos nA} = \frac{\sin A}{1 + \cos A}$
+
+  $= \frac{2\sin\frac{A}{2}\cos\frac{A}{2}}{2\cos^2\frac{A}{2}} = \tan \frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\frac{\sin(n + 1)A + 2\sin nA + \sin(n - 1)A}{\cos(n - 1) - \cos(n + 1)A} = \cot \frac{A}{2}$
+
+  L.H.S. $= \frac{2\sin nA\cos A + 2\sin nA}{2\sin nA\sin A}$
+
+  $= \frac{\cos A + 1}{\sin A} = \frac{2\cos^2\frac{A}{2}}{2\sin\frac{A}{2}\cos\frac{A}{2}}$
+
+  $= \cot\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\sin(2n + 1)A\sin A = \sin^2(n + 1)A - \sin^2nA$
+
+  R.H.S. $= (\sin(n + 1)A + \sin nA)(\sin(n + 1)A - \sin nA)$
+
+  $= (2\sin\frac{2n + 1}{2}A\cos \frac{A}{2})(2\cos\frac{2n + 1}{2}A\sin \frac{A}{2})$
+
+  $= 2\sin\frac{2n + 1}{2}A\cos\frac{2n + 1}{2}A.2\cos \frac{A}{2}\sin\frac{A}{2}$
+
+  $= \sin(2n + 1)A\sin A =$ L.H.S.
+
+\item We have to prove that $\frac{\sin(A + 3B) + \sin(3A + B)}{\sin 2A + \sin 2B} = 2\cos(A + B)$
+
+  L.H.S. $= \frac{\sin(A + 3B) + \sin(3A + B)}{\sin 2A + \sin 2B}$
+
+  $= \frac{2\sin(2A + 2B)\cos(A - B)}{2\sin(A + B)\cos(A - B)}$
+
+  $= \frac{2\sin(A + B)\cos(A + B)}{\sin(A + B)} = 2\cos(A + B) =$ R.H.S.
+
+\item We have to prove that $\sin 3A + \sin 2A - \sin A = 4\sin A\cos \frac{A}{2}\cos \frac{3A}{2}$
+
+  L.H.S. $= 2\cos 2A\sin A + 2\sin A\cos A = 2\sin A(\cos 2A + \cos A)$
+
+  $= 2\sin A\cos \frac{3A}{2}\cos\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\tan 2A = (\sec 2A + 1)\sqrt{\sec^2A - 1}$
+
+  R.H.S. $= \frac{1 + \cos 2A}{\cos 2A}\sqrt{\frac{1 - \cos^2A}{\cos^2A}}$
+
+  $= \frac{2\cos^2A}{2\cos^2A - 1}.\sqrt{\frac{\sin^2A}{\cos^2A}}$
+
+  $= \frac{2}{2 - \sec^2A}.tan A = \frac{2\tan A}{1 - \tan^2A} = \frac{\tan A + \tan A}{1 - \tan A.\tan A}$
+
+  $=\tan 2A =$ R.H.S.
+
+\item We have to prove that $\cos^32A + 3\cos 2A = 4(\cos^6A - \sin^6A)$
+
+  L.H.S. $= (\cos^2A - \sin^2A)^3 + 3(\cos^2A - \sin^2A)$
+
+  $= \cos^6A -3\cos^4A\sin^2A + 3\cos^2A\sin^4A - \sin^6A + 3(\cos^2A - \sin^2A)$
+
+  $= \cos^6A -3\cos^4A(1 - \cos^2A) + 3(1 - \sin^2A)\sin^4A - \sin^6A + 3(\cos^2A - \sin^2A)$
+
+  $= 4(\cos^6A - \sin^6A) =$ R.H.S.
+
+\item We have to prove that $1 + \cos^22A = 2(\cos^4A + \sin^4A)$
+
+  L.H.S. $= 1 + (\cos^2A - \sin^2A)^2 = 1 - 2\sin^2A\cos^2A + \cos^4A + \sin^4A$
+
+  $= 1 - 2\sin^2A(1 - \sin^2A) + \cos^4A + \sin^4A$
+
+  $= 1 - 2\sin^2A + 2\sin^4A + \cos^4A + \sin^4A$
+
+  $= (1 - \sin^2A)^2 + \cos^4A + 2\sin^4A = 2(\cos^4A + \sin^4A) =$ R.H.S.
+
+\item We have to prove that $\sec^2A(1 + \sec2A) = 2\sec2A$
+
+  L.H.S. $= \frac{1}{\cos^2A}.\frac{\cos2A + 1}{\cos 2A}$
+
+  $= \frac{1}{\cos^2A}.\frac{2\cos^2A}{\cos 2A} = 2\sec2A =$ R.H.S.
+
+\item We have to prove that $\csc A - 2\cot 2A\cos A = 2\sin A$
+
+  L.H.S. $= \frac{1}{\sin A} - \frac{2\cos 2A\cos A}{\sin 2A}$
+
+  $= \frac{1}{\sin A} - \frac{2\cos 2A\cos A}{2\sin A\cos A}$
+
+  $\frac{1}{\sin A} - \frac{\cos 2A}{\sin A} = \frac{1 - \cos 2A}{\sin A}$
+
+  $= \frac{2\sin^2A}{\sin A} = 2\sin A =$ R.H.S.
+
+\item We have to prove that $\cot A = \frac{1}{2}\left(\cot\frac{A}{2} - \tan\frac{A}{2}\right)$
+
+  R.H.S. $= \frac{1}{2}\left(\frac{1 - \tan^2\frac{A}{2}}{\tan\frac{A}{2}}\right)$
+
+  $= \frac{1}{2}\left(\frac{\cos^2\frac{A}{2} - \sin^2\frac{A}{2}}{\cos^2\frac{A}{2}}\right).\frac{\cos\frac{A}{2}}{\sin
+    \frac{A}{2}}$
+
+  $= \frac{1}{2}\frac{\cos A}{\cos\frac{A}{2}}.\frac{1}{\sin\frac{A}{2}} = \cot A =$ L.H.S.
+
+\item We have to prove that $\sin A\sin(60^\circ - A)\sin(60^\circ + A) = \frac{1}{4}\sin 3A$
+
+  L.H.S. $=\sin A.\frac{\cos 2A - \cos 120^\circ}{2} = \frac{\sin A\left(1 - 2\sin^2A + \frac{1}{2}\right)}{2}$
+
+  $= \frac{3\sin A - 4\sin^3A}{4} = \frac{1}{4}\sin 3A =$ R.H.S.
+
+\item We have to prove that $\cos A\cos(60^\circ - A)\cos(60^\circ + A) = \frac{1}{4}\cos 3A$
+
+  L.H.S. $= \frac{\cos A}{2}\left(\cos 2A + \cos120^\circ\right) = \frac{\cos A}{2}\left(2\cos^2A - 1 - \frac{1}{2}\right)$
+
+  $= \frac{4\cos^3A - 3\cos A}{4} = \frac{1}{4}\cos 3A =$ R.H.S.
+
+\item We have to prove that $\cot A + \cot(60^\circ + A) - \cot(60^\circ - A) = 3\cot 3A$
+
+  L.H.S. $= \frac{1}{\tan A} + \frac{1}{\tan(60^\circ + A)} - \frac{1}{\tan(60^\circ - A)}$
+
+  $= \frac{1}{\tan A} + \frac{1 - \sqrt{3}\tan A}{\sqrt{3} + \tan A} - \frac{1 + \sqrt{3}\tan A}{\sqrt{3} - \tan A}$
+
+  $= \frac{1}{\tan A} - \frac{8\tan A}{3 - \tan^2A} = \frac{3(1 - 3\tan^2A)}{3\tan A - \tan^3A} = \frac{3}{\tan 3A}$
+
+  $= 3\cot 3A =$ R.H.S.
+
+\item We have to prove that $\cos 4A = 1 - 8\cos^2A + 8\cos^4A$
+
+  L.H.S. $= \cos 4A = 2\cos^22A - 1 = 2(2\cos^2A - 1)^2 - 1$
+
+  $=2(4\cos^4A - 4\cos^2A + 1) - 1$
+
+  $= 1 - 8\cos^2A + 8\cos^4A =$ R.H.S.
+
+\item We have to prove that $\sin 4A = 4\sin A\cos^3A - 4\cos A\sin^3A$
+
+  L.H.S. $= 2\sin 2A\cos 2A = 4\sin A\cos A(\cos^2A - \sin^2A)$
+
+  $= 4\sin A\cos^3A - 4\cos A\sin^3A =$ R.H.S.
+
+\item We have to prove that $\cos 6A = 32\cos^6A - 48\cos^4A + 18\cos^2A - 1$
+
+  L.H.S. $= \cos 6A = (\cos^23A - \sin^23A) = (4\cos^3A - 3\cos A)^2 - (3\sin A - 4\sin^3A)^2$
+
+  $= 16\cos^6A + 9\cos^2A -24\cos^4A - 9\sin^2A - 16\sin^6A + 24\sin^4A$
+
+  $= 16\cos^6A + 9\cos^2A -24\cos^4A - 9(1 - \cos^2A) - 16(1 - \cos^2A)^3 + 24(1 - \cos^2A)^2$
+
+  $= 32\cos^6A - 48\cos^4A + 18\cos^2A - 1 =$ R.H.S.
+
+\item We have to prove that $\tan 3A\tan 2A\tan A = \tan 3A - \tan 2A - \tan A$
+
+  Rewriting this as following:
+
+  $\tan A + \tan 2A = \tan 3A(1 - \tan A\tan 2A)\Rightarrow \frac{\tan A + \tan 2A}{1 - \tan A\tan 2A} = \tan 3A$
+
+  $\Rightarrow \tan (A + 2A) = \tan 3A$
+
+  Hence, proved.
+
+\item We have to prove that $\frac{2\cos2^nA + 1}{2\cos A + 1} = (2\cos A - 1)(2\cos 2A - 1)(2\cos2^2A - 1)\ldots(2\cos2^{n -
+  1} - 1)$
+
+  L.H.S. $= \frac{2\cos2^nA + 1}{2\cos A + 1}$
+
+  Multiplying and dividing by $2\cos A - 1$
+
+  $= (2\cos A - 1)\frac{2\cos2^nA + 1}{4\cos^2A - 1} = (2\cos A - 1)\frac{2\cos2^nA + 1}{2\cos2A + 1}$
+
+  Multiplying and dividing by $2\cos2A - 1$
+
+  $= (2\cos A - 1)(2\cos2A - 1)\frac{2\cos2^nA + 1}{4\cos^22A - 1}$
+
+  $= (2\cos A - 1)(2\cos2A - 1)\frac{2\cos2^nA + 1}{2\cos2^2A + 1}$
+
+  Proceeding similarly we obtain the R.H.S.
+
+\item Given $\tan A= \frac{1}{7}, \sin B = \frac{1}{\sqrt{10}}$
+
+  $\therefore \cos B = \frac{3}{\sqrt{10}}, \tan B = \frac{1}{3}$
+
+  $\tan(A + 2B) = \frac{\tan A + \tan 2B}{1 - \tan A\tan 2B}$
+
+  $= \frac{\tan A + \frac{2\tan B}{1 - \tan^2B}}{1 - \tan A.\frac{2\tan B}{1 - \tan^2B}}$
+
+  $= \frac{\frac{1}{7} + \frac{2\frac{1}{3}}{1 - \frac{1}{9}}}{1 - \frac{1}{7}.\frac{2\frac{1}{3}}{1 - \frac{1}{9}}}$
+
+  $= 1 \therefore A + 2B = \frac{\pi}{4}$
+
+\item We have to prove that $\tan\left(\frac{\pi}{4} + A\right) + \tan\left(\frac{\pi}{4} - A\right) = 2\sec2A$
+
+  L.H.S. $= \frac{1 + \tan A}{1 - \tan A} + \frac{1 - \tan A}{1 + \tan A}$
+
+  $= \frac{(1 + \tan A)^2 + (1 - \tan A)^2}{1 - \tan^2A} = \frac{2 + 2\tan^2A}{1 - \tan^2A}$
+
+  $= \frac{2(\sin^2A + \cos^2A)}{\cos^2A - \sin^2A} = \frac{2}{\cos 2A} = 2\sec 2A =$ R.H.S.
+
+\item We have to prove that $\sqrt{3}\csc 20^\circ - \sec 20^\circ = 4$
+
+  L.H.S. $= \frac{\sqrt{3}}{\sin20^\circ} - \frac{1}{\cos20^\circ}$
+
+  $= \frac{4(\frac{\sqrt{3}}{2})\cos20^\circ - \frac{1}{2}\sin20^\circ}{2\sin20^\circ\cos^20\circ}$
+
+  $= \frac{4(\sin(50^\circ - 20^\circ))}{\sin40^\circ} = 4 =$ R.H.S.
+
+\item We have to prove that $\tan A + 2\tan 2A + 4\tan 4A + 8\cot 8A = \cot A$
+
+  $\tan A - \cot A = \frac{\sin^2A - \cos^2A}{\sin A\cos A} = -\frac{2\cos 2A}{\sin 2A} = -2\cot 2A$
+
+  Similarly, $2\tan 2A - 2\cot 2A = -4\cot 4A$
+
+  and $4\tan 4A - 4\cot 4A = -8\cot 8A$
+
+  Thus, $\tan A + 2\tan 2A + 4\tan 4A + 8\cot 8A = \cot A$
+
+\item We have to prove that $\cos^2A + \cos^2\left(\frac{2\pi}{3} - A\right) + \cos^2\left(\frac{2\pi}{3} + A\right) =
+  \frac{3}{2}$
+
+  $\Rightarrow 2\cos^2A + 2\cos^2\left(\frac{2\pi}{3} - A\right) + 2\cos^2\left(\frac{2\pi}{3} + A\right) = 3$
+
+  L.H.S. $= \cos 2A + 1 + \cos\left(\frac{4\pi}{3} - 2A\right) + 1 + \cos\left(\frac{4\pi}{3} + 2A\right) + 1$
+
+  $= 3 + \cos2A + 2\cos\left(\frac{4\pi}{3}\right)\cos2A = 3 =$ R.H.S.
+
+\item $2\sin^2A + 4\cos (A + B)\sin A\sin B + \cos2(A + B)$
+
+  $= 2\sin^2A + 2\cos(A + B)2\sin A\sin B + \cos2(A + B)$
+
+  $= 2\sin^2A + 2\cos(A + B)[\cos(A - B) - \cos(A + B)] + \cos2(A + B)$
+
+  $= 2\sin^2A + 2\cos(A + B)\cos(A - B) - 2\cos^2(A + B) + \cos2(A + B)$
+
+  $= 2\sin^2A + 2(\cos^2A - \sin^2B) - 2\cos^2(A + B) + 2\cos^2(A + B) - 1$
+
+  $= 2(\sin^2A + \cos^2A) -2\sin^2B - 1 = 1 -2\sin^2B$ which is independent of $A$
+
+\item Given, $\cos A = \frac{1}{2}\left(a + \frac{1}{a}\right)$
+
+  $\cos 2A = 2\cos^2A - 1 = 2.\frac{1}{4}\left(a + \frac{1}{a}\right)^2 - 1$
+
+  $= \frac{1}{2}\left(a^2 + \frac{1}{a^2}\right)$
+
+\item We have to prove that $\cos^2A + \sin^2A\cos 2B = \cos^2B + \sin^2B\cos 2A$
+
+  $\Rightarrow \cos^2A - \cos^2B = \sin^2B\cos2A - \sin^2A\cos2B$
+
+  R.H.S. $= \sin^2B\cos2A - \sin^2A\cos2B$
+
+  $= \sin^2B(\cos^2A - \sin^2A) - \sin^2A(\cos^2B - \sin^2B)$
+
+  $= \cos^2A\sin^2B - \sin^2A\cos^2B = \cos^2A(1 - \cos^2B) - (1 - \cos^2A)\cos^2B$
+
+  $= \cos^2A - \cos^2B =$ R.H.S.
+
+\item We have to prove that $1 + \tan A\tan 2A = \sec 2A$
+
+  L.H.S. $= 1 + \tan A\tan 2A = 1 + \tan A.\frac{2\tan A}{1 - \tan^2A}$
+
+  $= \frac{1 + \tan^2A}{1 - \tan^2A} = \frac{\cos^2A + \sin^2A}{\cos^2A - \sin^2A}$
+
+  $= \frac{1}{\cos 2A} = \sec 2A =$ R.H.S.
+
+\item We have to prove that $\frac{1 + \sin 2A}{1 - \sin 2A} = \left(\frac{1 + \tan A}{1 - \tan A}\right)^2$
+
+  L.H.S. $= \frac{1 + \sin 2A}{1 - \sin 2A} = \frac{\sin^2A + \cos^2A + 2\sin A\cos A}{\sin^2A + \cos^2A - 2\sin A\cos A}$
+
+  $= \left(\frac{\sin A + \cos A}{\sin A - \cos A}\right)^2$
+
+  Dividing numerator and denominator by $\cos^2A,$ we get
+
+  $= \left(\frac{1 + \tan A}{1 - \tan A}\right)^2 =$ R.H.S.
+
+\item We have to prove that $\frac{1}{\sin 10^\circ} - \frac{\sqrt{3}}{\cos 10^\circ} = 4$
+
+  L.H.S. $= \frac{1}{\sin 10^\circ} - \frac{\sqrt{3}}{\cos 10^\circ}$
+
+  $= \frac{\cos10^\circ - \sqrt{3}\sin10^\circ}{\sin10^\circ\cos10^\circ}$
+
+  $= \frac{2.2\left(\frac{1}{2}\cos10^\circ - \frac{\sqrt{3}}{2}\sin10^\circ\right)}{2\sin10^\circ\cos10^\circ}$
+
+  $= 4.\frac{\sin30^\circ\cos10^\circ - \cos30^\circ\sin10^\circ}{\sin20^\circ} = 4.\frac{\sin(30^\circ -
+    10^\circ)}{\sin20^\circ}$
+
+  $= 4 =$ R.H.S.
+
+\item We have to prove that $\cot^2A - \tan^2A = 4\cot2A\csc 2A$
+
+  L.H.S. $= \frac{\cos^2A}{\sin^2A} - \frac{\sin^2A}{\cos^2A}$
+
+  $= \frac{\cos^4A - \sin^4A}{\sin^2A\cos^2A} = \frac{4(\cos^2A + \sin^2A)(\cos^2A - \sin^2AA)}{(2\sin A\cos A)^2}$
+
+  $= \frac{4\cos 2A}{\sin^22A} = 4\cot 2A\csc 2A =$ R.H.S.
+
+\item We have to prove that $\frac{1 +\sin 2A}{\cos2A} = \frac{\cos A + \sin A}{\cos A - \sin A} = \tan\left(\frac{\pi}{4} +
+  A\right)$
+
+  L.H.S. $= \frac{1 +\sin 2A}{\cos2A} = \frac{\sin^2A + \cos^2A + 2\sin A\cos A}{\cos^2A - \sin^2A}$
+
+  $= \frac{(\cos A + \sin A)^2}{\cos^2A - \sin^2A} = \frac{\cos A + \sin A}{\cos A - \sin A} =$ middle term
+
+  Dividing both numerator and denominator by $\cos A,$ we get
+
+  $= \frac{1 + \tan A}{1 - \tan A} = \frac{\tan\frac{\pi}{4} + \tan A}{1 - \tan\frac{\pi}{4}.\tan A}$
+
+  $= \tan\left(\frac{\pi}{4} + A\right) =$ R.H.S.
+
+\item We have to prove that $\cos^6A - \sin^6A = \cos2A\left(1 - \frac{1}{4}\sin^22A\right)$
+
+  R.H.S. $= \cos2A\left(1 - \frac{1}{4}\sin^22A\right) = (\cos^2A - \sin^2A)(1 - \sin^2A\cos^2A)$
+
+  $= (\cos^2A - \sin^2A)[(\cos^2A + \sin^2A)^2 - \sin^2A\cos^2A] = \cos^6A - \sin^6A =$ L.H.S.
+
+\item This problem is similar to 44 and can be solved similarly.
+
+\item We have to prove that $(1 + \sec2A)(1+ \sec2^2A)(1 + sec2^3A) \ldots (1 + \sec2^nA) = \frac{\tan2^nA}{\tan A}$
+
+  L.H.S. $= (1 + \sec2A)(1 + \sec2^2A)(1 + \sec2^3A) \ldots (1 + \sec2^nA)$
+
+  $= \frac{\tan A}{\tan A}(1 + \sec2A)(1 + \sec2^2A)(1 + \sec2^3A) \ldots (1 + \sec2^nA)$
+
+  Now $\tan A(1 + \sec 2A) = \tan A\frac{1 + \cos 2A}{\cos 2A}$
+
+  $= \tan A\frac{1 + \frac{1 - \tan^2A}{1 + \tan^2A}}{\frac{1 - \tan^2A}{1 + \tan^2A}}$
+
+  $= \tan A\frac{2}{1 - \tan^2A} = \frac{2\tan A}{1 - \tan^2A} = \tan 2A$
+
+  Similarly, $\tan 2A(1 + \sec2^2A) = \tan2^2A$
+
+  Proceeding similalry we obtain R.H.S.
+
+\item We have to prove that $\frac{\sin2^nA}{\sin A} = 2^n\cos A\cos 2A\cos 2^2A\ldots\cos2^{n - 1}A$
+
+  Dividing and multiplying with $2\cos A$
+
+  L.H.S. $= \frac{\sin2^nA}{\sin A} = 2\cos A.\frac{\sin2^nA}{2\sin A\cos A} = 2\cos A.\frac{\sin2^nA}{\sin 2A}$
+
+  Again, dividing and multiplying with $2\cos 2A$
+
+  $= 2^2\cos A\cos 2A.\frac{\sin2^n A}{2\sin 2A\cos 2A} = 2^2\cos A\cos 2A.\frac{\sin2^n A}{\sin 2^2A}$
+
+  Proceeding similarly, we find the R.H.S.
+
+\item We have to prove that $3(\sin A - \cos A)^4 + 6(\sin A + \cos A)^2 + 4(\sin^6A + \cos^6A) = 13$
+
+  $3(\sin A - \cos A)^4 = 3[(\sin A - \cos A)^2]^2 = 3(1 - \sin 2A)^2$
+
+  $6(\sin A + \cos A)^2 = 6(1 + \sin2A)$
+
+  $4(\sin^6A + \cos^6A) = 4[(\cos^2A + \sin^2A)^3 - 3\cos^2A\sin^2A(\cos^2A + \sin^2A)] = 4(1 - \frac{3}{4}\sin^22A)$
+
+  Adding all these yields $13.$
+
+\item We have to prove that $2(\sin^6A + \cos^6A) - 3(\sin^4A + \cos^4A) + 1 = 0$
+
+  L.H.S. $= 2[(\sin^2A + \cos^2A)^3 - 3\sin^2A\cos^2A(\sin^2A + \cos^2A)] -3[(\sin^2A + \cos^2A)^2 - 2\sin^2A\cos^2A] + 1$
+
+  $= 2(1 - 3\sin^2A\cos^2A) - 3[1 - 2\sin^2A\cos^2A] + 1 = 0 =$ R.H.S.
+
+\item Given $\cos^2A + \cos^2(A + B) -2\cos A\cos B\cos(A + B)$
+
+  $= \cos^2A + \cos^2(A + B) -2\cos A\cos B\cos(A + B) + \cos^2A\cos^2B - \cos^2A\cos^2B$
+
+  $= \cos^2A + [\cos(A + B) - \cos A\cos B]^2 - \cos^2A\cos^2B$
+
+  $= \cos^2A + \sin^2A\sin^2B - \cos^2A\cos^2B$
+
+  $= \cos^2A + (1 - \cos^2A)(1 - \cos^2B) - \cos^2A\cos^2B$
+
+  $= 1 - \cos^2B$ which is independent of $A$
+
+\item We have to prove that $\cos^3A\cos 3A + \sin^3A\sin 3A = \cos^32A$
+
+  We know that $\cos^3A = \frac{1}{4}(3\cos A + \cos 3A)$ and
+
+  $\sin^3A = \frac{1}{4}(3\sin A - \sin 3A)$
+
+  L.H.S. $= \frac{1}{4}(3\cos A + \cos 3A)\cos 3A + \frac{1}{4}(3\sin A - \sin 3A)\sin 3A$
+
+  $= \frac{3}{4}(\cos3A\cos A + \sin 3A\sin A) + \frac{1}{4}(\cos^23A - \sin^23A)$
+
+  $= \frac{3}{4}\cos 2A + \frac{1}{4}\cos6A$
+
+  $= \frac{3}{4}\cos 2A + \frac{1}{4}(4\cos^32A - 3\cos 2A)$
+
+  $= \cos^32A =$ R.H.S.
+
+\item We have to prove that $\tan A\tan(60^\circ - A)\tan(60^\circ + A) = \tan 3A$
+
+  L.H.S. $= \frac{\sin A.\sin(60^\circ - A).\sin(60^\circ + A)}{\cos A.\cos(60^\circ - A).\cos(60^\circ + A)}$
+
+  $= \frac{\sin A(\sin^260^\circ - \sin^2A)}{\cos A(\cos^260^\circ - \sin^2A)}[\because \sin(A + B)\sin (A - B) = \sin^2A -
+    \sin^2B\text{~and~}\cos(A + B)\cos(A - B) = \cos^2A - \sin^2B]$
+
+  $= \frac{\sin A(3 - 4\sin^2A)}{\cos A(1 - 4\sin^2A)} = \frac{3\sin A - 4\sin^3A}{4\cos^3A - 3\cos A}$
+
+  $= \frac{\sin 3A}{\cos 3A} = \tan 3A =$ R.H.S.
+
+\item We have to prove that $\sin^2A + \sin^3\left(\frac{2\pi}{3} + A\right) + \sin^3\left(\frac{4\pi}{3} + A\right) =
+  -\frac{3}{4}\sin 3A$
+
+  $\because \sin^3A = \frac{1}{4}[3\sin A - \sin 3A]$
+
+  L.H.S. $= \frac{1}{4}[3\sin A - \sin 3A] + \frac{1}{4}\left[3\sin\left(\frac{2\pi}{3} + A\right) - \sin(2\pi + 3A)\right]
+  + \frac{1}{4}\left[3\sin\left(\frac{4\pi}{3} + A\right) - \sin(4\pi + 3A)\right]$
+
+  $= \frac{1}{4}[3\sin A - \sin 3A] + \frac{1}{4}\left[3\sin\left(\frac{2\pi}{3} + A\right) - \sin3A\right]
+  + \frac{1}{4}\left[3\sin\left(\frac{4\pi}{3} + A\right) - \sin3A\right]$
+
+  $= \frac{3}{4}\left[\sin A - \sin 3A + \sin\left(\frac{2\pi}{3} + A\right) + \sin\left(\frac{4\pi}{3} + A\right)\right]$
+
+  $= \frac{3}{4}[\sin A - \sin 3A + 2.(-\sin A).\frac{1}{2}]$
+
+  $= -\frac{3}{4}\sin 3A =$ R.H.S.
+
+\item We have to prove that $4(\cos^310^\circ + \sin^320^\circ) = 3(\cos 10\circ + \sin 20^\circ)$
+
+  $\Rightarrow 4\cos^310^\circ - 3\cos10^\circ = 3\sin20^\circ - 4\sin^320^\circ$
+
+  $\Rightarrow \cos 3.10^\circ = \sin 3.20^\circ$
+
+  $\Rightarrow \cos 30^\circ = \sin 60^\circ \Rightarrow \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{2}$
+
+  Hence, proved.
+
+\item We have to prove that $\sin A\cos^3A - \cos A\sin^3A = \frac{1}{4}\sin 4A$
+
+  L.H.S. $= \frac{1}{2}2\sin A\cos A(\cos^2A - \sin^2A) = \frac{1}{2}\sin2A\cos 2A$
+
+  $= \frac{1}{4}.2.\sin2A\cos 2A = \frac{1}{4}\sin 4A =$ R.H.S.
+
+\item We have to prove that $\cos^3A\sin3A + \sin^3A\cos 3A = \frac{3}{4}\sin 4A$
+
+  L.H.S. $= \cos^3A(3\sin A - 4\sin^3A) + \sin^3A(4\cos^3A - 4\cos A)$
+
+  $= 3(\sin A\cos^3A - \cos A\sin^3A)$
+
+  Following previous problem we obtain R.H.S.
+
+\item We have to prove that $\sin A\sin(60^\circ + A)\sin(A + 120^\circ) = \sin 3A$
+
+  We have proved in problem 32 that $\sin A\sin(60^\circ - A)\sin(60^\circ + A) = \frac{1}{4}\sin 3A$
+
+  Thus, we can prove what is required.
+
+\item We have to prove that $\cot A + \cot(60^\circ + A) + \cot(120^\circ + A) = 3\cot 3A$
+
+  L.H.S. $= \cot A + \cot(60^\circ + A) + \cot(180^\circ - (60^\circ - A))$
+
+  $= \cot A + \cot(60^\circ + A) - \cot(60^\circ - A)$
+
+  This we have proved in problem 34.
+
+\item We have to prove that $\cos 5A = 16\cos^5A - 20\cos^3A + 5\cos A$
+
+  L.H.S. $\cos(2A + 3A) = \cos 2A\cos 3A - \sin2A\sin3A$
+
+  $= (2\cos^2A - 1)(4\cos^3A - 3\cos A) - 2\sin A\cos A(3\sin A - 4\sin^3A)$
+
+  $= 8\cos^5A - 10\cos^3A + 3\cos A - 2\cos A\sin^2A[3 - 4(1 - \cos^2A)]$
+
+  $= 8\cos^5A - 10\cos^3A + 3\cos A - 2\cos A(1 - \sin^2A)[4\cos^2A - 1]$
+
+  $= 16\cos^5A - 20\cos^3A + 5\cos A =$ R.H.S.
+
+\item We have to prove that $\sin 5A = 5\sin A - 20\sin^3A + 16\sin^5A$
+
+  L.H.S. $= \sin5A = \sin(2A + 3A) = \sin2A\cos3A + \sin3A\cos2A$
+
+  $= 2\sin A\cos A(4\cos^3A - 3\cos A) + (3\sin A - 4\sin^3A)(1 - 2\sin^2A)$
+
+  $= 2\sin A(1 - \sin^2A)(4\cos^2A - 3) + (3\sin A - 4\sin^3A)(1 - 2\sin^2A)$
+
+  $= 2(\sin A - \sin^3A)(1 - 4\sin^2A) + (3\sin A - 4\sin^3A)(1 - 2\sin^2A)$
+
+  $= 5\sin A - 20\sin^3A + 16\sin^5A =$ R.H.S.
+
+\item We have to prove that $\cos 4A - \cos 4B = 8(\cos A - \cos B)(\cos A + \cos B)(\cos A - \sin B)(\cos A + \sin B)$
+
+  R.H.S. $= 2(2\cos^2A - 2\cos^2B)(2\cos^2A - 2\sin^2B)$
+
+  $= 2(\cos 2A - \cos 2B)(\cos 2A + \cos 2B)$
+
+  $= 2(\cos^22A - \cos^22B) = \cos4A - \cos4B =$ L.H.S.
+
+\item We have to prove that $\tan 4A = \frac{4\tan A - 4\tan^3A}{1 - 6\tan^2A + \tan^4A}$
+
+  L.H.S. $= \tan 4A = \tan(2A + 2A) = \frac{2\tan2A}{1 - \tan^22A}$
+
+  $= \frac{2.\frac{2\tan A}{1 - \tan^2A}}{1 - \left(\frac{2\tan A}{1 - \tan^2A}\right)^2}$
+
+  Solving this yields R.H.S.
+
+\item Given $2\tan A = 3\tan B,$ we have to prove that $\tan (A- B) = \frac{\sin 2B}{5 - \cos 2B}$
+
+  $\tan A = \frac{3}{2}\tan B$
+
+  $\tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A\tan B} = \frac{\frac{3}{2}\tan B - \tan B}{1 + \frac{3}{2}\tan^2B}$
+
+  $= \frac{\tan B}{2 + 3\tan^2B} = \frac{\sin B\cos B}{2\cos^2B + 3\sin^2B}$
+
+  $= \frac{\sin B\cos B}{1 + \cos 2B + 3.\frac{1}{2}(1 - \cos 2B)}$
+
+  $= \frac{\sin 2B}{5 - \cos 2B} =$ R.H.S.
+
+\item Given $\sin A + \sin B = x$ and $\cos A + \cos B = y,$ we have to show that $\sin(A + B) = \frac{2xy}{x^2 +
+  y^2}$
+
+  $2xy = 2(\sin A + \sin B)(\cos A + \cos B)$
+
+  $= 2(\sin A\cos A + \sin B\cos B + \sin A\cos B + \cos A\sin B)$
+
+  $= \sin2A + \sin 2B + 2\sin(A + B)$
+
+  $= 2\sin(A + B)\cos(A - B) + 2\sin(A + B) = 2\sin(A + B)[\cos(A - B) + 1]$
+
+  $x^2 + y^2 = (\sin A + \sin B)^2 + (\cos A + \cos B)^2$
+
+  $= 2 + 2(\cos A\cos B + \sin A \sin B) = 2[1 + \cos (A - B)]$
+
+  $\therefore \frac{2xy}{x^2 + y^2} = \sin(A + B)$
+
+\item Given $A= \frac{\pi}{2^n + 1},$ we have to prove that $\cos A.\cos 2A. \cos2^2A.\ldots.\cos2^{n - 1}A =
+  \frac{1}{2^n}$
+
+  L.H.S. $= \cos A.\cos 2A. \cos2^2A.\ldots.\cos2^{n - 1}A$
+
+  $= \frac{1}{2\sin A}(2\sin A\cos A).\cos 2A. \cos2^2A.\ldots.\cos2^{n - 1}A$
+
+  $= \frac{1}{2\sin A}\sin 2A.\cos 2A.\cos2^2A.\ldots.\cos2^{n - 1}A$
+
+  $= \frac{1}{2^2\sin A}(2\sin 2A\cos 2A)\cos2^2A.\ldots.\cos2^{n - 1}A$
+
+  Proceeding similarly
+
+  $= \frac{1}{2^n\sin A}\sin2^n A = \frac{1}{2^n\sin A}\sin(\pi - A) = \frac{1}{2^n} =$ R.H.S.
+
+\item Given $\tan A = \frac{y}{x},$ we have to prove that $x\cos 2A + y\sin 2A = x$
+
+  $\because \tan A = \frac{y}{x} \therefore \sin A = \frac{y}{\sqrt{x^2 + y^2}}, \cos A = \frac{x}{\sqrt{x^2 + y^2}}$
+
+  $\therefore x\cos 2A + y\sin 2A = x(\cos^2A - \sin^2A) + 2y\sin A\cos A = x\left(\frac{x^2 - y^2}{x^2 + y^2}\right) +
+  2\frac{x^2y}{x^2 + y^2}$
+
+  $= x =$ R.H.S.
+
+\item Given $\tan^2A = 1 + 2\tan^2B,$ we have to prove that $\cos 2B = 1 + 2\cos 2A$
+
+  $1 + 2\cos 2A = 1 + 2.\frac{1 - \tan^2A}{1 + \tan^2A} = \frac{3 - \tan^2A}{1 + \tan^2A}$
+
+  $= \frac{3 - 1 - 2\tan^2B}{2 + 2\tan^2B} = \frac{1 - \tan^2B}{1 + \tan^2B} = \cos 2B =$ L.H.S.
+
+\item Given $\cos 2A = \frac{3\cos 2B - 1}{3 - \cos 2B},$ we have to prove that $\tan A = \sqrt{2}\tan B$
+
+  $\cos 2A = \frac{3\cos 2B - 1}{3 - \cos 2B}$
+
+  $\Rightarrow \frac{1 - \tan^2A}{1 + \tan^B} = \frac{3 - 3\tan^2B - 1 - \tan^2B}{3 + 3\tan^2B - 1 + \tan^2B}$
+
+  $= \frac{1 - 2\tan^2B}{1 + 2\tan^2B}$
+
+  $\therefore \tan^2A = 2\tan^2B \Rightarrow \tan A = \sqrt{2}\tan B$
+
+\item Given $\tan B = 3\tan A,$ we have to prove that $\tan(A + B) = \frac{2\sin 2B}{1 + \cos 2B}$
+
+  $\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}$
+
+  $= \frac{\frac{4}{3}\tan B}{1 - \frac{\tan^2B}{3}} = \frac{4\tan B}{3 - \tan^2B}$
+
+  $= \frac{4\sin B\cos B}{3\cos^2B - \sin^2B} = \frac{2\sin2B}{2\cos^2B + \cos2B}$
+
+  $= \frac{2\sin2B}{1 + \cos2B} =$ R.H.S.
+
+\item Given $x\sin A = y\cos A,$ we have to prove that $\frac{x}{\sec 2A} + \frac{y}{\csc 2A} = x$
+
+  Given $\tan A = \frac{y}{x} \therefore \sin A = \frac{y}{\sqrt{x^2 + y^2}} \& \cos A = \frac{x}{\sqrt{x^2 + y^2}}$
+
+  L.H.S. $= \frac{x}{\sec 2A} + \frac{y}{\csc 2A}$
+
+  $= x\cos2A + y\sin2A = x(\cos^2A - \sin^2A) + 2y\sin A\cos A$
+
+  $x\frac{x^2 - y^2}{x^2 + y^2} + \frac{2xy^2}{x^2 + y^2}$
+
+  $= x$
+
+\item Given $\tan A = \sec 2B,$ we have to prove that $\sin 2A = \frac{1 - \tan^4B}{1 + \tan^4B}$
+
+  $\tan A = \frac{1}{\cos 2B} = \frac{1 + \tan^2B}{1 - \tan^2B}$
+
+  $\therefore \sin A = \frac{1 + \tan^2B}{\sqrt{2 + 2\tan^4B}}$
+
+  and $\cos A = \frac{1 - \tan^2B}{\sqrt{2 + 2\tan^4B}}$
+
+  L.H.S. $\sin 2A = 2\sin A\cos A = \frac{1 - \tan^4B}{1 + \tan^4B} =$ R.H.S.
+
+\item Given $A = \frac{\pi}{3},$ we have to prove that $\cos A.\cos 2A. \cos 3A.\cos 4A.\cos 5A.\cos 6A = -\frac{1}{16}$
+
+  L.H.S. $= \frac{1}{8}2\cos A.\cos 6A.2\cos 2A.\cos 5A.2\cos 3A\cos 4A$
+
+  $= \frac{1}{8}\left(\cos \frac{7A}{2} + \cos \frac{5A}{2}\right)\left(\cos \frac{7A}{2} + \cos
+  \frac{3A}{2}\right)\left(\cos \frac{7A}{2} + \cos \frac{A}{2}\right)$
+
+  $= \frac{1}{8}\left[\cos\left(\pi + \frac{\pi}{6}\right) + \cos \left(\pi -
+    \frac{\pi}{6}\right)\right]\left[\cos\left(\pi + \frac{\pi}{6}\right) + \cos \left(\frac{\pi}{2}\right)\right] +
+  \left[\cos\left(\pi + \frac{\pi}{6}\right) + \cos \frac{\pi}{6}\right]$
+
+  $= -\frac{1}{16}$
+
+\item Given $A = \frac{\pi}{15},$ we have to prove that $\cos2A.\cos4A.\cos8A.\cos14A = \frac{1}{16}$
+
+  $\cos 14A = \cos \frac{14\pi}{15} = \cos \left(2\pi - \frac{16\pi}{15}\right) = \cos 16A$
+
+  L.H.S. $= \cos2A.\cos4A.\cos8A.\cos16A = \frac{1}{2\sin2A}.2\sin2A.\cos2A.\cos4A.\cos8A.\cos16A$
+
+  $= \frac{1}{2\sin2A}\sin4A.\cos4A.\cos8A.\cos16A = \frac{1}{2^2\sin 2A}\sin8A.\cos8A.\cos16A$
+
+  $= \frac{1}{2^4\sin 2A}\sin32A = \frac{1}{16\sin2A}\sin(2\pi + 2A) = \frac{1}{16} =$ R.H.S.
+
+\item Given $\tan A\tan B = \sqrt{\frac{a - b}{a + b}},$ we have to prove that $(a - b\cos2A)(a - b\cos2B) = a^2 -
+  b^2$
+
+  L.H.S. $= (a - b\cos2A)(a - b\cos2B) = \left[a -b\frac{1 - \tan^2A}{1 + \tan^2A}\right]\left[a - b\frac{1 - \tan^2B}{1 +
+      \tan^2B}\right]$
+
+  $= \left[a -b\frac{1 - \tan^2A}{1 + \tan^2A}\right]\left[a - b\frac{1 - \frac{a - b}{(a + b)\tan^2A}}{1 + \frac{a -
+        b}{(a + b)\tan^2A}}\right]$
+
+  Solving this yields $\frac{a^2 - b^2}{}$
+
+\item Given $\sin A = \frac{1}{2}$ and $\sin B = \frac{1}{3},$ we have to find the value of $\sin(A + B)$ and
+  $\sin(2A + 2B)$
+
+  $\cos A = \frac{\sqrt{3}}{2}$ and $\cos B = \frac{\sqrt{8}}{3}$
+
+  $\sin(A + B) = \sin A\cos B + \cos A\sin B = \frac{\sqrt{8}}{6} + \frac{\sqrt{3}}{6} = \frac{\sqrt{8} + \sqrt{3}}{6}$
+
+  $\sin(2A + 2B) = \sin 2A\cos 2B + \cos 2A\sin 2B$
+
+  $= 2\sin A\cos A(\cos^2B - \sin^2B) + 2\sin B\cos B(\cos^2A - \sin^2A)$
+
+  Substituting the values we obtain the desired result.
+
+  85 and 86 have been left as exercises.
+
+\item $\cos A = \frac{3}{10} = \frac{1 - \tan^2\frac{A}{2}}{1 + \tan^2\frac{A}{2}} = \frac{3}{10}$
+
+  Let $x = \tan \frac{A}{2},$ then $\frac{1 - x^2}{1 + x^2} = \frac{3}{10}$
+
+  $x = \pm \sqrt{\frac{7}{13}}$
+
+  The reason for two values is that $\cos A$ may lie in first or fourth quadrant. If it is in first quadrant then
+  $\tan \frac{A}{2}$ will be positive and if it is in fourth quadrant then $\tan \frac{A}{2}$ will be negative.
+
+\item Given $\sin A + \sin B = x$ and $\cos A + \cos B = y,$ we have to find the value of $\tan \frac{A - B}{2}$
+
+  $\tan \frac{A - B}{2} = \frac{\tan \frac{A}{2} - \tan \frac{B}{2}}{1 + \tan\frac{A}{2}\tan\frac{B}{2}}$
+
+  $= \frac{\sin \frac{A}{2}\cos\frac{B}{2} - \sin\frac{B}{2}\cos\frac{A}{2}}{\cos\frac{A}{2}\cos\frac{B}{2} -
+  \sin\frac{A}{2}\sin\frac{B}{2}}$
+
+  Also, $\tan(A - B) = \frac{2\tan\frac{A - B}{2}}{1 - \tan^2\frac{A - B}{2}}$
+
+  Let $\tan\frac{A - B}{2} = a,$ then $\tan(A - B) = \frac{2a}{1 + a^2}$
+
+  $x^2 + y^2 = 2 + 2\sin A\sin B + 2\cos A\cos B$
+
+  Solving this yields $\tan\frac{A - B}{2} = \sqrt{\frac{4 - x^2 - y^2}{x^2 + y^2}}$
+
+\item We have to prove that $(\cos A + \cos B)^2 + (\sin A - \sin B)^2 = 4\cos^2 \frac{A + B}{2}$
+
+  L.H.S. $= \cos^2A + \cos^2B + 2\cos A\cos B + \sin^2A + \sin^2B - 2\sin A\sin B$
+
+  $= 2 + 2\cos(A + B) = 4\cos^2\frac{A + B}{2} =$ R.H.S.
+
+\item We have to prove that $(\cos A + \cos B)^2 + (\sin A + \sin B)^2 = 4\cos^2 \frac{A - B}{2}$
+
+  L.H.S. $= \cos^2A + \cos^2B + 2\cos A\cos B + \sin^2A + \sin^2B + 2\sin A\sin B$
+
+  $= 2 + 2\cos(A - B) = 4\cos^2\frac{A - B}{2} =$ R.H.S.
+
+\item We hve to prove that $(\cos A - \cos B)^2 + (\sin A - \sin B)^2 = 4\sin^2 \frac{A - B}{2}$
+
+  L.H.S. $= \cos^2A + \cos^2B - 2\cos A\cos B + \sin^2A + \sin^2B + 2\sin A\sin B$
+
+  $= 2 - 2\cos(A - B) = 4\sin^2\frac{A - B}{2} =$ R.H.S.
+
+\item We have to prove that $\sin^2\left(\frac{\pi}{8} + \frac{A}{2}\right) - \sin^2\left(\frac{\pi}{8} -\frac{A}{2}\right) =
+  \frac{1}{\sqrt{2}}\sin A$
+
+  L.H.S. $= \frac{1 - \cos\left(\frac{\pi}{4} + A\right)}{2} - \frac{1 - \cos\left(\frac{\pi}{4} - A\right)}{2}$
+
+  $= \frac{\cos\left(\frac{\pi}{4} - A\right) - \cos\left(\frac{\pi}{4} + A\right)}{2}$
+
+  $= \frac{2\sin\frac{\pi}{4}\sin A}{2} = \frac{1}{\sqrt{2}}\sin A =$ R.H.S.
+
+\item We have to prove that $(\tan 4A + \tan 2A)(1 - \tan^23A\tan^2A) = 2\tan 3A\sec^2A$
+
+  L.H.S. $= (\tan 4A + \tan 2A)(1 + \tan 3A\tan A)(1 - \tan 3A\tan A)$
+
+  $= \left(\frac{\sin 4A}{\cos 4A} + \frac{\sin 2A}{\cos 2A}\right)\left(\frac{cos 3A\cos A + \sin 3A\sin A}{\cos 3A\cos
+    A}\right)\left(\frac{cos 3A\cos A - \sin 3A\sin A}{\cos 3A - \cos A}\right)$
+
+  $= \frac{\sin 6A}{\cos 4A\cos 2A}.\frac{\cos 4A}{\cos 3A\cos A}\frac{\cos 2A}{\cos 3A\cos A}$
+
+  $= \frac{2\sin3A\cos3A}{\cos^23A\cos^2A} = 2\tan3A\sec^2A =$ R.H.S.
+
+\item We have to prove that $\left(1 + \tan \frac{A}{2} - \sec\frac{A}{2}\right)\left(1 + \tan \frac{A}{2} +
+  \sec\frac{A}{2}\right) = \sin A\sec^2\frac{A}{2}$
+
+  L.H.S. $= \left(1 + \tan \frac{A}{2} - \sec\frac{A}{2}\right)\left(1 + \tan \frac{A}{2} +
+  \sec\frac{A}{2}\right)$
+
+  $= \left(1 + \tan\frac{A}{2}\right)^2 - sec^2\frac{A}{2} = 2\tan\frac{A}{2}$
+
+  $= \frac{2\sin\frac{A}{2}\cos\frac{A}{2}}{\cos^2\frac{A}{2}} = \sin A\sec^2\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\frac{1 + \sin A - \cos A}{1 + \sin A + \cos A} = \tan \frac{A}{2}$
+
+  L.H.S. $= \frac{(1 - \cos A) + \sin A}{(1 + \cos A) + \sin A}$
+
+  $= \frac{2\sin^2\frac{A}{2} + 2\sin\frac{A}{2}\cos\frac{A}{2}}{2\cos^2\frac{A}{2} + 2\sin\frac{A}{2}\cos\frac{A}{2}}$
+
+  $= \frac{\sin\frac{A}{2}\left(\sin\frac{A}{2} + \cos\frac{A}{2}\right)}{\cos\frac{A}{2}\left(\sin\frac{A}{2} +
+    \cos\frac{A}{2}\right)}$
+
+  $= \tan\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\frac{1 - \tan \frac{A}{2}}{1 + \tan \frac{A}{2}} = \frac{1 + \sin A}{\cos A} = \tan
+  \left(\frac{\pi}{4} + \frac{A}{2}\right)$
+
+  $\frac{1 + \sin A}{\cos A} = \frac{\sin^2\frac{A}{2} + \cos^2\frac{A}{2} + 2\sin\frac{A}{2}\cos
+    \frac{A}{2}}{\cos^2\frac{A}{2} - \sin^2\frac{A}{2}}$
+
+  $= \frac{\sin\frac{A}{2} + \cos\frac{A}{2}}{\cos \frac{A}{2} - \sin \frac{A}{2}}$
+
+  Dividing numerator and denominator by $\cos \frac{A}{2},$ we get
+
+  $= \frac{1 + \tan \frac{A}{2}}{1 - \tan \frac{A}{2}}$
+
+\item We have to prove that $\cos^4\frac{\pi}{8} + \cos^4 \frac{3\pi}{8} + \cos^4\frac{5\pi}{8} + \cos^4\frac{7\pi}{8}=
+  \frac{3}{2}$
+
+  $\cos^4\frac{\pi}{8} = \left(\cos^2\frac{\pi}{8}\right)^2 = \left(\frac{1 + \cos\frac{\pi}{4}}{2}\right)^2$
+
+  $= \left(\frac{1 + \frac{1}{\sqrt{2}}}{2}\right)^2 = \frac{3}{8} + \frac{\sqrt{2}}{4}$
+
+  Similalry, $\cos^4\frac{3\pi}{8} = \frac{3}{8} - \frac{\sqrt{2}}{4}$
+
+  $\cos\frac{5\pi}{8} = \cos\left(\pi - \frac{3\pi}{8}\right) = -\cos\frac{3\pi}{8}$
+
+  $\cos\frac{7\pi}{8} = -\cos\frac{\pi}{8}$
+
+  Thus, $\cos^4\frac{\pi}{8} + \cos^4 \frac{3\pi}{8} + \cos^4\frac{5\pi}{8} + \cos^4\frac{7\pi}{8}=
+  \frac{3}{2}$
+
+\item We have to prove that $\frac{2\sin A - \sin2A}{2\sin A + \sin 2A} = \tan^2\frac{A}{2}$
+
+  L.H.S. $= \frac{2\sin A - 2\sin A\cos A}{2\cos A + 2\sin A\cos A} = \frac{2\sin A(1 - \cos A)}{2\sin A(1 + \cos A)}$
+
+  $= \frac{2\sin^2\frac{A}{2}}{2\cos^2\frac{A}{2}} = \tan^2\frac{A}{2} =$ R.H.S.
+
+\item We have to prove that $\cot \frac{A}{2} - \tan \frac{A}{2} = 2\cot A$
+
+  L.H.S. $= \frac{\cos \frac{A}{2}}{\sin \frac{A}{2}} - \frac{\sin \frac{A}{2}}{\cos\frac{A}{2}}$
+
+  $= \frac{\cos^2\frac{A}{2} - \sin^2\frac{A}{2}}{\sin \frac{A}{2}\cos\frac{A}{2}}$
+
+  $= \frac{2\cos A}{\sin A} = 2\cot A =$ R.H.S.
+
+\item We have to prove that $\frac{1 + \sin A}{1 - \sin A} = \tan^2\left(\frac{\pi}{4} + \frac{A}{2}\right)$
+
+  L.H.S. $= \frac{\cos^2\frac{A}{2} + \sin^2\frac{A}{2} + 2\cos \frac{A}{2}\sin\frac{A}{2}}{\cos^2\frac{A}{2} +
+    \sin^2\frac{A}{2} - 2\cos \frac{A}{2}\sin\frac{A}{2}}$
+
+  $= \frac{\cos \frac{A}{2} + \sin \frac{A}{2}}{\cos \frac{A}{2} - \sin \frac{A}{2}}$
+
+  Dividing both numerator and denominator by $\cos \frac{A}{2},$ we get
+
+  $= \frac{1 + \tan\frac{A}{2}}{1 - \tan \frac{A}{2}} = \frac{\tan\frac{\pi}{4} + \tan \frac{A}{2}}{1 -
+    \tan\frac{\pi}{4}\tan\frac{A}{2}}$
+
+  $= \tan\left(\frac{\pi}{4} + \frac{A}{2}\right) =$ R.H.S.
+
+\item We have to prove that $\sec A + \tan A = \tan\left(\frac{\pi}{4} + \frac{A}{2}\right)$
+
+  L.H.S. $= \frac{1 + \sin A}{\cos A} = \frac{\left(\cos\frac{A}{2} + \sin\frac{A}{2}\right)^2}{\cos^2\frac{A}{2} -
+    \sin^2\frac{A}{2}}$
+
+  $= \frac{\cos \frac{A}{2} + \sin \frac{A}{2}}{\cos \frac{A}{2} - \sin \frac{A}{2}}$
+
+  Now proceeding like previous problem
+
+  $= \tan\left(\frac{\pi}{4} + \frac{A}{2}\right) =$ R.H.S.
+
+\item We have to prove that $\frac{\sin A + \sin B - \sin(A + B)}{\sin A + \sin B + \sin(A + B)} = \tan \frac{A}{2}\tan
+  \frac{B}{2}$
+
+  L.H.S. $= \frac{2\sin\frac{A + B}{2}\cos\frac{A - B}{2} - 2\sin \frac{A + B}{2}\cos\frac{A + B}{2}}{2\sin\frac{A +
+      B}{2}\cos\frac{A - B}{2} + 2\sin \frac{A + B}{2}\cos\frac{A + B}{2}}$
+
+  $= \frac{\cos\frac{A - B}{2} - \cos \frac{A + B}{2}}{\cos\frac{A - B}{2} + \cos \frac{A + B}{2}}$
+
+  $= \frac{2\sin\frac{A}{2}\cos\frac{B}{2}}{2\cos\frac{A}{2}\cos\frac{B}{2}}$
+
+  $= \tan \frac{A}{2}\tan \frac{B}{2} =$ R.H.S.
+
+\item We have to prove that $\tan \left(\frac{\pi}{4} - \frac{A}{2}\right) = \sec A - \tan A = \sqrt{\frac{1 - \sin A}{1 +
+    \sin A}}$
+
+  L.H.S. $= \tan \left(\frac{\pi}{4} - \frac{A}{2}\right) = \frac{1 - \tan \frac{A}{2}}{1 + \tan \frac{A}{2}}$
+
+  $= \frac{\cos\frac{A}{2} - \sin \frac{A}{2}}{\cos\frac{A}{2} + \sin \frac{A}{2}}$
+
+  Multiplying both numerator and denominator by $\cos\frac{A}{2} + \sin\frac{A}{2}$
+
+  $= \frac{\cos A}{1 + \sin A} = \sqrt{\frac{\cos^2A}{(1 + \sin A)^2}} = \sqrt{\frac{1 - \sin A}{1 + \sin A}}$
+
+  Also, $\frac{\cos A}{1 + \sin A} = \frac{\cos A(1 - \sin A)}{1 - \sin^2A} = \sec A - \tan A$
+
+\item We have to prove that $\csc\left(\frac{\pi}{4} + \frac{A}{2}\right)\csc \left(\frac{\pi}{4} - \frac{A}{2}\right) =
+  2\sec A$
+
+  L.H.S. $= \frac{1}{\sin\left(\frac{\pi}{4} + \frac{A}{2}\right)}.\frac{1}{\sin\left(\frac{\pi}{4} -
+    \frac{A}{2}\right)}$
+
+  $= \frac{2}{\cos A - \cos \frac{\pi}{2}} = 2\sec A =$ R.H.S.
+
+\item We have to prove that $\cos^2\frac{\pi}{8} + \cos^2\frac{3\pi}{8} + \cos^2\frac{5\pi}{8} + \cos^2\frac{7\pi}{8} = 2$
+
+  $\cos^2\frac{\pi}{8} = \frac{1 + \cos \frac{\pi}{4}}{2} = \frac{1 + \sqrt{2}}{2\sqrt{2}}$
+
+  $\cos^2\frac{3\pi}{8} = \frac{1 + \cos \frac{3\pi}{4}}{2} = \frac{\sqrt{2} - 1}{2\sqrt{2}}$
+
+  $\cos^2\frac{5\pi}{8} = \cos^2\frac{3\pi}{8}$
+
+  $\cos^2\frac{7\pi}{8} = \cos^2\frac{\pi}{8}$
+
+  L.H.S. $= 2\left(\frac{1 + \sqrt{2}}{2\sqrt{2}} + \frac{\sqrt{2} - 1}{2\sqrt{2}}\right)$
+
+  $= 2 =$ R.H.S.
+
+\item This problem is similar to previous problem and can be solved in a likewise manner.
+
+\item We have to prove that $\left(1 + \cos \frac{\pi}{8}\right)\left(1 + \cos\frac{3\pi}{8}\right)\left(1 +
+  \cos\frac{5\pi}{8}\right)\left(1 + \cos \frac{7\pi}{8}\right) = \frac{1}{8}$
+
+  $\cos\frac{7\pi}{8} = \cos\left(\pi - \frac{\pi}{8}\right) = -\cos\frac{\pi}{8}$
+
+  $\cos\frac{5\pi}{8} = \cos\left(\pi - \frac{3\pi}{8}\right) = -\cos\frac{3\pi}{8}$
+
+  L.H.S. $= \left(1 - \cos^2\frac{\pi}{8}\right)\left(1 - \cos^2\frac{3\pi}{8}\right)$
+
+  $= \sin^2\frac{\pi}{8}\sin^2\frac{3\pi}{8}$
+
+  $= \frac{1 - 2\cos\frac{\pi}{4}}{2}.\frac{1 - 2\cos\frac{3\pi}{4}}{2}$
+
+  Substituting values from 105 we get desired result.
+
+\item We have to find the value of $\sin \frac{23\pi}{24}$
+
+  $\sin \left(\pi - \frac{\pi}{24}\right) = \sin\frac{15^\circ}{2}$
+
+  $\sin^2A = \frac{1}{2}(1 - \cos 2A) = \frac{1}{2}(1 - \cos15^\circ)$
+
+  $= \frac{1}{2}\left(1 - \frac{\sqrt{3} + 1}{2\sqrt{2}}\right)$
+
+  $\therefore \sin A = \frac{1}{4}\sqrt{8 - 2\sqrt{6} - 2\sqrt{2}}$
+
+\item Given $A = 112^\circ30'\therefore 2A = 225^\circ$
+
+  $\cos 2A = \cos(180^\circ + 45^\circ) = -\frac{1}{\sqrt{2}}$
+
+  $|\sin A| = \sqrt{\frac{1 - \left(-\frac{1}{\sqrt{2}}\right)}{2}} = \sqrt{\frac{2 + \sqrt{2}}{2}}$
+
+  $\because$ A lies in 2nd quadrant $\therefore \sin A$ will be positive and $\cos A$ will be negative.
+
+  $|\cos A| = -\frac{\sqrt{2 - \sqrt{2}}}{2}$
+
+\item We have to prove that $\sin^224^\circ - \sin^26^\circ = \frac{1}{8}(\sqrt{5} - 1)$
+
+  L.H.S. $= \sin(24^\circ + 6^\circ)\sin(24^\circ - 6^\circ) = \frac{1}{2}.\frac{\sqrt{5} - 1}{4}$
+
+  $= \frac{1}{8}(\sqrt{5} - 1) =$ R.H.S.
+
+\item We have to prove that $\tan6^\circ.\tan42^\circ.\tan66^\circ.\tan78^\circ = 1$
+
+  L.H.S. $= \frac{\sin66^\circ6^\circ}{\cos66^\circ\cos6^\circ}.\frac{\sin78^\circ\sin42^\circ}{\cos78^\circ\cos42^\circ}$
+
+  $= \frac{\cos60^\circ - \cos72^\circ}{\cos60^\circ + \cos72^\circ}.\frac{\cos36^\circ - \cos120^\circ}{\cos36^\circ +
+    \cos120^\circ}$
+
+  $= \frac{1 - 2\sin18^\circ}{1 + 2\sin18^\circ}.\frac{2\cos36^\circ + 1}{2\cos36^\circ - 1}$
+
+  $= \frac{1 - 2\left(\frac{\sqrt{5} - 1}{4}\right)}{1 + 2\left(\frac{\sqrt{5} -
+      1}{4}\right)}.\frac{2.\left(\frac{\sqrt{5} + 1}{4}\right) + 1}{2.\left(\frac{\sqrt{5} + 1}{4}\right) - 1}$
+
+  $= 1 =$ R.H.S.
+
+\item We have to prove that $\sin47^\circ + \sin61^\circ - \sin 11^\circ - \sin25^\circ = \cos 7^\circ$
+
+  L.H.S. $= 2\sin54^\circ\cos7^\circ - 2\sin18^\circ\cos7^\circ$
+
+  $= 2\cos7^\circ.2\cos36^\circ.\sin18^\circ = 2\cos7^\circ.2\frac{\sqrt{5} + 1}{4}.\frac{\sqrt{5} - 1}{4}$
+
+  $= \cos7^\circ$
+
+\item We have to prove that $\sin 12^\circ\sin48^\circ\sin54^\circ = \frac{1}{8}$
+
+  L.H.S. $= \frac{1}{2}.2\sin48^\circ\sin12^\circ.\sin54^\circ$
+
+  $= \frac{1}{2}(\cos 36^\circ - \cos60^\circ).\cos36^\circ$
+
+  $= \frac{1}{2}\left(\frac{\sqrt{5} + 1}{4} - \frac{1}{2}\right).\frac{\sqrt{5} + 1}{4}$
+
+  $= \frac{1}{8} =$ R.H.S.
+
+\item We have to prove that $\cot 142\frac{1}{2}^\circ = \sqrt{2} + \sqrt{3} - 2 - \sqrt{6}$
+
+  L.H.S. $\cos 142\frac{1}{2}^\circ = \cot\left(180^\circ - 37\frac{1}{2}^\circ\right) = -\cot37\frac{1}{2}^\circ$
+
+  We know that $\tan 15^\circ = \cot 75^\circ = \frac{\sqrt{3} - 1}{\sqrt{3} + 1}$
+
+  $\therefore -\cot37\frac{1}{2}^\circ = \sqrt{2} + \sqrt{3} - 2 - \sqrt{6} =$ R.H.S.
+
+\item We have to prove that $\sin^248^\circ - \cos^212^\circ = -\frac{\sqrt{5} + 1}{8}$
+
+  L.H.S. $= \frac{1}{2}\left(2\sin^248^\circ - 2\cos^212^\circ\right)$
+
+  $= \frac{1}{2}\left(1 - \cos96^\circ - 1 - \cos24^\circ\right)$
+
+  $= -\frac{1}{2}\left(2\cos60^\circ\cos36^\circ\right)$
+
+  $= -\frac{1}{2}.\frac{\sqrt{5} + 1}{4} = -\frac{\sqrt{5} + 1}{8} =$ R.H.S.
+
+\item We have to prove that $4(\sin 24^\circ + \cos6^\circ) = \sqrt{3} + \sqrt{15}$
+
+  L.H.S. $= 4(\sin24^\circ + \sin84^\circ) = 8\sin54^\circ\cos30^\circ = 4\sqrt{3}\sin54^\circ$
+
+  $= 4\sqrt{3}(3\sin18^\circ - 4\sin^318^\circ)$
+
+  We know that $\sin 18^\circ = \frac{\sqrt{5} - 1}{4}$
+
+  $\therefore 4\sqrt{3}(3\sin18^\circ - 4\sin^318^\circ) = \sqrt{3} + \sqrt{15} =$ R.H.S.
+
+\item We have to prove that $\cot6^\circ\cot42^\circ\cot66^\circ\cot78^\circ = 1$
+
+  L.H.S. $= \frac{1}{\tan6^\circ\tan42^\circ\tan66^\circ\tan78^\circ}$
+
+  We know that $\tan(60^\circ - x)\tan x\tan(60^\circ + x) = \tan 3x$
+
+  Putting $x=18^\circ,$ we get
+
+  $\tan42^\circ\tan18^\circ\tan78^\circ = \tan54^\circ$
+
+  Putting $x=6^\circ,$ we get
+
+  $\tan54^\circ\tan6^\circ\tan66^\circ = \tan18^\circ$
+
+  From these two, we derive that
+
+  $\tan6^\circ\tan42^\circ\tan66^\circ\tan78^\circ = 1$
+
+\item We have to prove that $\tan12^\circ\tan24^\circ\tan48^\circ\tan84^\circ = 1$
+
+  We know that $\tan(60^\circ - x)\tan x\tan(60^\circ + x) = \tan 3x$
+
+  Putting $x= 12^\circ,$ we get
+
+  $\tan48^\circ\tan 12^\circ\tan72^\circ = \tan 36^\circ$
+
+  Putthing $x = 24^\circ,$ we get
+
+  $\tan36^\circ\tan24^\circ\tan84^\circ = \tan72^\circ$
+
+  From these two, we derive that
+
+  $\tan12^\circ\tan24^\circ\tan48^\circ\tan84^\circ = 1$
+
+\item We have to prove that $\sin6^\circ\sin42^\circ\sin66^\circ\sin78^\circ = \frac{1}{16}$
+
+  L.H.S. $= \sin6^\circ\sin66^\circ\sin42^\circ\sin78^\circ$
+
+  $= \frac{1}{4}(\cos60^\circ - \cos72^\circ)(\cos 36^\circ - \cos120^\circ)$
+
+  $= \frac{1}{4}\left(\frac{1}{2} - \cos72^\circ\right)\left(\cos36^\circ + \frac{1}{2}\right)$
+
+  $= \frac{1}{16}(1 - 2\cos72^\circ)(2\cos36^\circ + 1)$
+
+  $= \frac{1}{16}[1 + 2\cos36^\circ - 2\cos72^\circ - 4\cos36^\circ\cos72^\circ]$
+
+  $= \frac{1}{16} + \frac{1}{8}[\cos36^\circ - \cos72^\circ - \cos 108^\circ - \cos36^\circ]$
+
+  $= \frac{1}{16} + \frac{1}{8}[\cos72^\circ + \circ108^\circ]$
+
+  $= \frac{1}{16} + \frac{1}{8}[\cos72^\circ + \cos(180^\circ - 72^\circ)]$
+
+  $= \frac{1}{16}$
+
+\item We have to prove that $\sin\frac{\pi}{5}\sin\frac{2\pi}{5}\sin\frac{3\pi}{5}\sin\frac{4\pi}{5} = \frac{5}{16}$
+
+  L.H.S. $= \sin\frac{\pi}{5}\sin\frac{2\pi}{5}\sin\left(\pi - \frac{2\pi}{5}\right)\sin\left(\pi - \frac{\pi}{5}\right)$
+
+  $= \sin^2\frac{\pi}{5}\sin^2\frac{2\pi}{5} = \sin^218^\circ\sin^236^\circ = \left(\frac{\sqrt{5} -
+    1}{4}\right)^2\left(\frac{1}{4}\sqrt{10 - 2\sqrt{5}}\right)^2$
+
+  $= \frac{5}{16} =$ R.H.S.
+
+\item We have to prove that $\cos36^\circ\cos72^\circ\cos108^\circ\cos144^\circ = \frac{1}{16}$
+
+  L.H.S. $= \cos36^\circ\cos72^\circ\cos(180^\circ - 72^\circ)\cos(180^\circ - 36^\circ)$
+
+  $= \cos^236^\circ\cos^272^\circ$
+
+  $\cos 36^\circ = \frac{\sqrt{5} + 1}{4}, \cos72^\circ = 2\cos^236^\circ - 1$
+
+  Thus, $\cos^236^\circ\cos^272^\circ = \frac{1}{16}$
+
+\item We have to prove that
+  $\cos\frac{\pi}{15}\cos\frac{2\pi}{15}\cos\frac{3\pi}{15}\cos\frac{4\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15} = \frac{1}{2^7}$
+
+  L.H.S. $=
+  \frac{1}{2\sin\frac{\pi}{15}}2\sin\frac{\pi}{15}\cos\frac{\pi}{15}\cos\frac{2\pi}{15}\cos\frac{3\pi}{15}\cos\frac{4\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15}$
+
+  $=
+  \frac{1}{2\sin\frac{\pi}{15}}\sin\frac{2\pi}{15}\cos\frac{2\pi}{15}\cos\frac{3\pi}{15}\cos\frac{4\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15}$
+
+  $= \frac{1}{2^2\sin\frac{\pi}{15}}\sin\frac{4\pi}{15}\cos\frac{3\pi}{15}\cos\frac{4\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15}$
+
+  $=
+  \frac{1}{2^3\sin\frac{\pi}{15}}\sin\frac{8\pi}{15}\cos\frac{3\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15}$
+
+  Now, $\sin\frac{8\pi}{15} = \sin\left(\pi - \frac{7\pi}{15}\right) = \sin\frac{7\pi}{15},$ therefore
+
+  $=
+  \frac{1}{2^4\sin\frac{\pi}{15}}2\sin\frac{7\pi}{15}\cos\frac{3\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}\cos\frac{7\pi}{15}$
+
+  $= \frac{1}{2^4\sin\frac{\pi}{15}}\sin\frac{14\pi}{15}\cos\frac{3\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}$
+
+  Now $\sin\frac{14\pi}{15} = \sin\left(\pi - \frac{\pi}{15}\right) = \sin\frac{\pi}{15},$ therefore
+
+  $= \frac{1}{2^4}\cos\frac{3\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}$
+
+  $= \frac{1}{2^5\sin\frac{3\pi}{15}}2\sin\frac{3\pi}{15}\cos\frac{3\pi}{15}\cos\frac{5\pi}{15}\cos\frac{6\pi}{15}$
+
+  $= \frac{1}{2^6\sin\frac{3\pi}{15}}2\sin\frac{6\pi}{15}\cos\frac{6\pi}{15}\cos\frac{\pi}{3}$
+
+  $= \frac{1}{2^6\sin\frac{3\pi}{15}}\sin\frac{12\pi}{15}\cos\frac{\pi}{3}$
+
+  Similarly $\sin\frac{12\pi}{15} = \sin \frac{3\pi}{15}$
+
+  $= \frac{1}{2^6}\cos\frac{\pi}{3} = \frac{1}{2^7} =$ R.H.S.
+
+\item We have to prove that
+  $\cos\frac{\pi}{65}\cos\frac{2\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65} =
+  \frac{1}{64}$
+
+  $=
+  \frac{1}{2\sin\frac{\pi}{65}}2\sin\frac{\pi}{65}\cos\frac{\pi}{65}\cos\frac{2\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65}$
+
+  $=
+  \frac{1}{2\sin\frac{\pi}{65}}\sin\frac{2\pi}{65}\cos\frac{2\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65}$
+
+  $=
+  \frac{1}{2^2\sin\frac{\pi}{65}}2\sin\frac{2\pi}{65}\cos\frac{2\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65}$
+
+  $=
+  \frac{1}{2^2\sin\frac{\pi}{65}}\sin\frac{4\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65}$
+
+  $=
+  \frac{1}{2^3\sin\frac{\pi}{65}}2\sin\frac{4\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65}$
+
+  Proceeding similalry we find that above is equal to
+
+  $\frac{1}{2^7\sin\frac{\pi}{65}}\sin\frac{64\pi}{65}$
+
+  However, $\sin\frac{64\pi}{65} = \sin\frac{\pi}{65},$ therefore
+
+  $\cos\frac{\pi}{65}\cos\frac{2\pi}{65}\cos\frac{4\pi}{65}\cos\frac{8\pi}{65}\cos\frac{16\pi}{65}\cos\frac{32\pi}{65} =
+  \frac{1}{64}$
+
+\item Given, $\tan \frac{A}{2} = \sqrt{\frac{a - b}{a + b}}\tan \frac{B}{2}$
+
+  Now, $\cos A = \frac{1 - \tan^2\frac{A}{2}}{1 + \tan^2\frac{A}{2}} = \frac{1 - \frac{a - b}{a + b}\tan^2\frac{B}{2}}{1 +
+    \frac{a - b}{a + b}\tan^2\frac{B}{2}}$
+
+  $= \frac{(a + b)\cos^2\frac{B}{2} - (a - b)\sin^2\frac{B}{2}}{(a + b)\cos^2\frac{B}{2} + (a - b)\sin^2\frac{B}{2}}$
+
+  $= \frac{a\cos B + b}{a + b\cos B}$
+
+\item This problem is similar to previous problem with $a = 1, e = b$ and has been left as an exercise.
+
+\item Given $\sin A + \sin B = a$ and $\cos A + \cos B = b,$ we have to prove that $\sin(A + B) = \frac{2ab}{a^2 +
+  b^2}$
+
+  $2ab = 2(\sin A + \sin B)(\cos A + \cos B) = 2\sin A\cos A + 2\sin A\cos B + 2\sin B\cos A + 2\sin B\cos B = \sin 2A +
+  \sin 2B + 2\sin(A + B)$
+
+  $= 2\sin(A + B)[\cos(B - A) + 1]$
+
+  $a^2 + b^2 = \sin^2A + \sin^2B + 2\sin A\sin B + \cos^2A + \cos^2B + 2\cos A\cos B$
+
+  $= 2 + 2\cos(B - A)$
+
+  $\therefore \sin(A + B) = \frac{2ab}{a^2 + b^2}$
+
+\item Given $\sin A + \sin B = a$ and $\cos A + \cos B = b,$ we have to prove that $\cos(A - B) =
+  \frac{1}{2}(a^2 + b^2 - 2)$
+
+  From previous problem, $2\cos(B - A) = a^2 + b^2 - 2 \Rightarrow \cos(A - B) = \frac{1}{2}(a^2 + b^2 - 2)$
+
+\item Let us solve these one by one.
+
+  i. Given $A$ and $B$ be two different roots of equation $a\cos\theta + b\sin\theta = c$
+
+  $a\cos A + b\sin A = c$ and $a\cos B + b\sin B = c$
+
+  $\Rightarrow a(\cos A - \cos B) + b(\sin A - \sin B) = 0$
+
+  $b(\sin A - \sin B) = a(\cos A - \cos B)$
+
+  $b.2\cos\frac{A + B}{2}\sin\frac{A - B}{2} = a.2\sin\frac{A + B}{2}\sin \frac{A - B}{2}$
+
+  $\Rightarrow \tan\frac{A + B}{2} = \frac{b}{a}$
+
+  $\tan{A + B} = \frac{2\tan\frac{A + B}{2}}{1 - \tan^2\frac{A + B}{2}} = \frac{2ab}{a^2 + b^2}$
+
+  ii. We have $\tan(A + B) = \frac{2ab}{a^2 + b^2}$
+
+  $\therefore \cos(A + B) = \frac{a^2 - b^2}{a^2 + b^2}$
+
+\item Given $\cos A + \cos B = \frac{1}{3}$ and $\sin A + \sin B = \frac{1}{4},$ we have to prove that $\cos
+  \frac{A - B}{2} = \pm\frac{5}{24}$
+
+  Squaring and adding $(\cos^2A + \sin^2A) + (\cos^2B + \sin^B) + 2(\cos A\cos B + \sin A\sin B) = \frac{1}{9} +
+  \frac{1}{16}$
+
+  $2 + 2\cos(A - B) = \frac{25}{144}$
+
+  $4\cos^2\frac{A - B}{2} = \frac{25}{144} \Rightarrow \cos\frac{A - B}{2} = \pm\frac{5}{24}$
+
+\item Given $2\tan \frac{A}{2} = \tan \frac{B}{2},$ we have to prove that $\cos A = \frac{3 + 5\cos B}{5 + 3\cos B}$
+
+  $\tan\frac{A}{2} = \frac{1}{2}\tan\frac{B}{2}$
+
+  $\cos A = \frac{1 - \tan^2\frac{A}{2}}{1 + \tan^2\frac{A}{2}} = \frac{1 - \frac{\tan^2\frac{B}{2}}{4}}{1 +
+  \frac{\tan^2\frac{B}{2}}{4}}$
+
+  $= \frac{4 - \tan^2\frac{B}{2}}{4 + \tan^2\frac{B}{2}} = \frac{3 + 5.\frac{1 - \tan^2\frac{B}{2}}{1 +
+    \tan^2\frac{B}{2}}}{5 + 3\frac{1 - \tan^2\frac{B}{2}}{1 + \tan^2\frac{B}{2}}}$
+
+  $= \frac{3 + 5\cos B}{5 + 3\cos B} =$ R.H.S.
+
+\item Given $\sin A = \frac{4}{5}$ and $\cos B = \frac{5}{13},$ we have to prove that one value of $\cos \frac{A -
+  B}{2} = \frac{8}{\sqrt{65}}$
+
+  $\cos A = \frac{3}{5}$ and $\sin B = \frac{12}{13}$
+
+  $\cos^2\frac{A - B}{2} = \frac{1 + \cos(A - B)}{2}$
+
+  $\cos(A - B) = \cos A\cos B + \sin A\sin B = \frac{15}{65} + \frac{48}{65} = \frac{63}{65}$
+
+  $\frac{1 + \cos(A - B)}{2} = \frac{128}{2.65}$
+
+  $\cos\frac{A - B}{2} = \pm\frac{8}{\sqrt{65}}$
+
+\item Given, $\sec(A + B) + \sec(A - B) = 2\sec A,$ we have to prove that $\cos B = \pm \sqrt{2}\cos \frac{B}{2}$
+
+  L.H.S. $= \frac{1}{\cos(A + B)} + \frac{1}{\cos(A - B)} = \frac{\cos(A - B) + \cos (A + B)}{\cos(A - B)\cos(A + B)}$
+
+  $= \frac{4(\cos A\cos B)}{\cos 2A + \cos 2B}$
+
+  $\frac{2\cos A\cos B}{\cos 2A + \cos 2B} = \frac{1}{\cos A}$
+
+  $2\cos^2A\cos B = 2\cos^2A - 1 + 2\cos^2B - 1$
+
+  $2\cos^2A(\cos B - 1) = 2(\cos^2B - 1)$
+
+  $\cos^2A = \cos B + 1 = 2\cos^2\frac{B}{2}$
+
+  $\cos A = \pm\sqrt{2}\cos\frac{B}{2}$
+
+\item Given $\cos \theta = \frac{\cos\alpha\cos\beta}{1 - \sin\alpha\sin\beta},$ we have to prove that one of the values of
+  $\tan \frac{\theta}{2}$ is $\frac{\tan \frac{\alpha}{2} - \tan\frac{\beta}{2}}{1 -
+  \tan\frac{\alpha}{2}\tan\frac{\beta}{2}}$
+
+  $\tan^2\frac{\theta}{2} = \frac{1 - \cos\theta}{1 + \cos\theta}$
+
+  $= \frac{1 - \frac{\cos\alpha\cos\beta}{1 - \sin\alpha\sin\beta}}{1 + \frac{\cos\alpha\cos\beta}{1 -
+    \sin\alpha\sin\beta}}$
+
+  $= \frac{1 - (\cos\alpha\cos\beta + \sin\alpha\sin\beta)}{1 + (\cos\alpha\cos\beta - \sin\alpha\sin\beta)}$
+
+  $= \frac{1 - \cos(\alpha - \beta)}{1 + \cos(\alpha + \beta)}$
+
+  $= \frac{2\sin^2\frac{\alpha - \beta}{2}}{2\cos^2\frac{\alpha + \beta}{2}}$
+
+  $\tan\frac{\theta}{2} = \frac{\sin\frac{\alpha - \beta}{2}}{\cos\frac{\alpha + \beta}{2}}$
+
+  $= \frac{\sin\frac{\alpha}{2}\cos\frac{\beta}{2} -
+  \cos\frac{\alpha}{2}\cos\frac{\beta}{2}}{\cos\frac{\alpha}{2}\cos\frac{\beta}{2} - \sin\frac{\alpha}{2}\sin\frac{\beta}{2}}$
+
+  Dividing both numerator and denominator by $\cos\frac{\alpha}{2}\cos\frac{\beta}{2}$
+
+  $\tan\frac{\theta}{2} = \frac{\tan \frac{\alpha}{2} - \tan\frac{\beta}{2}}{1 -
+    \tan\frac{\alpha}{2}\tan\frac{\beta}{2}}$
+
+\item Given $\tan\alpha = \frac{\sin\theta\sin\phi}{\cos\theta + \cos\phi},$ we have to prove that one of the values of
+  $\tan\frac{\alpha}{2}$ is $\tan\frac{\theta}{2}\tan\frac{\phi}{2}$
+
+  $\Rightarrow \frac{2\tan\frac{\alpha}{2}}{1 - \tan^2\frac{\alpha}{2}} = \frac{\frac{2\tan\frac{\theta}{2}}{1 +
+    \tan^2\frac{\theta}{2}}\frac{2\tan\frac{\phi}{2}}{1 + \tan^2\frac{\phi}{2}}}{\frac{1 - \tan^2\frac{\theta}{2}}{1 +
+    \tan^2\frac{\theta}{2}} + \frac{1 - \tan^2\frac{\phi}{2}}{1 + \tan^2\frac{\phi}{2}}}$
+
+  $= \frac{4\tan\frac{\theta}{2}\tan\frac{\phi}{2}}{1 + \tan^2\frac{\phi}{2} - \tan^2\frac{\theta}{2} -
+  \tan^2\frac{\phi}{2}.\tan^2\frac{\theta}{2} + 1 + \tan^2\frac{\theta}{2} -\tan^2\frac{\phi}{2} -
+  \tan^2\frac{\phi}{2}.\tan^2\frac{\theta}{2}}$
+
+  $= \frac{2\tan\frac{\theta}{2}\tan\frac{\phi}{2}}{1 - \tan^2\frac{\theta}{2}\tan^2\frac{\phi}{2}}$
+
+  Solving this quadratic equationin $\tan\frac{\alpha}{2}$ we obtain the desired result.
+
+\item Given $\cos\theta = \frac{\cos\alpha + \cos\beta}{1 + \cos\alpha\cos\beta},$ we have to prove that one of the values of
+  $\tan\frac{\theta}{2}$ is $\tan\frac{\alpha}{2}\tan\frac{\beta}{2}$
+
+  $\cos\theta = \frac{\cos\alpha + \cos\beta}{1 + \cos\alpha\cos\beta}$
+
+  $\frac{1 - \tan^2\frac{\theta}{2}}{1 + \tan^2\frac{\theta}{2}} = \frac{\cos\alpha + \cos\beta}{1 + \cos\alpha\cos\beta}$
+
+  $\tan^2\frac{\theta}{2} = \frac{1 - \cos\alpha\cos\beta - \cos\alpha + \cos\beta}{1 - \cos\alpha\cos\beta + \cos\alpha -
+  \cos\beta}$
+
+  $= \frac{(1 - \cos\alpha)(1 + \cos\beta)}{(1 + \cos\alpha)(1 + \cos\beta)}$
+
+  $\tan^2\frac{\theta}{2} = \tan^2\frac{\alpha}{2}\cot^2\frac{\beta}{2}$
+
+  $\tan\frac{\theta}{2} = \pm\tan\frac{\alpha}{2}\cot\frac{\beta}{2}$
+\stopitemize

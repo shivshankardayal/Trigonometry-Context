@@ -1,8 +1,8 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 int p=6; // how many points/sides are in the polygon
 real r=300; // radius of circle/polygon
@@ -36,11 +36,11 @@ while(a<p)
     ++a;
     real d=(a*b+c);
     pair y=dir(d)*r;
-    draw( y--z, 0.7*green);
+    draw( y--z);
   }
-draw(circle(a1, 150), 0.5*green+0.8*blue);
-draw(circle(a2, 150), 0.5*green+0.8*blue);
-draw(circle(a3, 150), 0.5*green+0.8*blue);
-draw(circle(a4, 150), 0.5*green+0.8*blue);
-draw(circle(a5, 150), 0.5*green+0.8*blue);
-draw(circle(a6, 150), 0.5*green+0.8*blue);
+draw(circle(a1, 150));
+draw(circle(a2, 150));
+draw(circle(a3, 150));
+draw(circle(a4, 150));
+draw(circle(a5, 150));
+draw(circle(a6, 150));

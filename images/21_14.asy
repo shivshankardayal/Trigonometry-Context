@@ -1,8 +1,8 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 int p=6; // how many points/sides are in the polygon
 real r=330; // radius of circle/polygon
@@ -24,17 +24,17 @@ while(a<p)
     ++a;
     real d=(a*b+c);
     pair y=dir(d)*r;
-    draw( y--z, 0.7*green);
+    draw( y--z);
   }
 pair o = (0, 0);
-draw(o -- a0, 0.5*green+0.8*blue);
-draw(o -- a1, 0.5*green+0.8*blue);
-label("$O$", o, align=S, 0.7*green);
-label("$A_1$", a0, align=E, 0.7*green);
-label("$A_2$", a1, align=NE, 0.7*green);
+draw(o -- a0);
+draw(o -- a1);
+label("$O$", o, align=S);
+label("$A_1$", a0, align=E);
+label("$A_2$", a1, align=NE);
 line p = perpendicular(o, line(a0, a1));
 pair d = intersectionpoint(p, line(a0, a1));
-draw(o -- d, 0.7*green);
-label("$D$", d, align=NE, 0.7*green);
-markangle("$\frac{\pi}{n}$", radius=20, a0,o,d, 0.7*green);
-markangle("$\frac{\pi}{n}$", radius=20, d,o,a1, 0.7*green);
+draw(o -- d);
+label("$D$", d, align=NE);
+markangle("$\frac{\pi}{n}$", radius=20, a0,o,d);
+markangle("$\frac{\pi}{n}$", radius=20, d,o,a1);

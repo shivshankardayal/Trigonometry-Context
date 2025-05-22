@@ -1,16 +1,16 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 triangle t = triangle((0,2), (1, 0), (-2, 0));
-show(LA="$A$", LB="$B$", LC="$C$", La="$a$", Lb="$b$", Lc="$c$", t, bp+0.5*green);
+show(LA="$A$", LB="$B$", LC="$C$", La="$a$", Lb="$b$", Lc="$c$", t);
 pair O= (-.1, .6);
-draw(O -- point(t.VA), bp+0.5*green);
-draw(O -- point(t.VB), bp+0.5*green);
-draw(O -- point(t.VC), bp+0.5*green);
-label("$O$", O, align=S, bp+0.5*green);
+draw(O -- point(t.VA));
+draw(O -- point(t.VB));
+draw(O -- point(t.VC));
+label("$O$", O, align=S);
 markangle("$\theta$", radius=10,O, point(t.VA), point(t.VB), bp+0.5*blue);
 markangle("$B - \theta$", radius=30,point(t.VA), point(t.VB),O, bp+0.5*blue);
 markangle("$\theta$", radius=10,O, point(t.VB), point(t.VC), bp+0.5*blue);

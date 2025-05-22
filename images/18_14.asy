@@ -1,22 +1,22 @@
-settings.outformat = "png";
-defaultpen(fontsize(14pt));
+settings.outformat = "pdf";
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 path p = circle((0,0), 2);
-draw(p, bp+0.5*green);
-draw((-2, 0) -- (2, 0), bp+0.5*blue);
-draw((-1, -1.732) -- (1, 1.732), bp+0.5*blue);
-draw((1, -1.732) -- (-1, 1.732), bp+0.5*blue);
+draw(p);
+draw((-2, 0) -- (2, 0));
+draw((-1, -1.732) -- (1, 1.732));
+draw((1, -1.732) -- (-1, 1.732));
 pair p1[] = intersectionpoints(line((-2, 0), (2, 0)), p);
 pair p2[] = intersectionpoints(line((-1, -1.732), (1, 1.732)), p);
 pair p3[] = intersectionpoints(line((1, -1.732), (-1, 1.732)), p);
-draw("$A$", p1[0], align=E, bp+0.5*green);
-draw("$D$", p1[1], align=W,  bp+0.5*green);
-draw("$B$", p2[0], align=NE, bp+0.5*green);
-draw("$E$", p2[1], align=SW,  bp+0.5*green);
-draw("$C$", p3[0], align=NW, bp+0.5*green);
-draw("$F$", p3[1], align=SE,  bp+0.5*green);
-draw("$O$", (0,-.2), align=S,  bp+0.5*blue);
+draw("$A$", p1[0], align=E);
+draw("$D$", p1[1], align=W);
+draw("$B$", p2[0], align=NE);
+draw("$E$", p2[1], align=SW);
+draw("$C$", p3[0], align=NW);
+draw("$F$", p3[1], align=SE);
+draw("$O$", (0,-.2), align=S);
 draw(p1[0] -- p2[0] -- p3[0] -- p1[1] -- p2[1] -- p3[1] -- cycle);

@@ -1,26 +1,26 @@
 settings.outformat = "pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 pair a = (0, 0);
 pair b = (0, 5);
 circle c = circle((point)b, 2);
 pair c1 = (4, 0);
 
-draw(a -- b -- c1 -- cycle, 0.7*green);
-draw(c, 0.7*green);
+draw(a -- b -- c1 -- cycle);
+draw(c);
 line [] ts = tangents(c, (4, 0));
 point[] ps = intersectionpoints(c, ts[0]);
 point[] ps1 = intersectionpoints(c, ts[1]);
-draw(b -- ps[0] -- c1, 0.7*green);
-draw(b -- ps1[0] -- c1, 0.7*green);
-label("$A$", a, align=S, 0.7*green);
-label("$O$", b, align=NW, 0.7*green);
-label("$B$", c1, align=S, 0.7*green);
-label("$L$", ps[0], align=SW, 0.7*green);
-label("$M$", ps1[0], align=SE, 0.7*green);
+draw(b -- ps[0] -- c1);
+draw(b -- ps1[0] -- c1);
+label("$A$", a, align=S);
+label("$O$", b, align=NW);
+label("$B$", c1, align=S);
+label("$L$", ps[0], align=SW);
+label("$M$", ps1[0], align=SE);
 
-markangle("$\alpha$", radius=10, ps1[0], c1, ps[0], 0.5*blue);
-markangle("$\beta$", radius=20, b, c1, a, 0.5*red);
+markangle("$\alpha$", radius=10, ps1[0], c1, ps[0]);
+markangle("$\beta$", radius=20, b, c1, a);
