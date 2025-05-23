@@ -1,5 +1,5 @@
 settings.outformat = "pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 import geometry;
 
 size(8cm);
@@ -8,42 +8,42 @@ point o = (0, 0);
 point x = (4, 0);
 point y = (0, 2);
 
-label("$X$", x, align=E, 0.7*green);
-label("$Y$", y, align=N, 0.7*green);
-label("$O$", o, align=SW, 0.7*green);
+label("$X$", x, align=E);
+label("$Y$", y, align=N);
+label("$O$", o, align=SW);
 
-draw(o -- x, 0.7*green, Arrow);
-draw(o -- y, 0.7*green, Arrow);
+draw(o -- x, Arrow);
+draw(o -- y, Arrow);
 
 point a = (1, 0);
 point b = (1 + cos(pi/12), sin(pi/12));
 point c = (1 + cos(pi/12) + cos(pi/6), sin(pi/12) + sin(pi/6));
 point d = (1 + cos(pi/12) + cos(pi/6) + cos(pi/4), sin(pi/12) + sin(pi/6) + sin(pi/4));
 
-draw(a -- b, 0.7*green);
-draw(c -- b, 0.7*green);
-draw(c -- d, 0.7*green);
+draw(a -- b);
+draw(c -- b);
+draw(c -- d);
 
 line x1 = line((0, 0), (2, 0));
 
 point x2 = intersectionpoint(x1, line(b, c));
-draw(b -- x2, 0.7*green + dashed);
+draw(b -- x2, dashed);
 point x3 = intersectionpoint(x1, line(c, d));
-draw(c -- x3, 0.7*green + dashed);
+draw(c -- x3, dashed);
 
 point b1 = relpoint(line(b, a), -.5);
-draw(b -- b1, 0.7*green + dashed);
+draw(b -- b1, dashed);
 
 point c1 = relpoint(line(c, b), -.5);
-draw(c -- c1, 0.7*green + dashed);
+draw(c -- c1, dashed);
 
-label("$A$", a, align=S, 0.7*green);
-label("$B$", b, align=N, 0.7*green);
-label("$C$", c, align=N, 0.7*green);
-label("$D$", d, align=N, 0.7*green);
+label("$A$", a, align=S);
+label("$B$", b, align=N);
+label("$C$", c, align=N);
+label("$D$", d, align=N);
 
-markangle("$\alpha$", radius=10, x, a, b, 0.7*blue + 0.5*green);
-markangle("$\alpha$", radius=10, b1, b, c, 0.7*blue + 0.5*green);
-markangle("$\alpha$", radius=10, c1, c, d, 0.7*blue + 0.5*green);
-markangle("$2\alpha$", radius=10, x, x2, c, 0.7*blue + 0.5*green);
-markangle("$3\alpha$", radius=10, x, x3, d, 0.7*blue + 0.5*green);
+markangle("$\alpha$", radius=10, x, a, b);
+markangle("$\alpha$", radius=10, b1, b, c);
+markangle("$\alpha$", radius=10, c1, c, d);
+markangle("$2\alpha$", radius=10, x, x2, c);
+markangle("$3\alpha$", radius=10, x, x3, d);

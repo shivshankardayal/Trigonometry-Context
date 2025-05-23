@@ -1,8 +1,8 @@
 settings.outformat = "pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(6cm);
 
 point a = (0, 0);
 point b = (3, 0);
@@ -15,23 +15,23 @@ point d1 = (1.5, 3.5);
 
 point o = (-2, -1);
 
-draw(a -- b -- c -- d -- cycle, 0.7*green);
-draw(a1 -- b1 -- c1 -- d1 -- cycle, 0.7*green);
-draw(a -- a1 -- o -- cycle, 0.7*green);
-draw(b -- b1, 0.7*green);
-draw(c -- c1, 0.7*green);
-draw(d -- d1, 0.7*green);
-draw(b -- o -- b1, 0.7*red);
+draw(a -- b -- c -- d -- cycle);
+draw(a1 -- b1 -- c1 -- d1 -- cycle);
+draw(a -- a1 -- o -- cycle);
+draw(b -- b1);
+draw(c -- c1);
+draw(d -- d1);
+draw(b -- o -- b1);
 
-label("$A$", a, align=S, 0.7*green);
-label("$B$", b, align=S, 0.7*green);
-label("$C$", c, align=S, 0.7*green);
-label("$D$", d, align=S, 0.7*green);
-label("$A'$", a1, align=N, 0.7*green);
-label("$B'$", b1, align=N, 0.7*green);
-label("$C'$", c1, align=N, 0.7*green);
-label("$D'$", d1, align=N, 0.7*green);
-label("$O$", o, align=SW, 0.7*green);
+label("$A$", a, align=S);
+label("$B$", b, align=S);
+label("$C$", c, align=S);
+label("$D$", d, align=S);
+label("$A'$", a1, align=N);
+label("$B'$", b1, align=N);
+label("$C'$", c1, align=N);
+label("$D'$", d1, align=N);
+label("$O$", o, align=SW);
 
-markangle("$60^\circ$", radius=10, a, o, a1, 0.7*green);
-markangle("$45^\circ$", radius=40, b, o, b1, 0.7*red);
+markangle("$60^\circ$", radius=10, a, o, a1);
+markangle("$45^\circ$", radius=20, b, o, b1);

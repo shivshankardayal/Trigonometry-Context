@@ -1,20 +1,20 @@
 settings.outformat = "pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(4cm);
 
 point a = (0, 0);
 point b = (4, 0);
 point c = (4.3, 2.5);
 
-draw(a -- b -- c -- cycle, 0.7*green);
-draw(b -- (4, 3), 0.7*green);
+draw(a -- b -- c -- cycle);
+draw(b -- (4, 3));
 
-label("$A$", a, align=SW, 0.7*green);
-label("$B$", b, align=S, 0.7*green);
-label("$C$", c, align=NE, 0.7*green);
-label("$2.05~m$", (a + b)/2, align=S, 0.7*green);
+label("$A$", a, align=SW);
+label("$B$", b, align=S);
+label("$C$", c, align=NE);
+label("$2.05~m$", (a + b)/2, align=S);
 
-markangle("$38^\circ$", radius=20, b, a, c, 0.7*green + 0.5*blue);
-markangle("$10^\circ$", radius=30, c, b, (4, 2.5), 0.7*green + 0.5*blue);
+markangle("$38^\circ$", radius=20, b, a, c);
+markangle("$10^\circ$", radius=30, c, b, (4, 2.5));

@@ -1,8 +1,8 @@
 settings.outformat = "pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 import geometry;
 
-size(8cm);
+size(6cm);
 
 int r = 2;
 point o = (0, 0);
@@ -12,38 +12,38 @@ point b = (-r*sqrt(3)/2, r/2);
 arc cc = arccircle(b, c, a);
 circle ccc = circle(o, r);
 
-draw(cc, 0.7*green);
+draw(cc);
 
 point p = (-1.5*r, r/2);
-draw(p -- a, 0.7*green);
+draw(p -- a);
 
 line[] ls = tangents(ccc, p);
-draw(ls[1], 0.7*green);
+draw(ls[1]);
 
 point[] q = intersectionpoints(ccc, ls[1]);
-draw(q[0] -- o, 0.7*green);
-draw(o -- c, 0.7*green);
+draw(q[0] -- o);
+draw(o -- c);
 point n = (0, q[0].y);
-draw(q[0] -- n, 0.7*green);
+draw(q[0] -- n);
 point m = (q[0].x, r/2);
-draw(q[0] -- m, 0.7*green);
+draw(q[0] -- m);
 
 point s = (-2*r, r/2);
-draw(s -- a, 0.7*green);
-draw(s -- q[0], 0.7*green);
-draw(o -- b, 0.7*green);
+draw(s -- a);
+draw(s -- q[0]);
+draw(o -- b);
 
-label("$O$", o, align=S, 0.7*green);
-label("$B$", p, align=SW, 0.7*green);
-label("$C$", b, align=S, 0.7*green);
-label("$P$", q[0], align=N, 0.7*green);
-label("$R$", c, align=N, 0.7*green);
-label("$M$", m, align=S, 0.7*green);
-label("$N$", n, align=E, 0.7*green);
+label("$O$", o, align=S);
+label("$B$", p, align=SW);
+label("$C$", b, align=S);
+label("$P$", q[0], align=N);
+label("$R$", c, align=N);
+label("$M$", m, align=S);
+label("$N$", n, align=E);
 point t = (0, r/2);
-label("$D$", t, align=SE, 0.7*green);
-label("$A$", s, align=SW, 0.7*green);
+label("$D$", t, align=SE);
+label("$A$", s, align=SW);
 
-markangle("$\theta$", radius=10, b, s, q[0], 0.7*green + 0.5*blue);
-markangle("$\phi$", radius=10, b, p, q[0], 0.7*green + 0.5*blue);
-markangle("$\beta$", radius=10, c, o, b, 0.7*green + 0.5*blue);
+markangle("$\theta$", radius=10, b, s, q[0]);
+markangle("$\phi$", radius=10, b, p, q[0]);
+markangle("$\beta$", radius=10, c, o, b);
