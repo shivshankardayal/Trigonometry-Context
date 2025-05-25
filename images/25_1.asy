@@ -1,5 +1,5 @@
 settings.outformat="pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 
 import graph;
 size(6cm);

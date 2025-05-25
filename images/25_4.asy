@@ -1,8 +1,8 @@
 settings.outformat="pdf";
-defaultpen(fontsize(14pt));
+defaultpen(fontsize(10pt));
 
 import graph;
-size(20cm);
+size(6cm);
 
 real f(real x) {
   if(x > 0)
