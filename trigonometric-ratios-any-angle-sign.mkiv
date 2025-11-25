@@ -1,0 +1,106 @@
+\chapter{Trigonometric Ratios of Any Angle and Sign}
+\section[title=Angle of $45^\circ$]
+\placefigure[force]{}{\hbox{\starttikzpicture
+\draw (0, 0) -- (2, 0);
+\draw (0, 0) -- (2, 2);
+\draw (2, 2) -- (2, 0);
+\draw [blue] (0,0) node[anchor=north east] {$O$};
+\draw [blue] (2,0) node[anchor=north] {$M$};
+\draw [blue] (2,2) node[anchor=south] {$P$};
+\draw (0, 0) -- (0.5, 0) arc[start angle=0, end angle=45, radius=0.5];
+\draw [black!60!green] (0.3, 0.1) node[anchor=south west] {$45^\circ$} ;
+\draw [black!60!green] (1, 0) node[anchor=north] {$a\sqrt{2}$};
+\draw [black!60!green] (2, 1) node[anchor=west] {$a\sqrt{2}$};
+\draw [black!60!green] (1, 1) node[anchor=south east] {$2a$};
+\stoptikzpicture}}
+
+Consider the above figure, which is a right-angle triangle, drawn so that $\angle OMP=90^\circ$ and $\angle MOP=45^\circ$. We know
+that the sum of all angles of a triangle is $180^\circ$. Thus,
+
+$$\angle OPM = 180^\circ - \angle MOP - \angle OMP = 180^\circ - 90^\circ - 45^\circ = 45^\circ$$
+
+$\therefore OM = MP$. Let $OP=2a,$ then from Pythagora theorem, we can write
+
+$$4a^2 = OP^2 = OM^2 + MP^2 = 2OM^2 \Rightarrow Om = a\sqrt{2} = MP$$
+
+$\sin45^\circ = \frac{MP}{OP} = \frac{a\sqrt{2}}{2a} = \frac{1}{\sqrt{2}}$.
+
+Other trigonometric ratios can be deduced similarly for this angle.
+
+\section[title=Angles of $30^\circ$ and $60^\circ$]
+\placefigure[force]{}{\hbox{\starttikzpicture
+\draw (0, 0) -- (2, 0);
+\draw (2, -1) -- (2, 1);
+\draw (0, 0) -- (2, 1);
+\draw (0, 0) -- (2, -1);
+\draw [blue] (0, 0) node[anchor=east] {$O$};
+\draw [blue] (2, 1) node[anchor=south] {$M$};
+\draw [blue] (2, -1) node[anchor=north] {$P$};
+\draw (0, 0) -- (0.5, 0) arc[start angle=0, end angle=27, radius=0.5];
+\draw [black!60!green] (0.5, -.1) node[anchor=south west] {$30^\circ$} ;
+\draw [black!60!green] (2, 0.5) node[anchor=west] {$a$};
+\draw [black!60!green] (1, 0.5) node[anchor=south east] {$2a$};
+\draw [blue] (2, 0) node[anchor=west] {$X$};
+\stoptikzpicture}}
+Consider an equilateral $\triangle OMP$. Let the sides $OM, OP, MP$ be each $2a$. We draw a bisector of $\angle MOP$, which will be
+a perpendicular bisector of $MP$ at $X$ because the triangle is equilateral. Thus, $MX = a$. In $\triangle OMX, OM=2a, \angle
+MOX=30^\circ, \angle OXM=90^\circ$ because each angle in an equilateral triangle is $60^\circ$.
+
+$\sin MOX=\frac{MX}{OM} = \frac{1}{2}\Rightarrow \sin30^\circ = \frac{1}{2}$
+
+Similarly, $\angle OMX=60^\circ$ because the sum of all angles of a triangle is $180^\circ$.
+
+$\cos OMX = \frac{MX}{OM} = \frac{1}{2}\Rightarrow \cos60^\circ = \frac{1}{2}$
+
+All other trigonometric ratios can be found from these two.
+
+\section[title=Angle of $0^\circ$]
+\placefigure[force]{}{\hbox{\starttikzpicture
+\draw (0, 0) -- (2, 0);
+\draw (0, 0) -- (2, .2);
+\draw (2, 0) -- (2, .2);
+\draw [blue] (0, 0) node[anchor=east] {$O$};
+\draw [blue] (2, 0) node[anchor=north] {$M$};
+\draw [blue] (2, .2) node[anchor=south] {$P$};
+\stoptikzpicture}}
+
+Consider the $\triangle MOP$ such that side $MP$ is smaller than any quantity we can assign i.e. what we denote by $0$. Thus,
+$\angle MOP$ is what is called approaching $0$ or $\lim_{x\to 0}$ in terms of calculus. Why we take such a value is because if any
+angle of a triangle is equal to $0^\circ$ then the triangle won't exist. Thus these values are limiting values as you will learn in
+calculus.
+
+However, in this case, $\sin0^\circ = \dfrac{MP}{OP} = \frac{0}{OP} = 0$. Other trigonometric ratios can be found from this easily.
+
+\section[title=Angle of $90^\circ$]
+In the previous figure, as $\angle OMP$ will approach $0^\circ$, the $\angle OPM$ will approach $90^\circ$. Also, $OP$ will
+approach the length of $OM$. Similar to previous case, in right-angle trianglee if one angle (other than right angle) approaches
+$0^\circ$ the other one will appraoch $90^\circ$ and at that value the triangle will cease to exist.
+
+Thus, $\sin90^\circ = \dfrac{OM}{OP} = \frac{OP}{OP} = 1$. Now other angles can be found easily from this.
+
+Given below is a table of most useful angles:
+
+\placetable{Values of useful angles}
+{\bTABLE
+\bTABLEhead
+\bTR
+\bTH Angle \eTH
+\bTH $0^\circ$ \eTH
+\bTH $30^\circ$ \eTH
+\bTH $45^\circ$ \eTH
+\bTH $60^\circ$ \eTH
+\bTH $90^\circ$ \eTH
+\eTR
+\eTABLEhead
+\bTABLEbody
+\bTR
+\bTC $\sin$ \eTC \bTC 0\eTC \bTC $\frac{1}{2}$\eTC \bTC $\frac{1}{\sqrt{2}}$ \eTC \bTC $\frac{\sqrt{3}}{2}$ \eTC \bTC $1$\eTC
+\eTR
+\bTR
+\bTC $\cos$ \eTC \bTC 1\eTC \bTC $\frac{\sqrt{3}}{2}$\eTC \bTC $\frac{1}{\sqrt{2}}$ \eTC \bTC $\frac{1}{2}$ \eTC \bTC $0$\eTC
+\eTR
+\bTR
+\bTC $\tan$ \eTC \bTC 0\eTC \bTC $\frac{1}{\sqrt{3}}$\eTC \bTC $1$ \eTC \bTC $\sqrt{3}$ \eTC \bTC $\infty$\eTC
+\eTR
+\eTABLEbody
+\eTABLE}
