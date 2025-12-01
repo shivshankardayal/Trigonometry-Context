@@ -1,5 +1,63 @@
 % -*- mode: context; -*-
 \chapter{Trigonometric Inequations and Inequalities}
+Verily, the manifold domains of trigonometric‑inequality endeavours are sundered into sundry and discrete
+sortal estates, each bearing its peculiar character and challenge; for by raising a sine or cosine in mortal
+coil, or by laying forth a bound upon triangle’s angles, one enters one such estate --- yet another abides
+when the inequality stands in symmetric form, or in the guise of a function; thus the whole constellation of
+tasks reveals itself as a varied host of kinds, each demanding its own art of proof and reasoning.
+In certain passages of mathematical endeavour, one is tasked with the proving of a strict numerical
+inequality, a bound which must be upheld by a specific value of a trigonometric function --- or by an
+expression wrought from such a value. In such instances the effort lies in demonstrating that the designated
+trigonometric datum --- sine, cosine, tangent, or a composite thereof --- indeed conforms to the stipulated
+quantitative constraint, under the exacting gaze of reason and the subtle arts of algebra and trigonometric
+manipulation. In other kinds of inquiry one must show that an inequality remains valid for every possible
+assignment of the arguments of a given trigonometric expression, or at least for all argument‑values
+permitted by some auxiliary constraint imposed by the hypothesis. In these circumstances the burden is to
+prove universally that no admissible angle or argument escapes the stipulated inequality, that for each
+allowable value the trigonometric expression satisfies the required bound under the full rigour of logical
+and analytic scrutiny. In either case the resolution of the problem ultimately comes down to an
+investigation of the values taken by a trigonometric function over some interval of its domain --- or, in
+more general cases, over the entire domain of definition of that function. The crux of the argument lies in
+examining how the sine, cosine, tangent (or other) function behaves over that domain (or interval),
+determining its extremal, zero or undefined points, and thereby ascertaining whether the inequality holds
+throughout, or only on certain subintervals. In simpler incarnations of these investigations one may succeed
+in transmuting a trigonometric expression so that it falls into the realm of the elementary and well‑known
+boundings — namely those by which one may directly invoke the universal truths $|\sin x| \leq 1$ or $|\cos x|
+\leq 1$. In so doing the originally intricate mixture of angles and functions yields to a more tractable form,
+allowing one to assert with clarity and certainty that the transformed expression abides by the classical
+extremal limits of the sine or cosine function. In other instances the trigonometric expression under
+scrutiny may be transformed so that, at the end of the manipulation, it assumes the guise of a new function
+$F(z)$, wherein the argument $z$ itself is expressed by some simpler trigonometric function (or by a
+trigonometric expression of reduced complexity). Thus the original, perhaps intricate, combination of sines
+and cosines gives way to a formulation in which the core object becomes $F(z)$, and the variable $z$ offers
+a simpler or more tractable pathway for analysis and proof. In such a scenario the resolution of the problem
+becomes equivalent to the investigation of a single function $F(z)$, keeping in mind that the new argument
+$z$ may itself be subject to additional conditions dictated by the inherent properties of trigonometric
+functions. Thus, the burden of proof shifts from handling a complicated trigonometric expression directly to
+analysing the behaviour of the function $F(z)$ over the domain permitted for $z$, ensuring that all
+constraints --- both arising from the substitution and from the original hypothesis --- are duly respected.
+In such circumstances the problem may be reduced to the analysis of the single function $F(z)$, with the
+understanding that the auxiliary variable $z$ is itself bound by certain conditions deriving from the
+intrinsic nature of trigonometric functions. Under these additional constraints one may embark upon the
+study of $F(z)$ either via differential calculus or by elementary means — for example by invoking the
+classical Arithmetic Mean–Geometric Mean inequality (AM–GM) for two non‑negative quantities $a$ and
+$b$, which asserts $\frac{a + b}{2}\geq \sqrt{ab}$, and hence under suitable algebraic arrangement yields
+the desired bound on $F(z)$ in which the equality sign occurs only for $a = b$. In a distinguished class of
+problems the proof of an inequality is reduced to a comparison among the measure of an acute angle, the
+value of its sine, and the value of its tangent. In such cases the task is to show that, for a given acute
+angle $\alpha$, the relative magnitudes of $\alpha, \sin\alpha$ and $\tan\alpha$ bear the required
+ordering (or satisfy the required bounds), thereby establishing the inequality by comparing angle, sine, and
+tangent in concert. This method often hinges upon the fundamental relations --- for an acute $\alpha$ ---
+that $0 < \sin\alpha < \alpha < \tan\alpha$, and upon exploiting monotonic or functional properties of sine
+and tangent to draw the necessary conclusions.
+
+At the outset, our procedure commences with proof of the inequalities $\sin x < x < \tan x$ and $\cos x <
+\frac{\sin x}{x} < 1$.
+
+Consider the following diagram:
+
+
+
 \section{Problems}
 \startitemize[n, 1*broad]
 \item Find the solution set of inequation $\sin x > \frac{1}{2}$.
@@ -28,6 +86,7 @@
 \item Show that $\cos(\alpha + \beta)\cos(\alpha - \beta)\leq \cos^2\alpha$.
 \item Show that $0\leq \cos^2\alpha + \cos^2(\alpha + \beta) - 2\cos\alpha\cos\beta\cos(\alpha + \beta) \leq
   1$.
+\item Show that $\sin^6\alpha + \cos^6\alpha \geq \frac{1}{4}$.
 \item Prove that in a $\triangle ABC, \cos A + \cos B + \cos C\leq \frac{3}{2}$.
 \item Prove that in a $\triangle ABC, \sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\leq \frac{1}{8}$.
 \item Prove that $\cos\alpha + 3\cos3\alpha + 6\cos6\alpha\geq -\frac{115}{16}$.
@@ -38,7 +97,14 @@
 \item Show that $\sin^4\alpha + \cos^4\alpha\geq \frac{1}{2}$.
 \item If $0 < \alpha < \beta < \frac{\pi}{2}$, show that $\frac{\sin\alpha}{\alpha}
   > \frac{\sin\beta}{\beta}$.
-\item If $0 < \alpha < \frac{\pi}{2}$, show that $\frac{\sin\alpha}{\alpha} > \frac{\alpha}{\sin\alpha}$.
+\item If $0 < \alpha < \frac{\pi}{2}$, show that $\frac{\tan\alpha}{\alpha} > \frac{\alpha}{\sin\alpha}$.
+\item If $0 < \alpha < \frac{\pi}{2}$, show that $\tan\frac{\alpha}{2} < \alpha$.
 \item If $0 < \alpha < \frac{\pi}{2}$, show that $\alpha - \frac{\alpha^3}{3} < \sin\alpha$.
-\item If $-\frac{\pi}{2} < \theta < \frac{\pi}{2}$, show that $\sqrt{\cos\theta} < \sqrt{2\cos\frac{\theta}{2}}$.
+\item If $-\frac{\pi}{2} < \theta < \frac{\pi}{2}$, show that $\sqrt{\cos\theta} <
+  \sqrt{2\cos\frac{\theta}{2}}$.
+\item If $0 < x < \frac{\pi}{4}$, show that $\frac{\cos x}{\sin^2x(\cos x - \sin x)} > 8$.
+\item Prove the inequality $\sin^8x + \cos^8x \geq \frac{1}{8}$.
+\item Prove the inequality $(x + y)(x + y + 2\cos x) + 2\geq 2\sin^2x$.
+\item Prove the inequality $-4\leq \cos2x + 3\sin x\leq \frac{17}{8}$.
+\item Prove the inequality $0 < \sin^8x + \cos^{14}x \leq 1$.
 \stopitemize
