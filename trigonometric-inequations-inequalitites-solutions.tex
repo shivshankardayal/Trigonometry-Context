@@ -286,4 +286,43 @@
 
   Hence, $0 < \sin^28x + \cos^{14}x\leq 1$. It will be equal to zero if both $\sin x$ and $\cos x$ are zero
   at the same time, which is impossible.
+\item Rewriting the given inequality, $5(1 - \cos2x) + 2(1 - \cos^22x) > 8\cos2x$
+
+  $\Rightarrow 2\cos^22x + 13\cos2x - 7 < 0\Rightarrow -7 < \cos2x < \frac{1}{2}$
+
+  The inequality $-7 < \cos2x$ is satisfied for any $x$. $\cos2x < \frac{1}{2}$ gives us $2n\pi +
+  \frac{\pi}{3} < 2x < 2n\pi + \frac{5\pi}{3}, \forall n\in\mathbb{z}$.
+\item Rewriting the given inequality, $7 - 4\sin^2x \leq 3|2\sin x - 1|$
+
+  When $\sin x \geq \frac{1}{2}$, then $7 - 4\sin^2x\leq 3(2\sin x - 1)\Rightarrow 2\sin^2x + 3\sin x - 5
+  \geq 0$.
+
+  Solving this gives us $\sin x\geq 1$ and $\sin x\leq -5/2$ but $\sin x\geq 1/2\Rightarrow \sin x\geq 1$.
+
+  When $\sin x\leq 1/2$, then $7 - 4\sin^2x \leq -3(2\sin x - 1)\Rightarrow 2\sin^2x - 3\sin x - 2\geq 0$
+
+  Thus, $\sin x\geq 2$ and $\sin x\leq -1/2$, and thus, $\sin x\leq -1/2$.
+
+  Thus, etiher $\sin x\geq 1\Rightarrow \sin x = 1 \Rightarrow x = 2n\pi + \frac{\pi}{2}$ or $\sin x\leq
+  -1/2\Rightarrow 2n\pi - \frac{5\pi}{6}\leq x\leq 2n\pi - \frac{\pi}{6}$
+\item $\sin^6x + \cos^6x = \left(\sin^2x + \cos^2x\right)\left(\sin^4x + \cos^4x - \sin^2x\cos^2x\right)$
+
+  $= \left(\sin^2x + \cos^2x\right)^2 - 3\sin^2x\cos^2x = \frac{5}{8} + \frac{3\cos4x}{8} > \frac{13}{16}$
+
+  $\Rightarrow \cos 4x > \frac{1}{2}\Rightarrow 2n\pi - \frac{\pi}{3} < 4x < 2n\pi + \frac{\pi}{3}$
+
+  $\Rightarrow \frac{n\pi}{2} - \frac{\pi}{12} < x < \frac{n\pi}{2} + \frac{\pi}{12}$.
+\item L.H.S.\ is defined for $x\neq n\pi + \frac{\pi}{2}$. Now we substitute $\sin2x = \frac{2\tan x}{1 +
+  \tan^2x}$
+
+  Thus, the inequality becomes $\frac{2\tan x}{1 + \tan^2x} + \tan x - 2\geq 0$
+
+  $\Rightarrow \tan^3x - 2\tan^2x + 3\tan x - 2\geq 0[\because 1 + \tan^2x \geq 1]$
+
+  $\Rightarrow \left(\tan^2x - \tan x + 2\right)(\tan x - 1)\geq 0$
+
+  $\tan^2x - \tan x + 2$ is positive for all $x$ as discriminant is negative. Thus, the inequality reduces
+  to
+
+  $\tan x \geq 1\Rightarrow n\pi + \frac{\pi}{4}\leq x < n\pi + \frac{\pi}{2}$.
 \stopitemize
