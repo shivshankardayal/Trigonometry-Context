@@ -1,0 +1,199 @@
+% -*- mode: context; -*-
+\chapter{Summation of Trigonometric Series}
+\section{Problems}
+\startitemize[n, 1*broad]
+\item Multiplying both sides by $2\sin\frac{\beta}{2}$ and writing termwise, we get
+  \startformula\startalign
+    \NC 2\sin\alpha\sin\frac{\beta}{2} \NC = \cos\left(\alpha - \frac{\beta}{2}\right) - \cos\left(\alpha +
+    \frac{\beta}{2}\right)\NR
+    \NC 2\sin(\alpha + \beta)\sin\frac{\beta}{2} \NC = \cos\left(\alpha + \frac{\beta}{2}\right) -
+    \cos\left(\alpha + \frac{3\beta}{2}\right)\NR
+    \NC 2\sin(\alpha + 2\beta)\sin\frac{\beta}{2} \NC = \cos\left(\alpha + \frac{3\beta}{2}\right) -
+    \cos\left(\alpha + \frac{5\beta}{2}\right)\NR
+    \NC \NC \cdots\NR
+    \NC 2\sin(\alpha + (n - 1)\beta)\sin\frac{\beta}{2} \NC = \cos\left(\alpha + (2n - 3)\frac{\beta}{2}\right)
+    - \cos\left(\alpha + (2n - 1)\frac{\beta}{2}\right)\NR
+  \stopalign\stopformula
+
+  Adding we get $2\left[\sin\frac{\beta}{2}\sin\alpha + \sin(\alpha + \beta) + \sin(\alpha + 2\beta) + \cdots +
+  \sin(\alpha + (n - 1)\beta)\right] = \cos\left(\alpha - \frac{\beta}{2}\right) - \cos\left[\alpha + (2n -
+    1)\frac{\beta}{2}\right]$
+
+  $\Rightarrow \sin\alpha + \sin(\alpha + \beta) + \sin(\alpha + 2\beta) + \cdots + \sin(\alpha + (n -
+  1)\beta) = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\sin\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$
+\item Let $S = cos\alpha + \cos(\alpha + \beta) + \cos(\alpha + 2\beta) + \cdots + \cos(\alpha + (n -
+  1)\beta)$
+
+  Multiplyinf both sides by $2\sin\frac{\beta}{2}$ like previous problems and writing termwise
+
+  \startformula\startalign
+    \NC 2\cos\alpha\sin\frac{\beta}{2} \NC = \sin\left(\alpha + \frac{\beta}{2}\right) - \sin\left(\alpha -
+    \frac{\beta}{2}\right)\NR
+    \NC 2\cos(\alpha + \beta)\sin\frac{\beta}{2} \NC = \sin\left(\alpha + \frac{3\beta}{2}\right) -
+    \sin\left(\alpha + \frac{\beta}{2}\right)\NR
+    \NC 2\cos(\alpha + 2\beta)\sin\frac{\beta}{2} \NC = \sin\left(\alpha + \frac{5\beta}{2}\right) -
+    \sin\left(\alpha + \frac{3\beta}{2}\right)\NR
+    \NC\NC \cdots\NR
+    \NC 2\cos(\alpha+ (n - 1)\beta)\sin\frac{\beta}{2} \NC = sin\left(\alpha + (2n - 1)\frac{\beta}{2}\right)
+    - \sin\left(\alpha + (2n - 3)\frac{\beta}{2}\right)\NR
+  \stopalign\stopformula
+
+  Adding we get $2S\sin\frac{\beta}{2} = \sin\left(\alpha + (2n - 1)\frac{\beta}{2}\right) -
+  \sin\left(\alpha - \frac{\beta}{2}\right)$
+
+  $\Rightarrow S = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\cos\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$.
+\item Let $S = \sin\theta + \sin3\theta + \sin5\theta + \cdots + \sin(2n - 1)\theta$
+
+  Multiplying both sides by $2\sin\theta$ and writing in termwise fashion
+
+  \startformula\startalign
+    \NC 2\sin\theta\sin\theta \NC = 1 - \cos2\theta\NR
+    \NC 2\sin\theta\sin3\theta \NC = \cos2\theta - \cos4\theta\NR
+    \NC 2\sin\theta\sin5\theta \NC = \cos4\theta - \cos6\theta\NR
+    \NC \NC \cdots\NR
+    \NC 2\sin\theta\sin(2n - 1)\theta \NC = \cos(2n - 2)\theta - \cos2n\theta\NR
+  \stopalign\stopformula
+
+  Adding gives us $2S\sin\theta = 1 - \cos2n\theta = 2\sin^2n\theta$
+
+  $\Rightarrow S = \frac{\sin^2n\theta}{\sin\theta}$.
+\item The terms are of the form $\sin^2x$ which we can write as $\frac{1 - \cos2x}{2}$. Let the sum be $S$.
+
+  Then $S = \frac{n}{2} - \frac{1}{2}\left[\cos2\alpha + \cos2(\alpha + \beta) + \cos2(\alpha + 2\beta) +
+    \cdots + \cos2\left\{\alpha + (2n - 1)\beta\right\}\right]$
+
+  Now we invoke the sum we obtained in second problem to arrive at
+
+  $S = \frac{n}{2} - \frac{1}{2}\frac{\sin n\beta}{\sin\beta}\cos[2\alpha + (n - 1)\beta]$.
+\item Since $B$ is the exterior angle of a regular polygon of $n$-sides. Thus, $B = \frac{2\pi}{n}$.
+
+  L.H.S.\ $= \cos A + \cos\left(A + \frac{2\pi}{n}\right) + \cos\left(A + \frac{4\pi}{n}\right) + \cdots$ to
+  $n$ terms
+
+  $= \frac{\sin\pi}{\sin\frac{\pi}{n}}\cos\left[A + (n - 1)\frac{\pi}{n}\right]$.
+\item $\because \sin(\pi + \theta) = -\sin\theta$ and $\sin(2\pi + \theta) = \sin\theta$
+
+  $\Rightarrow -\sin(\alpha + \beta) = \sin(\pi + \alpha + \beta), \sin(\alpha + 2\beta) = \sin(2\pi +
+  \alpha + 2\beta)$
+
+  and $-\sin(\alpha + 3\beta) = \sin(3\pi + \alpha + 3\beta)$
+
+  So we apply the formula obtained in first problem to get sum as $=
+  \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\sin[\alpha + (n - 1)\beta]$.
+\item Let $S = \sin\theta\sin2\theta + \sin2\theta\sin3\theta + \sin3\theta\sin4\theta + \cdots$
+
+  $= \frac{1}{2}[(\cos\theta - \cos3\theta) + (\cos\theta - \cos5\theta) + (\cos\theta - \cos7\theta) +
+  \cdots]$
+
+  $= \frac{1}{2}[n\cos\theta - (\cos3\theta + \cos5\theta + \cos7\theta + \cdots)]$
+
+  $= \frac{n}{2}\cos\theta - \frac{1}{2}\frac{\sin n\theta}{\sin\theta}\cos(n + 2)\theta$.
+\item We have proven that $\cos\alpha + \cos(\alpha + \beta) + \cos(\alpha + 2\beta) + \cdots + \cos(\alpha
+  + (n - 1)\beta) = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\cos\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$
+
+  Comparing we have $\alpha = \frac{\pi}{11}, \beta = \frac{2\pi}{11}, n = 5$
+
+  Thus, sum is $\frac{\sin\frac{5\pi}{11}}{\sin\frac{\pi}{11}}\cos\left[\frac{\pi}{11} +
+    \frac{4\pi}{11}\right]$
+
+  $= \frac{\sin\frac{5\pi}{11}}{\sin\frac{\pi}{11}}\cos\frac{5\pi}{11} =
+  \frac{1}{2}\frac{\sin\frac{10\pi}{11}}{\sin\frac{\pi}{11}} = \frac{1}{2}\frac{\sin\left(\pi -
+      \frac{\pi}{11}\right)}{\sin\frac{\pi}{11}} = \frac{1}{2}$.
+\item Let $t_n$ denote the $n$th term. Then $t_1 = \frac{\sin x}{\sin2x\sin3x} = \frac{\sin(3x -
+    2x)}{\sin2x\sin3x} = \cot2x - \cot3x$
+
+  \startformula\startalign
+    \NC t_1 \NC = \cot2x - \cot3x\NR
+    \NC t_2 \NC = \cot3x - \cot4x\NR
+    \NC t_3 \NC = \cot4x - \cot5x\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \cot(n + 1)x - \cot(n + 2)x\NR
+  \stopalign\stopformula
+
+  Adding and represeenting the sum as $S$, we have $S = \cot2x - \cot(n + 2)x$.
+\item Let $t_n$ denote the $n$th term. Then $t_1 = \csc\theta\csc2\theta =
+  \frac{1}{\sin\theta}.\frac{\sin\theta}{\sin\theta.\sin2\theta}$
+
+  $= \frac{1}{\sin\theta}.\frac{\sin(2\theta - \theta)}{\sin\theta\sin2\theta} =
+  \frac{1}{\sin\theta}[\cot\theta - \cot2\theta]$
+
+  Now we proceed like previous problems to obtains the sum as $S = \frac{1}{\sin\theta}[\cot\theta - \cot(n
+  + 1)\theta]$.
+\item Let $t_n$ denote the $n$th term. Then $t_1 = \frac{1}{\cos\theta + \cos3\theta} =
+  \frac{1}{2\cos2\theta\cos\theta}$
+
+  $= \frac{1}{2}\frac{\sin\theta}{\cos2\theta\cos\theta\sin\theta} =
+  \frac{1}{2\sin\theta}.\frac{\sin(2\theta - \theta)}{\cos2\theta\cos\theta} =
+  \frac{1}{2\sin\theta}[\tan2\theta - \tan\theta]$
+
+  \startformula\startalign
+    \NC t_1\NC = \frac{1}{\sin\theta}[\tan2\theta - \tan\theta]\NR
+    \NC t_2\NC = \frac{1}{\sin\theta}[\tan3\theta - \tan2\theta]\NR
+    \NC t_3\NC = \frac{1}{\sin\theta}[\tan4\theta - \tan3\theta]\NR
+    \NC \NC \cdots\NR
+    \NC t_n\NC = \frac{1}{\sin\theta}[\tan(n + 1)\theta - \tan n\theta]\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \frac{1}{\sin\theta}[\tan(n + 1)\theta -
+  \tan\theta]$.
+\item Let $t_n$ denote the $n$th term. Then $t_1 = \frac{\sin x}{\cos x + \cos2x}$
+
+  $= \frac{1}{2\sin\frac{x}{2}}.\frac{2\sin\frac{x}{2}\sin x}{\cos x + \cos 2x} =
+  \frac{1}{2\sin\frac{x}{2}}.\frac{\cos\frac{x}{2} - \cos\frac{3x}{2}}{2\cos\frac{3x}{2}\cos\frac{x}{2}}$
+
+  $= \frac{1}{4\sin\frac{x}{2}}\left[\sec\frac{3x}{2} - \sec\frac{x}{2}\right]$
+
+  \startformula\startalign
+    \NC t_1\NC = \frac{1}{4\sin\frac{x}{2}}\left[\sec\frac{3x}{2} - \sec\frac{x}{2}\right]\NR
+    \NC t_2\NC = \frac{1}{4\sin\frac{x}{2}}\left[\sec\frac{5x}{2} - \sec\frac{3x}{2}\right]\NR
+    \NC t_3\NC = \frac{1}{4\sin\frac{x}{2}}\left[\sec\frac{7x}{2} - \sec\frac{5x}{2}\right]\NR
+    \NC \NC \cdots\NR
+    \NC t_n\NC = \frac{1}{4\sin\frac{x}{2}}\left[\sec(2n + 1)\frac{x}{2} - \sec(2n - 1)\frac{x}{2}\right]\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \frac{\csc\frac{x}{2}}{4}\left[\sec(2n +
+    1)\frac{x}{2} - \sec\frac{x}{2}\right]$.
+\item We know that $\sin3\theta = 3\sin\theta - 4\sin^3\theta \Rightarrow 4\sin^3\theta = 3\sin\theta -
+  \sin3\theta$
+
+  \startformula\startalign
+    \NC \sin^3\theta \NC = \frac{1}{4}[3\sin\theta - \sin3\theta]\NR
+    \NC \frac{1}{3}\sin^33\theta \NC = \frac{1}{4}\left[\sin3\theta - \frac{1}{3}\sin9\theta\right]\NR
+    \NC \frac{1}{3^2}\sin^39\theta \NC = \frac{1}{4}\left[\frac{1}{3}\sin9\theta - \frac{1}{3^2}\sin27\theta\right]\NR
+    \NC \NC \cdots\NR
+    \NC \frac{1}{3^{n - 1}}\sin\left(3^{n - 1}\theta\right) \NC = \frac{1}{4}\left[\frac{1}{3^{n -
+          1}}\sin\left(3^{n - 1}\theta\right) - \frac{1}{3^{n - 1}}\sin3^n\theta\right]\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \frac{1}{4}\left[3\sin\theta - \frac{1}{3^{n -
+        1}}\sin3^n\theta\right]$.
+\item $\csc\theta = \frac{1}{\sin\theta} = \frac{1}{\sin\theta}.\frac{\sin\left(\theta -
+  \frac{\theta}{2}\right)}{\sin\frac{\theta}{2}}$
+
+  $= \frac{\sin\theta\cos\frac{\theta}{2} - \cos\theta\sin\frac{\theta}{2}}{\sin\theta\sin\frac{\theta}{2}}
+  = \cot\frac{\theta}{2} - \cot\theta$
+
+  \startformula\startalign
+    \NC \csc\theta \NC = \cot\frac{\theta}{2} - \cot\theta\NR
+    \NC \csc2\theta \NC = \cot\theta - \cot2\theta\NR
+    \NC \csc2^2\theta \NC = \cot2\theta - \cot2^2\theta\NR
+    \NC \NC \cdots\NR
+    \NC \csc2^{n- 1}\theta \NC = \cot2^{n - 2}\theta - \cot2^{n - 1}\theta\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \cot\frac{\theta}{2} - \cot2^{n - 1}\theta$.
+\item From previous problem we can say that
+
+  \startformula\startalign
+    \NC \csc\theta \NC = \cot\frac{\theta}{2} - \cot\theta\NR
+    \NC \csc\frac{\theta}{2} \NC = \cot\frac{\theta}{2^2} - \cot\frac{\theta}{2}\NR
+    \NC \csc\frac{\theta}{2^2} \NC = \cot\frac{\theta}{2^3} - \cot\frac{\theta}{2^2}\NR
+    \NC \NC \cdots\NR
+    \NC \csc\frac{\theta}{2^{n - 1}} \NC = \cot\frac{\theta}{2^n} - \cot\frac{\theta}{2^{n - 1}}\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \cot\frac{\theta}{2^n} - \cot\theta$.
+\stopitemize

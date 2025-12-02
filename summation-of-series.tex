@@ -1,0 +1,352 @@
+% -*- mode: context; -*-
+\chapter{Summation of Trigonometric Series}
+
+In the study of trigonometric functions, one eventually encounters objects
+that are not functions in the everyday sense---they are \quotation{aggregates}
+of oscillations, woven together across infinitely many frequencies.
+These trigonometric series form an approximation ideal, a structured
+superposition in which infinitely many tiny oscillations cooperate to
+construct finite phenomena. From the hum of a vibrating string to the flicker
+of light waves, such aggregates appear everywhere in mathematical physics.
+
+Our purpose in this chapter is to explore lesser-trodden territory of
+summation techniques—classical, modern, and obscure. The \quotation{esoteric
+theory} here reveals the deeper unity beneath familiar formulas.
+
+\section{The Canonical Trigonometric Series}
+
+We begin with the classical periodic expansion:
+
+\startformula
+S(x) = a_0 + \sum_{n=1}^{\infty} \bigl( a_n \cos nx + b_n \sin nx \bigr),
+\stopformula
+
+and its complex counterpart:
+
+\startformula
+S(x) = \sum_{n=-\infty}^{\infty} c_n e^{inx}.
+\stopformula
+
+The partial sums
+
+\startformula
+S_N(x) = \sum_{|n|\le N} c_n e^{inx}
+\stopformula
+
+raise the fundamental question: How should one understand the limit
+$N\to\infty$? Pointwise? Uniformly? Distributionally? Or through a
+summation process?
+
+\section{Abel Summation: Dissolving Oscillation into Continuity}
+
+One of the most elegant techniques is Abel summation:
+
+\startformula
+S_r(x) = \sum_{n=-\infty}^{\infty} c_n r^{|n|} e^{inx}, \qquad 0<r<1.
+\stopformula
+
+As $r\to 1^{-}$, the high frequencies return, and the original series is
+recovered in a controlled manner.
+
+This leads to the Poisson kernel:
+
+\startformula
+P_r(\theta) = \frac{1-r^2}{1 - 2r\cos\theta + r^2},
+\stopformula
+
+and the harmonic representation:
+
+\startformula
+S_r(x) = \frac{1}{2\pi} \int_{-\pi}^{\pi} S(t)P_r(x-t)\,dt.
+\stopformula
+
+Thus, Abel summation smothers oscillation and then allows us to recover
+the boundary behavior of a harmonic function on the unit disk.
+
+\section{Cesàro Summation and Fejér's Mystical Smoothing}
+
+Instead of multiplying coefficients by $r^n$, Cesàro summation averages
+partial sums:
+
+\startformula
+\sigma_N(x) = \frac{1}{N+1}\sum_{k=0}^{N} S_k(x).
+\stopformula
+
+Its kernel, the Fejér kernel, is
+
+\startformula
+K_N(\theta) = \frac{1}{N+1}
+\left(\frac{\sin\frac{(N+1)\theta}{2}}{\sin\frac{\theta}{2}}\right)^2.
+\stopformula
+
+This kernel is nonnegative and integrates to $2\pi$, making
+Cesàro summation a purified, well-behaved form of convergence—one that
+eliminates oscillatory defects such as the Gibbs phenomenon.
+
+\section{Principal Value and Divergent Sine Series}
+
+Consider the divergent series:
+
+\startformula
+\sum_{n=1}^{\infty} \sin nx.
+\stopformula
+
+Although divergent in the classical sense, one may assign it a
+\quotation{principal value}. Using the identity:
+
+\startformula
+\sum_{n=1}^{N} \sin nx =
+\frac{\sin\frac{Nx}{2}\,\sin\frac{(N+1)x}{2}}{\sin\frac{x}{2}},
+\stopformula
+
+and taking a symmetric limit, one obtains the distributional identity:
+
+\startformula
+\sum_{n=1}^{\infty} \sin nx = \frac{1}{2}\cot\frac{x}{2}.
+\stopformula
+
+Here the \quotation{sum} becomes a singular generalized function: an
+analytic echo left by infinite oscillation.
+
+\section{Ramanujan Summation and Trigonometric Quasi-Values}
+
+Ramanujan summation assigns values to wildly divergent series. For example:
+
+\startformula
+1 - \cos x + \cos 2x - \cos 3x + \cdots
+\stopformula
+
+has the Ramanujan sum:
+
+\startformula
+\frac{1}{4} - \frac{1}{2}\cot\frac{x}{2}.
+\stopformula
+
+The method consists of subtracting the integral trend from finite sums,
+leaving a subtle residue of oscillation. Such quasi-values transcend
+ordinary convergence and reveal hidden structure.
+
+\section{Summation as Analytic Continuation}
+
+Every trigonometric series is secretly the boundary trace of a function
+analytic in a disk. Let
+
+\startformula
+F(z) = \sum_{n=-\infty}^{\infty} c_n z^n.
+\stopformula
+
+The value of the original series at $z=e^{ix}$ can often be interpreted
+as the analytic continuation of $F(z)$, even when the boundary series
+diverges. Thus summation becomes a manifestation of holomorphic structure,
+not numerical addition.
+
+\section{Spectral Interpretation: Frequency Selection}
+
+Via the shift operator
+
+\startformula
+(Tf)(x) = f(x+1),
+\stopformula
+
+whose eigenfunctions are $e^{inx}$, trigonometric summation becomes
+a spectral selection problem. Summing a series corresponds to constructing
+a function via assembly of eigenmodes under spectral constraints.
+
+
+Each reveals a different world in which \quotation{the sum} possesses a
+different meaning. A trigonometric series is a prism through which the
+infinite reveals many faces.
+The esoteric theory of summation shows that infinite oscillations can
+produce finite truths, divergent expressions can acquire meaningful
+interpretations, and analytic structure hides behind periodicity until
+revealed through summation techniques. This chapter is an invitation to
+embrace these deeper harmonies within trigonometry.
+
+\section{Problems}
+\startitemize[n, 1*broad]
+\item Prove that $\sin\alpha + \sin(\alpha + \beta) + \sin(\alpha + 2\beta) + \cdots + \sin(\alpha + (n -
+  1)\beta) = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\sin\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$.
+\item Prove that $\cos\alpha + \cos(\alpha + \beta) + \cos(\alpha + 2\beta) + \cdots + \cos(\alpha + (n -
+  1)\beta) = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\cos\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$.
+\item Prove that $\sin\theta + \sin3\theta + \sin5\theta + \cdots + \sin(2n - 1)\theta =
+  \frac{\sin^2n\theta}{\sin\theta}$.
+\item Find the sum of the series $\sin^2\alpha + \sin^2(\alpha + \beta) + \sin^2(\alpha + 2\beta) + \cdots +
+  \sin^2(\alpha + (n - 1)\beta)$.
+\item If $B$ is the exterior angle of a regular polygon of $n$ sides and $A$ is any constant, then prove
+  that $\cos A + \cos(A + B) + \cos(A + 2B) + \cdots + \cos[A + (n - 1)B] = 0$.
+\item Find the sum of $n$ terms of the series $\sin\alpha - \sin(\alpha + \beta) + \sin(\alpha + 2\beta) -
+  \sin(\alpha + 3\beta) + \cdots$.
+\item Find the sum of $n$ terms of the series $\sin\theta\sin2\theta + \sin2\theta\sin3\theta +
+  \sin3\theta\sin4\theta + \cdots$.
+\item Prove that $\cos\frac{\pi}{11} + \cos\frac{3\pi}{11} + \cos\frac{5\pi}{11} + \cos\frac{7\pi}{11} +
+  \cos\frac{9\pi}{11} = \frac{1}{2}$.
+\item Sum the series $\frac{\sin x}{\sin2x\sin3x} + \frac{\sin x}{\sin3x\sin4x} + \frac{\sin
+    x}{\sin4x\sin5x} + \cdots$ to $n$ terms.
+\item Sum the series $\csc\theta\csc2\theta + \csc2\theta\csc3\theta + \csc3\theta\csc4\theta + \cdots$ to
+  $n$ terms.
+\item Sum the series $\frac{1}{\cos\theta + \cos3\theta} + \frac{1}{\cos\theta + \cos5\theta} +
+  \frac{1}{\cos\theta + \cos7\theta} + \cdots$ to $n$ terms.
+\item Find the sum of $n$ terms of the series $\frac{\sin x}{\cos x + \cos 2x} + \frac{\sin 2x}{\cos x +
+    \cos4x} + \frac{\sin3x}{\cos x + \cos 6x} + \cdots$.
+\item Find the sum of $n$ terms of the series $\sin^3\theta + \frac{1}{3}\sin^33\theta +
+  \frac{1}{3^2}\sin^39\theta + \frac{1}{3^3}\sin^327\theta + \cdots$.
+\item Find the sum of $n$ terms of the series $\csc\theta + \csc2\theta + \csc2^2\theta + \csc2^3\theta +
+  \cdots$.
+\item Prove that $\csc\theta + \csc\frac{\theta}{2} + \csc\frac{\theta}{2^2} + \csc\frac{\theta}{2^3} +
+  \cdots$ to $n$ terms $= \cot\frac{\theta}{2^n} - \cot\theta$.
+\item Sum the series $\tan x\tan2x + \tan2x\tan3x + \cdots + \tan nx\tan(n + 1)x$.
+\item Sum the series $\tan x + 2\tan2x + 2^2\tan2^2x + \cdots + 2^{n - 1}\tan2^{n - 1}x$.
+\item Sum the series $\tan\theta + \frac{1}{2}\tan\frac{\theta}{2} + \frac{1}{2^2}\tan\frac{\theta}{2^2} +
+  \frac{1}{2^3}\tan\frac{\theta}{2^3} + \cdots$ to $\infty$.
+\item Find the sum $\frac{1}{2}\sec x + \frac{1}{2^2}\sec x\sec2x + \frac{1}{2^3}\sec x\sec2x\sec2^2x +
+  \cdots$ to $n$ terms.
+\item Sum the series $\tan^{-1}\frac{x}{1 + 1.2x^2} + \tan^{-1}\frac{x}{1 + 2.3x^2} + \cdots +
+  \tan^{-1}\frac{x}{1 + n(n + 1)x^2}$.
+\item Find the sum of the series $\tan^{-1}\frac{1}{2.1^2} + \tan^{-1}\frac{1}{2.2^2} +
+  \tan^{-1}\frac{1}{2.2^3} + \cdots \infty$.
+\item Find the sum $\tan^{-1}\frac{1}{3 + 3.1 + 1^2} + \tan^{-1}\frac{1}{3 + 3.2 + 2^2} + \cdots +
+  \tan^{-1}\frac{1}{3 + 3n + n^2}$.
+\item Find the sum $\sin^{-1}\frac{1}{\sqrt{2}} + \sin^{-1}\frac{\sqrt{2} - 1}{\sqrt{6}} +
+  \sin^{-1}\frac{\sqrt{3} - \sqrt{2}}{\sqrt{12}} + \cdots $ to $\infty$.
+\item Find the sum of the series $\cos\alpha + x\cos(\alpha + \beta) + \frac{x^2}{2!}\cos(\alpha + 2\beta) +
+  \cdots$ to $\infty$.
+\item Find the sum of the series $\sin\theta - \frac{\sin2\theta}{2!} + \frac{\sin3\theta}{3!} - \cdots$ to
+  $\infty$.
+\item Find the sum of the series $\sin\theta\cos\theta + \frac{\sin2\theta\cos^2\theta}{2!} +
+  \frac{\sin3\theta\cos^3\theta}{3!} + \cdots $ to $\infty$.
+\item Sum the series $\cos\theta + \frac{\sin\theta}{1!}\cos2\theta + \frac{\sin^2\theta}{2!}\cos3\theta +
+  \frac{\sin^3\theta}{3!}\cos^4\theta + cdots$ to $\infty$.
+\item Find the sum of the series $x\cos\theta + \frac{x^2}{2}\cos2\theta + \frac{x^3}{\theta}\cos3\theta +
+  \cdots$ to $\infty$.
+\item Find the sum of the series $x\sin\theta + \frac{x^2}{2}\sin2\theta + \frac{x^3}{\theta}\sin3\theta +
+  \cdots$ to $\infty$.
+\item Find the sum of the series $\cos\theta + \frac{\cos2\theta}{2} + \frac{\cos3\theta}{3} +
+  \frac{\cos4\theta}{4} + \cdots$ to $\infty$.
+\item Prove that $\cos\frac{\pi}{3} + \frac{1}{2}\cos\frac{2\pi}{3} + \frac{1}{3}\cos\frac{3\pi}{3} +
+  \cdots$ to $\infty = 0$.
+\item Find the sum of the series $\sin\alpha + n\sin(\alpha + \beta) + \frac{n(n - 1)}{2!}\sin(\alpha +
+  2\beta) + \cdots$ upto $(n + 1)$ terms.
+\item Find the sum of the series $\sin\theta + \frac{1}{2}\sin3\theta + \frac{1.3}{2.4}\sin5\theta + \cdots$
+  to $\infty$.
+\item Find the sum of the series $1 - \frac{1}{2}\cos\theta + \frac{1.3}{2.4}\cos2\theta -
+  \frac{1.3.5}{2.4.6}\cos3\theta + \cdots$ to $\infty$.
+\item Find the sum of the series $\frac{1}{2}\sin\theta + \frac{1.3}{2.4}\sin2\theta +
+  \frac{1.3.5}{2.4.6}\sin3\theta + \cdots$ to $\infty$.
+\item Find the sum of the series $\sin x + \frac{1}{2}\sin2x + \frac{1}{2^2}\sin3x + \cdots$ to $\infty$.
+\item Find the sum of the series $1 + x\cos\theta + x^2\cos2\theta + \cdots $ to $n$ terms.
+\item Find the sum of the series $\sin\alpha + x\sin(\alpha + \beta) + x^2\sin(\alpha + 2\beta) + \cdots$.
+\item Find the sum of the series $\cos\theta + 2\cos2\theta + 3\cos3\theta + \cdots + n\cos n\theta$.
+\item Find the sum of the series $\cos\theta - \frac{1}{3}\cos3\theta + \frac{1}{5}\cos5\theta - \cdots$ to
+  $\infty$.
+\item Show that if $n > 2$, $\cos^2\frac{\pi}{n} + \cos^2\frac{3\pi}{n} + \cos^2\frac{5\pi}{n} + \cdots$ to
+  $n$ terms $= \frac{n}{2}$.
+\item Show that $\sin^2\alpha + \sin^2\left(\alpha + \frac{2\pi}{n}\right) + \sin^2\left(\alpha +
+    \frac{4\pi}{n}\right) + \cdots$ to $n$ terms $= \frac{n}{2}$.
+\item If $4n\theta = \pi$, prove that $\sin^2\theta + \sin^23\theta + \cdots $ to $2n$ terms $= n$.
+\item Prove that $\frac{\sin\theta + \sin3\theta + \sin5\theta + \cdots\text{ to }n\text{ terms}}{\cos\theta
+    + \cos3\theta + \cos5\theta + \cdots\text{ to }n\text{ terms}} = \tan n\theta$.
+\item Sum to $n$ terms the series $\sin^3\theta + \sin^33\theta + \sin^35\theta + \cdots$.
+\item Sum to $n$ terms the series $\cos\theta - \sin2\theta - \cos3\theta + \sin4\theta + \cos5\theta -
+  \cdots$.
+\item Find the sum of the series $\sin\alpha\sin(\alpha + \beta) - \sin(\alpha + \beta)\sin(\alpha + 2\beta)
+  + \cdots$ to $n$ terms.
+\item Find the sum to $n$ terms of the series $\cos^2\alpha + \cos^2(\alpha + \beta) + \cos^2(\alpha +
+  2\beta) + \cdots$.
+\item Find the sum of the series $\cos\theta\cos2\theta + \cos3\theta\cos4\theta + \cos5\theta\cos6\theta +
+  \cdots$ to $n$ terms.
+\item Prove that $\frac{\sin\theta - \sin2\theta + \sin3\theta - \cdots \text{ to }n\text{
+      terms}}{\cos\theta - \cos2\theta + \cos3\theta - \cdots \text{ to }n\text{ terms}} = \tan\frac{n +
+    1}{2}.(\pi + \theta)$.
+\item Find the sum to $n$ terms of the series $\sqrt{1 - \sin2\theta} + \sqrt{1 - \sin4\theta} + \sqrt{1 -
+    \sin6\theta} + \cdots$.
+\item If $\phi$ be the exterior angle of a regular polygon of $n$ sides and $\theta$ is any constant, then
+  prove that $\cos\theta + \cos(\theta + \phi) + \cos(\theta + 2\phi) + \cdots$ to $n$ terms $ = 0$.
+\item Prove that $\cos^2x + \cos^23x + \cos^25x + \cdots$ to $n$ terms $= \frac{1}{2}\left[n +
+    \frac{\sin4nx}{2\sin2x}\right]$.
+\item Prove that $\cos^3\theta + \cos^3\left(\theta - \frac{2\pi}{n}\right) + \cos^3\left(\theta -
+    \frac{4\pi}{n}\right) + \cdots$ to $n$ terms $= 0$.
+\item Prove that $\sin^4x + \sin^4\left(x + \frac{2\pi}{n}\right) + \sin^4\left(x + \frac{4\pi}{n}\right)$
+  to $n$ terms $= \frac{3n}{8}$.
+\item Find the sum to $n$ terms of the series $\cos x + \sin3x + \cos5x + \sin7x + \cdots + \sin(4n - 1)x$.
+\item Find the sum of the series $\sin^3\frac{x}{3} + 3\sin^3\frac{x}{3^2} + 3^2\sin^3\frac{x}{3^3} +
+  \cdots$ to $n$ terms and also find its sum to $\infty$.
+\item Prove that the sum to $n$ terms of the series $\sec\theta\sec2\theta + \sec2\theta\sec3\theta +
+  \sec3\theta\sec4\theta + \cdots = \frac{1}{\sin\theta}[\tan(n + 1)\theta - \tan\theta]$.
+\item Sum the series $\tan\frac{\theta}{2}\sec\theta + \tan\frac{\theta}{2^2}\sec\frac{\theta}{2} +
+  \tan\frac{\theta}{2^3}\sec\frac{\theta}{2^2} + \cdots \infty$.
+\item Find the sum to $n$ terms of the series $\cot\theta\cot2\theta + \cot2\theta\cot3\theta + \cdots$.
+\item Prove that $\frac{1}{\cos\theta - \cos3\theta} + \frac{1}{\cos\theta - \cos5\theta} +
+  \frac{1}{\cos\theta - \cos7\theta} + \cdots$ to $n$ terms $= \frac{1}{2\sin\theta}[\cot\theta - \cot(n +
+  1)\theta]$.
+\item Prove that $\sec x\sec(x + y) + \sec(x + y)\sec(x + 2y) + \sec(x + 2y)\sec(x + 3y) + \cdots$ to $n$
+  terms $= \frac{1}{\sin y}[\tan(x + ny) - \tan x]$.
+\item Prove that $\frac{1}{\sin x\cos2x} - \frac{1}{\sin2x\cos3x} + \frac{1}{\sin3x\cos4x} - \cdots$ to $n$
+  terms $= -\frac{1}{\cos x}[\cot(n + 1)x - \cot x]$.
+\item Prove that $\frac{\sin2\theta}{\cos\theta\cos3\theta} + \frac{\sin4\theta}{\cos3\theta\cos5\theta} +
+  \frac{\sin6\theta}{\cos5\theta\cos7\theta} + \cdots$ to $n$ terms $= \frac{1}{2\sin\theta}[\sec(2n +
+  1)\theta - \sec\theta]$.
+\item Find the sum to $n$ terms of the series $\frac{\sin2\theta}{\sin\theta\sin3\theta} +
+  \frac{\sin4\theta}{\sin3\theta\sin5\theta} + \frac{\sin6\theta}{\sin5\theta\sin7\theta} + \cdots$.
+\item Prove that $\tan x\sec2x + \tan2x\sec4x + \tan4x\sec8x + \cdots$ to $n$ terms $= \tan2^nx - \tan x$.
+\item Prove that $2\csc2\theta\cot2\theta + 4\csc4\theta\cot4\theta + 8\csc8\theta\cot8\theta + \cdots$ to
+  $n$ terms $= \csc2^n\theta - 2^n\csc\left(2^n\theta\right)$.
+\item Sum to $n$ terms of the series $\sin\theta\sin3\theta + \sin\frac{\theta}{2}\sin\frac{3\theta}{2} +
+  \sin\frac{\theta}{2^2}\sin\frac{3\theta}{2^2} + \cdots$.
+\item Prove that $\cos\frac{\theta}{2} + 2\cos\frac{\theta}{2}\cos\frac{\theta}{2^2} +
+  2^2\cos\frac{\theta}{2}\cos\frac{\theta}{2^2}\cos\frac{\theta}{2^3} + \cdots$ to $n$ terms $=
+  \frac{1}{2}\sin\theta\left[\cot\frac{\theta}{2^{n + 1}} - \cot\frac{\theta}{2}\right]$.
+\item Prove that $\tan^2x\tan2x + \frac{1}{2}\tan^22x\tan4x + \frac{1}{2^2}\tan^24x\tan8x + \cdots$ to $n$
+  terms $= \frac{1}{2^{n - 1}}\tan2^nx - 2\tan x$.
+\item Find the sum of the series $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} + \tan^{-1}\frac{1}{13} +
+  \cdots$ to $n$ terms.
+\item Find the sum of the series $\tan^{-1}\frac{1}{1 + 1 + 1^2} + \tan^{-1}\frac{1}{1 + 2 + 2^2} +
+  \tan^{-1}\frac{1}{1 + 3 + 3^2} + \cdots$ to $n$ terms.
+\item Prove that $\tan^{-1}\frac{4}{1 + 3.4} + \tan^{-1}\frac{6}{1 + 8.9} + \tan^{-1}\frac{8}{1 + 15.16} +
+  \cdots$ to $n$ terms $= \tan^{-1}(n + 1)(n + 2) - \tan^{-1}2$.
+\item Prove that $\cot^{-1}\left(2.1^2\right) + \cot^{-1}\left(2.2^2\right) + \cot^{-1}\left(2.3^2\right) +
+  \cdots \infty = \frac{\pi}{4}$.
+\item Prove that $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{2}{9} + \tan^{-1}\frac{4}{33} + \cdots \infty =
+  \frac{\pi}{4}$.
+\item Prove that $\cot^{-1}\left(2^2 + \frac{1}{2}\right) + \cot^{-1}\left(2^3 + \frac{1}{2^2}\right) +
+  \cot^{-1}\left(2^4 + \frac{1}{2^3}\right) + \cdots \infty$.
+\item Find the sum of the series $\cos\theta + \frac{1}{2}\cos2\theta + \frac{1}{2^2}\cos3\theta + \cdots
+  \infty$.
+\item Find the sum of the series $1 + \cos\theta\cos\theta + \cos^2\theta\cos2\theta +
+  \cos^3\theta\cos3\theta + \cdots \infty$.
+\item Find the sum of the series $1 + x\cos\theta + x^2\cos2\theta + \cdots \infty$.
+\item Find the sum $\sin\theta + x\sin2\theta + x^2\sin3\theta + \cdots \infty$.
+\item Sum to infinity the series $1 + \frac{\cos\theta}{\cos\theta} + \frac{\cos2\theta}{\cos^2\theta} +
+  \frac{\cos3\theta}{\cos^3\theta} + \cdots$.
+\item Find the sum of the series $\sin\alpha + n\sin(\alpha + \beta) + \frac{n(n + 1)}{2!}\sin(\alpha +
+  2\beta) + \cdots \infty$.
+\item Find the sum of the series $n\sin\alpha + \frac{n(n + 1)}{2!}\sin2\alpha + \frac{n(n + 1)(n +
+  2)}{3!}\sin3\alpha + \cdots \infty$.
+\item Find the sum $1 + n\cos\alpha + \frac{n(n + 1)}{2!}\cos2\alpha + \cdots \infty$.
+\item Sum the series $\cos\alpha + C_1^^n\cos(\alpha + \beta) + C_2^^2\cos(\alpha + 2\beta) + \cdots +
+  \cos(\alpha + b\beta)$.
+\item Find the sum $\frac{1}{2}\cos\theta + \frac{1.3}{2.4}\cos2\theta + \frac{1.3.5}{2.4.6}\cos3\theta +
+  \cdots \infty$.
+\item Sum the series $1 + \frac{1}{2}\cos2\theta - \frac{1}{2.4}\cos4\theta + \frac{1.3}{2.4.6}\cos6\theta +
+  \cdots \infty$.
+\item Sum the infinite series $\sin\alpha + x\sin(\alpha + \beta) + \frac{x^2}{2!}\sin(\alpha + 2\beta) +
+  \frac{x^3}{3!}\sin(\alpha + 3\beta) + \cdots$.
+\item Find the sum of the series $\cos\theta - \frac{\cos2\theta}{2!} + \frac{\cos3\theta}{3!} - \cdots
+  \infty$.
+\item Find the sum $\cos\theta + \frac{a\cos2\theta}{1!} + \frac{a^2\cos3\theta}{2!} +
+  \frac{a^3\cos4\theta}{3!} + \cdots$.
+\item Find the sum $\cos\theta + \frac{\cos\theta}{1!}\cos2\theta + \frac{\cos^2\theta}{2!}\cos3\theta +
+  \frac{\cos^3\theta}{3!}\cos4\theta + \cdots$.
+\item Find the sum $\cos\alpha + \frac{\cos\alpha}{1!}\cos\beta + \frac{\cos^2\alpha}{2!}\cos2\beta +
+  \frac{\cos^3\alpha}{3!}\cos3\beta + \cdots$.
+\item Prove that $\sin\theta - \frac{1}{2}\sin2\theta + \frac{1}{3}\sin3\theta - \cdots \infty =
+  \frac{\theta}{2}$.
+\item Prove that $a\sin\theta - \frac{a^22}{2}\sin2\theta + \frac{a^3}{3}\sin3\theta - \cdots \infty =
+  \tan^{-1}\frac{a\sin\theta}{1 + a\cos\theta}$.
+\item Prove that $\cos\theta + \frac{1}{2}\cos2\theta + \frac{1}{3}\cos3\theta + \cdots \infty =
+  -\log2\sin\frac{\theta}{2}$.
+\item Prove that $\sin\theta + \frac{1}{2}\sin2\theta + \frac{1}{3}\sin3\theta + \cdots \infty =
+  \frac{\pi}{2} - \frac{\theta}{2}$.
+\item Sum the series $a\cos\theta - \frac{1}{3}c^3\cos3\theta + \frac{1}{5}c^5\cos5\theta - \cdots \infty$.
+\stopitemize
