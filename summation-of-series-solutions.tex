@@ -196,4 +196,298 @@
   \stopalign\stopformula
 
   Adding and representing the sum as $S$, we have $S = \cot\frac{\theta}{2^n} - \cot\theta$.
+\item $\tan(A - B) = \frac{\tan A - \tan B}{1 + \tan A\tan B}\Rightarrow \tan A\tan B = \cot(A - B)[\tan A -
+  \tan B] - 1$. Thus, we can write
+
+  \startformula\startalign
+    \NC \tan x\tan2x\NC = \cot x[\tan2x - \tan x]- 1\NR
+    \NC \tan2x\tan3x\NC = \cot x[\tan3x - \tan2x]- 1\NR
+    \NC \tan3x\tan4x\NC = \cot x[\tan4x - \tan3x]- 1\NR
+    \NC \NC \cdots\NR
+    \NC \tan n\tan(n + 1)x\NC = \cot x[\tan(n + 1)x - \tan nx]- 1\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \cot x[\tan(n + 1)x - \tan nx] - n$.
+\item $\tan x = \frac{\sin x}{\cos x} = \frac{\sin^2x}{\sin x\cos x} = \frac{\cos^2x - \left(\cos^2x -
+  \sin^2x\right)}{\sin x\cos x}$
+
+  $= \frac{\cos^2x}{\sin x\cos x} - \frac{2\cos2x}{\sin2x} = \cot x - 2\cot2x$
+
+  Thus, we can write(we let $t_n$ represent the $n$th term)
+
+  \startformula\startalign
+    \NC t_1 \NC = \cot x - 2\cot2x\NR
+    \NC t_2 \NC = 2\cot2x - 2^2\cot2^2x\NR
+    \NC t_3 \NC = 2^2\cot2^2x - 2^3\cot2^3x\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = 2^{n - 1}\cot2^{n - 1}x - 2^n\cot2^nx
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \cot x - 2^n\cot2^nx$.
+\item We can reuse the identity derives and write similarly
+
+  \startformula\startalign
+    \NC t_1 \NC = \cot\theta - 2\cot2\theta\NR
+    \NC t_2 \NC = \frac{1}{2}\cot\frac{\theta}{2} - \cot\theta\NR
+    \NC t_3 \NC = \frac{1}{2^2}\cot\frac{\theta}{262} - \frac{1}{2}\cot\frac{\theta}{2}\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \frac{1}{2^{n - 1}}\cot\frac{\theta}{2^{n - 1}} - \frac{1}{2^{n -
+        2}}\cot\frac{\theta}{2^{n - 2}}\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S_n$, we have $S_n = \frac{1}{2^{n - 1}}\cot\frac{\theta}{2^{n - 1}} -
+  2\cot2\theta$.
+
+  $\displaystyle S_\infty = \lim_{n\to\infty}\left(\frac{1}{2^{n - 1}}\cot\frac{\theta}{2^{n - 1}} -
+  2\cot2\theta\right)$
+
+  $= \lim_{n\to\infty}\left[\frac{1}{\theta}.\frac{\theta}{2^{n - 1}}.\frac{1}{\tan\frac{\theta}{2^{n - 1}}}
+    - 2\cot2\theta\right]$
+
+  $= \frac{1}{\theta} - 2\cot2\theta$.
+\item Let $S_n = \frac{1}{2}\sec x + \frac{1}{2^2}\sec x\sec2x + \frac{1}{2^3}\sec x\sec2x\sec2^2x +
+  \cdots$ to $n$ terms
+
+  $= \frac{1}{2\cos x} + \frac{1}{2^2\cos x\cos2x} + \frac{1}{2^3\cos x\cos2x\cos2^2x} + \cdots$ to $n$
+  terms
+
+  $= \frac{\sin x}{2\sin x\cos x} + \frac{\sin x}{2^2\sin x\cos x\cos2x} + \frac{\sin x}{2^3\sin x\cos
+    x\cos2x\cos2^2x} + \cdots$ to $n$
+
+  $= \sin x\left[\frac{1}{\sin 2x} + \frac{1}{\sin 4x} + \frac{1}{\sin 8x} + \cdots\right]$ to $n$ terms
+
+  Now $\csc2x = \frac{1}{\sin2x} = \frac{\sin x}{\sin2x\sin x} = \frac{\sin(2x - x)}{\sin 2x\sin x} = \cot x
+  - \cot 2x$
+
+  Thus, we can write
+
+  \startformula\startalign
+    \NC \csc2x \NC = \cot x - \cot2x\NR
+    \NC \csc4x \NC = \cot2x - \cot4x\NR
+    \NC \csc8x \NC = \cot4x - \cot8x\NR
+    \NC \NC \cdots\NR
+    \NC csc2^nx \NC = \cot2^{n - 1}x - \cot2^nx\NR
+  \stopalign\stopformula
+
+  Adding we get $2S_n = \sin x[\cot x - \cot2^nx]$.
+\item Let $t_n = \tan^{-1}\frac{nx}{1 + n(n + 1)x^2} = \tan^{-1}\frac{(n + 1)x - nx}{1 + [(n + 1)x]nx} =
+  \tan^{-1}(n + 1)x - \tan^{-1}nx$
+
+  Thus, we can write
+
+  \startformula\startalign
+    \NC t_1 \NC = \tan^{-1}2x - \tan^{-1}x\NR
+    \NC t_2 \NC = \tan^{-1}3x - \tan^{-1}2x\NR
+    \NC t_3 \NC = \tan^{-1}4x - \tan^{-1}3x\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \tan^{-1}(n + 1)x - \tan^{-1}nx\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \tan^{-1}(n + 1)x - \tan^{-1}x$.
+\item Let $t_n$ denote the $n$th term of the series. Then $t_n = \tan^{-1}\frac{1}{2n^2} =
+  \tan^{-1}\frac{2}{4n^2}$
+
+  $= \tan^{-1}\left[\frac{(2n + 1) - (2n - 1)}{1 + (2n + 1)(2n - 1)}\right] = \tan^{-1}(2n + 1) -
+  \tan^{-1}(2n - 1)$
+
+  Thus, we can write
+
+  \startformula\startalign
+    \NC t_1 \NC = \tan^{-1}3 - \tan^{-1}1\NR
+    \NC t_2 \NC = \tan^{-1}5 - \tan^{-1}3\NR
+    \NC t_3 \NC = \tan^{-1}7 - \tan^{-1}5\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \tan^{-1}(2n + 1) - \tan^{-1}(2n - 1)\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S_n$, we have $S_n = \tan^{-1}(2n + 1) - \tan^{-1}1$
+
+  Now $\displaystyle S_\infty = \lim_{n\to\infty}\left(\tan^{-1}(2n + 1) - \tan^{-1}1\right) = \frac{\pi}{2}
+  - \frac{\pi}{4} = \frac{\pi}{4}$.
+\item Let $t_n$ denote the $n$th term. $t_n = \tan^{-1}\frac{1}{3 + 3n + n^2} = \tan^{-1}\frac{1}{1 + n^2 +
+  3n + 2}$
+
+  $=\tan^{-1}\frac{1}{1 + (n + 2)(n + 1)} = \tan^{-1}(n + 2) - \tan^{-1}(n + 1)$
+
+  Thus, we can write
+
+  \startformula\startalign
+    \NC t_1 \NC = \tan^{-1}3 - \tan^{-1}2\NR
+    \NC t_2 \NC = \tan^{-1}4 - \tan^{-1}3\NR
+    \NC t_3 \NC = \tan^{-1}5 - \tan^{-1}4\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \tan^{-1}(n + 2) - \tan^{-1}(n + 1)\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \tan^{-1}(n + 2) - \tan^{-1}2$.
+\item Let $t_n$ represent the $n$th term. Then $t_n = \sin^{-1}\left[\frac{\sqrt{n} - \sqrt{n -
+      1}}{\sqrt{n}\sqrt{n + 1}}\right]$
+
+  $= \sin^{-1}\left[\frac{\sqrt{n}}{\sqrt{n}\sqrt{n + 1}} - \frac{\sqrt{n - 1}}{\sqrt{n}\sqrt{n + 1}}\right]
+  = \sin^{-1}\left[\frac{1}{\sqrt{n}}\sqrt{1 - \frac{1}{n + 1}} - \frac{1}{\sqrt{n + 1}}\sqrt{1 -
+      \frac{1}{n}}\right]$
+
+  Let $\frac{1}{\sqrt{n}} = \sin A$ and $\frac{1}{\sqrt{n + 1}} = \sin B$ then $\cos A = \sqrt{1 -
+    \frac{1}{n}}$ and $\cos B = \sqrt{1 - \frac{1}{n + 1}}$
+
+  $\Rightarrow t_n = \sin^{-1}[\sin A\cos B - \sin B\cos A] = \sin^{-1}\sin(A - B) = A - B =
+  \sin^{-1}\frac{1}{\sqrt{n}} - \sin^{-1}\frac{1}{\sqrt{n + 1}}$
+
+  Thus, we can write
+
+  \startformula\startalign
+    \NC t_1 \NC = \sin^{-1}1 - \sin^{-1}\frac{1}{\sqrt{2}}\NR
+    \NC t_2 \NC = \sin^{-1}\frac{1}{\sqrt{2}} - \sin^{-1}\frac{1}{\sqrt{3}}\NR
+    \NC t_3 \NC = \sin^{-1}\frac{1}{\sqrt{3}} - \sin^{-1}\frac{1}{\sqrt{4}}\NR
+    \NC \NC \cdots\NR
+    \NC t_n \NC = \sin^{-1}\frac{1}{\sqrt{n}} - \sin^{-1}\frac{1}{\sqrt{n + 1}}\NR
+  \stopalign\stopformula
+
+  Adding and representing the sum as $S$, we have $S = \sin^{-1}1 - \sin^{-1}\frac{1}{\sqrt{n + 1}}$
+
+  $\displaystyle\lim_{n\to\infty}S = \frac{\pi}{2}$.
+\item Let $C = \cos\alpha + x\cos(\alpha + \beta) + \frac{x^2}{2!}\cos(\alpha + 2\beta) +
+  \cdots$ to $\infty$
+
+  and $S = \sin\alpha + x\sin(\alpha + \beta) + \frac{x^2}{2!}\sin(\alpha + 2\beta) +
+  \cdots$ to $\infty$
+
+  $C + iS = e^{i\alpha} + xe^{i(\alpha + \beta)} + \frac{x^2}{2!}e^{i(\alpha + 2\beta)} + \cdots$ to
+  $\infty$
+
+  $= e^{i\alpha}\left[1 + xe^{i\beta} + \frac{x^2}{2!}e^{i2\beta} + \cdots \text{ to } \infty\right]$
+
+  $= e{i\alpha}\left[1 + z + \frac{z^2}{2!} + \cdots \text{ to } \infty\right]$ where $z = x.e^{i\beta}$
+
+  $= e^{i\alpha}e^{xe^{i\beta}} = e^{i\alpha}e^{x\cos\beta}e^{i\sin\beta} = e^{x\cos\beta}[\cos(\alpha +
+    x\sin\beta) + i\sin(\alpha + i\sin\beta)]$
+
+  Comparing real parts we have $C = e^{x\cos\beta}\cos(\alpha + x\sin\beta)$.
+\item Let $C = \cos\theta - \frac{\cos2\theta}{2!} + \frac{\cos3\theta}{3!} - \cdots$ to $\infty$
+
+  and $S = \sin\theta - \frac{\sin2\theta}{2!} + \frac{\sin3\theta}{3!} - \cdots$ to
+  $\infty$
+
+  Then $C + iS = (\cos\theta + i\sin\theta) - \frac{\cos2\theta + i\sin2\theta}{2!} + \frac{\cos3\theta +
+    i\sin3\theta}{3!} - \cdots$ to $\infty$
+
+  $= e^{i\theta} - \frac{e^{i2\theta}}{2!} + \frac{e^{i3\theta}}{3!} + \cdots$ to $\infty = 1 -
+  e^{-i\theta}$
+
+  $= 1 - e^{-(\cos\theta + i\sin\theta)} = 1 - e^{-\cos\theta}e^{-i\sin\theta} = 1 -
+  e^{-\cos\theta}[\cos(\sin\theta) - i\sin(\sin\theta)]$
+
+  Comparing imaginary parts $C = e^{-\cos\theta}\sin(\sin\theta)$.
+\item Let $S = \sin\theta\cos\theta + \frac{\sin2\theta\cos^2\theta}{2!} +
+  \frac{\sin3\theta\cos^3\theta}{3!} + \cdots $ to $\infty$
+
+  and $C = 1 + \cos\theta\cos\theta + \frac{\cos2\theta\cos^2\theta}{2!} +
+  \frac{\cos3\theta\cos^2\theta}{3!} + \cdots$ to $\infty$
+
+  Now $C + iS = 1 + \cos\theta e^{i\theta} + \frac{\cos^2\theta}{2!}e^{i2\theta} +
+  \frac{\cos^3\theta}{3!}e^{i3\theta} + \cdots$ to $\infty$
+
+  $= 1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots$ to $\infty$[where $z = \cos\theta e^{i\theta}$]
+
+  $ = e^z = e^{\cos\theta e^{i\theta}} = e^{\cos^2\theta}e^{i\sin\theta\cos\theta} =
+  e^{\cos^2\theta}[\cos(\sin\theta\cos\theta) + i\sin(\sin\theta\cos\theta)]$
+
+  Comparing imaginary parts $S = e^{\cos^2\theta}\sin(\sin\theta\cos\theta)$.
+\item Let $C = \cos\theta + \frac{\sin\theta}{1!}\cos2\theta + \frac{\sin^2\theta}{2!}\cos3\theta +
+  \frac{\sin^3\theta}{3!}\cos4\theta + \cdots$ to $\infty$
+
+  and $S = \sin\theta + \frac{\sin\theta}{1!}\sin2\theta + \frac{\sin^2\theta}{2!}\sin3\theta +
+  \frac{\sin^3\theta}{3!}\sin4\theta + \cdots$ to $\infty$
+
+  $C + iS = e^{i\theta} + \frac{\sin\theta}{1!}e^{i2\theta} + \frac{\sin^2\theta}{2!}e^{i3\theta} + \cdots$
+  to $\infty$
+
+  $= e^{i\theta}\left[1 + \frac{\sin\theta}{1!}e^{i\theta} + \frac{\sin^2\theta}{2!}e^{i2\theta} + \cdots
+    \infty\right]$
+
+  $= e^{i\theta}\left[1 + z + \frac{z^2}{2!} + \frac{z^3}{3!} + \cdots \infty\right]$ where $z = \sin\theta
+  e^{i\theta}$
+
+  $= e^{i\theta}e^z = e^{i\theta}e^{\sin\theta e^{i\theta}} = e^{i\theta}e^{\sin\theta(\cos\theta +
+    i\sin\theta)}$
+
+  $= e^{\sin\theta\cos\theta}e^{i(\theta + \sin^2\theta)} = e^{\sin\theta\cos\theta}[cos(\theta +
+    \sin^2\theta) + i\sin(\theta + \cos^2\theta)]$
+
+  Comparing real parts, we have sum as $C = e^{\sin\theta\cos\theta}\cos(\theta + \sin^2\theta)$.
+\item Let $C = x\cos\theta + \frac{x^2}{2}\cos2\theta + \frac{x^3}{\theta}\cos3\theta +
+  \cdots$ to $\infty$
+
+  and $S = x\sin\theta + \frac{x^2}{2}\sin2\theta + \frac{x^3}{\theta}\sin3\theta +
+  \cdots$ to $\infty$
+
+  $C + iS = xe^{i\theta} + \frac{x^2}{2}e^{i2\theta} + \frac{x^3}{3}e^{i3\theta} + \cdots$ to $\infty$
+
+  $= z + \frac{z^2}{2} + \frac{z^3}{3} + \cdots$ to $\infty$ where $z = xe^{i\theta}$
+
+  $= -\log_e(1 - z) = -\log_e\left(1 - xe^{i\theta}\right) = -\log_e[(1 - x\cos\theta) - ix\sin\theta]$
+
+  We know that $\log_e(\alpha + \beta) = \frac{1}{2}\log_e\left(\alpha^2 + \beta^2\right) +
+  i\tan^{-1}\frac{\beta}{\alpha}$
+
+  Using the formula above we can write
+
+  $C + iS = -\left[\frac{1}{2}\log_e\left\{(1 - x\cos\theta)^2 + x^2\sin^2\theta\right\} -
+    i\tan^{-1}\frac{x\sin\theta}{1 - x\cos\theta}\right]$
+
+  Comparing real parts we get $C = -\frac{1}{2}\log_e(1 - 2x\cos\theta + x^2)$.
+\item We proceed like previous problem and compare imaginary parts to obtain the sum as $S =
+  \tan^{-1}\frac{x\sin\theta}{1 - x\cos\theta}$.
+\item Let $C = \cos\theta + \frac{\cos2\theta}{2} + \frac{\cos3\theta}{3} +
+  \frac{\cos4\theta}{4} + \cdots$ to $\infty$
+
+  and $S = \sin\theta - \frac{1}{2}\sin2\theta + \frac{1}{3}\sin3\theta - \cdots \infty$
+
+  $\Rightarrow C + iS = e^{i\theta} - \frac{1}{2}e^{i2\theta} + \frac{1}{3}e^{i3\theta} - \cdots \infty$
+
+  $= \log_e\left(1 + e^{i\theta}\right) = \log_e(1 + \cos\theta + i\sin\theta)$
+
+  $= \frac{1}{2}\log_e\left[(1 + \cos\theta)^2 + \sin^2\theta\right] + i\tan^{-1}\frac{\sin\theta}{1 +
+    \cos\theta}$
+
+  $ = \frac{1}{2}\log_e\left(4\cos^2\frac{\theta}{2}\right) + i\tan^{-1}\tan\frac{\theta}{2} =
+  \log_e\left(2\cos\frac{\theta}{2}\right) + i\frac{\theta}{2}$
+
+  Comparing real parts, we get $C = \log_e\left(2\cos\frac{\theta}{2}\right)$.
+\item Let $C = \cos\frac{\pi}{3} + \frac{1}{2}\cos\frac{2\pi}{3} + \frac{1}{3}\cos\frac{3\pi}{3} +
+  \cdots$ to $\infty = 0$
+
+  and $S = \sin\frac{\pi}{3} + \frac{1}{2}\sin\frac{2\pi}{3} + \frac{1}{3}\sin\frac{3\pi}{3} + \cdots$ to
+  $\infty$
+
+  $\Rightarrow C + iS = e^{i\frac{\pi}{3}} + \frac{1}{2}e^{i\frac{2\pi}{3}} + \frac{1}{3}e^{i\frac{3\pi}{3}}
+  + \cdots$ to $\infty$
+
+  $= -\log_e\left(1 - e^{i\frac{\pi}{3}}\right) = -\log_e\left[1 - \left(\cos\frac{\pi}{3} +
+    i\sin\frac{\pi}{3}\right)\right] = -\log_e\left[\frac{1}{2} - i\frac{\sqrt{3}}{2}\right]$
+
+  $= -\frac{1}{2}\log_e\left(\frac{1}{3} + \frac{3}{4}\right) -i\tan^{-1}\sqrt{3} = 0 + i\frac{\pi}{3}$
+
+  Comparing real and imaginary parts $C = 0, S = \frac{\pi}{3}$.
+\item Let $S = \sin\alpha + n\sin(\alpha + \beta) + \frac{n(n - 1)}{2!}\sin(\alpha + 2\beta) + \cdots$ upto
+  $(n + 1)$ terms
+
+  and $C = \cos\alpha + n\cos(\alpha + \beta) + \frac{n(n - 1)}{2!}\cos(\alpha + 2\beta) + \cdots$ upto $(n
+  + 1)$ terms
+
+  $C + iS = e^{i\alpha} + ne^{i(\alpha + \beta)} + \frac{n(n - 1)}{2}e^{i(\alpha + 2\beta)} + \cdots$
+
+  $= e^{i\alpha}\left[1 + ne^{i\beta} + \frac{n(n - 1)}{2}e^{i2\beta} + \cdots\right] = e^{i\alpha}\left(1 +
+  e^{ii\beta}\right)^n$
+
+  $= e^{i\alpha}\left[\left(1 + \cos\beta + i\sin\beta\right)^n\right] =
+  e^{i\alpha}\left[2\cos^2\frac{\beta}{2} + i.2\sin\frac{\beta}{2}\cos\frac{\beta}{2}\right]^n$
+
+  $= e^{i\alpha}\left(2\cos\frac{\beta}{2}\right)^ne^{in\frac{\beta}{2}} =
+  2^n\cos^n\frac{\beta}{2}\left[\cos\left(\alpha + \frac{n\beta}{2}\right) + i\sin\left(\alpha +
+    \frac{n\beta}{2}\right)\right]$
+
+  Equating imaginary paarts gives us
+
+  $S = 2^n\cos^n\frac{\beta}{2}\sin\left(\alpha + \frac{n\beta}{2}\right)$.
 \stopitemize
