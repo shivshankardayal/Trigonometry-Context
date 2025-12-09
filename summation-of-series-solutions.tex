@@ -35,7 +35,7 @@
     \NC 2\cos(\alpha + 2\beta)\sin\frac{\beta}{2} \NC = \sin\left(\alpha + \frac{5\beta}{2}\right) -
     \sin\left(\alpha + \frac{3\beta}{2}\right)\NR
     \NC\NC \cdots\NR
-    \NC 2\cos(\alpha+ (n - 1)\beta)\sin\frac{\beta}{2} \NC = sin\left(\alpha + (2n - 1)\frac{\beta}{2}\right)
+    \NC 2\cos(\alpha+ (n - 1)\beta)\sin\frac{\beta}{2} \NC = \sin\left(\alpha + (2n - 1)\frac{\beta}{2}\right)
     - \sin\left(\alpha + (2n - 3)\frac{\beta}{2}\right)\NR
   \stopalign\stopformula
 
@@ -487,7 +487,413 @@
   2^n\cos^n\frac{\beta}{2}\left[\cos\left(\alpha + \frac{n\beta}{2}\right) + i\sin\left(\alpha +
     \frac{n\beta}{2}\right)\right]$
 
-  Equating imaginary paarts gives us
+  Equating imaginary parts gives us
 
   $S = 2^n\cos^n\frac{\beta}{2}\sin\left(\alpha + \frac{n\beta}{2}\right)$.
+\item Let $S = \sin\theta + \frac{1}{2}\sin3\theta + \frac{1.3}{2.4}\sin5\theta + \cdots$
+  to $\infty$
+
+  and $C = \cos\theta + \frac{1}{2}\cos3\theta + \frac{1.3}{2.4}\cos5\theta + \cdots$
+  to $\infty$
+
+  $\Rightarrow C + iS = e^{i\theta} + \frac{1}{2}e^{i3\theta} + \frac{\frac{1}{2}\left(\frac{1}{2} +
+    1\right)}{1.2}e^{i5\theta} + \cdots$ to $\infty$
+
+  $= e^{i\theta}\left[1 + \frac{1}{2}e^{i2\theta} + \frac{\frac{1}{2}\left(\frac{1}{2} +
+      1\right)}{1.2}e^{i4\theta} + \cdots \text{ to } \infty\right]$
+
+  $= e^{i\theta}\left(1 - e^{i2\theta}\right)^{-\frac{1}{2}} = e^{i\theta}[1 - (\cos2\theta +
+    i\sin\theta)]^{-\frac{1}{2}}$
+
+  $= e^{\theta}(2\sin\theta)^{-\frac{1}{2}}[\sin\theta - i\cos\theta]^{-\frac{1}{2}} =
+  (2\sin\theta)^{-\frac{1}{2}}e^{i\theta}\left[\cos\left(\frac{\pi}{2} - \theta\right) +
+    i\sin\left(\frac{\pi}{2} - \theta\right)\right]^{-\frac{1}{2}}$
+
+  $= \frac{1}{\sqrt{2\sin\theta}}e^{\left(\theta + \frac{pi}{4} - \frac{\theta}{2}\right)} =
+  \frac{1}{\sqrt{2\sin\theta}}\left[\cos\left(\frac{\pi}{4} + \frac{\theta}{2}\right) +
+    i\sin\left(\frac{\pi}{4} + \frac{\theta}{2}\right)\right]$
+
+  Equating imaginary parts gives us $S = \frac{1}{\sqrt{2\sin\theta}}\sin\left(\frac{\pi}{4} +
+  \frac{\theta}{2}\right)$.
+\item Let $C = 1 - \frac{1}{2}\cos\theta + \frac{1.3}{2.4}\cos2\theta - \frac{1.3.5}{2.4.6}\cos3\theta +
+  \cdots$ to $\infty$
+
+  and $S = - \frac{1}{2}\sin\theta + \frac{1.3}{2.4}\sin2\theta - \frac{1.3.5}{2.4.6}\sin3\theta + \cdots$
+  to $\infty$
+
+  $\Rightarrow C + iS = 1 - \frac{1}{2}e^{i\theta} + \frac{1.3}{2.3}e^{i2\theta} -
+  \frac{1.3.5}{2.4.6}e^{i3\theta} + \cdots$ to $\infty$
+
+  $= \left(1 + e^{i\theta0}\right)^{-1/2} = (1 + \cos\theta + i\sin\theta)^{-1/2} =
+  \left[2\cos^2\frac{\theta}{2} + 2i\sin\frac{\theta}{2}\cos\frac{\theta}{2}\right]^{-1/2}$
+
+  $= \frac{1}{\sqrt{2\cos\frac{\theta}{2}}}\left[\cos\frac{\theta}{2} + i\sin\frac{\theta}{2}\right]^{-1/2}
+  = \frac{1}{\sqrt{2\cos\frac{theta}{2}}}\left(e^{i\theta/2}\right)^{-1/2}$
+
+  $= \frac{1}{\sqrt{2\cos\frac{\theta}{2}}}\left(\cos\frac{\theta}{4} - i\sin\frac{\theta}{4}\right)$
+
+  Comparing real parts of both sides gives us
+
+  $C = \frac{1}{\sqrt{2\cos\frac{\theta}{2}}}\cos\frac{\theta}{4}$.
+\item Let $S = \frac{1}{2}\sin\theta + \frac{1.3}{2.4}\sin2\theta + \frac{1.3.5}{2.4.6}\sin3\theta + \cdots$
+  to $\infty$
+
+  and $C = 1 = \frac{1}{2}\cos\theta + \frac{1.3}{2.4}\cos2\theta + \frac{1.3.5}{2.4.6}\cos3\theta + \cdots$
+  to $\infty$
+
+  $\Rightarrow C + iS = 1 + \frac{1}{2}e^{i\theta} + \frac{1.3}{2.4}e^{2i\theta} +
+  \frac{1.3.5}{2.4.6}e^{3i\theta} + \cdots$ to $\infty$
+
+  $= \left(1 - e^{i\theta}\right)^{-1/2} = \left(1 - \cos\theta + i\sin\theta\right)^{-1/2} =
+  \left(2\sin^2\frac{\theta}{2} - 2i\sin\frac{\theta}{2}\cos\frac{\theta}{2}\right)^{-1/2}$
+
+  $= \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}\left(\sin\frac{\theta}{2} - i\cos\frac{\theta}{2}\right)^{-1/2}
+  = \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}\left[e^-i\left(\frac{\pi}{2} - \theta\right)\right]^{-1/2}$
+
+  $= \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}\left[\cos\left(\frac{\pi}{4} - \frac{\theta}{2}\right) +
+    i\sin\left(\frac{\pi}{4} - \frac{\theta}{2}\right)\right]$
+
+  Comparing imaginary parts gives us $S = \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}\sin\left(\frac{\pi}{4} -
+  \frac{\theta}{2}\right)$.
+\item Let $S = \sin x + \frac{1}{2}\sin2x + \frac{1}{2^2}\sin3x + \cdots$ to $\infty$
+
+  and $C = \cos x + \frac{1}{2}\cos2x + \frac{1}{2^2}\cos3x + \cdots$ to $\infty$
+
+  $\Rightarrow C + iS = e^{ix} + \frac{1}{2}e^{i2x} + \frac{1}{2^2}e^{i3x} + \cdots$ to $\infty$
+
+  $= \frac{2e^{ix}}{2 - e^{ix}} = 2\left[\frac{\cos x + i\sin x}{2 - \cos x - i\sin x}\right] =
+  2\left[\frac{\cos x + i\sin x}{2 - \cos x - i\sin x}.\frac{2 - \cos x + i\sin x}{2 - \cos x + i\sin
+      x}\right]$
+
+  $= 2\left[\frac{2\cos x - 1 + i2\sin x}{5 - 4\cos x}\right]$
+
+  $\Rightarrow S = \frac{4\sin x}{5 - 4\cos x}$.
+\item Let $C = 1 + x\cos\theta + x^2\cos2\theta + \cdots + x^{n - 1}\cos(n - 1)\theta$
+
+  and $S = x\sin\theta + x^2\sin2\theta + \cdots + x^{n - 1}\sin(n - 1)\theta$
+
+  $\Rightarrow C + iS = 1 + xe^{i\theta} + x^2e^{i2\theta} + \cdots + x^{n - 1}e^{i(n - 1)\theta}$
+
+  $= \frac{1 - \left(x^{i\theta}\right)^n}{1 - xe^{i\theta}} = \frac{1 - \left(x^{i\theta}\right)^n}{1 -
+    xe^{i\theta}}.\frac{1 - \left(x^{-i\theta}\right)}{1 - xe^{-i\theta}}$
+
+  $= \frac{1 - x^ne^{in\theta} - xe^{-i\theta0} + x^{n + 1}e^{i(n - 1)\theta}}{1 - 2x\cos\theta + x^2}$
+
+  $= \frac{1 - x^n(\cos n\theta + i\sin n\theta) - x(\cos\theta - i\sin\theta) + x^{n + 1}[\cos(n - 1)\theta
+      + i\sin(n - 1)\theta]}{1 - 2x\cos\theta + x^2}$
+
+  $\Rightarrow C = \frac{1 - x^nn\cos n\theta - x\cos\theta + x^{n + 1}\cos(n - 1)\theta}{1 - 2x\cos\theta +
+    x^2}$.
+\item Let $C = \sin\alpha + x\sin(\alpha + \beta) + x^2\sin(\alpha + 2\beta) + \cdots$
+
+  and $S = \cos\alpha + x\cos(\alpha + \beta) + x^2\cos(\alpha + 2\beta) + \cdots$
+
+  $\Rightarrow C + iS = e6{i\alpha} + xe^{i(\alpha + \beta)} + x^2e^{i(\alpha + 2\beta)} + \cdots$
+
+  $= e^{i\alpha}\left[1 + xe^{i\beta} + x^2e^{i2\beta} + \cdots\right] = e^{i\alpha}\left[\frac{1 -
+      x^ne^{in\beta}}{1 - xe^{i\beta}}\right]$
+
+  $= e^{i\alpha}\frac{1 - x^ne^{in\beta}}{1 - xe^{i\beta}}\frac{1 - xe^{-i\beta}}{1 - xe^{-i\beta}} =
+  \frac{e^{i\alpha}}{1 - x\left(e^{i\beta} + e^{-i\beta} + x^2\right)}\left[1 - xe^{-i\beta} -
+    x^ne^{in\beta} + x^{n + 1}e^{i(n - 1)\beta}\right]$
+
+  Proceeding like previous problems and comparing imaginary parts gives us
+
+  $S = \frac{\sin\alpha - x\sin(\alpha - \beta) - x^n\cos(\alpha + n\beta) + x^{n + 1}\sin[\alpha + (n -
+      1)\beta]}{1 - 2x\cos\beta + x^2}$.
+\item Let $C = \cos\theta + 2\cos2\theta + 3\cos3\theta + \cdots + n\cos n\theta$
+
+  and $S = \sin\theta + 2\sin2\theta + 3\sin3\theta + \cdots + n\sin n\theta$
+
+  $\Rightarrow C + iS = e^{i\theta} + 2e^{i2\theta} + 3e^{i3\theta} + \cdots + ne^{in\theta}$
+
+  $\Rightarrow \left(1 - e^{i\theta}\right) = \frac{e^{i\theta}\left(1 - e^{in\theta}\right)}{1 -
+    e^{i\theta}} - 2.e^{i(n + 1)\theta}$
+
+  $\Rightarrow C + iS = \frac{e^{i\theta} + (n + 1)e^{i(n + 1)\theta} + ne^{i(n + 2)\theta}}{\left(1 -
+    e^{i\theta}\right)^2}$
+
+  Now, $\left(1 - e^{i\theta}\right)^2 = (1 - \cos\theta - i\sin\theta)^2 = \left(2\sin^2\frac{\theta}{2} -
+  2i\sin\frac{\theta}{2}\cos\frac{\theta}{2}\right)^2$
+
+  $= 4\sin^2\frac{\theta}{2}\left[-i\left(\cos\frac{\theta}{2} + i\sin\frac{\theta}{2}\right)\right]^2 =
+  -4\sin^2\frac{\theta}{2}e^{i\theta}$
+
+  $\Rightarrow C + iS = -\frac{1}{4\sin^2\frac{\theta}{2}}\left[1 - (n + 1)e^{in\theta} + n.e^{i(n +
+      1)\theta}\right]$
+
+  Comparing real parts gives us
+
+  $C = -\frac{1}{4\sin^2\frac{\theta}{2}}\left[1 - (n + 1)\cos n\theta + n\cos(n + 1)\theta\right]$.
+\item Let $C = \cos\theta - \frac{1}{3}\cos3\theta + \frac{1}{5}\cos5\theta - \cdots$ to
+  $\infty$
+
+  and $S = \sin\theta - \frac{1}{3}\sin3\theta + \frac{1}{5}\sin5\theta - \cdots$ to
+  $\infty$
+
+  $\Rightarrow C + iS = e^{i\theta} - \frac{e^{i3\theta}}{3} + \frac{e^{i5\theta}}{5} + \cdots$ to $\infty$
+
+  $= \tan^{-1}e^{i\theta}$
+
+  Taking conjugate gives us $C - iS = \tan^{-1}e^{-i\theta}$
+
+  Adding the two gives us
+
+  $2C = \tan^{-1}(\cos\theta + i\sin\theta) + \tan^{-1}(\cos\theta - i\sin\theta) =
+  \tan^{-1}\left[\frac{2\cos\theta}{1 - \left(\cos^2\theta + \sin^2\theta\right)}\right]$
+
+  $2C = \tan^{-1}\infty C = \frac{\pi}{4}$.
+\item Using the formula $\cos^2\theta = \frac{1 + \cos2\theta}{2}$ we can rewite the given series(let its
+  sum be $S$) as
+
+  $S = \frac{n}{2} + \frac{\left[\cos\frac{2\pi}{n} + \cos\frac{6\pi}{n} + \cos\frac{10\pi}{n}\right]}{2}$
+
+  We know that $\cos\alpha + \cos(\alpha + \beta) + \cos(\alpha + 2\beta) + \cdots + \cos(\alpha + (n -
+  1)\beta) = \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\cos\left[\alpha + (n -
+    1)\frac{\beta}{2}\right]$
+
+  Here $\alpha = \frac{2\pi}{n}, \beta = \frac{4\pi}{n}$, which makes
+
+  $\sin\frac{n\beta}{2} = \sin2\pi$, which makes right hand side equal to zero.
+
+  Thus, $S = \frac{n}{2}$.
+\item Let the sum of the series be $S$. We substitute $\sin^2\theta = \frac{1 - \cos2\theta}{2}$ to obtain
+
+  $S = \frac{n}{2} - \frac{\left[\cos2\alpha + \cos\left(2\alpha + \frac{4\pi}{n}\right) + \cdots\right]}{2}$
+
+  Following like previous problem we obtain the same sum and we have same value of $\beta$ which will make
+  the sum zero.
+
+  Thus, $S = \frac{n}{2}$.
+\item Let the sum of the series be $S$. We again substitute $\sin^2\theta = \frac{1 - \cos2\theta}{2}$
+
+  $S = \frac{1 - \cos2\theta}{2} + \frac{1 - \cos6\theta}{2} + \frac{1 - \cos10\theta}{2} + \cdots$ to $2n$
+  terms
+
+  $= n - \frac{\left[\cos2\theta + \cos6\theta + \cos10\theta + \cdots \text{ to } 2n \text{
+        terms}\right]}{2}$
+
+  Now in this case $\alpha = 2\theta$ and $\beta = 4\theta$
+
+  Thus, $\sin
+  n\beta = \sin 4n\theta = \sin\pi$ which is zero.
+
+  Thus, $S = 0$.
+\item We use the result of first two problems to obtain numerator as $\frac{\sin n\alpha}{\sin\alpha}\sin
+  n\alpha$ and denominator as $\frac{\sin n\alpha}{\sin\alpha}\cos n\alpha$.
+
+  Thus, given fraction is $\tan n\alpha$.
+\item We use the formula $\sin^3\theta = \frac{3\sin\theta - \sin3\theta}{4}$, the series becomes
+
+  $S = \frac{3\sin\theta - \sin3\theta}{4} + \frac{3\sin3\theta - \sin9\theta}{4} + \frac{3\sin5\theta -
+  \sin15\theta}{4} + \cdots$
+
+  Again using the fact that $\sin\alpha + \sin(\alpha + \beta) + \sin(\alpha + 2\beta) + \cdots =
+  \frac{\sin\frac{n\beta}{2}}{\sin\frac{\beta}{2}}\sin\left[\alpha + (n - 1)\frac{\beta}{2}\right]$
+
+  $S = \frac{3}{4}\frac{\sin^2n\theta}{\sin\theta} - \frac{1}{4}.\frac{\sin^23n\theta}{\sin3\theta}$.
+\item We can write given series as $\cos\theta + \cos\left[\theta + \left(\theta +
+  \frac{\pi}{2}\right)\right] + \cos\left[\theta + 2\left(\theta + \frac{\pi}{2}\right)\right] + \cdots$
+
+  $= \frac{\sin \frac{n}{2}\left(\theta + \frac{\pi}{2}\right)}{\sin\frac{\left(\theta +
+    \frac{\pi}{2}\right)}{2}}\sin\left(\theta + (n - 1)\frac{\left(\theta + \frac{\pi}{2}\right)}{2}\right)$.
+\item We can use teh formula $2\sin A\sin B = \cos(A - B) - \cos(A + B)$, and the given series can be
+  written as
+
+  $\frac{1}{2}\left[\cos\beta - \cos\left(\alpha + \frac{\beta}{2}\right) - \cos\beta + \cos\left(\alpha +
+  \frac{3\beta}{2}\right) + \cdots\right]$
+
+  $= -\frac{1}{2}\left[\cos\left(\alpha + \frac{\beta}{2}\right) + \cos\left(\alpha + \pi + \frac{3\beta}{2}\right)
+    + \cos\left(\alpha + 2\pi + \frac{5\beta}{2}\right) + \cdots\right]$
+
+  Now from  the formula $\alpha = \alpha + \frac{\beta}{2}$ and $\beta = \pi + \beta$, and thus, the sum
+  becomes
+
+  $S = -\frac{1}{2}\frac{\sin \frac{n(\pi + \beta)}{2}}{\sin\frac{\pi + \beta}{2}}\cos\left[\alpha +
+    \frac{\beta}{2} + (n - 1)\frac{\pi + \beta}{2}\right]$.
+\item Using the formula $\cos^2\theta - \frac{1 + \cos2\theta}{2}$, we can write the given series as
+
+  $S = \frac{n}{2} + \cos2\alpha + \cos2(\alpha + \beta) + \cos2(\alpha + 2\beta) + \cdots$
+
+  Now usiing the formula we have $\alpha = 2\alpha$ and $\beta = 2\beta$, which gives us
+
+  $S = \frac{n}{2} + \frac{\sin n\beta}{\sin\beta}\cos[2\alpha + (n - 1)\beta]$.
+\item We can use the formula $\cos A\cos B = \frac{\cos(A + B) + \cos(A - B)}{2}$, and thus the sum becomes
+
+  $S = \frac{1}{2}\left[\cos\theta + \cos3\theta + \cos\theta + \cos7\theta + \cdots + \cos\theta + \cos(4n
+  - 1)\theta\right]$
+
+  $= \frac{n\cos\theta}{2} + \frac{1}{2}[\cos3\theta  + \cos7\theta + \cos11\theta + \cdots + \cos(4k -
+  1)\theta]$
+
+  Comparing from the foumula $\alpha = 3\theta, \beta = 4\theta$, which gives the sum as
+
+  $S = \frac{n\cos\theta}{2} + \frac{\sin2n\theta}{\sin2\theta}\cos[3\theta + (n - 1)2\theta]$.
+\item We can write the given series as
+
+  $S = \frac{\sin\theta + \sin(\pi + 2\theta) + \sin(2\pi + 3\theta) + \sin(3\pi + 4\theta) +
+  \cdots}{\cos\theta + \cos(\pi + 2\theta) + \cos(2\pi + 3\theta) + \cos(3\pi + 4\theta) + \cdots}$
+
+  Using the formulas we have $\alpha = \theta, \beta = \pi + \theta$, which gives us
+
+  $S = \tan\left[\theta + \frac{(n - 1)(\pi + \theta)}{2}\right] = \tan\frac{(n + 1)}{2}(\pi + \theta)$.
+\item We can write $\sqrt{1 - \sin2\theta} = \sqrt{\sin^2\theta + \cos^2\theta - 2\sin\theta\cos\theta} =
+  \pm(\sin\theta -\cos\theta)$ and so on.
+
+  Thus, the series becomes $\pm[\sin\theta - \cos\theta + \sin2\theta - \cos2\theta + \sin3\theta -
+    \cos3\theta + \cdots]$
+
+  Now using the formula we have the sum as
+
+  $\pm\left[\frac{\sin\frac{n\theta}{2}}{\sin\frac{\theta}{2}}\right]\left[\sin\left(\theta + (n -
+    1)\frac{\theta}{2} - \cos\left(\theta + (n - 1)\frac{\theta}{2}\right)\right)\right]$.
+\item Sum of the series can be obtained from the formula as
+
+  $S = \frac{\sin\frac{n\phi}{2}}{\sin\frac{\phi}{2}}\left[\cos\left(\theta + (n -
+  1)\frac{\phi}{2}\right)\right]$
+
+  Given that $\phi$ is the exterior angle of a regular polygon of $n$ sides, which makes $\phi =
+  \frac{2\pi}{n}$, which make the denominator term $\sin\frac{n\phi}{2} = \sin\pi = 0$ making the entire sum
+  zero.
+\item We write $\cos^2x = \frac{1 + \cos2x}{2}$ to transform the given series to
+
+  $S = \frac{1}{2}[1 + \cos2x + 1 + \cos6x + 1 + \cos10x + \cdots] = \frac{1}{2}[n + \cos2x + \cos6x +
+  \cos10x + \cdots]$
+
+  Clearly, $\alpha = 2x$ and $\beta = 4x$, which gives the sum of the series as
+
+  $S = \frac{1}{2}\left[n + \frac{\sin 2nx}{\sin 2x}\cos[2x + (n - 1)2x]\right] = \frac{1}{2}\left[n +
+    \frac{\sin4nx}{2\sin2x}\right]$.
+\item We make use of the formula $\cos^3\theta = \frac{\cos3\theta + \cos\theta}{4}$ to transform the given
+  series to
+
+  $S = \frac{1}{4}\left[\cos3\theta + \cos3\left(\theta - \frac{2\pi}{n}\right) + \cos3\left(\theta -
+    \frac{4\pi}{n}\right) + \cdots + 3\cos\theta + \3cos\left(\theta - \frac{2\pi}{n}\right) +
+    3\cos\left(\theta - \frac{4\pi}{n}\right) + \cdots\right]$
+
+  In both the series $\beta$ is a multiple of $\frac{2\pi}{n}$, which makes the term in denominator
+  $\sin\frac{n\beta}{2} = \sin\pi = 0$, which makes the entire sum zero.
+\item $\sin^4x = \left(\frac{1 - \cos2x}{2}\right)^2 = \frac{1 - 2\cos2x + \cos^22x}{4} = \frac{1}{4}\left(1
+  - 2\cos2x + \frac{1 + \cos4x}{2}\right) = \frac{3}{8} - \frac{1}{2}\cos2x + \frac{1}{8}\cos4x$
+
+  We observe the series and the transformation we obtain to deduce that $\beta$ will be $\frac{2\pi}{n}$ so
+  the sum of the terms of $\cos x$ would be zero and $\frac{3}{8}$ would be multiplied with $n$. Hence, sum
+  would be $\frac{3n}{8}$.
+\item Given series can be written as $\cos x + \sin3x + \cos5x + \sin7x + \cdots + \cos(4n - 3)x + \sin(4n -
+  1)x$
+
+  For two parts $\alpha = x, 3x$ and $\beta = 4x$. Thus, sum would be
+
+  $S = \frac{\sin2nx}{\sin2x}[\cos\{x + (n - 1)2x\} - \sin\{3x + (n - 1)2x\}]$.
+\item Using the formula $\sin^3\theta = \frac{3\sin\theta - \sin3\theta}{4}$ we can write
+
+  \startformula\startalign
+    \NC \sin^3\frac{x}{3}\NC = \frac{1}{4}\left[3\sin\frac{x}{3} - \sin x\right]\NR
+    \NC 3\sin^3\frac{x}{3^2}\NC = \frac{1}{4}\left[3^2\sin\frac{x}{3^2} - 3\sin\frac{x}{3}\right]\NR
+    \NC \NC \cdots\NR
+    \NC 3^{n - 1}\sin\frac{x}{3^n}\NC = \frac{1}{4}\left[3^n\sin\frac{x}{3^n} - 3^{n - 1}\sin\frac{x}{3^{n - 1}}\right]
+  \stopalign\stopformula
+
+  Adding these we get sum of terms $S_n$ as $S_n = \frac{1}{4}\left[3^n\sin\frac{x}{3^n} - \sin x\right]$,
+  and thus, $S_\infty = -\frac{3}{4}\sin x$.
+\item We write $\sec\theta\sec2\theta = \frac{1}{\cos\theta\cos2\theta} = \frac{\sin(2\theta -
+  \theta)}{\sin\theta\cos\theta\cos2\theta} = \frac{\sin2\theta\cos\theta -
+  \cos2\theta\sin\theta}{\sin\theta\cos\theta\cos2\theta} = \frac{1}{\sin\theta}[\tan2\theta - \tan\theta]$
+
+  Thus, we can write terms as
+
+  \startformula\startalign
+    \NC \sec\theta\sec2\theta \NC = \frac{1}{\sin\theta}[\tan2\theta - \tan\theta]\NR
+    \NC \sec2\theta\sec3\theta \NC = \frac{1}{\sin\theta}[\tan3\theta - \tan2\theta]\NR
+    \NC\NC \cdots \NR
+    \NC \sec n\theta\sec(n + 1)\theta \NC = \frac{1}{\sin\theta}[\tan(n + 1)\theta - \tan n\theta]\NR
+  \stopalign\stopformula
+
+  Adding these we get sum $S$ as $S = \frac{1}{\sin\theta}[\tan(n + 1)\theta - \tan\theta]$.
+\item We know that $\tan2A - \tan A = \tan A\sec2A$ and thus we can write given series in termwise manner
+
+  \startformula\startalign
+    \NC \tan\frac{\theta}{2}\sec\theta \NC = \tan\theta - \tan\frac{\theta}{2}\NR
+    \NC \tan\frac{\theta}{2^2}\sec\frac{\theta}{2} \NC = \tan\frac{\theta}{2} - \tan\frac{\theta}{2^2}\NR
+    \NC \tan\frac{\theta}{2^3}\sec\frac{\theta}{2^2} \NC = \tan\frac{\theta}{2^2} - \tan\frac{\theta}{2^3}\NR
+    \NC\NC \cdots \NR
+  \stopalign\stopformula
+
+  Thus, sum of infinite terms would be $\tan\theta$.
+\item We know that $\cot(A - B) = \frac{\cot A\cot B + 1}{\cot B - \cot A}$, and it follows that
+
+  $\cot r\theta\cot(r + 1)\theta = \cot\theta\cot r\theta - \cot\theta\cot(r + 1)\theta - 1$
+
+  Writing the series in termwise fashion gives us
+
+  \startformula\startalign
+    \NC \cot\theta\cot2\theta \NC = \cot\theta\cot\theta - \cot\theta\cot2\theta - 1\NR
+    \NC \cot2\theta\cot3\theta \NC = \cot\theta\cot2\theta - \cot\theta\cot3\theta - 1\NR
+    \NC\NC\cdots\NR
+    \NC \cot n\theta\cot(n + 1)\theta \NC = \cot\theta\cot n\theta - \cot\theta\cot(n + 1)\theta - 1\NR
+  \stopalign\stopformula
+
+  Adding gives the sum $S$ as $S = \cot^2\theta - \cot\theta\cot(n + 1)\theta - n$.
+\item We know that $\cos C - \cos D = 2\sin\frac{C + D}{2}\sin\frac{D - C}{2}$
+
+  $\Rightarrow \frac{1}{\cos\theta - \cos3\theta} = \frac{1}{2\sin2\theta\sin\theta} = \frac{\sin(2\theta -
+  \theta)}{2\sin\theta\sin\theta\sin2\theta} = \frac{1}{2\sin\theta}[\cot\theta - \cot2\theta]$
+
+  Writing the series in termwise fashion gives us
+
+  \startformula\startalign
+    \NC \frac{1}{\cos\theta - \cos3\theta} \NC = \frac{1}{2\sin\theta}[\cot\theta - \cot2\theta]\NR
+    \NC \frac{1}{\cos\theta - \cot5\theta} \NC = \frac{1}{2\sin\theta}[\cot2\theta - \cot3\theta]\NR
+    \NC \frac{1}{\cos\theta - \cot7\theta} \NC = \frac{1}{2\sin\theta}[\cot3\theta - \cot4\theta]\NR
+    \NC\NC \cdots\NR
+    \NC \frac{1}{\cos\theta - \cot(2n + 1)\theta} \NC = \frac{1}{2\sin\theta}[\cot n\theta - \cot(n + 1)\theta]\NR
+  \stopalign\stopformula
+
+  Adding gives the sum $S$ as $S = \frac{1}{2\sin\theta}[\cot\theta - \cot(n + 1)\theta]$.
+\item $\sec x\sec(x + y) = \frac{\sin(x + y - x)}{\sin y\cos x \cos(x + y)} = \frac{1}{\sin y}[\tan(x + y) -
+  \tan x]$
+
+  Writing the series in termwise fashion gives us
+
+  \startformula\startalign
+    \NC \sec x\sec(x + y) \NC = \frac{1}{\sin y}[\tan(x + y) - \tan x]\NR
+    \NC \sec(x + y)\sec(x + 2y) \NC = \frac{1}{\sin y}[\tan(x + 2y) - \tan(x + y)]\NR
+    \NC \sec(x + 2y)\sec(x + 3y) \NC = \frac{1}{\sin y}[\tan(x + 3y) - \tan(x + 2y)]\NR
+    \NC\NC \cdots \NR
+    \NC \sec(x + (n- 1)y)\sec(x + ny) \NC = \frac{1}{\sin y}[\tan(x + ny) - \tan(x + (n - 1)y)]\NR
+  \stopalign\stopformula
+
+  Adding gives the sum $S$ as $S = \frac{1}{\sin y}[\tan(x + ny) - \tan x]$.
+\item $\frac{\sin2\theta}{\cos\theta\cos3\theta} =
+  \frac{2\sin\theta\sin2\theta}{2\sin\theta\cos\theta\cos2\theta} = \frac{\cos\theta -
+    \cos3\theta}{2\sin\theta\cos\theta\cos2\theta} = \frac{1}{2\sin\theta}[\sec3\theta - \sec\theta]$
+
+  Writing the series in termwise fashion gives us
+
+  \startformula\startalign
+    \NC \frac{\sin2\theta}{\cos\theta\cos3\theta} \NC = \frac{1}{2\sin\theta}[\sec3\theta - \sec\theta]\NR
+    \NC \frac{\sin4\theta}{\cos3\theta\cos5\theta} \NC = \frac{1}{2\sin\theta}[\sec5\theta - \sec3\theta]\NR
+    \NC \frac{\sin6\theta}{\cos5\theta\cos7\theta} \NC = \frac{1}{2\sin\theta}[\sec7\theta - \sec5\theta]\NR
+    \NC\NC \cdots \NR
+    \NC \frac{\sin2n\theta}{\cos(2n - 1)\theta\cos(2n + 1)\theta} \NC = \frac{1}{2\sin\theta}[\sec(2n +
+      1)\theta - \sec(2n - 1)\theta]\NR
+  \stopalign\stopformula
+
+  Adding gives the sum $S$ as $S = \frac{1}{2\sin\theta}[\sec(2n + 1)\theta - \sec\theta]$.
+\item $\frac{\sin2\theta}{\sin\theta\sin3\theta} =
+  \frac{2\cos\theta\sin2\theta}{2\cos\theta\sin\theta\sin3\theta} = \frac{\sin3\theta -
+    \sin\theta}{2\cos\theta\sin\theta\sin3\theta} = \frac{1}{2\cos\theta}[\csc\theta - \csc3\theta]$
+
+  Writing the series in termwise fashion gives us
+
+  \startformula\startalign
+    \NC \frac{\sin2\theta}{\sin\theta\sin3\theta}\NC = \frac{1}{2\cos\theta}[\csc\theta - \csc3\theta]\NR
+    \NC \frac{\sin4\theta}{\sin3\theta\sin5\theta}\NC = \frac{1}{2\cos\theta}[\csc3\theta - \csc5\theta]\NR
+    \NC \frac{\sin6\theta}{\sin5\theta\sin7\theta}\NC = \frac{1}{2\cos\theta}[\csc5\theta - \csc7\theta]\NR
+    \NC\NC \cdots\NR
+    \NC \frac{\sin2n\theta}{\sin(2n - 1)\theta\sin(2n + 1)\theta}\NC = \frac{1}{2\cos\theta}[\csc(2n -
+      1)\theta - \csc(2n + 1)\theta]\NR
+  \stopalign\stopformula
+
+  Adding gives the sum $S$ as $S = \frac{1}{2\cos\theta[\csc\theta - csc(2n + 1)\theta]}$.
 \stopitemize
