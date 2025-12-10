@@ -357,7 +357,7 @@
 
   $= e^{i\alpha}\left[1 + xe^{i\beta} + \frac{x^2}{2!}e^{i2\beta} + \cdots \text{ to } \infty\right]$
 
-  $= e{i\alpha}\left[1 + z + \frac{z^2}{2!} + \cdots \text{ to } \infty\right]$ where $z = x.e^{i\beta}$
+  $= e^{i\alpha}\left[1 + z + \frac{z^2}{2!} + \cdots \text{ to } \infty\right]$ where $z = x.e^{i\beta}$
 
   $= e^{i\alpha}e^{xe^{i\beta}} = e^{i\alpha}e^{x\cos\beta}e^{i\sin\beta} = e^{x\cos\beta}[\cos(\alpha +
     x\sin\beta) + i\sin(\alpha + i\sin\beta)]$
@@ -415,10 +415,10 @@
     \sin^2\theta) + i\sin(\theta + \cos^2\theta)]$
 
   Comparing real parts, we have sum as $C = e^{\sin\theta\cos\theta}\cos(\theta + \sin^2\theta)$.
-\item Let $C = x\cos\theta + \frac{x^2}{2}\cos2\theta + \frac{x^3}{\theta}\cos3\theta +
+\item Let $C = x\cos\theta + \frac{x^2}{2}\cos2\theta + \frac{x^3}{3}\cos3\theta +
   \cdots$ to $\infty$
 
-  and $S = x\sin\theta + \frac{x^2}{2}\sin2\theta + \frac{x^3}{\theta}\sin3\theta +
+  and $S = x\sin\theta + \frac{x^2}{2}\sin2\theta + \frac{x^3}{3}\sin3\theta +
   \cdots$ to $\infty$
 
   $C + iS = xe^{i\theta} + \frac{x^2}{2}e^{i2\theta} + \frac{x^3}{3}e^{i3\theta} + \cdots$ to $\infty$
@@ -896,4 +896,372 @@
   \stopalign\stopformula
 
   Adding gives the sum $S$ as $S = \frac{1}{2\cos\theta[\csc\theta - csc(2n + 1)\theta]}$.
+  %65
+\item We know that $\tan x\sec2x = \tan2x - \tan x$, and thus, we can write given series in termwise manner
+  to obtain
+
+  \startformula\startalign
+    \NC \tan x\sec2x \NC = \tan2x - \tan x\NR
+    \NC \tan2x\sec2^2\NC = \tan2^2x - \tan2x\NR
+    \NC \tan2^2x\sec2^3x \NC = \tan2^3x - \tan2^2x\NR
+    \NC\NC \cdots\NR
+    \NC \tan2^{n - 1}x\sec2^nx \NC = \tan2^nx - \tan2^{n - 1}x\NR
+  \stopalign\stopformula
+
+  Adding gives us $S = \tan2^nx - \tan x$.
+  %66
+\item It can be easily proven than $2\csc2\theta\cot2\theta = \csc^2\theta - 2\csc^22\theta$
+
+  Now we can write the given series in termwise fashion as given below:
+
+  \startformula\startalign
+    \NC 2\csc2\theta\cot2\theta \NC = \csc^2\theta - 2\csc^22\theta\NR
+    \NC 4\csc4\theta\cot4\theta \NC = 2\csc^22\theta - 2^2\csc^22^2\theta\NR
+    \NC 8\csc8\theta\cot8\theta \NC = 2^2\csc^22^2\theta - 2^3\csc^22^3\theta\NR
+    \NC\NC \cdots\NR
+    \NC 2^n\csc2^n\theta\cot2^n\theta \NC = 2^{n - 1}\csc^22^{n - 1}\theta - 2^n\csc^22^n\theta\NR
+  \stopalign\stopformula
+
+  Adding we get the sum of the series as $\csc^2\theta - 2^n\csc^22^n{\theta}$.
+  %67
+\item We find that $\sin\theta\sin3\theta = \frac{1}{2}[\cos2\theta - \cos4\theta]$. Writing rest of the
+  terms similarly gives us
+
+  \startformula\startalign
+    \NC\sin\theta\sin3\theta\NC = \frac{1}{2}[\cos2\theta - \cos4\theta]\NR
+    \NC\sin\frac{\theta}{2}\sin\frac{3\theta}{2} \NC = \frac{1}{2}\left[\cos\theta - \cos2\theta\right]\NR
+    \NC\sin\frac{\theta}{2^2}\sin\frac{3\theta}{2^2} \NC = \frac{1}{2}\left[\cos\frac{\theta}{2} -
+      \cos\theta\right]\NR
+    \NC\NC\cdots\NR
+    \NC\sin\frac{\theta}{2^{n - 1}}\sin\frac{3\theta}{2^{n - 1}} \NC =
+    \frac{1}{2}\left[\cos\frac{\theta}{2^{n - 2}} - \cos\frac{\theta}{2^{n - 1}}\right]\NR
+  \stopalign\stopformula
+
+  Adding gives us sum as $\frac{1}{2}\left[\cos\frac{\theta}{2^{n - 2}} - \cos4\theta\right]$.
+  %68
+\item $\cos\frac{\theta}{2} = \frac{2\sin\theta}{2\sin\theta}.\cos\frac{\theta}{2} =
+  \frac{\sin\theta}{2}.\frac{\cos\frac{\theta}{2}}{2\sin\frac{\theta}{2}\cos\frac{\theta}{2}}$
+
+  $= \frac{\sin\theta}{2}.\csc\frac{\theta}{2} =
+  \frac{2\sin\theta}{2}.\frac{\sin\frac{\theta}{4}}{\sin\frac{\theta}{2}\sin\frac{\theta}{4}} =
+  \frac{\sin\theta}{2}.\frac{\sin\left(\frac{\theta}{2} -
+    \frac{\theta}{4}\right)}{.\sin\frac{\theta}{2}.\sin\frac{\theta}{4}} =
+  \frac{\sin\theta}{2}\left[\cot\frac{\theta}{4} - \cot\frac{\theta}{2}\right]$
+
+  Writing rest of the terms similarly gives us
+
+  \startformula\startalign
+    \NC\cos\frac{\theta}{2}\NC = \frac{\sin\theta}{2}\left[\cot\frac{\theta}{4} - \cot\frac{\theta}{2}\right]\NR
+    \NC2\cos\frac{\theta}{2}\cos\frac{\theta}{2^2}\NC = \frac{\sin\theta}{2}\left[\cot\frac{\theta}{8} -
+      \cot\frac{\theta}{4}\right]\NR
+    \NC\NC\cdots\NR
+    \NC2^n\cos\frac{\theta}{2}\cos\frac{\theta}{2^2}\cdots\cos\frac{\theta}{2^n}\NC =
+    \frac{\sin\theta}{2}\left[\cot\frac{\theta}{2^{n + 1}} -
+      \cot\frac{\theta}{2^n}\right]\NR
+  \stopalign\stopformula
+
+  Adding gives the sum as $\frac{\sin\theta}{2}\left[\cot\frac{\theta}{2^{n + 2}} -
+    \cot\frac{\theta}{2}\right]$.
+  %69
+\item $\tan^2x\tan2x = \frac{2\tan x.\tan^2x}{1 - \tan^2x} = \frac{2\tan x}{1 - \tan^2x} - 2\tan x = \tan2x
+  - 2\tan x$, and similarly
+
+  $\frac{1}{2}\tan^22x\tan4x = \frac{1}{2}\tan2^2x - \tan 2x$
+
+  Following similarly we can write
+
+  \startformula\startalign
+    \NC \tan^2x\tan2x \NC = \tan2x - 2\tan x\NR
+    \NC \frac{1}{2}\tan^22x\tan4x \NC = \frac{1}{2}\tan2^2x - \tan2x\NR
+    \NC\NC\cdots\NR
+    \NC \frac{1}{2^{n - 1}}\tan^22^{n - 1}x\tan2^nx \NC = \frac{1}{2^{n - 1}}\tan2^nx - \frac{1}{2^{n -
+        2}}\tan2^{n - 1}x\NR
+  \stopalign\stopformula
+
+  Adding gives the sum of the series as $\frac{1}{2^{n - 1}}\tan2^nx - 2\tan x$.
+  %70
+\item Given series is $\tan^{-1}\frac{1}{3} + \tan^{-1}\frac{1}{7} + \tan^{-1}\frac{1}{13} +
+  \cdots$ to $n$ terms.
+
+  We can write $\frac{1}{3} = \frac{1}{1 + 1.2}\Rightarrow \tan^{-1}\frac{1}{3} = \tan^{-1}2 - \tan^{-1}1$
+  and similarly
+
+  $\tan^{-1}\frac{1}{7} = \tan^{-1}3 - \tan^{-1}2$ and so on.
+
+  Thus, we see that the sum of the series is $\tan^{-1}\infty - \tan^{-1}1 = \frac{\pi}{4}$.
+  %71
+\item This is same as previous problem and sum of $n$ term is $\tan^{-1}(n + 1) - \tan^{-1}1$.
+  %72
+\item We can wrote $\tan^{-1}\frac{4}{1 + 3.4} = \tan^{-1}\frac{6 - 2}{1 + 2.6} = \tan^{-1}6 - \tan^{-1}2 =
+  \tan^{-1}2.3 - \tan^{-1}1.2$
+
+  Similarly $tan^{-1}\frac{6}{1 + 8.9} = \tan^{-1}\frac{12 - 6}{1 + 12.6} = \tan^{-1}12 - \tan^{-1}6 =
+  \tan^{-1}3.4 - tan^{-1}2.3$
+
+  and so on.
+
+  Adding these terms gives us sum as $\tan^{-1}(n + 1)(n + 2) - \tan^{-1}2$.
+  %73
+\item General term is given by $\cot^{-1}2n^2 = \tan^{-1}\frac{1}{2n^2} = \tan^{-1}\frac{2n + 1 - 2n + 1}{1
+  + (2n + 1)(2n - 1)} = \tan^{-1}(2n + 1) - \tan^{-1}(2n - 1)$
+
+  Thus, sum of series would be $\tan^{-1}\infty - \tan^{-1}1 = \frac{\pi}{2} - \frac{\pi}{4} =
+  \frac{\pi}{4}$.
+  %74
+\item We can write $\tan^{-1}\frac{1}{3} = \tan^{-1}\frac{2 - 1}{1 + 1.2} = \tan^{-1}2 - \tan^{-1}1$
+
+  Similarly $\tan^{-1}\frac{2}{9} = \tan^{-1}\frac{4 - 2}{1 + 2.4} = \tan^{-1}4 - \tan^{-1}2$
+
+  Similarly $\tan^{-1}\frac{4}{33} = \tan^{-1}\frac{8 - 4}{1 + 4.8} = \tan^{-1}8 - \tan^{-1}4$
+
+  and proceeding similarly, we see that sum of infinite terms is $\tan^{-1}\infty - \tan^{-1}1 =
+  \frac{\pi}{4}$.
+  %75
+\item $t_r = \cot^{-1}\left(2^{r + 1} + \frac{1}{2^r}\right) = \tan^{-1}\frac{2^r}{1 + 2^r.2^{r + 1}} =
+  \tan^{-1}2^{r + 1} - \tan^{-1}2^r$
+
+  Thus we can write the series in termwise fashion to get the sum as $\tan^{-1}\infty - \tan^{-1}2$.
+  %76
+\item Let $C = \cos\theta + \frac{1}{2}\cos2\theta + \frac{1}{2^2}\cos3\theta + \cdots \infty$
+
+  and $S = \sin\theta + \frac{1}{2}\sin2\theta + \frac{1}{2^2}\sin3\theta + \cdots \infty$
+
+  Now $C + iS = e^{i\theta} + \frac{e^{i2\theta}}{2} + \frac{e^{i3\theta}}{2^2} + \cdots \infty$
+
+  $= \frac{e^{i2\theta}}{2 - e^{i\theta}} = \frac{(\cos2\theta + i\sin2\theta)[(2 - \cos\theta) +
+      i\sin\theta]}{(2 - \cos\theta)^2 + \sin^2\theta}$
+
+  Comparing real parts gives the sum of the series as
+
+  $C = \frac{\cos2\theta(2 - \sin\theta) + \sin\theta\sin2\theta}{5 - 4\cos\theta}$.
+  %77
+\item Let $C = 1 + \cos\theta\cos\theta + \cos^2\theta\cos2\theta + \cos^3\theta\cos3\theta + \cdots \infty$
+
+  and $S = \cos\theta\sin\theta + \cos^2\theta\sin2\theta + \cos^3\theta\sin3\theta + \cdots \infty$
+
+  $C + iS = 1 + \cos\theta e^{i\theta} + \cos^2\theta e^{i2\theta} + \cos^3\theta e^{i3\theta} + \cdots
+  \infty$
+
+  $= \frac{1}{1 - \cos\theta e^{i\theta}} = \frac{1}{1 - \cos^2\theta - i\cos\theta\sin\theta} = \frac{1 -
+    \cos^2\theta + i\cos\theta\sin\theta}{\left(1 - \cos^2\theta\right)^2 + \cos^2\theta\sin^2\theta}$
+
+  Comparing real parts we find $C = 1$.
+  %78
+\item Let $C = 1 + x\cos\theta + x^2\cos2\theta + \cdots \infty$
+
+  and $S = x\sin\theta + x^2\sin2\theta + \cdots \infty$
+
+  $\Rightarrow C + iS = 1 + xe^{i\theta} + x^2e^{i2\theta} + \cdots \infty = \frac{1}{1 - xe^{i\theta}}$
+
+  $= \frac{1}{1 - x\cos\theta + xi\sin\theta}$
+
+  Comparing real parts we get $C = \frac{1 - x\cos\theta}{1 - 2x\cos\theta + x^2}$.
+  %79
+\item The sum of this series is $\frac{S}{x}$ of previous part or imaginary part of the sum.
+
+  $S = \frac{\sin\theta}{1 - 2x\cos\theta + x^2}$.
+  %80
+\item Let $C = 1 + \frac{\cos\theta}{\cos\theta} + \frac{\cos2\theta}{\cos^2\theta} +
+  \frac{\cos3\theta}{\cos^3\theta} + \cdots$
+
+  and $S = \frac{\sin\theta}{\cos\theta} + \frac{\sin2\theta}{\cos^2\theta} +
+  \frac{\sin3\theta}{\cos^3\theta} + \cdots$
+
+  $C + iS = 1 + \frac{e^{i\theta}}{\cos\theta} + \frac{e^{i2\theta}}{\cos^2\theta} +
+  \frac{e^{i3\theta}}{\cos^3\theta} + \cdots$
+
+  $= \frac{1}{1 - \frac{e^{i\theta}}{\cos\theta}} = \frac{\cos\theta}{-i\sin\theta}$
+
+  Thus, comparing real parts we find the sum $C = 0$.
+  %81
+\item Let $S = \sin\alpha + n\sin(\alpha + \beta) + \frac{n(n + 1)}{2!}\sin(\alpha +
+  2\beta) + \cdots \infty$
+
+  and $C = \cos\alpha + in\cos(\alpha + \beta) + i\frac{n(n + 1)}{2}\cos(\alpha + 2\beta) + \cdots \infty$
+
+  $\Rightarrow C + iS = e^{i\alpha}\left(1 - e^{i\beta}\right)^{-n}$
+
+  $1 - e^{i\beta} = e^{i\beta/2}\left(e^{-i\beta/2} - e^{i\beta/2}\right) = e^{i\beta/2}(-2i\sin(\beta/2))$
+
+  $\left(1 - e^{i\beta}\right)^{-n} = e^{-in\beta/2}\left(-2i\sin(\beta/2)\right)^{-n} =
+  e^{-in\beta/2}\left(2\sin(\beta/2)\right)^{-n}(-i)^{-n}$
+
+  We know that $-i = e^{-i\pi/2}\Rightarrow (-i)^{-n} = e^{-in\pi/2}$
+
+  $\Rightarrow C + iS = (2\sin(\beta/2))^{-n}e^{i(\alpha - n\beta/2 + n\pi/2)}$
+
+  Thus, sum of the series is $\frac{\sin(\alpha + n(\pi/2 - \beta/2))}{2^n\sin^n(\beta/2)}$.
+  %82
+\item Let $S = n\sin\alpha + \frac{n(n + 1)}{2!}\sin2\alpha + \frac{n(n + 1)(n +
+  2)}{3!}\sin3\alpha + \cdots \infty$
+
+  Like previous problems corresponding complex series would be $C + iS = ne^{i\alpha} + \frac{n(n +
+    1)}{2!}e^{i2\alpha} + \cdots \infty = \left(1 - e^{i\alpha}\right)^{-n} - 1$
+
+  Now $1 - e^{i\alpha} = (1 - \cos\alpha) + i\sin\alpha = 2\sin\frac{\alpha}{2}\left(\sin\frac{\alpha}{2} -
+  i\cos\frac{\alpha}{2}\right)$
+
+  Now $\sin\frac{\alpha}{2} - i\cos\frac{\alpha}{2} = e^{i\left(\frac{\alpha}{2} - \frac{\pi}{2}\right)}$
+
+  Now $\left(1 - e^{i\alpha}\right)^{-n} = \frac{1}{2^n\sin^n\frac{\alpha}{2}}\left[\cos\left(\frac{n\pi}{2}
+    - \frac{n\alpha}{2}\right) + i\sin\left(\frac{n\pi}{2} - \frac{n\alpha}{2}\right)\right]$
+
+  Comparing imaginary parts we get $S = \frac{1}{2^n\sin^n\frac{\alpha}{2}}\sin\left(\frac{n\pi}{2} -
+  \frac{n\alpha}{2}\right)$.
+  %83
+\item Following like previous problem we obtain the sum as
+  $\frac{1}{2^n\sin^2\frac{\alpha}{2}}\cos\left(\frac{n\pi}{2} - \frac{n\alpha}{2}\right)$.
+  %84
+\item Given series is $C = \cos\alpha + C_1^^n\cos(\alpha + \beta) + C_2^^n\cos(\alpha + 2\beta) + \cdots +
+  \cos(\alpha + n\beta)$
+
+  Let $S = \sin\alpha + C_1^^n\sin(\alpha + \beta) + C_2^^n\sin(\alpha + 2\beta) + \cdots +
+  \sin(\alpha + n\beta)$
+
+  $\Rightarrow C + iS = e^{i\alpha} + C_1^^ne^{i(\alpha + \beta)} + C_2^^ne^{i(\alpha + 2\beta)} + \cdots +
+  e^{i(\alpha + n\beta)}$
+
+  $= e^{i\alpha}\left(1 + e^{i\beta}\right)^n = e^{i\alpha}\left(2\cos^2\frac{\beta}{2} +
+  2i\sin\frac{\beta}{2}\cos\frac{\beta}{2}\right)$
+
+  $= 2^n\cos^n\frac{\beta}{2}e^{i\left(\alpha + \frac{\beta}{2}\right)}$
+
+  Comparing real parts we get the sum as $C = 2^n\cos^n\frac{\beta}{2}\cos\left(\alpha +
+  \frac{n\beta}{2}\right)$.
+  %85
+\item Let $C = \frac{1}{2}\cos\theta + \frac{1.3}{2.4}\cos2\theta + \frac{1.3.5}{2.4.6}\cos3\theta +
+  \cdots \infty$
+
+  and $S = \frac{1}{2}\sin\theta + \frac{1.3}{2.4}\sin2\theta + \frac{1.3.5}{2.4.6}\sin3\theta +
+  \cdots \infty$
+
+  $\Rightarrow C + iS = \frac{1}{2}e^{i\theta} + \frac{1.3}{2.4}e^{i2\theta} +
+  \frac{1.3.5}{2.4.6}e^{i3\theta} + \cdots \infty$
+
+  $= \left(1 - e^{i\theta}\right)^{-\frac{1}{2}} - 1 = \left(2\sin^2\frac{\theta}{2} -
+  2i\cos\frac{\theta}{2}\sin\frac{\theta}{2}\right)^{-\frac{1}{2}} - 1$
+
+  $= \left(-2i\sin(\theta/2)e^{i\theta/2}\right)^{-1/2} - 1$
+
+  Putting $-i = e^{-i\pi/2}$, we get
+
+  $C + iS = \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}e^{i\left(\frac{\pi}{4} - \frac{\theta}{4}\right)} - 1$
+
+  Comparing real part gives us $C = \frac{1}{\sqrt{2\sin\frac{\theta}{2}}}\cos\left(\frac{\pi -
+    \theta}{4}\right) - 1$.
+  %86
+\item Let $C = 1 + \frac{1}{2}\cos2\theta - \frac{1}{2.4}\cos4\theta + \frac{1.3}{2.4.6}\cos6\theta +
+  \cdots \infty$
+
+  and $S = \frac{1}{2}\sin2\theta - \frac{1}{2.4}\sin4\theta + \frac{1.3}{2.4.6}\sin6\theta +
+  \cdots \infty$
+
+  $\Rightarrow C + iS = 1 = \frac{1}{2}e^{i2\theta} - \frac{1}{2.4}e^{i4\theta} +
+  \frac{1.3}{2.4.6}e^{i6\theta} + \cdots \infty$
+
+  $= \left(e^{i2\theta}\right)^{1/2} = (1 + \cos\theta + i\sin2\theta)^{2/1} = \left(2\cos^2\theta +
+  i2\sin\theta\cos\theta\right)^{1/2} = \sqrt{2\cos\theta}\left(\cos\frac{\theta}{2} +
+  i\sin\frac{\theta}{2}\right)$
+
+  $\Rightarrow C = \sqrt{2\cos\theta}.\cos\frac{\theta}{2} = \sqrt{\cos\theta(1 + \cos\theta)}$.
+  %87
+\item Let $S = \sin\alpha + x\sin(\alpha + \beta) + \frac{x^2}{2!}\sin(\alpha + 2\beta) +
+  \frac{x^3}{3!}\sin(\alpha + 3\beta) + \cdots$
+
+  and $C = \cos\alpha + x\\cos(\alpha + \beta) + \frac{x^2}{2!}\cos(\alpha + 2\beta) +
+  \frac{x^3}{3!}\cos(\alpha + 3\beta) + \cdots$
+
+  $\Rightarrow C + iS = e^{i\alpha} + xe^{i(\alpha + \beta)} + \frac{x^2}{2!}e^{i(\alpha + 2\beta)} +
+  \frac{x^3}{3!}e^{i(\alpha + 3\beta)} + \cdots$
+
+  $= e^{i\alpha}e^{xe}^{i\beta} = e^{x\cos\beta}e^{i(\alpha + x\sin\beta)}$
+
+  The imaginary part is $e^{x\cos\beta}\sin(\alpha + x\sin\beta)$.
+  %88
+\item Let $C = \cos\theta - \frac{\cos2\theta}{2!} + \frac{\cos3\theta}{3!} - \cdots
+  \infty$
+
+  $C = \displaystyle\sum_{n = 1}^\infty(-1)^{n - 1}\frac{\cos b\theta}{n!}$. Let $S = \displaystyle\sum_{n =
+    1}^\infty(-1)^{n - 1}\frac{\sin b\theta}{n!}$
+
+  $C + iS = \displaystyle\sum_{n = 1}^n (-1)^{n - 1}\frac{e^{in\theta}}{n!}$
+
+  We know that $e^{-x} = 1 - x + \frac{x^2}{2!} - \frac{x^3}{3!} + \cdots \infty$
+
+  $\Rightarrow C + iS = 1 - e^{e^{-i\theta}} = 1 - e^{-\cos\theta}[\cos(\sin\theta) - i\sin(\sin\theta)]$
+
+  Thus, $C = 1 - e^{-\cos\theta}\cos(\sin\theta)$.
+  %89
+\item Let $C = \cos\theta + \frac{a\cos2\theta}{1!} + \frac{a^2\cos3\theta}{2!} +
+  \frac{a^3\cos4\theta}{3!} + \cdots$
+
+  and $S = \sin\theta + \frac{a\sin2\theta}{1!} + \frac{a^2\sin3\theta}{2!} +
+  \frac{a^3\sin4\theta}{3!} + \cdots$
+
+  $C + iS = \displaystyle\sum_{n = 0}^\infty \frac{a^ne^{i(n + 1)\theta}}{n!} = e^{i\theta}e^{ae^{i\theta}}$
+
+  $= e^{a\cos\theta}[\cos(\theta + a\sin\theta) + i\sin(\theta + a\sin\theta)]$
+
+  The real part is $e^{a\cos\theta}\cos(\theta + a\sin\theta)$.
+  %90
+\item In this question instead of $a$ we have $\cos\theta$. Thus, answer is $e^{\cos^2\theta}\cos(\theta +
+  \cos\theta\sin\theta)$.
+  %91
+\item Let $C = 1 + \frac{\cos\alpha}{1!}\cos\beta + \frac{\cos^2\alpha}{2!}\cos2\beta +
+  \frac{\cos^3\alpha}{3!}\cos3\beta + \cdots$
+
+  and $S = \frac{\sin\alpha}{1!}\sin\beta + \frac{\sin^2\alpha}{2!}\sin2\beta +
+  \frac{\sin^3\alpha}{3!}\sin3\beta + \cdots$
+
+  $C + iS = \displaystyle\sum_{n = 0}^\infty\frac{\left(\cos\alpha e^{i\beta}\right)^n}{n!}$
+
+  Proceeding like previous problem we find real part i.e. sum as
+  $e^{\cos\alpha\cos\beta}\cos(\cos\alpha\sin\beta)$.
+  %92
+\item Let $C = \sin\theta - \frac{1}{2}\sin2\theta + \frac{1}{3}\sin3\theta - \cdots \infty$
+
+  and $S = \cos\theta - \frac{1}{2}\cos2\theta + \frac{1}{3}\cos3\theta - \cdots \infty$
+
+  $\Rightarrow S + iC = \displaystyle\sum_{n = 1}^\infty (-1)^{n + 1}\frac{e^{in\theta}}{n} = \ln\left(1 +
+  e^{i\theta}\right)$
+
+  $= \ln\left(2\cos\frac{\theta}{2}\right) + i\frac{\theta}{2}$
+
+  Comparing imaginary parts we have the required equality.
+  %93
+\item Let $S = a\sin\theta - \frac{a^22}{2}\sin2\theta + \frac{a^3}{3}\sin3\theta - \cdots \infty$
+
+  and $C = a\cos\theta - \frac{a^22}{2}\cos2\theta + \frac{a^3}{3}\cos3\theta - \cdots \infty$
+
+  $\Rightarrow C + iS = \ln\left(1 + ae^{i\theta}\right) = \ln(1 + \cos\theta + i\sin\theta)$
+
+  Representing $1 + \cos\theta + i\sin\theta = re^{i\phi}$ gives us $r = \sqrt{1 + a^2 + 2a\cos\theta}$ and
+  $\phi = \tan^{-1}\left(\frac{a\sin\theta}{1 + \cos\theta}\right)$
+
+  Thus, $S = \tan^{-1}\left(\frac{a\sin\theta}{1 + \cos\theta}\right)$.
+  %94
+\item Let $C = \cos\theta + \frac{1}{2}\cos2\theta + \frac{1}{3}\cos3\theta + \cdots \infty =
+  \displaystyle\sum_{n = 1}^\infty = \frac{\cos n\theta}{n}$
+
+  Let $S = \sin\theta + \frac{1}{2}\sin2\theta + \frac{1}{3}\sin3\theta + \cdots \infty$
+
+  $\Rightarrow C + iS = \displaystyle\sum_{n = 1}^\infty \frac{e^{in\theta}}{n} = -\log\left(1 -
+  e^{i\theta}\right)$
+
+  Simplifying like previous problems we arrive at $C = -\log2\sin\frac{\theta}{2}$.
+  %95
+\item This problem is the imaginary part of the last probelm which can be found to be $\frac{\pi}{2} -
+  \frac{\theta}{2}$.
+  %96
+\item Proceeding like previous problems the given series can be written as
+
+  $C = \Re\left[\displaystyle\sum_{n = 0}^\infty(-1)^n\frac{c^{2n + 1}}{2n + 1}e^{i(2n + 1)\theta}\right]$
+
+  We know that $\tan^{-1}z = z - \frac{z^3}{3} + \frac{z^5}{5} - \cdots$
+
+  Thus, $C = \Re\left(\tan^{-1}ce^{i\theta}\right)$
+
+  Now $\Re\left(\tan^{-1}{x + iy}\right) = \frac{1}{2}\tan^{-1}\left(\frac{2x}{1 - x^2 - y^2}\right)$
+
+  Thus, $C = \frac{1}{2}\tan^{-1}\left(\frac{2c\cos\theta}{1 - c^2}\right)$.
 \stopitemize
