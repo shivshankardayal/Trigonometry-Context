@@ -1,0 +1,253 @@
+% -*- mode: context; -*-
+\chapter{De Moivre's Theorem}
+
+Throughout the development of mathematics, one recurring theme has been the search for elegant structures
+that unify seemingly different ideas. From the earliest explorations of geometry and number theory to the
+modern study of analysis, mathematicians have continually sought ways to simplify complex operations and
+reveal the hidden order behind them. This desire for connection is especially evident in the evolution of
+the complex number system—a framework that began as a formal solution to equations lacking real roots, yet
+eventually became one of the most powerful tools in both pure and applied mathematics.
+
+Complex numbers extend the real number line into a plane, transforming arithmetic into a geometric
+language. Here, addition corresponds to translation, multiplication corresponds to a combined rotation and
+dilation, and each number carries not only a magnitude but also a direction. This geometric interpretation
+opened new pathways for understanding algebraic operations, enabling mathematicians to visualize
+transformations that once appeared abstract. The interplay between these different viewpoints—algebraic,
+geometric, and trigonometric—revealed deep structural relationships that unify broad areas of mathematics.
+
+As complex numbers became more widely studied, it became clear that expressing them in polar form, using a
+magnitude and an angle, provides exceptional clarity when dealing with multiplication and
+exponentiation. Instead of expanding polynomials or dealing with unwieldy rectangular coordinates, polar
+form offers a concise way to describe how complex numbers stretch and rotate the plane. This shift in
+perspective set the stage for one of the most elegant connections between trigonometry and complex algebra.
+
+It is in this context that {\bf De Moivre's Theorem} emerges as a central and beautiful result. By showing how to
+raise complex numbers in trigonometric form to integer powers, the theorem creates a direct bridge between
+algebraic exponentiation and angular rotation. It reveals that the behavior of powers of complex numbers
+follows a surprisingly simple pattern: magnitudes grow exponentially, while angles increase linearly. This
+insight not only simplifies computations that would otherwise be cumbersome, but also leads to powerful
+methods for deriving trigonometric identities and finding complex roots.
+
+Thus, {\bf De Moivre's Theorem} stands as a remarkable example of mathematical unity, where ideas from
+different domains converge into a single, elegant statement that captures the essence of complex
+exponentiation. The journey from algebraic equations to geometric rotations culminates in this theorem,
+highlighting the profound ways in which mathematics weaves diverse concepts into coherent and beautiful
+structures.
+
+\starttheorem
+If $n$ be a positive or negative number, then $(\cos\theta + i\sin\theta)^n = \cos n\theta + i\sin n\theta$
+and if $n$ is a positive or negative rational(not an integer) then one of the values of $(\cos\theta +
+i\sin\theta)^n$ is $\cos n\theta + i\sin n\theta$.
+\stoptheorem
+
+\startproof
+{\bf Case I:} When $n$ is a positive integer.
+
+$\left(\cos\theta_1 + i\sin\theta_1\right)\left(\cos\theta_2 + i\sin\theta_2\right) = \cos\theta_1\cos\theta_2 -
+\sin\theta_1\sin\theta_2 + i\left(\cos\theta_1\sin\theta_2 + \cos\theta_2\sin\theta_1\right)$
+
+$= \cos\left(\theta_1 + \theta_2\right) + i\sin\left(\theta_1 + \theta_2\right)$
+
+Similarly, $\left(\cos\theta_1 + i\sin\theta_1\right)\left(\cos\theta_2 +
+  i\sin\theta_2\right)\left(\cos\theta_3 + i\sin\theta_3\right) = \cos\left(\theta_1 + \theta_2 +
+  \theta_3\right) + i\sin\left(\theta_1 + \theta_2 + \theta_3\right)$
+
+Extending this we can say that $(\cos\theta + i\sin\theta)(\cos\theta + i\sin\theta) \cdots n$ times $= \cos
+n\theta + i\sin n\theta$.
+
+{\bf Case II:} When $n$ is a negative integer.
+
+$(\cos\theta + i\sin\theta)^{-n} = \frac{1}{\cos n\theta - i\sin n\theta} = \frac{1}{\cos n\theta - i\sin
+  n\theta}.\frac{\cos n\theta + i\sin n\theta}{\cos n\theta + i\sin n\theta}$
+
+$= \cos n\theta - i\sin n\theta$
+
+Similarly, we can prove it for a fraction.
+\stopproof
+
+\section{Applications of De Moivre's Theorem}
+\startitemize[n]
+\item Simplifying Powers of Complex Numbers
+
+  One of the most direct and practical uses of De Moivre’s theorem is turning the potentially messy process
+  of expanding $(\cos\theta + i\sin\theta)^n$ into a simple operation. Instead of using the binomial theorem
+  and carefully separating real and imaginary parts, we can compute: $(\cos\theta + i\sin\theta)^n = \cos
+  n\theta + i\sin n\theta$. This dramatically simplifies tasks in complex algebra, especially when dealing
+  with high powers.
+\item Deriving Trigonometric Identities
+
+  De Moivre's theorem provides a systematic way to create multiple-angle identities such as:
+
+  \startitemize[i]
+\item $\cos2\theta.\sin2\theta$
+\item $\cos3\theta.\sin3\theta$
+\item General $\cos n\theta$ and $\sin n\theta$ formulas
+  \stopitemize
+  By expanding $(\cos⁡\theta+i\sin⁡\theta)^n$ using the binomial theorem and equating real and imaginary
+  parts, one directly obtains identities like:
+
+  $$\cos3\theta = 4\cos^3\theta - 3\cos\theta.$$
+
+  This is a very clean pathway to advanced trigonometric formulas.
+\item Computing Complex Roots
+
+  The theorem leads naturally to a formula for the n-th roots of complex numbers. If
+
+  $$z = r(\cos\theta + i\sin\theta),$$
+
+  then the $n$th roots are
+
+  $$z_k = r^{1/n}\left(\cos\frac{\theta + 2k\pi}{n} + \sin \frac{\theta + 2k\pi}{n}\right), k = 0, 1,
+  \ldots, n - 1.$$
+
+  This result implies:
+
+  \startitemize[i]
+\item The roots lie evenly spaced on a circle.
+\item They form a regular $n$-gon in the complex plane.
+  \stopitemize
+
+  This is essential in fields such as algebra, number theory, and signal processing.
+\item Solving Polynomial Equations
+
+  De Moivre's method of extracting roots allows one to solve many polynomials conveniently, especially when
+  roots occur in conjugate or symmetric patterns. For example, the roots of equations like:
+
+  $$z^n = 1$$
+
+  are directly found using the root formula derived from De Moivre’s theorem. These roots of unity play
+  foundational roles in:
+
+  \startitemize[i]
+\item Fourier analysis
+\item Group theory
+\item Number theory
+\item Discrete mathematics
+  \stopitemize
+\item Fourier Series and Harmonic Analysis
+
+  The entire structure of Fourier analysis relies on the relationship between complex exponentials and
+  trigonometric functions. De Moivre’s theorem is one of the first bridges showing that powers and
+  combinations of trigonometric functions behave predictably and periodically.
+
+  It underlies the idea that signals can be decomposed into sinusoidal components, which is the basis of:
+
+  \startitemize[i]
+\item Audio compression (MP3)
+\item Image compression (JPEG)
+\item Signal filtering
+\item Vibrational analysis
+  \stopitemize
+\item Electrical Engineering and AC Circuit Analysis
+
+  AC circuits use phasors, which represent sinusoidal voltages and currents as complex numbers. Multiplying
+  phasors, an essential operation when analyzing networks, relies on De Moivre’s theorem:
+
+  \startitemize[i]
+\item Powers change magnitude and rotate the angle.
+\item Roots help find phase relationships and resonant frequencies.
+  \stopitemize
+
+  It allows simplification of impedance calculations, modeling phase shifts, and designing filters and
+  oscillators.
+\item Rotations and Transformations in Geometry
+
+  Because multiplication of complex numbers corresponds to rotation plus scaling, De Moivre’s theorem
+  provides a clear way to compute repeated rotations, symmetry transformations, and spiral patterns. It
+  helps generate and analyze geometric figures that arise from repeated angular transformations.
+\item Fractals and Complex Dynamics
+
+  Iterated functions like $z\mapsto z^n + c$, used in Mandelbrot and Julia sets, rely on understanding how
+  powers of complex numbers behave.
+
+  De Moivre’s theorem reveals:
+
+  \startitemize[i]
+\item How magnitudes grow under iteration
+\item How angles wrap or expand
+\item How periodic points behave
+  \stopitemize
+
+  This insight is used in chaos theory, visualization, and mathematical art.
+\item Quantum Mechanics and Wave Functions
+
+  Complex exponentials and their trigonometric forms are essential in quantum physics. While Euler’s formula
+  is the direct tool, De Moivre’s theorem supports:
+
+  \startitemize[i]
+\item Expansion of wave functions
+\item Analysis of periodic potentials
+\item Manipulation of complex amplitudes
+  \stopitemize
+
+  It helps link angular frequencies (found in wave mechanics) to complex powers.
+\stopitemize
+
+\section{Problems}
+\startitemize[n, 1*broad]
+%1
+\item Prove that $\left(\frac{\cos\theta + i\sin\theta}{\sin\theta + i\cos\theta}\right)^4 = \cos8\theta +
+  i\sin8\theta$.
+  %2
+\item Prove that $\frac{(\cos\theta + i\sin\theta)^4}{(\sin\theta + i\cos\theta)^5} = \sin9\theta -
+  i\cos9\theta$.
+  %3
+\item Simplify $\frac{(\cos3\theta + i\sin3\theta)^5(\cos\theta - i\sin\theta)^3}{(\cos5\theta +
+  i\sin5\theta)^7(\cos2\theta - i\sin2\theta)^5}$.
+  %4
+\item Simplify $[(\sin15^\circ - \cos15^\circ) + i(\sin75^\circ - \cos75^\circ)]^n + [(\sin15^\circ -
+  \cos15^\circ) - i(\sin75^\circ - \cos75^\circ)]^n$.\
+  %5
+\item Prove that $\left(\frac{1 + \cos\theta + i\sin\theta}{1 + \cos\theta - i\sin\theta}\right)^n =
+  \cos n\theta + i\sin n\theta$.
+  %6
+\item Prove that $(1 + \cos\theta + i\sin\theta)^n(1 + \cos\theta - i\sin\theta)^n = 2^{n +
+  1}\cos^n\frac{\theta}{2}\cos\frac{n\theta}{2}$.
+  %7
+\item If $x_r = \cos\frac{\pi}{2^r} + i\sin\frac{\pi}{2^r}$, prove that $x_1x_2x_3\ldots \infty = -1$.
+  %8
+\item If $x = \cos2\alpha + i\sin2\alpha, y = \cos2\beta + i\sin2\beta$ and $z = \cos2\gamma + i\sin2\gamma$
+  then prove that $\sqrt{xyz} + \frac{1}{\sqrt{xyz}} = 2\cos(\alpha + \beta + \gamma)$.
+  %9
+\item Simplify $\frac{(\cos\theta + i\sin\theta)^5(\cos2\theta - i\sin2\theta)^2}{(\cos3\theta +
+  i\sin3\theta)^{11}(\cos4\theta - i\sin4\theta)^8}$.
+  %10
+\item Prove that $[(\cos\theta\cos\phi) + i(\sin\theta\sin\phi)]^n + [(\cos\theta\cos\phi) -
+  i(\sin\theta\sin\phi)]^n = 2^{n + 1}\cos^n\frac{\theta - \phi}{2}\cos n\frac{\theta + \phi}{2}$.
+  %11
+\item Prove that $\left(\frac{1 + \sin\phi + i\cos\phi}{1 + \sin\phi - i\cos\phi}\right)^n = (\sin\phi +
+  i\cos\phi)^n$.
+  %12
+\item If $\theta = 15^\circ$, find the value of $\frac{(\cos\theta + i\sin\theta)(\cos2\theta +
+  i\sin\theta)}{(\cos3\theta - i\sin3\theta)}$.
+  %13
+\item Express $\left(\frac{\cos\theta + i\sin\theta}{\sin\theta + i\cos\theta}\right)^5$ in the form of
+  $\cos x + i\sin x$.
+  %14
+\item Prove that $[(\cos\theta - \cos\phi) + i(\sin\theta - \sin\phi)]^n + [(\cos\theta - \cos\phi) -
+  i(\sin\theta - \sin\phi)]^n = 2^{n + 1}\sin^n\frac{\theta - \phi}{2}\cos n\left(\frac{\pi + \theta -
+  \phi}{2}\right)$.
+  %15
+\item If $\left(a_1 + ib_1\right)\left(a_2 + ib_1\right)\cdots\left(a_n + ib_n\right) = A + iB$ then prove
+  that $\left(a_1^2 + b_1^2\right)\left(a_2^2 + b_2^2\right)\cdots\left(a_n^2 + b_n^2\right) = A^2 + B^2$
+  and $\tan^{-1}\frac{b_1}{a_1} + \tan^{-1}\frac{b_2}{a_2} + \cdots + \tan^{-1}\frac{b_n}{a_n} =
+  \tan^{-1}\frac{B}{A}$.
+  %16
+\item Show that $(a + ib)^{m/n} + (a - ib)^{m/n} = 2\left(a^2 +
+  b^2\right)^{m/2n}\cos\left(\frac{m}{n}\tan^{-1}\frac{b}{a}\right)$.
+  %17
+\item Prove that $\frac{(1 + \sin\phi + i\cos\phi)^n}{(1 = \sin\phi - i\cos\phi)^n} =
+  \cos\left(\frac{n\pi}{2} - n\phi\right) + i\sin\left(\frac{n\pi}{2} - n\phi\right)$.
+  %18
+\item If $(1 + x)^n = p_0 + p_1x + p_2x^2 + \cdots + p_nx^n$, where $n$ is a positive integer, prove that
+  $p_0 - p_2 + p_4 - \cdots = 2^{n/2}\cos\frac{n\pi}{4}$.
+  %19
+\item If $n$ be a positive integer, prove that $(1 + i)^n + (1 - i)^n = 2^{n/2 + 1}\cos\frac{n\pi}{4}$.
+  %20
+\item If $n$ be a positive integer, prove that $(\sqrt{3} + i)^n + (\sqrt{3} - i)^n = 2^{n +
+  1}\cos\frac{n\pi}{6}$.
+  %21
+\item If $(1 + x)^n = C_0 + C_1x + C_2x^2 + \cdots + C_nx^n0,$ where $n$ is a positive integer, prove that
+  $C_1 - C_3 + C_5 - C_7 + \cdots = 2^{n/2}\sin\frac{n\pi}{4}$ and $C_0 + C_4 + C_8 + \cdots = 2^{n/2 -
+  1}\cos\frac{n\pi}{4} + 2^{n - 2}$.
+\stopitemize
