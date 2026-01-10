@@ -795,5 +795,62 @@
   $\sin^{2n} x + \cos^{2n} x \le 1$.
 
   Equality holds when either $\sin^2 x = 0$ or $\cos^2 x = 0$, that is, when $x = k\pi$ or $x = \frac{\pi}{2} + k\pi$.
+  %49
+\item Then $\sin \theta > 0$ and $\sin \frac{\theta}{2} > 0$.
 
+  Using the identity
+  $\cot \frac{\theta}{2} = \frac{1 + \cos \theta}{\sin \theta}$,
+  the inequality
+  $\cot \frac{\theta}{2} \ge 1 + \cot \theta$
+
+  is equivalent to
+  $\frac{1 + \cos \theta}{\sin \theta} \ge 1 + \frac{\cos \theta}{\sin \theta}$.
+
+  Multiplying both sides by $\sin \theta$, which is positive, gives
+  $1 + \cos \theta \ge \sin \theta + \cos \theta$.
+
+  Canceling $\cos \theta$ from both sides, we obtain
+  $1 \ge \sin \theta$.
+
+  Since $0 < \theta < \pi$, we have $\sin \theta \le 1$.
+  Therefore the inequality holds.
+
+  Hence
+  $\cot \frac{\theta}{2} \ge 1 + \cot \theta$
+  for all $0 < \theta < \pi$.
+  %50
+\item We consider
+  $\tan(\theta - \phi) = \frac{\tan \theta - \tan \phi}{1 + \tan \theta \tan \phi}$.
+
+  Substituting $\tan \theta = n \tan \phi$ gives
+  $\tan(\theta - \phi) = \frac{(n - 1)\tan \phi}{1 + n \tan^2 \phi}$.
+
+  Hence
+  $\tan^2(\theta - \phi) = \frac{(n - 1)^2 \tan^2 \phi}{(1 + n \tan^2 \phi)^2}$.
+
+  Let $t = \tan^2 \phi$, where $t \ge 0$.
+  Then
+  $\tan^2(\theta - \phi) = \frac{(n - 1)^2 t}{(1 + n t)^2}$.
+
+  We now use the inequality
+  $(1 + n t)^2 \ge 4 n t$,
+  which follows from $(\sqrt{n t} - 1)^2 \ge 0$.
+
+  Therefore
+  $\frac{t}{(1 + n t)^2} \le \frac{1}{4n}$.
+
+  Multiplying both sides by $(n - 1)^2$ yields
+  $\tan^2(\theta - \phi) \le \frac{(n - 1)^2}{4n}$.
+  %51
+\item Here we will make use of the mathematical induction.
+
+  Clearly, for $n = 1$ the equality holds. Let the inequality be true for $n = k$ i.e. $|\sin kx|\leq k|\sin
+  x|$.
+
+  Now $|\sin(k + 1)x| = |\sin kx\cos x + \sin x\cos kx|\leq |\sin kx||cos x| + |\cos kx||\sin x|\leq |\sin
+  kx| + |\sin x|$
+
+  $\leq k|\sin x| + |\sin x| = (k + 1)|\sin x|$.
+
+  Hence, the inequality is proven using mathematical induction.
 \stopitemize
