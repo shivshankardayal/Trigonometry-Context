@@ -478,4 +478,49 @@
   = \cot^2\theta$
 
   Adding the two equations obtained we get the desired equation.
+  %36
+\item $\frac{1 + \sin A}{\cos A} = \tan A + \sec A$ and $\frac{\cos B}{1 - \sin B} = \frac{\cos B(1 + \sin
+  B)}{1 - \sin^2B} = \tan B + \sec B$
+
+  Now $\sin A - \sin B = 2\cos\frac{A + B}{2}\sin\frac{A - B}{2}, \sin(A - B) = 2\sin\frac{A -
+    B}{2}\cos\frac{A - B}{2}$ and $\cos A - \cos B = 2\sin \frac{A + B}{2}\sin\frac{A - B}{2}$
+
+  Then denominator of R.H.S.\ becomes $2\sin\frac{A - B}{2}\left(\cos\frac{A - B}{2} - \sin\frac{A +
+    B}{2}\right)$
+
+  Thus, R.H.S. is $\frac{2\cos\frac{A + B}{2}}{\cos\frac{A - B}{2} - \sin\frac{A + B}{2}}$
+
+  Rationalizing $\frac{2\cos\frac{A + B}{2}}{\cos\frac{A - B}{2} - \sin\frac{A + B}{2}}.\frac{\cos\frac{A -
+      B}{2} + \sin\frac{A + B}{2}}{\cos\frac{A - B}{2} - \sin\frac{A + B}{2}}$
+
+  Now we use $\cos^2x - \sin^2y = \frac{1 + \cos2x}{2} - \frac{1 - \cos 2y}{2}$, which makes denominator
+
+  $\frac{\cos(A - B) + \cos(A + B)}{2} = \cos A\cos B$
+
+  Similarly expanding numerator gives us $\cos A + \cos B + \sin A + \sin B$ and R.H.S.\ becomes $\tan A
+  + \sec A + \tan B + \sec B$.
+
+  Hence, L.H.S. = R.H.S.
+  %37
+\item Let $u = \cos^2x$ and $v = \cos^2y$ then the given equation becomes
+
+  $\frac{u^2}{v} + \frac{(1 - u)^2}{1 - v} = 1\Rightarrow \frac{u^2(1 - v) + v(1 - u)^2}{v(1 - v)} = 1$
+
+  $\Rightarrow u^2 - u^2v + v\left(1 - 2u + u^2\right) = v - v^2$
+
+  $\Rightarrow u^2 - 2uv + v^2 = 0 \Rightarrow (u - v)^2 = 0 \Rightarrow u = v$
+
+  Thus, $\cos^2x = \cos^2y$ and $\sin^2x = \sin^2y$ so they are interchangable, and, hence proved.
+  %38
+\item Given that $\theta + \phi + \psi = 2\pi\Rightarrow \cos\psi = \cos(2\pi - \theta - \phi) = \cos(\theta
+  + \phi)$
+
+  Now, L.H.S. $= \cos^2\theta + \cos^2\phi + \cos^2(\theta + \phi) - 2\cos\theta\cos\phi\cos(\theta + \phi)$
+
+  $= \cos^2\theta + \cos^2\phi + (\cos\theta\cos\phi - \sin\theta\sin\phi)^2 -
+  2\cos\theta\cos\phi(\cos\theta\cos\phi - \sin\theta\sin\phi)$
+
+  $= \cos^2\theta + \cos^2\phi + \sin^2\theta\sin^2\phi - \cos^2\theta\cos^2\phi$
+
+  $= \cos^2\theta + \cos^2\phi + (1 - \cos^2\theta)(1 - \cos^2\phi) - \cos^2\theta\cos^2\phi = 1$.
 \stopitemize
