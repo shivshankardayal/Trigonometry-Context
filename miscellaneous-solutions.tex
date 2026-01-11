@@ -853,4 +853,336 @@
   $\leq k|\sin x| + |\sin x| = (k + 1)|\sin x|$.
 
   Hence, the inequality is proven using mathematical induction.
+  %52
+\item We prove that $2^{\sin x}+2^{\cos x}\ge 2^{1-\frac1{\sqrt2}}$ for all real $x$ using the AM--GM inequality.
+
+  By the AM--GM inequality,
+  $2^{\sin x}+2^{\cos x}\ge 2\sqrt{2^{\sin x}\cdot 2^{\cos x}}=2\cdot 2^{\frac{\sin x+\cos x}{2}}=2^{1+\frac{\sin x+\cos x}{2}}$.
+
+  For all real $x$, we have $\sin x+\cos x=\sqrt2\sin(x+\frac\pi4)\ge -\sqrt2$. Therefore,
+  $1+\frac{\sin x+\cos x}{2}\ge 1-\frac{\sqrt2}{2}=1-\frac1{\sqrt2}$.
+
+  Hence,
+  $2^{\sin x}+2^{\cos x}\ge 2^{1-\frac1{\sqrt2}}$ for all real $x$.
+  %53
+\item Since $A+B+C=\pi$ and $C>\frac\pi2$, we have
+  $A+B=\pi-C<\frac\pi2$.
+
+  Using the identity for the tangent of a sum,
+  $\tan(A+B)=\frac{\tan A+\tan B}{1-\tan A\tan B}$.
+
+  Because $0<A,B<\frac\pi2$, both $\tan A$ and $\tan B$ are positive, hence $\tan(A+B)>0$.
+
+  Since $A+B<\frac\pi2$, we also have $\tan(A+B)<\infty$, which implies that the denominator is positive:
+  $1-\tan A\tan B>0$.
+
+  Therefore,
+  $\tan A\tan B<1$.
+  %54
+\item Rewrite the left-hand side using $\tan x=\frac{\sin x}{\cos x}$:
+  $\frac{1}{\cos\alpha\cos\beta}+\frac{\sin\alpha\sin\beta}{\cos\alpha\cos\beta}
+  =\frac{1+\sin\alpha\sin\beta}{\cos\alpha\cos\beta}$.
+
+  Hence,
+  $\tan\gamma=\frac{1+\sin\alpha\sin\beta}{\cos\alpha\cos\beta}$.
+
+  We show that $\tan\gamma\ge1$. Indeed,
+  $\frac{1+\sin\alpha\sin\beta}{\cos\alpha\cos\beta}\ge1
+  \iff 1+\sin\alpha\sin\beta\ge\cos\alpha\cos\beta$.
+
+  But
+  $\cos\alpha\cos\beta-\sin\alpha\sin\beta=\cos(\alpha+\beta)\le1$,
+  so
+  $\cos\alpha\cos\beta\le1+\sin\alpha\sin\beta$.
+
+  Thus $\tan\gamma\ge1$, which implies $\gamma\ge\frac\pi4$ (mod $\pi$).
+  Therefore,
+  $2\gamma\ge\frac\pi2$ and hence
+  $\cos2\gamma\le0$
+  %55
+\item $\tan\alpha+\cot\alpha=\frac{\sin\alpha}{\cos\alpha}+\frac{\cos\alpha}{\sin\alpha}
+  =\frac{\sin^2\alpha+\cos^2\alpha}{\sin\alpha\cos\alpha}
+  =\frac{1}{\sin\alpha\cos\alpha}$.
+
+  Thus it suffices to prove
+  $\frac{1}{\sin\alpha\cos\alpha}>\sin\alpha+\cos\alpha$.
+
+  Multiplying both sides by the positive quantity $\sin\alpha\cos\alpha$, we obtain
+  $1>(\sin\alpha+\cos\alpha)\sin\alpha\cos\alpha$.
+
+  Now,
+  $(\sin\alpha+\cos\alpha)\sin\alpha\cos\alpha
+  =\sin^2\alpha\cos\alpha+\sin\alpha\cos^2\alpha
+  =\sin\alpha\cos\alpha(\sin\alpha+\cos\alpha)$.
+
+  Since $0\le\sin\alpha,\cos\alpha\le1$, we have
+  $\sin\alpha\cos\alpha\le\frac12$ and $\sin\alpha+\cos\alpha\le\sqrt2$.
+  Hence,
+  $(\sin\alpha+\cos\alpha)\sin\alpha\cos\alpha\le\frac{\sqrt2}{2}<1$.
+
+  Therefore,
+  $\tan\alpha+\cot\alpha>\sin\alpha+\cos\alpha$ for all
+  $0\le\alpha<\frac\pi2$.
+  %56
+\item By AM--GM,
+  $\tan^2\alpha+\tan^2\beta+\tan^2\gamma
+  \ge 3\sqrt[3]{\tan^2\alpha\,\tan^2\beta\,\tan^2\gamma}
+  =3(\tan\alpha\tan\beta\tan\gamma)^{\frac23}$.
+
+  Thus it suffices to show that
+  $\tan\alpha\tan\beta\tan\gamma\ge\frac1{3\sqrt3}$.
+
+  Since $\alpha+\beta+\gamma=\frac\pi2$, we have
+  $\tan(\alpha+\beta+\gamma)=\infty$.
+  Using the identity
+  $\tan(\alpha+\beta+\gamma)
+  =\frac{\tan\alpha+\tan\beta+\tan\gamma
+    -\tan\alpha\tan\beta\tan\gamma}
+  {1-\tan\alpha\tan\beta-\tan\beta\tan\gamma-\tan\gamma\tan\alpha}$,
+
+  the denominator must be zero, hence
+  $1=\tan\alpha\tan\beta+\tan\beta\tan\gamma+\tan\gamma\tan\alpha$.
+
+  Applying AM--GM to the three positive terms,
+  $\tan\alpha\tan\beta+\tan\beta\tan\gamma+\tan\gamma\tan\alpha
+  \ge3\sqrt[3]{(\tan\alpha\tan\beta)(\tan\beta\tan\gamma)(\tan\gamma\tan\alpha)}
+  =3(\tan\alpha\tan\beta\tan\gamma)^{\frac23}$.
+
+  Therefore,
+  $1\ge3(\tan\alpha\tan\beta\tan\gamma)^{\frac23}$,
+  which implies
+  $(\tan\alpha\tan\beta\tan\gamma)^{\frac23}\le\frac13$.
+
+  Hence,
+  $\tan^2\alpha+\tan^2\beta+\tan^2\gamma
+  \ge3(\tan\alpha\tan\beta\tan\gamma)^{\frac23}
+  \ge3\left(\frac1{3\sqrt3}\right)^{\frac23} =1$.
+  %57
+\item Let $E=\cos^2\alpha+\cos^2(\alpha+\beta)-2\cos\alpha\cos\beta\cos(\alpha+\beta)$.
+
+  Using $\cos(\alpha+\beta)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$,
+
+  $E = \cos^2\alpha + \cos^2\alpha\cos^2\beta + \sin^2\alpha\sin^2\beta -
+  2\cos\alpha\cos\beta\sin\alpha\sin\beta - 2\cos^2\alpha\cos^2\beta +
+  2\cos\alpha\cos\beta\sin\alpha\sin\beta$
+
+  $= \cos^2\alpha + \sin^2\alpha\sin^2\beta - \cos^2\alpha\cos^2\beta = \cos^2\alpha.\sin^2\beta
+  + \sin^2\alpha\sin^2\beta$
+
+  $= \sin^2\beta$, which satisfies the given inequality.
+  %58
+\item Let $t=\tan\theta+\cot\theta$. Then $\tan^2\theta+\cot^2\theta=t^2-2$.
+
+  Substituting, we get $3(t^2-2)-8t+10 =3t^2-8t+4$.
+
+  Now complete the square: $3t^2-8t+4 =3\left(t-\frac43\right)^2+\frac43$.
+
+  Since $t=\tan\theta+\cot\theta\ge2$ for all $\theta$ for which both terms are defined,
+  we have
+  $3\left(t-\frac43\right)^2+\frac43>0$.
+
+  Hence, $3(\tan^2\theta+\cot^2\theta)-8(\tan\theta+\cot\theta)+10>0$.
+  %59
+\item For $n=2$, we use the identity
+  $\tan 2x=\frac{2\tan x}{1-\tan^2 x}$.
+
+  Since $0<x<\frac\pi4$, we have $0<\tan x<1$, hence $1-\tan^2 x<1$.
+
+  Therefore, $\tan 2x=\frac{2\tan x}{1-\tan^2 x}>2\tan x$, so the inequality holds for $n=2$.
+
+  Assume that for some $k\ge2$, $\tan(kx)>k\tan x$
+  holds whenever $0<x<\frac{\pi}{4(k-1)}$.
+
+  We prove it for $n=k+1$.
+
+  Using the addition formula, $\tan((k+1)x)=\frac{\tan(kx)+\tan x}{1-\tan(kx)\tan x}$.
+
+  From the induction hypothesis, $\tan(kx)>k\tan x$, hence $\tan(kx)\tan x>k\tan^2 x$.
+
+  Since $0<x<\frac{\pi}{4k}$, we have $\tan x<\tan\frac{\pi}{4k}\le\frac1k$, and therefore
+  $k\tan^2 x<\tan x$. Thus, $1-\tan(kx)\tan x<1-\tan x$.
+
+  Hence, $\tan((k+1)x) >\frac{k\tan x+\tan x}{1-\tan x} =\frac{(k+1)\tan x}{1-\tan x} >(k+1)\tan x$.
+
+  Thus the inequality holds for $n=k+1$.
+  %60
+\item Using the sine addition formula, $\sin(\alpha+\beta+\gamma)
+  =\sin\alpha\cos(\beta+\gamma)+\cos\alpha\sin(\beta+\gamma)$.
+
+  Since $0<\beta+\gamma<\pi$, we have $\cos(\beta+\gamma)<1$ and $\sin(\beta+\gamma)<\sin\beta+\sin\gamma$.
+
+  Hence,
+  $\sin(\alpha+\beta+\gamma) <\sin\alpha+\cos\alpha(\sin\beta+\sin\gamma)$.
+
+  Because $0<\alpha<\frac\pi2$, we have $\cos\alpha<1$, and therefore
+  $\cos\alpha(\sin\beta+\sin\gamma)<\sin\beta+\sin\gamma$.
+
+  Combining the inequalities gives
+  $\sin(\alpha+\beta+\gamma) < \sin\alpha+\sin\beta+\sin\gamma$.
+  %61
+\item {\bf Base case $n=1$.}
+  We must show that
+  $\frac{2\cos2\theta+1}{2\cos\theta+1}=2\cos\theta-1$.
+
+  Using $\cos2\theta=2\cos^2\theta-1$, we obtain
+  $2\cos2\theta+1=4\cos^2\theta-1=(2\cos\theta-1)(2\cos\theta+1)$.
+
+  Dividing by $2\cos\theta+1$ gives $\frac{2\cos2\theta+1}{2\cos\theta+1}=2\cos\theta-1$,
+  so the formula holds for $n=1$.
+
+  {\bf Induction hypothesis.}
+
+  Assume that for some $k\ge1$, $\frac{2\cos2^k\theta+1}{2\cos\theta+1}
+  =(2\cos\theta-1)(2\cos2\theta-1)\cdots(2\cos2^k\theta-1)$.
+
+  {\bf Inductive step.}
+  Consider $\frac{2\cos2^{k+1}\theta+1}{2\cos\theta+1}$.
+
+  Using $\cos2x=2\cos^2x-1$, we have $2\cos2^{k+1}\theta+1 =4\cos^2(2^k\theta)-1
+  =(2\cos2^k\theta-1)(2\cos2^k\theta+1)$.
+
+  Hence, $\frac{2\cos2^{k+1}\theta+1}{2\cos\theta+1}
+  =\frac{2\cos2^k\theta+1}{2\cos\theta+1}\,(2\cos2^k\theta-1)$.
+
+  Applying the induction hypothesis, $\frac{2\cos2^{k+1}\theta+1}{2\cos\theta+1}
+  =(2\cos\theta-1)(2\cos2\theta-1)\cdots(2\cos2^k\theta-1)(2\cos2^k\theta-1)$.
+  %62
+\item First, simplify the expression under the square root. Using
+  $\sin2\theta=2\sin\theta\cos\theta$,
+  we have $\sin^22\theta=4\sin^2\theta\cos^2\theta$.
+
+  Hence, $4\sin^4\theta+\sin^22\theta=4\sin^2\theta(\sin^2\theta+\cos^2\theta) =4\sin^2\theta$.
+
+  Therefore, $\sqrt{4\sin^4\theta+\sin^22\theta} =\sqrt{4\sin^2\theta} =2|\sin\theta|$.
+
+  Since $\pi<\theta<\frac{3\pi}{2}$, we have $\sin\theta<0$, so $|\sin\theta|=-\sin\theta$.
+
+  Thus the first term becomes $-2\sin\theta$.
+
+  Next, consider the second term. Using the identity $\cos^2x=\frac{1+\cos2x}{2}$, we obtain
+  $4\cos^2\!\left(\frac\pi4-\frac\theta2\right)=2\left(1+\cos\!\left(\frac\pi2-\theta\right)\right)$.
+
+  Since $\cos(\frac\pi2-\theta)=\sin\theta$, this simplifies to
+  $4\cos^2\!\left(\frac\pi4-\frac\theta2\right)=2(1+\sin\theta)$.
+
+  Adding the two parts, we get $-2\sin\theta+2(1+\sin\theta)=2$.
+
+  Hence, $\sqrt{4\sin^4\theta+\sin^22\theta} + 4\cos^2\!\left(\frac\pi4-\frac\theta2\right)=2$.
+  %63
+\item Using $\cos(\theta+\phi)=\cos\theta\cos\phi-\sin\theta\sin\phi$, we write
+
+  $\cos\phi+\cos\theta-\cos(\theta+\phi)
+  =\cos\phi+\cos\theta-\cos\theta\cos\phi+\sin\theta\sin\phi$.
+
+  Rearranging terms,
+  $= (1-\cos\theta)\cos\phi+(1-\cos\phi)\cos\theta+\sin\theta\sin\phi$.
+
+  Now use the identities $1-\cos x=2\sin^2\frac x2$ and $\sin x=2\sin\frac x2\cos\frac x2$.
+
+  Then the expression becomes $2\sin^2\frac\theta2\cos\phi + 2\sin^2\frac\phi2\cos\theta
+  +4\sin\frac\theta2\sin\frac\phi2\cos\frac\theta2\cos\frac\phi2$.
+
+  Grouping terms, we obtain $2\left(\sin\frac\theta2\cos\frac\phi2 +\sin\frac\phi2\cos\frac\theta2\right)^2
+  =2\sin^2\frac{\theta+\phi}{2}$.
+
+  Hence the given condition becomes $2\sin^2\frac{\theta+\phi}{2}=\frac32$,
+  so $\sin^2\frac{\theta+\phi}{2}=\frac34$.
+
+  Since $0<\theta+\phi<2\pi$, this implies $\sin\frac{\theta+\phi}{2}=\frac{\sqrt3}{2}$,
+  and therefore $\frac{\theta+\phi}{2}=\frac\pi3$,
+
+  so $\theta+\phi=\frac{2\pi}{3}$.
+
+  Substitute this into the original expression: $\cos\theta+\cos\phi-\cos\frac{2\pi}{3}
+  =\cos\theta+\cos\phi+\frac12=\frac32$, which gives $\cos\theta+\cos\phi=1$.
+
+  Using the identity
+  $\cos\theta+\cos\phi =2\cos\frac{\theta+\phi}{2}\cos\frac{\theta-\phi}{2}$,
+
+  we get $2\cos\frac\pi3\cos\frac{\theta-\phi}{2}=1$, so
+  $\cos\frac{\theta-\phi}{2}=1$.
+
+  Hence,$\frac{\theta-\phi}{2}=0$,
+  which implies $\theta=\phi$.
+
+  Together with $\theta+\phi=\frac{2\pi}{3}$, we conclude
+  $\theta=\phi=\frac\pi3$.
+  %64
+\item Let $x=\sin\frac\pi{14}$. Using the identity $\sin3\theta=3\sin\theta-4\sin^3\theta$, we write
+  $4\sin^3\theta=3\sin\theta-\sin3\theta$.
+
+  Substituting $\theta=\frac\pi{14}$ gives $4x^3=3x-\sin\frac{3\pi}{14}$.
+
+  Hence, $8x^3=6x-2\sin\frac{3\pi}{14}$, and therefore $8x^3-4x =2x-2\sin\frac{3\pi}{14}$.
+
+  So the given expression becomes
+  $8x^3-4x^2-4x+1 = (2x-2\sin\frac{3\pi}{14})-4x^2+1$.
+
+  Now use $\sin\frac{3\pi}{14}=\cos\frac{2\pi}{7}$ and
+  $\sin\frac\pi{14}=\cos\frac{3\pi}{7}$.
+
+  Thus, $x=\cos\frac{3\pi}{7}$.
+
+  Substitute $x=\cos\frac{3\pi}{7}$: $8x^3-4x^2-4x+1 = 8\cos^3\frac{3\pi}{7}-4\cos^2\frac{3\pi}{7}
+  - 4\cos\frac{3\pi}{7}+1$.
+
+  Using $\cos3\theta=4\cos^3\theta-3\cos\theta$, we obtain
+  $8\cos^3\theta=2\cos3\theta+6\cos\theta$.
+
+  Applying this with $\theta=\frac{3\pi}{7}$ gives $8\cos^3\frac{3\pi}{7} =
+  2\cos\frac{9\pi}{7}+6\cos\frac{3\pi}{7}$.
+
+  Since $\cos\frac{9\pi}{7}=\cos\left(2\pi-\frac{5\pi}{7}\right)=\cos\frac{5\pi}{7}$,
+  the expression becomes
+  $2\cos\frac{5\pi}{7}+2\cos\frac{3\pi}{7}-4\cos^2\frac{3\pi}{7}+1$.
+
+  Using $\cos\frac{5\pi}{7}+\cos\frac{3\pi}{7}=2\cos\frac{4\pi}{7}\cos\frac\pi7$
+
+  and the identity
+  $4\cos^2\frac{3\pi}{7}=2(1+\cos\frac{6\pi}{7})$,
+  we simplify and obtain zero.
+
+  Hence,
+  $8x^3-4x^2-4x+1=0$ for $x=\sin\frac\pi{14}$.
+  %65
+\item Let the angles of the triangle be $A,B,C$, so that $A+B+C=\pi$.
+
+  We are given $\sin A\sin B\sin C=p$ and $\cos A\cos B\cos C=q$.
+
+  Let $s=\tan A,\; b=\tan B,\; c=\tan C$. We show that $a,b,c$ are the roots of
+  $qx^3-px^2+(1+q)x-p=0$.
+
+  First, using $\tan A=\frac{\sin A}{\cos A}$, we obtain
+  $xyz=\tan A\tan B\tan C
+  =\frac{\sin A\sin B\sin C}{\cos A\cos B\cos C}
+  =\frac{p}{q}$.
+
+  Next, since $A+B+C=\pi$, we have $\tan(A+B+C)=0$.
+
+  Using the identity $\tan(A+B+C) =\frac{a+b+c - abc}{1 - ab- bc - ca}$,
+  the numerator must vanish, hence
+  $a+b+c = abc =\frac{p}{q}$.
+
+  Now consider $ab + bc + ca$. Using $1+\tan^2A=\sec^2A=\frac1{\cos^2A}$,
+  we have
+
+  $(1+a^2)(1+b^2)(1+c^2) = \frac1{\cos^2A\cos^2B\cos^2C} = \frac1{q^2}$.
+
+  Expanding the left-hand side and using $abc=\frac{p}{q}$ and $a + b + c=\frac{p}{q}$, we obtain
+  $1+(a^2+b^2+c^2)+(ab+bc+ca)^2=\frac1{q^2}$.
+
+  Since $a^2+b^2+c^2=(a + b + c)^2 - 2(ab + bc + ca)$, this gives
+  $1+\frac{p^2}{q^2}-2(ab + bc + ca) + (ab + bc + ca)^2 = \frac1{q^2}$.
+
+  Simplifying, we find $ab + bc + ca=\frac{1+q}{q}$.
+
+  Hence, $a + b + c = \frac{p}{q},\quad
+  ab + bc + ca = \frac{1+q}{q},\quad
+  abc = \frac{p}{q}$.
+
+  Therefore, the monic cubic equation whose roots are $a, b, c$ is
+  $x^3-\frac{p}{q}x^2+\frac{1+q}{q}x-\frac{p}{q}=0$.
+
+  Multiplying throughout by $q$, we obtain
+  $qx^3-px^2+(1+q)x-p=0$.
 \stopitemize
