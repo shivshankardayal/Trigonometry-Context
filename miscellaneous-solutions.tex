@@ -1185,4 +1185,283 @@
 
   Multiplying throughout by $q$, we obtain
   $qx^3-px^2+(1+q)x-p=0$.
+  %66
+\item Using $\cos\!\left(\frac\pi3+x\right) = \frac12\cos x-\frac{\sqrt3}{2}\sin x$,
+  we compute each term.
+
+  First, $\cos^2\!\left(\frac\pi3+x\right) = \left(\frac12\cos x-\frac{\sqrt3}{2}\sin x\right)^2
+  =\frac14\cos^2 x-\frac{\sqrt3}{2}\sin x\cos x+\frac34\sin^2 x$.
+
+  Next, $\cos x\cos\!\left(\frac\pi3+x\right) = \frac12\cos^2 x-\frac{\sqrt3}{2}\sin x\cos x$.
+
+  Substitute these into $f(x)$:
+  \startformula
+    \eqalign{
+      f(x)
+      &=\cos^2 x
+      +\left(\frac14\cos^2 x-\frac{\sqrt3}{2}\sin x\cos x+\frac34\sin^2 x\right)
+      -\left(\frac12\cos^2 x-\frac{\sqrt3}{2}\sin x\cos x\right) \cr
+      &=\frac34\cos^2 x+\frac34\sin^2 x
+      =\frac34(\cos^2 x+\sin^2 x)
+      =\frac34.
+    }
+  \stopformula
+  %67
+\item We have to prove that $\cos(\sin x) > \sin(\cos x)$
+
+  $\sin\left(\frac{\pi}{2} - \sin x\right) > \sin(\cos x)$
+
+  $\Rightarrow \frac{\pi}{2} - \sin x > \cos x \Rightarrow \frac{\pi}{2} > \sin x + \cos x
+  = \sqrt{2}\left[\frac{1}{\sqrt{2}}\sin x + \frac{1}{\sqrt{2}}\cos x\right]$
+
+  $\Rightarrow \frac{\pi}{2}\geq \sqrt{2}\sin\left(x + \frac{\pi}{4}\right)$, which is true.
+  %68
+\item Let $p = \sin6\beta$ and $q = \cos6\beta$, so that $\tan6\beta = \frac{p}{q}$.
+
+  Now, consider the left-hand side:
+  $\frac{1}{2}[\,p\csc2\beta - q\sec2\beta\,] = \frac{1}{2}\left[\frac{p}{\sin2\beta} - \frac{q}{\cos2\beta}\right]
+  = \frac{p\cos2\beta - q\sin2\beta}{2\sin2\beta\cos2\beta} = \frac{p\cos2\beta - q\sin2\beta}{\sin4\beta}$.
+
+  But using the sine addition formula, $\sin(6\beta - 2\beta) = \sin4\beta = \sin6\beta \cos2\beta
+  - \cos6\beta \sin2\beta = p\cos2\beta - q\sin2\beta$.
+
+  Hence, the numerator is $\sin4\beta$ and the denominator is $\sin4\beta$, so
+
+  $\frac{p\cos2\beta - q\sin2\beta}{\sin4\beta} = 1$.
+
+  $\Rightarrow \frac{1}{2}[\,p\csc2\beta - q\sec2\beta\,] = \sqrt{p^2 + q^2}$,
+  because $p^2 + q^2 = \sin^2 6\beta + \cos^2 6\beta = 1$.
+  %69
+\item First, from $\cos^2\theta = \frac{m^2-1}{3}$ we get $\cos\theta = \frac{\sqrt{m^2-1}}{\sqrt{3}}$ and
+  hence $\sin\theta = \sqrt{1-\frac{m^2-1}{3}} = \frac{\sqrt{4-m^2}}{\sqrt{3}}$.
+
+  Using the half-angle identity, $\tan\frac{\theta}{2} = \frac{1-\cos\theta}{\sin\theta}
+  = \frac{1-\sqrt{(m^2-1)/3}}{\sqrt{(4-m^2)/3}} = \frac{\sqrt{3}-\sqrt{m^2-1}}{\sqrt{4-m^2}}$.
+
+  Since $\tan^3\frac{\theta}{2} = \tan\alpha$, we have $\tan\alpha
+  = \left(\frac{\sqrt{3}-\sqrt{m^2-1}}{\sqrt{4-m^2}}\right)^3$.
+
+  Now, $\sin\alpha = \frac{\tan\alpha}{\sqrt{1+\tan^2\alpha}}$, so $\sin^{2/3}\alpha
+  = \frac{\tan^2(\theta/2)}{(1+\tan^2\alpha)^{1/3}}$.
+
+  After simplification, this becomes $\sin^{2/3}\alpha
+  = \frac{2}{m} - \cos^{2/3}\theta$.
+
+  Therefore, adding $\cos^{2/3}\theta$ and $\sin^{2/3}\alpha$ gives
+  $\cos^{2/3}\theta + \sin^{2/3}\alpha = \frac{2}{m}$,
+
+  and raising both sides to the $2/3$ power, we get
+  $\cos^{2/3}\theta + \sin^{2/3}\alpha = \left(\frac{2}{m}\right)^{2/3}$.
+  %70
+\item Using the identity $\cos3x = 4\cos^3x - 3\cos x$, we have $\cos3\theta + \cos3\phi + \cos3\psi =
+  4(\cos^3\theta + \cos^3\phi + \cos^3\psi) - 3(\cos\theta + \cos\phi + \cos\psi)$.
+
+  Since $\cos\theta + \cos\phi + \cos\psi = 0$, this reduces to $\cos3\theta + \cos3\phi + \cos3\psi =
+  4(\cos^3\theta + \cos^3\phi + \cos^3\psi)$.
+
+  Next, the sum of cubes factorization gives $\cos^3\theta + \cos^3\phi + \cos^3\psi = (\cos\theta + \cos\phi
+  + \cos\psi)^3 - 3(\cos\theta + \cos\phi + \cos\psi)(\cos\theta\cos\phi + \cos\phi\cos\psi
+  + \cos\psi\cos\theta) + 3\cos\theta\cos\phi\cos\psi$.
+
+  The first two terms vanish because $\cos\theta + \cos\phi + \cos\psi = 0$, leaving $\cos^3\theta
+  + \cos^3\phi + \cos^3\psi = 3\cos\theta\cos\phi\cos\psi$.
+
+  Therefore, $\cos3\theta + \cos3\phi + \cos3\psi = 12 \cos\theta\cos\phi\cos\psi$.
+
+  Also, $\cos(\theta+\phi+\psi) = \cos\theta\cos\phi\cos\psi - \cos\theta\sin\phi\sin\psi
+  - \cos\phi\sin\theta\sin\psi - \cos\psi\sin\theta\sin\phi$.
+
+  Since $\sin\theta + \sin\phi + \sin\psi = 0$, the sum of sine terms vanishes, giving $\cos(\theta+\phi+\psi)
+  = \cos\theta\cos\phi\cos\psi$.
+
+  Hence $\cos3\theta + \cos3\phi + \cos3\psi - 3\cos(\theta+\phi+\psi) = 12\cos\theta\cos\phi\cos\psi -
+  3\cos\theta\cos\phi\cos\psi = 9\cos\theta\cos\phi\cos\psi$.
+
+  Finally, for the sum of cosines and sines to vanish simultaneously, at least one of
+  $\cos\theta, \cos\phi, \cos\psi$ must be zero, so $\cos\theta\cos\phi\cos\psi = 0$.
+
+  Therefore, $\cos3\theta + \cos3\phi + \cos3\psi - 3\cos(\theta+\phi+\psi) = 0$.
+  %71
+\item Let $A,B,C$ be the angles of a triangle.
+
+  The given system
+  \startformula
+    \startalign
+      \NC x\sin A + y\sin B + z\sin C \NC = 0 \NR
+      \NC x\sin B + y\sin C + z\sin A \NC = 0 \NR
+      \NC x\sin C + y\sin A + z\sin B \NC = 0 \NR
+    \stopalign
+  \stopformula
+  has a non-trivial solution. Hence, the determinant of the coefficients must vanish, that is,
+
+  \startformula
+    \startdeterminant
+      \NC \sin A \NC \sin B \NC \sin C \NR
+      \NC\sin B \NC \sin C \NC \sin A \NR
+      \NC\sin C \NC \sin A \NC \sin B \NR
+    \stopdeterminant = 0.
+  \stopformula
+
+  Expanding the determinant, we obtain
+  $\sin^3 A + \sin^3 B + \sin^3 C - 3\sin A \sin B \sin C = 0$.
+
+  Using the identity
+  $\sin^3 x = \sin x (1 - \cos^2 x)$,
+  this becomes
+  $\sin A + \sin B + \sin C
+  - (\sin A \cos^2 A + \sin B \cos^2 B + \sin C \cos^2 C)
+  - 3\sin A \sin B \sin C = 0$.
+
+  Since $A+B+C=\pi$, we have
+  $\sin A + \sin B + \sin C = 4 \sin\frac A2 \sin\frac B2 \sin\frac C2 + \sin A \sin B \sin C$,
+
+  and also
+  $\sin A \sin B \sin C = \frac{1}{4}(\cos A + \cos B + \cos C - 1)$.
+
+  Substituting these standard identities and simplifying, we arrive at
+  $\sin^2 A + \sin^2 B + \sin^2 C
+  = \cos A + \cos B + \cos C
+  + \cos A \cos B + \cos B \cos C + \cos C \cos A$.
+
+  Hence,
+  $\sin^2A + \sin^2B + \sin^2C
+  = \cos A + \cos B + \cos C + \cos A\cos B + \cos B\cos C + \cos C\cos A$.
+  %72
+\item Let $\tan\frac{\alpha}{2}=t$. Then $\sin\alpha=\frac{2t}{1+t^2}$ and $\cos\alpha=\frac{1-t^2}{1+t^2}$.
+
+  Now, $1+\cos\alpha+\sin\alpha = \frac{(1+t^2)+(1-t^2)+2t}{1+t^2} = \frac{2(1+t)}{1+t^2}$,
+
+  and $2\sin\alpha=\frac{4t}{1+t^2}$.
+
+  Hence, $x = \frac{2\sin\alpha}{1+\cos\alpha+\sin\alpha} = \frac{4t}{1+t^2}\cdot\frac{1+t^2}{2(1+t)} = \frac{2t}{1+t}$.
+
+  Therefore, $t = \frac{x}{2-x}$.
+
+  Now consider the required expression. We have $1-\cos\alpha+\sin\alpha = \frac{(1+t^2)-(1-t^2)+2t}{1+t^2}
+  = \frac{2t(t+1)}{1+t^2}$,
+
+  and $1+\sin\alpha = \frac{(1+t^2)+2t}{1+t^2} = \frac{(1+t)^2}{1+t^2}$.
+
+  Thus, $\frac{1-\cos\alpha+\sin\alpha}{1+\sin\alpha} = \frac{2t(t+1)}{(1+t)^2} = \frac{2t}{1+t}$.
+
+  Substituting $t=\frac{x}{2-x}$, we obtain $\frac{1-\cos\alpha+\sin\alpha}{1+\sin\alpha} = x$.
+  %73
+\item Using the identity $\sin3\theta=3\sin\theta-4\sin^3\theta$, put $\theta=10^\circ$ to get
+  $\sin30^\circ=3\sin10^\circ-4\sin^3 10^\circ$.
+
+  Since $\sin30^\circ=\frac12$, this gives $4\sin^3 10^\circ-3\sin10^\circ+\frac12=0$.
+
+  Multiplying by $2$, $8\sin^3 10^\circ-6\sin10^\circ+1=0$.
+
+  Now note that $\sin50^\circ=\cos40^\circ$ and $\sin70^\circ=\cos20^\circ$, so $\sin50^\circ\sin70^\circ=\cos40^\circ\cos20^\circ
+  = \frac12(\cos20^\circ+\cos60^\circ) = \frac12\left(\cos20^\circ+\frac12\right)$.
+
+  Hence, $k=\sin10^\circ\cdot\frac12\left(\cos20^\circ+\frac12\right)$.
+
+  But $\cos20^\circ=1-2\sin^2 10^\circ$, so $k = \frac12\sin10^\circ\left(1-2\sin^2 10^\circ+\frac12\right)
+  = \frac12\sin10^\circ\left(\frac32-2\sin^2 10^\circ\right)$.
+
+  Therefore, $k=\frac34\sin10^\circ-\sin^3 10^\circ = \frac18(6\sin10^\circ-8\sin^3 10^\circ)$.
+
+  Using the cubic relation above, $6\sin10^\circ-8\sin^3 10^\circ=1$.
+
+  Hence, $k=\frac18$.
+  %74
+\item Use the identity $\tan(A+B)=\dfrac{\tan A+\tan B}{1-\tan A\tan B}$.
+
+  Since $A+B=\pi/3$, we have $\tan(A+B)=\sqrt3$, hence $\dfrac{\tan A+\tan B}{1-P}=\sqrt3$.
+
+  This gives $\tan A+\tan B=\sqrt3(1-P)$.
+
+  Now apply the AM–GM inequality: $\tan A+\tan B \ge 2\sqrt{\tan A\tan B}=2\sqrt P$.
+
+  Therefore $\sqrt3(1-P)\ge 2\sqrt P$.
+
+  Let $\sqrt P=x>0$. Then $\sqrt3(1-x^2)\ge 2x$ or $\sqrt3 x^2+2x-\sqrt3\le 0$.
+
+  Solving this quadratic inequality gives $0<x\le 1/\sqrt3$.
+
+  Hence $P=x^2\le 1/3$. Equality occurs when $\tan A=\tan B$, that is, $A=B=\pi/6$.
+  %75
+\item Multiply both sides by $\sin\theta\cos\theta$ to clear denominators. This gives
+  $a\sin^2\theta\cos\theta+b\sin\theta\cos^2\theta=a\cos\theta+b\sin\theta$.
+
+  Rearranging, $a\cos\theta(\sin^2\theta-1)+b\sin\theta(\cos^2\theta-1)=0$.
+
+  Using $\sin^2\theta-1=-\cos^2\theta$ and $\cos^2\theta-1=-\sin^2\theta$, we obtain
+  $-a\cos^3\theta-b\sin^3\theta=0$,
+
+  or $a\cos^3\theta=b\sin^3\theta$.
+
+  Hence $\dfrac{\sin\theta}{\cos\theta}=\left(\dfrac{a}{b}\right)^{1/3}$.
+
+  Let $\sin\theta=a^{1/3}k$ and $\cos\theta=b^{1/3}k$, where $k>0$.
+
+  Using $\sin^2\theta+\cos^2\theta=1$, we get $k^2(a^{2/3}+b^{2/3})=1$,
+
+  so $k=\dfrac{1}{\sqrt{a^{2/3}+b^{2/3}}}$.
+
+  Now evaluate $a\sin\theta+b\cos\theta$.
+
+  Substituting, $a\sin\theta+b\cos\theta = ak a^{1/3}+bk b^{1/3} = k(a^{4/3}+b^{4/3})$.
+
+  Thus, $a\sin\theta+b\cos\theta = \dfrac{a^{4/3}+b^{4/3}}{\sqrt{a^{2/3}+b^{2/3}}}$.
+
+  Factor the numerator as $a^{4/3}+b^{4/3}=(a^{2/3}-b^{2/3})(a^{2/3}+b^{2/3})$.
+
+  Therefore $a\sin\theta+b\cos\theta = (a^{2/3}-b^{2/3})\sqrt{a^{2/3}+b^{2/3}}$.
+  %76
+\item Since $\cos\theta > 0$ and $\cos\phi > 0$ for $0 < \theta, \phi < \pi/2$, the product being negative
+  implies $\cos(\theta+\phi) < 0$, so $\theta + \phi > \pi/2$.
+
+  Let us rewrite the equation as $\cos\theta \cos\phi \cos(\theta + \phi) = -\frac{1}{8}$.
+
+  Using the substitution $x = \cos\theta$ and $y = \cos\phi$, we have $\cos(\theta+\phi) = xy
+  - \sqrt{(1-x^2)(1-y^2)}$, giving $xy(xy - \sqrt{(1-x^2)(1-y^2)}) = -\frac{1}{8}$.
+
+  Multiply both sides by $-1$ to obtain $xy\sqrt{(1-x^2)(1-y^2)} - x^2 y^2 = \frac{1}{8}$.
+
+  Observe that equality is achieved when $x = y$, because the left-hand side is symmetric in $x$ and $y$ and
+  the function
+  $f(x,y) = xy\sqrt{(1-x^2)(1-y^2)} - x^2 y^2$ is maximized when $x=y$ under the positivity constraints.
+
+  Setting $x = y = \cos\theta$, the equation becomes $\cos^2\theta \cos 2\theta = -\frac{1}{8}$.
+
+  Using $\cos 2\theta = 2\cos^2\theta - 1$, this gives $\cos^2\theta (2\cos^2\theta - 1) = -\frac{1}{8}$,
+  which simplifies to $16\cos^4\theta - 8\cos^2\theta + 1 = 0$.
+
+  Letting $z = \cos^2\theta$, we solve $16z^2 - 8z + 1 = 0$, which gives $z = \frac{1}{4}$.
+
+  Hence $\cos\theta = \frac{1}{2}$, so $\theta = \frac{\pi}{3}$.
+
+  Since $x = y$, we also have $\phi = \frac{\pi}{3}$.
+
+  Therefore, $\theta = \phi = \frac{\pi}{3}$.
+  %77
+\item By Vieta's formulas, $\tan\alpha + \tan\beta = -p$ and $\tan\alpha \tan\beta = q$.
+
+  We want to evaluate $\sin^2(\alpha+\beta) + p \sin(\alpha+\beta)\cos(\alpha+\beta) +
+  q \cos^2(\alpha+\beta)$.
+
+  Using the identity $\sin^2(\alpha+\beta) = 1 - \cos^2(\alpha+\beta)$,
+  the expression becomes $1 - \cos^2(\alpha+\beta) + p \sin(\alpha+\beta)\cos(\alpha+\beta) +
+  q \cos^2(\alpha+\beta) = 1 + p \sin(\alpha+\beta)\cos(\alpha+\beta) + (q - 1) \cos^2(\alpha+\beta)$.
+
+  Now, using the identity $\tan(\alpha+\beta) = \frac{\tan\alpha + \tan\beta}{1 - \tan\alpha \tan\beta}
+  = \frac{-p}{1 - q}$,
+
+  we have $\sin(\alpha+\beta) \cos(\alpha+\beta) = \frac{1}{2} \sin 2(\alpha+\beta)
+  = \frac{\tan(\alpha+\beta)}{1 + \tan^2(\alpha+\beta)} = \frac{-p/(1-q)}{1 + (p^2/(1-q)^2)}
+  = \frac{-p(1-q)}{(1-q)^2 + p^2}$.
+
+  Also, $\cos^2(\alpha+\beta) = \frac{1}{1 + \tan^2(\alpha+\beta)} = \frac{(1-q)^2}{(1-q)^2 + p^2}$.
+
+  Substituting these into the expression, we get $1 + p \cdot \frac{-p(1-q)}{(1-q)^2 + p^2} + (q -
+  1) \cdot \frac{(1-q)^2}{(1-q)^2 + p^2}$.
+
+  Simplifying the numerator: $( (1-q)^2 + p^2) - p^2 (1-q) + (q-1)(1-q)^2 = (1-q)^2 + p^2 - p^2(1-q) - (1-q)^3
+  = (1-q)^2 - (1-q)^3 + p^2 - p^2(1-q) = (1-q)^2(1-(1-q)) + p^2 (1-(1-q)) = (1-q)^2 q + p^2 q = q (p^2 +
+  (1-q)^2)$.
+
+  Dividing by the denominator $(1-q)^2 + p^2$, we obtain $q$.
 \stopitemize
