@@ -1836,13 +1836,13 @@
   Rewriting gives the desired relation $\sin \alpha + \cos \alpha + \sin \beta + \cos \beta = \frac{2b(1 -
     a)}{1 + a^2}$.
   %93
-\item Use the double-angle formulas: $\sin 2x = 2 \sin x \cos x$ and $\cos 2x = 2 \cos^2 x - 1$.
+\item Using the double-angle formulas: $\sin 2x = 2 \sin x \cos x$ and $\cos 2x = 2 \cos^2 x - 1$.
 
   Then the equation becomes $2 \sin x \cos x + 2 \cos^2 x - 1 + \sin x + \cos x + 1 = 0$, which simplifies
   to $2 \cos^2 x + 2 \sin x \cos x + \sin x + \cos x = 0$.
 
-  Factor by grouping: $2 \cos x (\cos x + \sin x) + (\sin x + \cos x) = 0$, which gives $(2 \cos x + 1)(\sin
-  x + \cos x) = 0$.
+  Factoring by grouping: $2 \cos x (\cos x + \sin x) + (\sin x + \cos x) = 0$, which gives $(2 \cos x +
+  1)(\sin x + \cos x) = 0$.
 
   Hence either $2 \cos x + 1 = 0$ or $\sin x + \cos x = 0$.
 
@@ -1854,4 +1854,16 @@
 
   Therefore the complete set of solutions is $x = \frac{2\pi}{3} + 2n\pi$, $x = \frac{4\pi}{3} + 2n\pi$, and
   $x = \frac{3\pi}{4} + n\pi$, where $n$ is any integer.
+  %94
+\item Let $x = \frac{A}{2}, y = \frac{B}{2}, z = \frac{C}{2}$. Then $x, y, z > 0$ and $x + y + z
+  = \frac{\pi}{2}$. We want to maximize $f(x, y, z) = \cos x \cos y \cos z$.
+
+  By the inequality of arithmetic and geometric means (AM–GM), for positive numbers with a fixed sum, the
+  product is maximized when all are equal. Hence the maximum occurs at $x = y = z = \frac{\pi}{6}$.
+
+  Then $\cos x \cos y \cos z = (\cos \frac{\pi}{6})^3 = \left(\frac{\sqrt{3}}{2}\right)^3
+  = \frac{3\sqrt{3}}{8}$.
+
+  Therefore, $\cos\frac{A}{2} \cos\frac{B}{2} \cos\frac{C}{2} \le \frac{3\sqrt{3}}{8}$, with equality if and
+  only if $A = B = C = \frac{\pi}{3}$.
 \stopitemize
