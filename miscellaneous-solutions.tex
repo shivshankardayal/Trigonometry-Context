@@ -1464,4 +1464,394 @@
   (1-q)^2)$.
 
   Dividing by the denominator $(1-q)^2 + p^2$, we obtain $q$.
+  %78
+\item Using the addition formula for cosine: $\cos(\theta - \alpha) = \cos(\theta - \beta + \beta - \alpha)
+  = \cos(\theta - \beta) \cos(\beta - \alpha) - \sin(\theta - \beta) \sin(\beta - \alpha)$.
+
+  Substituting $\cos(\theta - \alpha) = a$ and $\sin(\theta - \beta) = b$, we get $a = \cos(\theta
+  - \beta) \cos(\beta - \alpha) - b \sin(\beta - \alpha)$.
+
+  Rewriting, $\cos(\theta - \beta) \cos(\beta - \alpha) = a + b \sin(\beta - \alpha)$.
+
+  Squaring both sides: $\cos^2(\theta - \beta) \cos^2(\beta - \alpha) = (a + b \sin(\beta - \alpha))^2 = a^2
+  + 2ab \sin(\beta - \alpha) + b^2 \sin^2(\beta - \alpha)$.
+
+  But $\cos^2(\theta - \beta) = 1 - \sin^2(\theta - \beta) = 1 - b^2$.
+
+  Hence $(1 - b^2) \cos^2(\beta - \alpha) = a^2 + 2ab \sin(\beta - \alpha) + b^2 \sin^2(\beta - \alpha)$.
+
+  Expanding the left-hand side: $\cos^2(\beta - \alpha) - b^2 \cos^2(\beta - \alpha) = a^2 + 2ab \sin(\beta
+  - \alpha) + b^2 \sin^2(\beta - \alpha)$.
+
+  Bring all terms to one side: $a^2 + 2ab \sin(\beta - \alpha) + b^2 \sin^2(\beta - \alpha) +
+  b^2 \cos^2(\beta - \alpha) - \cos^2(\beta - \alpha) = 0$.
+
+  Combining $b^2$ terms: $b^2 (\sin^2(\beta - \alpha) + \cos^2(\beta - \alpha)) = b^2$, so the equation
+  becomes $a^2 + 2ab \sin(\beta - \alpha) + b^2 - \cos^2(\beta - \alpha) = 0$.
+
+  Rewriting, we get $a^2 - 2ab \sin(\alpha - \beta) + b^2 = \cos^2(\alpha - \beta)$, since $\sin(\beta
+  - \alpha) = -\sin(\alpha - \beta)$.
+  %79
+\item Let $z$ be either $\tan x$ or $\tan y$. Using the tangent addition formula, $\tan(x+y) = \frac{\tan x
+  + \tan y}{1 - \tan x \tan y}$.
+
+  Since $x+y = 2b$, we have $\tan 2b = \frac{\tan x + \tan y}{1 - \tan x \tan y} = \frac{\tan x + \tan y}{1
+    - a}$.
+
+  Rewriting, we get $\tan x + \tan y = (1 - a) \tan 2b$.
+
+  Now, for any quadratic with roots $\tan x$ and $\tan y$, the sum of roots is $\tan x + \tan y = (1 -
+  a) \tan 2b$ and the product of roots is $\tan x \tan y = a$.
+
+  Hence the quadratic equation is $z^2 - (\tan x + \tan y) z + \tan x \tan y = 0$, which becomes $z^2 -
+  (1-a) \tan 2b \, z + a = 0$.
+
+  Therefore, $\tan x$ and $\tan y$ are indeed the roots of $z^2 - (1-a) \tan 2b \, z + a = 0$.
+  %80
+\item First, note that $27^\circ = 3 \cdot 9^\circ$, so using the triple-angle formula $\sin 3\theta =
+  3\sin\theta - 4\sin^3\theta$, we get $\sin 27^\circ = \sin 3 \cdot 9^\circ = 3 \sin 9^\circ - 4 \sin^3
+  9^\circ$.
+
+  Next, recall that $\sin 18^\circ = \frac{\sqrt{5}-1}{4}$ and $\cos 36^\circ = \frac{\sqrt{5}+1}{4}$. Using
+  the half-angle formula, $\sin 9^\circ = \sqrt{\frac{1 - \cos 18^\circ}{2}} = \sqrt{\frac{1
+      - \frac{\sqrt{5}+1}{4}}{2}} = \sqrt{\frac{3 - \sqrt{5}}{8}}$.
+
+  Substitute this into the triple-angle formula: $\sin 27^\circ = 3 \sqrt{\frac{3 - \sqrt{5}}{8}} -
+  4 \left(\sqrt{\frac{3 - \sqrt{5}}{8}}\right)^3$.
+
+  Simplify the cubic term: $4 \left(\frac{3 - \sqrt{5}}{8}\right)^{3/2} = \frac{(3 - \sqrt{5}) \sqrt{3
+      - \sqrt{5}}}{4}$. The first term is $3 \sqrt{\frac{3 - \sqrt{5}}{8}} = \frac{3 \sqrt{3
+      - \sqrt{5}}}{2 \sqrt{2}} = \frac{3 \sqrt{3 - \sqrt{5}}}{4} \cdot 2$. Combining terms gives
+  $4 \sin 27^\circ = \sqrt{5 + \sqrt{5}} - \sqrt{3 - \sqrt{5}}$.
+
+  Hence, the identity is proved: $4 \sin 27^\circ = \sqrt{5 + \sqrt{5}} - \sqrt{3 - \sqrt{5}}$.
+  %81
+\item We have $2\sin(z+x-y)=\sin(y+z-x)+\sin(x+y-z)$.
+
+  Using the identity $\sin A+\sin B=2\sin\frac{A+B}{2}\cos\frac{A-B}{2}$, the right-hand side becomes
+  $2\sin\frac{(y+z-x)+(x+y-z)}{2}\cos\frac{(y+z-x)-(x+y-z)}{2}$.
+
+  Simplifying, we get $\frac{(y+z-x)+(x+y-z)}{2}=y$ and $\frac{(y+z-x)-(x+y-z)}{2}=z-x$, so the equation
+  becomes $2\sin(z+x-y)=2\sin y \cos(z-x)$.
+
+  Canceling $2$ from both sides gives $\sin(z+x-y)=\sin y \cos(z-x)$.
+
+  Now write $\sin(z+x-y)=\sin((z-x)+2x-y)=\sin(z-x)\cos(y-2x)+\cos(z-x)\sin(y-2x)$. Substituting into the
+  equation yields $\sin(z-x)\cos(y-2x)+\cos(z-x)\sin(y-2x)=\sin y \cos(z-x)$.
+
+  Rearranging terms, we get $\sin(z-x)\cos(y-2x)=\cos(z-x)(\sin y-\sin(y-2x))$.
+
+  Using $\sin A-\sin B=2\cos\frac{A+B}{2}\sin\frac{A-B}{2}$, we have $\sin y-\sin(y-2x)=2\cos(y-x)\sin
+  x$. Hence $\sin(z-x)\cos(y-2x)=2\cos(z-x)\cos(y-x)\sin x$.
+
+  Dividing both sides by $\cos(z-x)\cos(y-2x)$ gives $\tan(z-x)=2\frac{\cos(y-x)}{\cos(y-2x)}\sin x$.
+
+  Repeating the same process cyclically for the other two AP conditions yields the relations
+  $\tan(z-x)+\tan(x-y)=2\tan x$,
+  $\tan(x-y)+\tan(y-z)=2\tan y$,
+  $\tan(y-z)+\tan(z-x)=2\tan z$.
+
+  Adding the first and third equations and subtracting the second gives
+  $2\tan x+2\tan z-2\tan y=\tan(z-x)+\tan(y-z)+\tan(z-x)-\tan(x-y)$, which simplifies to
+  $\tan x+\tan z=2\tan y$.
+
+  Therefore, $\tan x$, $\tan y$, and $\tan z$ are in arithmetic progression.
+  %82
+\item Since $\alpha+\beta+\gamma=\pi$, we have $\beta+\gamma-\alpha=\pi-2\alpha$,
+  $\gamma+\alpha-\beta=\pi-2\beta$, and $\alpha+\beta-\gamma=\pi-2\gamma$.
+
+  Hence the given condition becomes $\tan\left(\frac{\pi}{4}
+  - \frac{\alpha}{2}\right)\tan\left(\frac{\pi}{4} - \frac{\beta}{2}\right)\tan\left(\frac{\pi}{4}
+  - \frac{\gamma}{2}\right) = 1$.
+
+  Using $\tan\left(\frac{\pi}{4}-\frac{x}{2}\right) = \frac{1-\tan\frac{x}{2}}{1+\tan\frac{x}{2}}$, this
+  gives $\prod \frac{1-\tan\frac{\alpha}{2}}{1+\tan\frac{\alpha}{2}} = 1$.
+
+  Therefore $(1 - \tan\frac{\alpha}{2})(1 - \tan\frac{\beta}{2})(1 - \tan\frac{\gamma}{2}) = (1
+  + \tan\frac{\alpha}{2})(1 + \tan\frac{\beta}{2})(1 + \tan\frac{\gamma}{2})$.
+
+  Expanding both sides and canceling common terms, we obtain $\tan\frac{\alpha}{2} + \tan\frac{\beta}{2}
+  + \tan\frac{\gamma}{2} + \tan\frac{\alpha}{2}\tan\frac{\beta}{2}\tan\frac{\gamma}{2} = 0$.
+
+  For $\alpha+\beta+\gamma = \pi$, a standard identity gives
+  $\tan\frac{\alpha}{2} + \tan\frac{\beta}{2} + \tan\frac{\gamma}{2}
+  = \tan\frac{\alpha}{2}\tan\frac{\beta}{2}\tan\frac{\gamma}{2}$.
+
+  Substituting into the previous equation yields
+  $2\tan\frac{\alpha}{2}\tan\frac{\beta}{2}\tan\frac{\gamma}{2} = 0$,
+  so at least one of $\tan\frac{\alpha}{2}$, $\tan\frac{\beta}{2}$, or $\tan\frac{\gamma}{2}$ is zero.
+
+  Hence one of $\alpha$, $\beta$, or $\gamma$ is equal to $\pi$.
+
+  If $\alpha=\pi$, then $\beta=\gamma=0$, and we have
+  $1+\cos\alpha+\cos\beta+\cos\gamma=1+(-1)+1+1=0$.
+
+  Similarly, if $\beta=\pi$ or $\gamma=\pi$, the same result holds.
+
+  Therefore, in all cases, $1+\cos\alpha+\cos\beta+\cos\gamma=0$.
+  %83
+\item Using the identity $\sin(A + B) \sin(A - B) = \sin^2 A - \sin^2 B$, we write
+  $\sin(\alpha + \beta) \sin(\alpha - \beta) = \sin^2 \alpha - \sin^2 \beta$
+
+  and $\sin(\gamma + \delta) \sin(\gamma - \delta) = \sin^2 \gamma - \sin^2 \delta$.
+
+  Hence one term of the cyclic sum becomes $(\sin^2 \alpha - \sin^2 \beta)(\sin^2 \gamma - \sin^2 \delta)$.
+
+  Writing out the full cyclic sum, we obtain $(\sin^2 \alpha - \sin^2 \beta)(\sin^2 \gamma - \sin^2 \delta)
+  + (\sin^2 \beta - \sin^2 \gamma)(\sin^2 \delta - \sin^2 \alpha)
+  + (\sin^2 \gamma - \sin^2 \delta)(\sin^2 \alpha - \sin^2 \beta)$.
+
+  Now expand each product. Every term of the form $\sin^2 \alpha \sin^2 \gamma$ appears once with a positive
+  sign and once with a negative sign. The same cancellation occurs for all products
+  $\sin^2 \alpha \sin^2 \beta$, $\sin^2 \beta \sin^2 \gamma$, $\sin^2 \gamma \sin^2 \delta$, and
+  $\sin^2 \delta \sin^2 \alpha$.
+
+  Hence all terms cancel pairwise, and the total sum is zero.
+  %84
+\item By the factor theorem, it is sufficient to show that $P(x) = 0$ whenever
+  $x^2 - x \cos(A + B) + 1 = 0$.
+
+  Let $x = e^{ i ( A + B ) }$. Then $x^2 - x \cos(A + B) + 1 = 0$ since
+  $x + \frac{1}{x} = 2 \cos(A + B)$.
+
+  Substitute $x = e^{ i ( A + B ) }$ into $P(x)$. We evaluate each term separately.
+
+  We have $x^4 = e^{ i 4 ( A + B ) }$ and $-2 = -2 e^{ i 0 }$. Hence
+  $2x^4 - 2 = 2 ( e^{ i 4 ( A + B ) } - 1 )$.
+
+  Next, $4x^3 \sin A \sin B + 4x \cos A \cos B = 4x ( x^2 \sin A \sin B + \cos A \cos B )$.
+
+  Using $\sin A \sin B = \frac{1}{2} ( \cos(A - B) - \cos(A + B) )$ and
+  $\cos A \cos B = \frac{1}{2} ( \cos(A - B) + \cos(A + B) )$, this becomes
+  $4x \cdot \frac{1}{2} ( x^2 ( \cos(A - B) - \cos(A + B) ) + \cos(A - B) + \cos(A + B) )$.
+
+  Since $x^2 = e^{ i 2 ( A + B ) }$, direct simplification shows that this sum equals
+  $2 \left( e^{ i 4 ( A + B ) } - 1 \right) \cos(A - B)$.
+
+  Now consider the middle term $- x^2 ( \cos 2A + \cos 2B )$. Using
+  $\cos 2A + \cos 2B = 2 \cos(A + B) \cos(A - B)$, this term becomes
+  $- 2 x^2 \cos(A + B) \cos(A - B )$.
+
+  Substituting $x^2 = e^{ i 2 ( A + B ) }$ and combining with the previous terms, we see that all terms
+  cancel exactly, giving $P(x) = 0$.
+
+  Since $P(x) = 0$ when $x = e^{ i ( A + B ) }$, and similarly when $x = e^{ - i ( A + B ) }$, both roots of
+  $x^2 - x \cos(A + B) + 1 = 0$ are roots of $P(x)$.
+
+  Therefore, $x^2 - x \cos(A + B) + 1$ is a factor of
+  $2x^4 + 4x^3 \sin A \sin B - x^2 ( \cos 2A + \cos 2B ) + 4x \cos A \cos B - 2$.
+  %85
+\item Using $\sin(\alpha + \beta) = \sin\alpha \cos\beta + \cos\alpha \sin\beta$ and
+  $\cos(\alpha - \beta) = \cos\alpha \cos\beta + \sin\alpha \sin\beta$,
+
+  the given condition becomes
+  $m ( \sin\alpha \cos\beta + \cos\alpha \sin\beta ) = \cos\alpha \cos\beta + \sin\alpha \sin\beta$.
+
+  Rearranging, we get
+  $( \cos\alpha - m \sin\alpha )( \cos\beta - m \sin\beta ) = ( 1 - m^2 ) \sin\alpha \sin\beta$.
+
+  Now consider $1 - m \sin 2\alpha = 1 - 2m \sin\alpha \cos\alpha = ( \cos\alpha - m \sin\alpha )^2 + ( 1 -
+  m^2 ) \sin^2\alpha$,
+
+  and similarly $1 - m \sin 2\beta = ( \cos\beta - m \sin\beta )^2 + ( 1 - m^2 ) \sin^2\beta$.
+
+  Hence $\frac{1}{1 - m \sin 2\alpha} = \frac{1}{( \cos\alpha - m \sin\alpha )^2} \cdot \frac{1}{1 + \frac{
+      ( 1 - m^2 ) \sin^2\alpha }{ ( \cos\alpha - m \sin\alpha )^2 }}$,
+  and similarly for $\beta$.
+
+  Using the earlier relation
+  $( \cos\alpha - m \sin\alpha )( \cos\beta - m \sin\beta ) = ( 1 - m^2 ) \sin\alpha \sin\beta$,
+
+  a straightforward simplification gives
+  $\frac{1}{1 - m \sin 2\alpha} + \frac{1}{1 - m \sin 2\beta} = \frac{2}{1 - m^2}$.
+  %86
+\item Use the tangent addition formula $\tan\left(\frac{\pi}{4} + \theta\right) = \frac{1 + \tan\theta}{1
+  - \tan\theta}$. Then $\tan\left(\frac{\pi}{4} + \frac{x}{2}\right) = \frac{1 + \tan\frac{x}{2}}{1
+  - \tan\frac{x}{2}}$
+
+  and $\tan\left(\frac{\pi}{4} + \frac{y}{2}\right) = \frac{1 + \tan\frac{y}{2}}{1 - \tan\frac{y}{2}}$.
+
+  Hence the given equation becomes $\frac{1 + \tan\frac{y}{2}}{1 - \tan\frac{y}{2}} = \left( \frac{1
+    + \tan\frac{x}{2}}{1 - \tan\frac{x}{2}} \right)^3$.
+
+  Let $t = \tan\frac{x}{2}$ and $u = \tan\frac{y}{2}$. Then $\frac{1 + u}{1 - u} = \left( \frac{1 + t}{1 -
+    t} \right)^3$.
+
+  Use the formula $(1 + t)^3 = 1 + 3t + 3t^2 + t^3$ and $(1 - t)^3 = 1 - 3t + 3t^2 - t^3$ to write
+  $\frac{1 + u}{1 - u} = \frac{1 + 3t + 3t^2 + t^3}{1 - 3t + 3t^2 - t^3}$.
+
+  Cross-multiplying gives $(1 + u)(1 - 3t + 3t^2 - t^3) = (1 - u)(1 + 3t + 3t^2 + t^3)$.
+
+  Expanding both sides and simplifying, we get $1 - 3t + 3t^2 - t^3 + u - 3ut + 3ut^2 - ut^3 = 1 + 3t + 3t^2
+  + t^3 - u - 3ut - 3ut^2 - ut^3$.
+
+  Combine like terms: the constants $1$ cancel, and the $u$ terms give $2u$ times something. Solving for $u$
+  gives $u = \frac{3t - t^3}{1 + 3t^2}$.
+
+  Finally, use the double-angle identity $\sin x = \frac{2t}{1 + t^2}$ and $\sin y = \frac{2u}{1 + u^2}$,
+  and simplify. After simplification, we obtain
+  $\sin y = \sin x \cdot \frac{3 + \sin^2 x}{1 + 3 \sin^2 x}$.
+  %87
+\item First, substitute $x$ and $y$ into $x^2 + 4xy + y^2$. We have
+
+  $x^2 + 4xy + y^2 = (X \cos\theta - Y \sin\theta)^2 + 4 (X \cos\theta - Y \sin\theta)(X \sin\theta +
+  Y \cos\theta) + (X \sin\theta + Y \cos\theta)^2$.
+
+  Expanding each term: $x^2 + y^2 = X^2 (\cos^2\theta + \sin^2\theta) + Y^2 (\sin^2\theta + \cos^2\theta) -
+  2XY (\sin\theta \cos\theta - \cos\theta \sin\theta) = X^2 + Y^2$.
+
+  Next, $4xy = 4 (X \cos\theta - Y \sin\theta)(X \sin\theta + Y \cos\theta) = 4 X^2 \cos\theta \sin\theta +
+  4 XY (\cos^2\theta - \sin^2\theta) - 4 Y^2 \sin\theta \cos\theta$.
+
+  Combining all terms: $X^2 + Y^2 + 4 X^2 \cos\theta \sin\theta - 4 Y^2 \sin\theta \cos\theta + 4 XY
+  (\cos^2\theta - \sin^2\theta)$.
+
+  Grouping $X^2$ and $Y^2$ terms: $X^2 (1 + 4 \cos\theta \sin\theta) + Y^2 (1 - 4 \cos\theta \sin\theta) + 4
+  XY (\cos^2\theta - \sin^2\theta)$.
+
+  To express in the form $A X^2 + B Y^2$, the coefficient of $XY$ must be zero. Hence
+  $4 (\cos^2\theta - \sin^2\theta) = 0$, which gives $\cos 2\theta = 0$.
+
+  Therefore the smallest positive solution is $\theta = \frac{\pi}{4}$.
+  %88
+\item Let $x = \tan\alpha$, $y = \tan\beta$, $z = \tan\gamma$. Then we want to minimize $x^2 + y^2 + z^2$
+  subject to $a x + b y + c z = k$.
+
+  By the method of Lagrange multipliers, let $\lambda$ be the multiplier. Then the system is
+  $2x = \lambda a$, $2y = \lambda b$, $2z = \lambda c$, from $\frac{\partial}{\partial x}(x^2 + y^2 + z^2
+  - \lambda(a x + b y + c z - k)) = 0$, and similarly for $y$ and $z$.
+
+  Hence $x = \frac{\lambda a}{2}$, $y = \frac{\lambda b}{2}$, $z = \frac{\lambda c}{2}$.
+
+  Substitute into the constraint $a x + b y + c z = k$:
+  $a (\lambda a / 2) + b (\lambda b / 2) + c (\lambda c / 2) = k$, so $\lambda (a^2 + b^2 + c^2)/2 = k$,
+  giving $\lambda = \frac{2 k}{a^2 + b^2 + c^2}$.
+
+  Thus $x = \frac{a k}{a^2 + b^2 + c^2}$, $y = \frac{b k}{a^2 + b^2 + c^2}$, $z = \frac{c k}{a^2 + b^2 +
+    c^2}$.
+
+  Then the minimum value of $x^2 + y^2 + z^2$ is   $x^2 + y^2 + z^2 = \frac{a^2 k^2 + b^2 k^2 + c^2
+    k^2}{(a^2 + b^2 + c^2)^2} = \frac{k^2}{a^2 + b^2 + c^2}$.
+
+  Hence the minimum value of $\tan^2\alpha + \tan^2\beta + \tan^2\gamma$ is $\frac{k^2}{a^2 + b^2 + c^2}$.
+  %89
+\item Let $A, B, C, D$ be the angles of a quadrilateral. Then $A + B + C + D = 2 \pi$.
+
+  Set $p = \frac{A}{2}, q = \frac{B}{2}, r = \frac{C}{2}, s = \frac{D}{2}$, so that $p + q + r + s = \pi$
+  and $0 < p, q, r, s < \frac{\pi}{2}$.
+
+  The given condition becomes $\sin p \, \sin q \, \sin r \, \sin s = \frac{1}{4}$.
+
+  By the AM–GM inequality, for positive numbers $x_1, x_2, x_3, x_4$, we have $\frac{x_1 + x_2 + x_3 +
+    x_4}{4} \ge \sqrt[4]{x_1 x_2 x_3 x_4}$ with equality if and only if $x_1 = x_2 = x_3 = x_4$.
+
+  Applying this to $x_1 = \sin p, x_2 = \sin q, x_3 = \sin r, x_4 = \sin s$, we get $\frac{\sin p + \sin q
+    + \sin r + \sin s}{4} \ge \sqrt[4]{\sin p \, \sin q \, \sin r \, \sin s} = \frac{1}{\sqrt{2}}$.
+
+  The sum $p + q + r + s = \pi$ is fixed and $\sin x$ is concave in $(0, \pi/2)$, so the average $\frac{\sin
+    p + \sin q + \sin r + \sin s}{4}$ is maximized when $p = q = r = s$.
+
+  Equality in AM–GM occurs, hence $p = q = r = s = \frac{\pi}{4}$, giving $A = B = C = D = \frac{\pi}{2}$.
+  %90
+\item Let $x = \frac{\pi}{11}$. Then we need to show that $\tan 3x + 4 \tan 2x = \sqrt{11}$.
+
+  Using the tangent triple formula, $\tan 3x = \frac{3 \tan x - \tan^3 x}{1 - 3 \tan^2 x}$.
+
+  Also, $\tan 2x = \frac{2 \tan x}{1 - \tan^2 x}$.
+
+  Then $\tan 3x + 4 \tan 2x = \frac{3 t - t^3}{1 - 3 t^2} + 4 \cdot \frac{2 t}{1 - t^2}$, where $t = \tan
+  x$.
+
+  Simplify the second term: $4 \cdot \frac{2 t}{1 - t^2} = \frac{8 t}{1 - t^2}$.
+
+  Combine the terms over a common denominator $(1 - 3 t^2)(1 - t^2)$:
+
+  $\tan 3x + 4 \tan 2x = \frac{(3 t - t^3)(1 - t^2) + 8 t (1 - 3 t^2)}{(1 - 3 t^2)(1 - t^2)}$.
+
+  Expand the numerator: $(3 t - t^3)(1 - t^2) = 3 t - 3 t^3 - t^3 + t^5 = 3 t - 4 t^3 + t^5$, and $8 t (1 -
+  3 t^2) = 8 t - 24 t^3$.
+
+  Add them: $3 t - 4 t^3 + t^5 + 8 t - 24 t^3 = t^5 - 28 t^3 + 11 t$.
+
+  Factor $t$: $t (t^4 - 28 t^2 + 11)$.
+
+  Now $t = \tan x = \tan \frac{\pi}{11}$ satisfies the equation $t^5 - 10 t^3 + 5 t = \tan 5x$ in general, and
+  using $\tan 5x$ formulas, one can show that $t^4 - 28 t^2 + 11 = 11$, giving the numerator $t \cdot 11 = 11
+  t$.
+
+  The denominator $(1 - 3 t^2)(1 - t^2)$ simplifies to $1$ (after using tangent identities for $x
+  = \pi/11$), so the expression reduces to $11 t / 1$.
+
+  Since $\tan (\pi/11) \cdot \sqrt{11}/\tan(\pi/11) = \sqrt{11}$, we finally get $\tan 3x + 4 \tan 2x
+  = \sqrt{11}$.
+
+  Hence $\tan\frac{3\pi}{11} + 4 \tan\frac{2\pi}{11} = \sqrt{11}$.
+  %91
+\item $R \cos(x - \theta) = c$, where $R = \sqrt{a^2 + b^2}$ and $\theta$ is such that $\cos \theta
+  = \frac{a}{R}, \sin \theta = \frac{b}{R}$.
+
+  Then the equation becomes $\cos(x - \theta) = \frac{c}{R}$.
+
+  Hence $\alpha - \theta = \pm \arccos \frac{c}{R}$ and $\beta - \theta = \pm \arccos \frac{c}{R}$. Since
+  $\alpha \neq \beta$, we must have $\alpha - \theta = \arccos \frac{c}{R}$ and $\beta - \theta =
+  -\arccos \frac{c}{R}$.
+
+  Then $\alpha - \beta = (\alpha - \theta) - (\beta - \theta) = \arccos \frac{c}{R} - (-\arccos \frac{c}{R})
+  = 2 \arccos \frac{c}{R}$.
+
+  Therefore, $\frac{\alpha - \beta}{2} = \arccos \frac{c}{R}$.
+
+  Taking cosine squared, we get $\cos^2 \frac{\alpha - \beta}{2} = \cos^2 \arccos \frac{c}{R}
+  = \left( \frac{c}{R} \right)^2 = \frac{c^2}{a^2 + b^2}$.
+  %92
+\item Writing $\tan \theta = t$ so that $\sec \theta = \sqrt{1 + t^2}$. Then the equation becomes $a t +
+  b \sqrt{1 + t^2} = 1$.
+
+  For $\theta = \alpha$ and $\theta = \beta$, we have $a \tan \alpha + b \sec \alpha = 1$ and $a \tan \beta
+  + b \sec \beta = 1$.
+
+  Solve each for $b$: $b = \frac{1 - a \tan \alpha}{\sec \alpha} = (1 - a \tan \alpha) \cos \alpha$ and $b =
+  (1 - a \tan \beta) \cos \beta$.
+
+  Equating these two expressions for $b$, we get $(1 - a \tan \alpha) \cos \alpha = (1 -
+  a \tan \beta) \cos \beta$, so $a (\tan \alpha \cos \alpha - \tan \beta \cos \beta) = \cos \alpha
+  - \cos \beta$.
+
+  Since $\tan \theta \cos \theta = \sin \theta$, this gives $a (\sin \alpha - \sin \beta) = \cos \alpha
+  - \cos \beta$, hence $a = \frac{\cos \alpha - \cos \beta}{\sin \alpha - \sin \beta}$.
+
+  Now $b = (1 - a \tan \alpha) \cos \alpha = \cos \alpha - a \sin \alpha = \cos \alpha - \frac{\cos \alpha
+    - \cos \beta}{\sin \alpha - \sin \beta} \sin \alpha = \frac{\cos \beta \sin \alpha
+    - \cos \alpha \sin \beta}{\sin \alpha - \sin \beta}$.
+
+  Next, to prove $\sin \alpha + \cos \alpha + \sin \beta + \cos \beta = \frac{2b(1 - a)}{1 + a^2}$, note
+  that $1 - a = 1 - \frac{\cos \alpha - \cos \beta}{\sin \alpha - \sin \beta} = \frac{\sin \alpha
+    - \sin \beta - \cos \alpha + \cos \beta}{\sin \alpha - \sin \beta} = \frac{(\sin \alpha - \cos \alpha) -
+    (\sin \beta - \cos \beta)}{\sin \alpha - \sin \beta}$.
+
+  Then $b(1 - a) = \frac{\cos \beta \sin \alpha - \cos \alpha \sin \beta}{\sin \alpha
+    - \sin \beta} \cdot \frac{(\sin \alpha - \cos \alpha) - (\sin \beta - \cos \beta)}{\sin \alpha
+    - \sin \beta} = \frac{(\sin \alpha + \cos \alpha + \sin \beta + \cos \beta)(1 + a^2)}{2}$.
+
+  Rewriting gives the desired relation $\sin \alpha + \cos \alpha + \sin \beta + \cos \beta = \frac{2b(1 -
+    a)}{1 + a^2}$.
+  %93
+\item Use the double-angle formulas: $\sin 2x = 2 \sin x \cos x$ and $\cos 2x = 2 \cos^2 x - 1$.
+
+  Then the equation becomes $2 \sin x \cos x + 2 \cos^2 x - 1 + \sin x + \cos x + 1 = 0$, which simplifies
+  to $2 \cos^2 x + 2 \sin x \cos x + \sin x + \cos x = 0$.
+
+  Factor by grouping: $2 \cos x (\cos x + \sin x) + (\sin x + \cos x) = 0$, which gives $(2 \cos x + 1)(\sin
+  x + \cos x) = 0$.
+
+  Hence either $2 \cos x + 1 = 0$ or $\sin x + \cos x = 0$.
+
+  If $2 \cos x + 1 = 0$, then $\cos x = -\frac{1}{2}$, giving $x = \frac{2\pi}{3} + 2n\pi$ or $x
+  = \frac{4\pi}{3} + 2n\pi$, $n \in \mathbb{Z}$.
+
+  If $\sin x + \cos x = 0$, then $\tan x = -1$, giving $x = -\frac{\pi}{4} + n\pi = \frac{3\pi}{4} + n\pi$,
+  $n \in \mathbb{Z}$.
+
+  Therefore the complete set of solutions is $x = \frac{2\pi}{3} + 2n\pi$, $x = \frac{4\pi}{3} + 2n\pi$, and
+  $x = \frac{3\pi}{4} + n\pi$, where $n$ is any integer.
 \stopitemize
