@@ -1866,4 +1866,391 @@
 
   Therefore, $\cos\frac{A}{2} \cos\frac{B}{2} \cos\frac{C}{2} \le \frac{3\sqrt{3}}{8}$, with equality if and
   only if $A = B = C = \frac{\pi}{3}$.
+  %95
+\item Let $\theta = u + v$ and $\phi = u - v$. Then $\cos\theta + \cos\phi = 2\cos u\cos v = a$
+
+  and $\sin\theta + \sin\phi = 2\sin u\cos v = b$.
+
+  Squaring and adding gives $a^2 + b^2 = 4\cos^2v(\cos^2u+\sin^2u) = 4\cos^2v$,
+
+  so $\cos v = \tfrac12\sqrt{a^2+b^2}$.
+
+  Dividing the two equations gives $\tan u=b/a$.
+
+  Now $\cos(\theta + \phi) = \cos2u = \frac{1 - \tan^2u}{1 + \tan^2u} = \frac{a^2 - b^2}{a^2 + b^2}$
+
+  and $\sin(\theta + \phi) = \sin2u = \frac{2\tan u}{1 + \tan^2u}=\frac{2ab}{a^2 + b^2}$.
+  %96
+\item Let $S=\sum_{\text{cyc}}\sin3A\sin^3(B-C)$.
+  Using the identity $\sin^3x=\frac{3\sin x-\sin3x}{4}$, we obtain
+  $S=\frac14\sum_{\text{cyc}}\left(3\sin3A\sin(B-C)-\sin3A\sin3(B-C)\right)
+  =\frac14(3S_1-S_2)$,
+
+  where $S_1=\sum_{\text{cyc}}\sin3A\sin(B-C)$ and $S_2=\sum_{\text{cyc}}\sin3A\sin3(B-C)$.
+
+  First consider $S_1$. Using $\sin x\sin y=\frac12[\cos(x-y)-\cos(x+y)]$, we have
+  $\sin3A\sin(B-C)=\frac12\{\cos(3A-B+C)-\cos(3A+B-C)\}$.
+
+  Summing cyclically and using $A+B+C=\pi$, each cosine term cancels with another of opposite sign, hence
+  $S_1=0$.
+
+  Next consider $S_2$. Similarly, $\sin3A\sin3(B-C)=\frac12\{\cos(3A-3B+3C)-\cos(3A+3B-3C)\}$.
+
+  In the cyclic sum, all cosine terms cancel pairwise since
+  $3A-3B+3C=3(\pi-2B)$ and $3A+3B-3C=3(\pi-2C)$, and cyclic permutation only changes the sign.
+  Therefore $S_2=0$.
+
+  Hence $S=\frac14(3\cdot0-0)=0$, which proves
+  $\sin3A\sin^3(B-C)+\sin3B\sin^3(C-A)+\sin3C\sin^3(A-B)=0$.
+  %97
+\item $2(\sin x - \cos2x) - \sin2x - 2\sin2x\sin x + 2\cos x = 0$
+
+  $\Rightarrow 2(\sin x - \cos2x) - \sin2x - (\cos x - \cos3x) + 2\cos x = 0$
+
+  $\Rightarrow 2\sin x - 2\cos2x - 2\sin x\cos x + \cos x + \cos 3x = 0$
+
+  $\Rightarrow 2\sin x - 2\sin x\cos x - 2\cos2x + 2\cos2x.\cos x = 0$
+
+  $\Rightarrow 2\sin x(1 - \cos x) - 2\cos2x(1 - \cos x) = 0$
+
+  $\Rightarrow (1 - \cos x)(2\sin x - 2\cos2x) = 0$
+
+  If $\cos x = 1 \Rightarrow x = 2n\pi$, if $2\sin x = 2\cos2x \Rightarrow \cos2x = \cos\left(\frac{\pi}{2}
+  - x\right)$
+
+  $\Rightarrow 2x = 2n\pi \pm \left(\frac{\pi}{2} - x\right)$
+
+  Taking positive sign $x = \frac{2n\pi}{3} + \frac{\pi}{6}$ and taking negative sign $x = 2n\pi
+  - \frac{\pi}{2}$.
+  %98
+\item The given relations can be written as $\left(m' + m\cos\theta\right)^2 + m^2 - m^2\cos^2\theta = 1$
+
+  $\Rightarrow \left(m' + m\cos\theta\right)^2 = 1 - m^2\sin^2\theta$
+
+  Similarly $\left(n' + n\cos\theta\right)^2 = 1 - n^2\sin^2\theta$
+
+  and $\left(m' + m\cos\theta\right)\left(n' + n\cos\theta\right) + mn\sin^2\theta = 0$
+
+  $\Rightarrow \left(m' + m\cos\theta\right)^2\left(n' + n\cos\theta\right)^2 = m^2n^2\sin^4\theta$
+
+  Thus, $\left(1 - m^2\sin^2\theta\right)\left(1 - n^2\sin^2\theta\right) = m^2n^2\sin^4\theta$
+
+  $\Rightarrow \left(m^2 + n^2\right)\sin^2\theta = 1 \Rightarrow m^2 + n^2 = \csc^2\theta$.
+  %99
+\item Since $A, B, C$ are angles of a triangle, therefore, $\sin A, \sin B, \sin C > 0$.
+
+  Thus, $\sin A + \sin B > \sin A, \sin B + \sin C > \sin B, \sin C + \sin A > \sin C$
+
+  Multiplying all three we have desired inequality.
+  %100
+\item Given that $\cos\theta = \frac{a}{b + c}\Rightarrow 1 + \cos\theta = \frac{a + b + c}{2}\Rightarrow
+  2\cos^2\frac{\theta}{2} = \frac{a + b + c}{b + c}\Rightarrow \sec^2\frac{\theta}{2} = 1
+  + \tan^2\frac{\theta}{2} = \frac{2(b + c)}{a + b + c}$
+
+  Similarly, $1 + \tan^2\frac{\phi}{2} = \frac{2(c + a)}{a + b + c}$, and $1 + \tan^2\frac{\psi}{2}
+  = \frac{2(a + b)}{a + b + c}$
+
+  Thus, $\tan^2\frac{\theta}{2} = \frac{b + c - a}{a + b + c} = \frac{s - a}{s}, \tan^2\frac{\phi}{2}
+  = \frac{s - b}{s}, \tan^2\frac{\psi}{2} = \frac{s - c}{s}$
+
+  $\Rightarrow \tan\frac{\theta}{2}\tan\frac{\phi}{2}\tan\frac{\psi}{2} = \sqrt{\frac{(s - a)(s - b)(s -
+      c)}{s^3}}$
+
+  Now $\tan\frac{A}{2}\tan\frac{B}{2}\tan\frac{C}{2} = \frac{\Delta}{s(s - a)}.\frac{\Delta}{s(s -
+    b)}.\frac{\Delta}{s(s - c)}$
+
+  $= \frac{\left[s(s - a)(s - b)(s - c)\right]^{\frac{3}{2}}}{s^3(s - a)(s - b)(s - c)} = \sqrt{\frac{(s -
+      a)(s - b)(s - c)}{s^3}}$.
+
+  Hence proved.
+  %101
+\item L.H.S $S = \left[\frac{s(s - a)}{\Delta} + \frac{s(s - b)}{\Delta}\right]\left[a.\frac{(s - c)(s -
+    a)}{ca} + b\frac{(s - b)(s - c)}{bc}\right]$
+
+  $= \frac{s}{\Delta}[2s - a - b]\left[\frac{s - c}{c}(s - a + s - b)\right] = \frac{s}{\Delta}.c.\frac{s -
+  c}{c}.c = c.\frac{s(s - c)}{\Delta} = c.\cot\frac{C}{2} =$ R.H.S.
+  %102
+\item Given that $\sqrt{3}\sin2A = \sin2B\Rightarrow 3\sin^22A = \sin^22B$ and
+
+  $\sqrt{3}\sin^2A + \sin^2B = \frac{1}{2}(\sqrt{3} - 1)\Rightarrow 2\sqrt{3}\sin^2A - \sqrt{3} = - 1 -
+  2\sin^2B$
+
+  $\Rightarrow \sqrt{3}\left(1 - 2\sin^2A\right) = 1 + 2\sin^2B \Rightarrow \sqrt{3}\cos2A = 2 - \cos2B$
+
+  Squaring, we get $\Rightarrow 3\cos^2A = 4 - 4\cos2x + \cos^22B$
+
+  Adding the two obtained equations, we have
+
+  $3 = 4 - 4\cos2B + 1 \Rightarrow \cos2B = \frac{1}{2}\Rightarrow B = n\pi \pm\frac{\pi}{6}$
+
+  $\Rightarrow \cos2A = \frac{\sqrt{3}}{2}\Rightarrow A = n\pi \pm\frac{\pi}{12}$.
+  %103
+\item L.H.S. $= \sqrt{\tan x + \sin x} + \sqrt{\tan x - \sin x} = \sqrt{\tan x}(\sqrt{1 + \cos x} + \sqrt{1
+  - \cos x})$
+
+  $= \sqrt{2}\sqrt{tan x}\left[\cos\frac{x}{2} + \sin\frac{x}{2}\right]$
+
+  $= 2\sqrt{\tan x}\left[\frac{1}{\sqrt{2}}\cos\frac{x}{2} + \frac{1}{\sqrt{2}}\sin\frac{x}{2}\right]$
+
+  $= 2\sqrt{\tan x}\cos\left(\frac{\pi}{4} - \frac{x}{2}\right) =$ R.H.S.
+  %104
+\item Using sine rule $\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R \Rightarrow \frac{a + b +
+  c}{sin A + \sin B + \sin C} = 2R$
+
+  Using result obtained earlier, $\Rightarrow \frac{2s}{4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}} =
+  2R$
+
+  $\Rightarrow \frac{1}{2}s\sec\frac{A}{2}\sec\frac{B}{2}\sec\frac{C}{2} = 2R$
+
+  Again from sine rule $\frac{abc}{\sin A\sin B\sin C} = 8R^3\Rightarrow \sqrt[3]{\frac{abc}{\sin A\sin
+      B\sin C}} = 2R$
+
+  Thus, $s\sec\frac{A}{2}\sec\frac{B}{2}\sec\frac{C}{2} = 2\sqrt[3]{\frac{abc}{\sin A\sin B\sin C}}$.
+  %105
+\item Given that $p\cos^2\theta + q\cos^2\phi = 1$. Multiplying by $q$
+
+  $pq\cos^2\theta + q^2\cos^2\phi = q$. Squaring the last given equation $p^2\sin^2\theta = q^2\sin^2\phi$
+
+  $\Rightarrow p^2\cos^2\theta - q^2\sin^2\phi = p^2 - q^2$
+
+  Adding the two equations $\left(p^2 + pq\right)\cos^2\theta = p^2 - q^2 + q$
+
+  $\Rightarrow \cos^2\theta = \frac{p^2 - q^2 + q}{p^2 + pq}\Rightarrow \sin^2\theta = \frac{q(p + q -
+    1)}{p(p + q)}\Rightarrow \cot^2\theta = \frac{p^2 + q^2 + p}{p(p + q - 1)}$
+
+  Similarly $\cot^2\phi = \frac{q^2 - p^2 + p}{p(p + q - 1)}$
+
+  Given that $p\cot^2\theta + q\cot^2\phi = 1 \Rightarrow p.\frac{p^2 + q^2 + p}{p(p + q - 1)} + q.\frac{q^2
+    - p^2 + p}{p(p + q - 1)} = 1$, which is now trivially proven to be $\left(p^2 - q^2\right)^2 = -pq$.
+  %106
+\item Given $a\sin^2x + b\cos^2x = c \Rightarrow a\tan^2x + b = c\sec^2x \Rightarrow (a - c)\tan^2x = c - b$
+
+  Similalry, $(b - d)\tan^2y = d - a$. Also, $a\tan x = b\tan y \Rightarrow \frac{\tan^2x}{\tan^2y}
+  = \frac{b^2}{a^2}$
+
+  From first two equation $\Rightarrow \frac{a - c}{b - d}\frac{\tan^2}{\tan^2y} = \frac{c - b}{d - a}$
+
+  Form last two equations $\frac{b^2}{a^2} = \frac{(c - b)(b - d)}{(a - c)(d - a)}$.
+  %107
+\item $\tan\theta - \cot\theta = a \Rightarrow \frac{\sin^2\theta - \cos^2\theta}{\sin\theta\cos\theta} =
+  a\Rightarrow \frac{\sin\theta - \cos\theta}{\sin\theta\cos\theta} = \frac{a}{b}$
+
+  $\Rightarrow \sin\theta - \cos\theta = \frac{a}{b}\sin\theta\cos\theta$. Also, $\sin\theta + \cos\theta =
+  b$
+
+  Squaring and adding $2 = \frac{a^2}{b^2}\sin^2\theta\cos^2\theta +
+  b^2 \Rightarrow \sin^2\theta\cos^2\theta = \left(2 - b^2\right)\frac{b^2}{a^2}$
+
+  Again $1 + 2\sin\theta\cos\theta = b^2 \Rightarrow 4\sin^2\theta\cos^2\theta = \left(b^2 - 1\right)^2$
+
+  $\Rightarrow \left(b^2 - 1\right)^2 = 4\left(2 - b^2\right).\frac{b^2}{a^2}$.
+  %108
+\item L.H.S. $= \frac{\sin\theta\cos A + \cos\theta\sin A}{\sin\theta\cos B + \cos\theta\sin B}
+  = \frac{\tan\theta\cos A + \sin A}{\tan\theta\cos B + \sin B} = \sqrt{\frac{\sin A\cos A}{\sin B\cos B}}$
+
+  $\Rightarrow \tan\theta\cos A\sqrt{\sin B\cos B} + \sin A\sqrt{\sin A\sin B} = \tan\theta\cos B\sqrt{\sin
+    A\cos A} + sin B\sqrt{\sin A\cos A}$
+
+  $\Rightarrow \tan\theta[\cos A\sqrt{\sin B\cos B} - \cos B\sqrt{\sin A\cos A}] = \sin B\sqrt{\sin A\cos A}
+  - \sin A\sqrt{\sin B\cos B}$
+
+  $\Rightarrow \tan\theta\left[\sqrt{\cos A\cos B}\left(\sqrt{\cos A\sin B} - \sqrt{\sin A\cos
+      B}\right)\right] = \sqrt{\sin A\sin B}\left(\sqrt{\cos A\sin B} - \sqrt{\sin A\cos b}\right)$
+
+  $\Rightarrow \tan\theta\sqrt{\cos A\cos B} = \sqrt{\sin A\sin B}\Rightarrow \tan^2\theta = \tan A\tan B$.
+
+  Hence proved.
+  %109
+\item L.H.S. $= \displaystyle\sum \frac{x + y}{x - y}\sin^2(\alpha - \beta) = \sum \frac{\tan(\theta
+  + \alpha) + \tan(\theta + \beta)}{\tan(\theta + \alpha) - \tan(\theta + \alpha)}\sin^2(\alpha - \beta)$
+
+  $= \displaystyle\sum \frac{\sin(\theta + \alpha)\cos(\theta + \beta) + \cos(\theta + \alpha)\sin(\theta
+  + \beta)}{\sin(\theta + \alpha)\cos(\theta + \beta) - \cos(\theta + \alpha)\sin(\theta
+  + \beta)}\sin^2(\alpha - \beta)$
+
+  $= \displaystyle\sum\frac{\sin(2\theta + \alpha + \beta)}{\sin(\alpha - \beta)}\sin^2(\alpha - \beta)
+  = \sum\sin(2\theta + \alpha + \beta)\sin(\alpha - \beta)$
+
+  $= \frac{1}{2}\sum \left[\cos2(\theta + \beta) - \cos2(\theta + \alpha)\right] = 0 =$ R.H.S.
+  %110
+\item Let $y = a\sin^2\theta + b\sin\theta\cos\theta + c\cos^2\theta = a\frac{1 - \cos2\theta}{2} +
+  b.\frac{\sin2\theta}{2} + c\frac{1 + \cos2\theta}{2}$
+
+  $= \frac{1}{2}(c - a)\cos2\theta + \frac{1}{2}b\sin2\theta + \frac{1}{2}(a + c)$.
+
+  Let $\frac{1}{2}(c - a) = r\cos\phi$ and $\frac{b}{2} = r\sin\phi\Rightarrow r = \frac{1}{2}\sqrt{b^2 + (c
+    - a)^2}$.
+
+  The given expression becomes $y = 3\cos\phi\cos2\theta + r\sin\phi\sin2\theta + \frac{1}{2}(a + c)$
+
+  $= r\cos(2\theta - \phi) + \frac{1}{2}(a + c)$
+
+  Now maaximum value of $\cos(2\theta - \phi)$ is $1$ and minimum value is $-1$.
+
+  Thus, for all real values of $\theta$, the expression $a\sin^2\theta + b\sin\theta\cos\theta +
+  c\cos^2\theta$ lies between $\frac{1}{2}(a + c) - \frac{1}{2}\sqrt{b^2 + (a - c)^2}$ and $\frac{1}{2}(a +
+  c) + \frac{1}{2}\sqrt{b^2 + (a - c)^2}$.
+  %111
+\item $4\sin^4x + \cos^4x = 1 \Rightarrow \4sin^4x = 1 - \cos^4x = \left(1 - \cos^2x\right)\left(1 + \cos^2x\right)$
+
+  $\Rightarrow \sin^2x\left(4\sin^2x - 1 - \cos^2x\right) = 0 \Rightarrow \sin^2x\left(5\sin^2x - 2\right) =
+  0$
+
+  Either $\sin x = 0 \Rightarrow x = n\pi$ or $\sin x = \pm\sqrt{\frac{2}{5}}\Rightarrow x = n\pi +
+  (-1)^n\left(\pm\sin^{-1}\sqrt{\frac{2}{5}}\right)$.
+  %112
+\item Given equation is $2\sin^2x + \sin 2x = 2\Rightarrow 1 - \cos2x + 1 - \cos^22x =
+  2 \Rightarrow \cos2x(\cos2x + 1) = 0$
+
+  $\Rightarrow \cos2x = 0 \Rightarrow x = (2n + 1)\frac{\pi}{4}$ or $\cos2x = -1 \Rightarrow x =
+  n\pi\pm\frac{\pi}{2}$.
+  %113
+\item Given that $\sin^8x + \cos^8x = \frac{17}{16}\cos^22x \Rightarrow 16\sin^8x + 16\cos^8x = 17\cos^22x$
+
+  $\Rightarrow \left(2\sin^2x\right)^4 + \left(2\cos^2x\right)^4 = 17\cos^22x$
+
+  $\Rightarrow (1 - \cos2x)^4 + (1 + \cos2x)^4 = 17\cos^22x\Rightarrow 2 + 2\cos^42x - 5\cos^22x = 0$
+
+  $\Rightarrow 2 + 2\left(\frac{1 + \cos4x}{2}\right)^2 - 5\left(\frac{1 + \cos2x}{2}\right) = 0$
+
+  $\Rightarrow \cos^24x - 3\cos4x = 0 \Rightarrow \cos4x = 0$
+
+  $\Rightarrow x = (2n + 1)\frac{\pi}{8}$, where $n = 1, 2, 3, \ldots$.
+  %114
+\item Rewriting L.H.S. $= \left(1 + \cos\frac{\pi}{10}\right)\left(1 + \cos\frac{9\pi}{10}\right)\left(1
+  + \cos\frac{3\pi}{10}\right)\left(1 + \cos\frac{7\pi}{10}\right)$
+
+  $= \left(1 + \cos\frac{\pi}{10}\right)\left[1 + \cos\left(\pi - \frac{\pi}{10}\right)\right]\left(1
+  + \cos\frac{3\pi}{10}\right)\left[1 + \cos\left(\pi - \frac{3\pi}{10}\right)\right]$
+
+  $= \left(1 - \cos^2\frac{\pi}{10}\right)\left(1 - \cos^2\frac{3\pi}{10}\right) =
+  sin^2\frac{\pi}{10}\sin^2\frac{3\pi}{10}$
+
+  $= \frac{\left(1 - \cos\frac{2\pi}{10}\right)}{2}\frac{\left(1 - \cos\frac{6\pi}{10}\right)}{2}$
+
+  $= \frac{1}{4}\left(1 - \cos36^\circ\right)\left(1 - \cos108^\circ\right) = \frac{1}{5}\left(1
+  - \cos36^\circ\right)\left(1 + \sin18^\circ\right)$
+
+  $= \frac{1}{4}\left(1 - \frac{\sqrt{5 + 1}}{4}\right)\left(1 + \frac{\sqrt{5} - 1}{4}\right)$
+
+  $= \frac{1}{16} =$ R.H.S.
+  %115
+\item The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_1.pdf]
+  \stopplacefigure
+
+  Draw $AP\perp EF, BQ\perp EF$ and $CR\perp EF$. Also, $BM\parallel EF$ and $CN\parallel EF$.
+
+  According to question $AP = p, BQ = q, CR = r$. Let $\angle CBM = \phi, \angle AFE = \theta$.
+
+  Clearly, $\angle BED = \phi$ and $\angle ACN = \angle AFE = \theta$ and $\angle NCB = \angle CBM = \phi$
+
+  $\therefore \angle ACB = \theta + \phi\Rightarrow \angle C = \theta + \phi$
+
+  Thus, $AN = b\sin\theta \Rightarrow p - r = b\sin\theta \Rightarrow \sin\theta = \frac{p - r}{b}$
+
+  Also, $CM = a\sin\phi \Rightarrow \sin\phi = \frac{r - q}{a}$
+
+  $\Rightarrow \sin\theta = \frac{p - r}{b}\Rightarrow \sin(C - \phi) = \frac{p - r}{b}$
+
+  $\Rightarrow \sin C\cos\phi - \cos C\cos\phi = \frac{p - r}{b}$
+
+  $\Rightarrow \sin C\sqrt{1 - \left(\frac{r - q}{a}\right)^2} - \cos C.\frac{r - q}{a} = \frac{p - r}{b}$
+
+  $\Rightarrow b\sin C\sqrt{a^2 - (r - q)^2} - b(r - q)\cos C = a(p - r)$
+
+  $\Rightarrow b^2\sin^2C\left[a^2 - (r - q)^2\right] = a^2(p - r)^2 + b^2(r - q)^2\cos^2C + 2ab(p - r)(r -
+  q)\cos C$
+
+  $\Rightarrow a^2b^2\sin^2C = b^2(r - q)^2(\sin^2C + \cos^2C) + a^2(p - r)^2 + 2ab(p - r)(r - q)\frac{a^2
+    + b^2 - c^2}{2ab}$
+
+  $\Rightarrow 4\Delta^2 = a^2(p - r)^2 + b^2(r - q)^2 + a^2(p - r)(r - q) + b^2(p - r)(r - q) - c^2(p -
+  r)(r - q)$
+
+  $\Rightarrow a^2(p - q)(p - r) + b^2(q - r)(q - p) + c^2(r - p)(r - q) = 4\Delta^2$.
+  %116
+\item Given equation is $\sin(\theta + \alpha) = k\sin2\theta$
+
+  $\Rightarrow \sin\theta\cos\alpha + \cos\theta\sin\alpha = k\sin2\theta$
+
+  $\Rightarrow \frac{2\tan\frac{\theta}{2}}{1 + \tan^2\frac{\theta}{2}}\cos\alpha + \frac{1
+  - \tan^2\frac{\theta}{2}}{1 + \tan^2\frac{theta}{2}}\sin\alpha = k.2.\frac{2\tan\frac{\theta}{2}}{1
+  + \tan^2\frac{\theta}{2}}.\frac{1 - \tan^2\frac{\theta}{2}}{1 + \tan^2\frac{\theta}{2}}$
+
+  Let $\tan\frac{\theta}{2} = t$ the equation becomes
+
+  $\frac{2t}{1 + t^2}\cos\alpha + \frac{1 - t^2}{1 + t^2}\sin\alpha = \frac{4k.t.(1 - t^2)}{\left(1 +
+    t^2\right)^2}$
+
+  $\Rightarrow 2t\left(1 + t^2\right)\cos\alpha + \left(1 - t^2\right)\left(1 + t^2\right)\sin\alpha =
+  4kt\left(1 - t^2\right)$
+
+  $\Rightarrow \sin\alpha.t^4 - (4k + 2\cos\alpha)t^3 + (4k - 2\cos\alpha)t - \sin\alpha = 0$
+
+  If $t_1, t_2, t_3, t_4$ are the roots of the equation then
+
+  $\sum t_1 = \frac{4k + 2\cos\alpha}{\sin\alpha} = s_1, \sum t_1t_2 = 0 = s_2, \sum t_1t_2t_3 = \frac{2\cos\alpha
+    - 4k}{\sin\alpha} = s_3, \prod t_1 = \frac{-\sin\alpha}{\sin\alpha} = -1 = s_4$
+
+  $\tan\left(\frac{\theta_1 + \theta_2 + \theta_3 + \theta_4}{4}\right) = \frac{s_1 - s_3}{1 - s_2 + s_4}$
+
+  $= \frac{\frac{4k + 2\cos\alpha}{\sin\alpha} - \frac{2\cos\alpha - 4k}{\sin\alpha}}{1 - 0 + (-1)} = \infty
+  = \tan\frac{\pi}{2}$
+
+  $\Rightarrow \frac{\theta_1 + \theta_2 + \theta_3 + \theta_4}{4} = n\pi + \frac{\pi}{2}$
+
+  $\Rightarrow \theta_1 + \theta_2 + \theta_3 + \theta_4 = (2n + 1)\pi$.
+  %117
+\item Given equation is $\sec\theta + \csc\theta = c \Rightarrow \sin\theta + \cos\theta =
+  c\sin\theta\cos\theta = \frac{c}{2}\sin2\theta$
+
+  Squaring we have $1 + 2\sin\theta\cos\theta = \frac{c^2}{4}\sin^22\theta$
+
+  $\Rightarrow 1 + \frac{2\tan\theta}{1 + \tan^2\theta} = \frac{c^2}{4}\left(\frac{2\tan\theta}{1
+    + \tan^2\theta}\right)^2$
+
+  Let $\tan\theta = t$, then the equation becomes
+
+  $1 + \frac{2t}{1 + t^2} = \frac{c^2}{4}\left(\frac{2t}{1 + t^2}\right)^2$
+
+  $\Rightarrow \left(1 + t^2\right)^2 + 2t(1 + t^2) = c^2t^2 \Rightarrow \left(1 + t + t^2\right)^2 =
+  t^2(c^2 + 1)$
+
+  {\bf Case I:} When $c^2 < 8, c^2 + 1 < 9$ then $\left(1 + t + t^2\right)^2 < 9t^2$
+
+  $\Rightarrow (t^2 + 4t + 1)(t^2 - 2t + 1) < 0 \Rightarrow (t^2 + 4t + 1) < 0$ as $(t - 1)^2 \ge 0$
+
+  $\Rightarrow -2 - \sqrt{3} < t < -2 + \sqrt{3}$
+
+  This means $\tan\theta$ will be negaative and $\theta$ will have only two values between $0$ and $2\pi$
+  as $\tan\theta$ is negative only in $2$nd and $4$th quadrants.
+
+  {\bf Case II:} When $c^2 > 8, c^2 + 1 > 9$ then $\left(1 + t + t^2\right) > 9t^2$
+
+  $\Rightarrow (t^2 + 3t + 1)(t^2 - 2t + 1) > 0$
+
+  $\Rightarrow -\infty < t < -2 -\sqrt{3}$ or $-2 + \sqrt{3} < t < 1$ or $1 < t < \infty$.
+
+  Thus, $\tan\theta$ will be both positive and negative and will have one value each in all the quadrants.
+  %118
+\item Given that $u_n = 2\cos n\theta \Rightarrow u_1u_n - u_{n - 1} = 2\cos\theta.2\cos n\theta - 2\cos(n -
+  1)\theta$
+
+  $= 2[2\cos n\theta\cos\theta] - 2\cos(n - 1)\theta = 2[\cos(n + 1)\theta + \cos(n - 1)\theta] - 2\cos(n -
+  1)\theta$
+
+  $= 2\cos(n + 1)\theta = u_{n + 1}$
+
+  Now $2\cos7\theta = u_1u_6 - u_5$
+
+  Now $u_6 = u_1u_5 - u_4, u_5 = u_-1u_4 - u_3, u_4 = u_1u_3 - u_2, u_3 = u_1u_2 - u_1, u_2 = u_1u_1 - u_0$
+
+  $\Rightarrow u_2 = u_1^2 - 2[\because u_0 = 2\cos0 = 2]$
+
+  $\Rightarrow u_3 = u_1\left(u_1^2 - 2\right) = u_1^3 - 2u_1$
+
+  Proceeding similalry we obtain the desired result.
 \stopitemize
