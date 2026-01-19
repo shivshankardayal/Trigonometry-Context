@@ -3415,4 +3415,122 @@
   $\sin^{-1}\frac{3}{5} < \sin^{-1}\frac{\sqrt{3}}{2} = \frac{\pi}{3}$
 
   So $B < \frac{2\pi}{3}$. Hence, $A$ is greater.
+  %206
+\item Given $\displaystyle f(n) = \frac{\displaystyle \sum_{k =
+    0}^n\sin\left(\frac{k + 1}{n + 2}\pi\sin\frac{k + 2}{n + 2}\pi\right)}{\displaystyle\sum_{k =
+    0}^n\sin^2\left(\frac{k + 1}{n + 2}\pi\right)}$
+
+  $= \displaystyle\frac{\displaystyle\sum_{k = 0}^n\left[\cos\frac{\pi}{n + 2} - \cos\frac{2k + 3}{n +
+      2}\pi\right]}{\displaystyle\sum_{k = 0}^n\left[1 - \cos\frac{2k + 2}{n + 2}\pi\right]}$
+
+  $= \displaystyle\frac{\displaystyle\left(\cos\frac{\pi}{n + 2}\right)(n + 1) - \left[\cos\frac{3\pi}{n +
+      2} + \cos\frac{5\pi}{n + 2} + \cos\frac{7\pi}{n + 2} + \cdots + \cos\frac{(2n + 3)\pi}{n +
+      2}\right]}{\displaystyle(n + 1) - \left[\cos\frac{2\pi}{n +
+      2} + \cos\frac{4\pi}{n + 2} + \cos\frac{6\pi}{n + 2} + \cdots + \cos\frac{(2n + 2)\pi}{n +
+      2}\right]}$
+
+  $= \displaystyle \frac{\displaystyle(n + 1)\cos\frac{\pi}{n + 2} - \frac{\sin\frac{n\pi}{n +
+        2}}{\sin\frac{\pi}{n + 2}}\cos\frac{n + 3}{n + 2}\pi}{n + 1 - \displaystyle\frac{\sin\frac{n\pi}{n +
+      2}}{\sin\frac{\pi}{n + 2}}\cos\frac{n + 2}{n + 2}\pi}$
+
+  $=\displaystyle\frac{(n + 1)\cos\frac{\pi}{n + 2} - \frac{\sin\left(\pi - \frac{\pi}{n +
+      2}\right)}{\sin\frac{\pi}{n + 2}}\cos\left(\pi + \frac{\pi}{n + 2}\right)}{(n + 1)
+  - \frac{\sin\left(\pi - \frac{\pi}{n + 2}\right)}{\sin\left(\frac{\pi}{n + 2}\right)}\cos\pi}$
+
+  $= \cos\frac{\pi}{n + 2}$
+
+  $f(8) = \cos\frac{\pi}{8}\Rightarrow \alpha = \tan\left(\cos^{-1}f(6)\right) = \tan\frac{\pi}{8} = \sqrt{2
+  - 1}$
+
+  $\Rightarrow \alpha^2 + 2\alpha - 1 = 0$
+
+  $f(4) = \cos\frac{\pi}{6} = \frac{\sqrt{3}}{2}$
+
+  $\sin\left(7\left(\cos^{-1}f(5)\right)\right) = \sin7.\frac{\pi}{7} = 0$.
+  %207
+\item $fog(x) = f\left(\sin^{-1}\left(e^{-x}\right)\right)
+  = \log_e\left[\sin\left(\sin^{-1}\left(e^{-x}\right)\right)\right] = \log_ee^{-x} = -x$
+
+  $(fog)'(x) = -1$
+
+  Then according to question $a = -1$ and $b = -\alpha$.
+
+  Thus, $a\alpha^2 - b\alpha - a = 1$.
+  %208
+\item We have to find the value of $\displaystyle\cot\left[\sum_{n = 1}^{19}\cot^{-1}\left(1 + \sum_{p =
+    1}^n2p\right)\right]$
+
+  $= \displaystyle\cot\left[\sum_{n = 1}^{19}\cot^{-1}[1 + n(n + 1)]\right] = \cot\left[\sum_{n =
+    1}^{19}\tan^{-1}\frac{1}{1 + n(n + 1)}\right]$
+
+  $= \cot\displaystyle\sum_{n =1}^{19}\left[\tan^{-1}(n + 1) - \tan^{-1}n\right]$
+
+  $\cot\left(\tan^{-1}20 - \tan^{-1}1\right) = \cot\left[\left(\frac{\pi}{2} - \cot^{-1}20\right)
+  - \left(\frac{\pi}{2} - \cot^{-1}1\right)\right]$
+
+  $= \cot\left(\cot^{-1}1 - \cot^{-1}20\right) = \frac{\cot\cot{-1}1\cot\cot^{-1}20 + 1}{\cot\cot^{-1}20
+  - \cot\cot^{-1}1}$
+
+  $= \frac{21}{19}$.
+  %209
+\item We know that $\sin^{-1}\alpha + \cos^{-1}\alpha = \frac{\pi}{2}$, therefore
+
+  $x - \frac{x^2}{2} + \frac{x^3}{4}- \cdots = x^2 - \frac{x^4}{2} + \frac{x^6}{4} - \cdots$
+
+  $\Rightarrow \frac{x}{1 + \frac{x}{2}} = \frac{x^2}{1 + \frac{x^2}{2}}$
+
+  $\Rightarrow x(4 - 4x) = 0 \Rightarrow x = 0, 1$
+
+  Given that $0 < |x| <\sqrt{2}\Rightarrow x = 1$.
+  %210
+\item We have to find the value of $\displaystyle\sec^{-1}\left[\frac{1}{4}\sum_{k =
+    0}^{10}\sec\left(\frac{7\pi}{12} + \frac{k\pi}{2}\right)\sec\left(\frac{7\pi}{12} + \frac{(k +
+    1)\pi}{2}\right)\right]$
+
+  Now $\displaystyle\sum_{k = 0}^{10}\frac{1}{\cos\left(\frac{7\pi}{12}
+    + \frac{k\pi}{2}\right)\cos\left(\frac{7\pi}{12} + \frac{(k + 1)\pi}{2}\right)}$
+
+  $= \displaystyle\sum_{k = 0}^{10}\frac{\sin\left[\left(\frac{7\pi}{12} + \frac{(k + 1)\pi}{2}\right)
+      - \sin\left(\frac{7\pi}{12} + \frac{k\pi}{2}\right)\right]}{\cos\left(\frac{7\pi}{12}
+    + \frac{k\pi}{2}\right)\cos\left(\frac{7\pi}{12} + \frac{(k + 1)\pi}{2}\right)}$
+
+  $= \displaystyle\sum_{k = 0}^{10}\left[\tan\left(\frac{7\pi}{12} + \frac{(k + 1)\pi}{2}\right)
+    - \tan\left(\frac{7\pi}{12} + \frac{k\pi}{2}\right)\right]$
+
+  $= \tan\left(\frac{7\pi}{12} + \frac{11\pi}{2}\right) - \tan\frac{7\pi}{12} = \tan\frac{\pi}{12}
+  + \cot\frac{\pi}{12}$
+
+  $= \frac{1}{\sin\frac{\pi}{12}\cos\frac{\pi}{12}} = \frac{2}{\sin\frac{\pi}{6}} = 4$
+
+  Thus, $\displaystyle\sec^{-1}\left[\frac{1}{4}\sum_{k = 0}^{10}\sec\left(\frac{7\pi}{12}
+    + \frac{k\pi}{2}\right)\sec\left(\frac{7\pi}{12} + \frac{(k + 1)\pi}{2}\right)\right] = \sec^{-1}1 = 0$.
+  %211
+\item We have $\sin^{-1}\left[\frac{x^2}{1 - x} - \frac{x.\frac{x}{2}}{1 - \frac{x}{2}}\right]
+  = \frac{\pi}{2} - \cos^{-1}\left[\frac{-\frac{x}{2}}{1 + \frac{x}{2}} - \frac{-x}{1 + x}\right]$
+
+  $\Rightarrow \sin^{-1}\left[\frac{x^2}{1 - x^2} - \frac{x^2}{2 - x}\right] = \frac{\pi}{2}
+  - \cos^{-1}\left[\frac{x}{1 + x} - \frac{x}{2 + x}\right]$
+
+  $\Rightarrow \sin^{-1}\left[\frac{x^2}{1 - x^2} - \frac{x^2}{2 - x}\right] = \sin^{-1}\left[\frac{x}{1 +
+      x} - \frac{x}{2 + x}\right]$
+
+  $\Rightarrow \frac{x^2}{1 - x^2} - \frac{x^2}{2 - x} = \frac{x}{1 + x} - \frac{x}{2 + x}$
+
+  $\Rightarrow x^3 + 3x^2 + 2x = x^2 - 3x + 2$ or $x = 0$
+
+  Let $f(x) = x^3 + 2x^2 + 5x - 2, f'(x) = 3x^2 + 4x + 5 > 0\forall x\in\mathbb{R}$
+
+  $\therefore x^3 + 2x^2 + 5x - 2$ has only one real root. Therefore, total no.\ of solutions is $2$.
+  %212
+\item We know that
+
+  \startformula
+    \cos^{-1}(\cos x) =
+    \startcases[align={right,left},distance=3pt]
+      \NC x \NC \text{if } x\in[0, \pi]\NR
+      \NC 2\pi - x \NC \text{if } x\in[\pi, 2\pi]\NR
+      \NC -2\pi + x \NC \text{if } x\in[2\pi, 3\pi]\NR
+      \NC 4\pi - x \NC \text{if } x\in[3\pi, 4\pi]\NR
+    \stopcases
+  \stopformula
 \stopitemize
