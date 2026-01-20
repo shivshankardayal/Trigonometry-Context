@@ -4227,4 +4227,359 @@
   For $x = 1, \tan\left(S_n(x)\right) = \frac{n}{n + 2}$, which is greater than $\frac{1}{2}$ for $n\ge 3$.
 
   Thus, (d) is incorrect.
+  %261
+\item Let $AB = c, BC = a, AC = b$. Then given that $c = \sqrt{23}, a = 3, b = 4$
+
+  We have to find the value of $\frac{\cot A + \cot C}{\cot B} = \frac{\frac{\cos A}{\sin A} + \frac{\cos
+      C}{\sin C}}{\frac{\cos B}{\sin B}}$
+
+  $= \frac{\frac{b^2 + c^2 - a^2}{2bc\sin A} + \frac{a^2 + b^2 - c^2}{2ab\sin C}}{\frac{a^2 + c^2 -
+      b^2}{2ac\sin B}}$
+
+  $= \frac{\frac{b^2 + c^2 - a^2}{4\Delta} + \frac{a^2 + b^2 - c^2}{4\Delta}}{\frac{a^2 + c^2 -
+      b^2}{4\Delta}}$
+
+  $= \frac{b^2 + c^2 - a^2 + a^2 + b^2 - c^2}{a^2 + c^2 - b^2} = \frac{2b^2}{a^2 + c^2 - b^2} = 2$.
+  %262
+\item $\cos P = \frac{q^2 + r^2 - p^2}{2qr}$
+
+  Using A.M.-G.M.\ inequality $\frac{q^2 + r^2}{2}\ge qr\Rightarrow q^2 + r^2\ge 2qr$
+
+  $\Rightarrow \cos P\ge 1- \frac{p^2}{2qr}$ so (a) is true.
+
+  $\frac{q - r}{p + q}\cos P + \frac{p - r}{p + q}\cos Q = \frac{(q\cos P + p\cos Q) - r(\cos P + \cos Q)}{p
+    + q}$
+
+  $= \frac{r - r\cos P - r\cos Q}{p + q} = \frac{r - (q - p\cos R) - (p - q\cos R)}{p + q} = \frac{r - p - q +
+    (p + q)\cos R}{p + q}$
+
+  $\Rightarrow \cos R + \frac{r - (p + q)}{p + q}\le \cos R$
+
+  Thus, (b) is true.
+
+  $\frac{q + r}{p} = \frac{\sin Q + \sin R}{\sin P}\ge \frac{2\sqrt{\sin Q\sin R}}{\sin P}$
+
+  Thus, (c) is false.
+
+  $p$ is smallest side hence $Q$ or $R$ can be obtuse and $\cos Q$ or $\cos R$ can be negative.
+
+  Therefore, $\cos Q > \frac{p}{r}$ and $\cos R > \frac{p}{q}$ cannot always hold.
+
+  Thus, (d) is false.
+  %263
+\item The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_25.pdf]
+  \stopplacefigure
+
+  In $\triangle AQR, \tan60^\circ = \frac{15}{AQ}\Rightarrow AQ = 5\sqrt{3}$
+
+  In $\triangle AQP, \tan75^\circ = \frac{15 + x}{AQ} \Rightarrow x = 10\sqrt{3}$
+
+  Thus, $PQ = 5\left(2\sqrt{3} + 3\right)$ m.
+  %264
+\item Since the system of equations has no solution.
+
+  $\therefore \startdeterminant\NC3\sin3\theta\NC -1\NC 1\NR\NR 3\cos2\theta \NC 4\NC 3\NR\NC 6\NC 7\NC
+  7\NR\stopdeterminant = 0$
+
+  $\Rightarrow \sin3\theta + 2\cos2\theta - 2 = 0$
+
+  The above equation has $7$ solutions in $(0, 4\pi)$.
+  %265
+\item $14\csc^2x - 2\sin^2x = 21 - 4\cos^2x  = 21 - 4(1 - \sin^2x)\Rightarrow 14\csc^2x - 6\sin^2x = 17$
+
+  Let $\sin^2x = p$, then the equation transforms to
+
+  $\frac{14}{p} - 6p = 17 \Rightarrow p = -\frac{7}{2}, \frac{2}{3}\Rightarrow \sin x
+  = \pm\sqrt{\frac{2}{3}}$.
+
+  Thus, we have a total of $4$ solutions.
+  %266
+\item $\sin12^\circ + \sin12^\circ - \sin72^\circ = \sin12^\circ - 2\cos42^\circ\sin30^\circ$
+
+  $= \sin12^\circ - \sin48^\circ = -2\cos30^\circ\sin18^\circ$
+
+  $= -2.\frac{\sqrt{3}}{2}.\frac{\sqrt{5} - 1}{4} = \frac{\sqrt{3}}{4}\left(1 - \sqrt{5}\right)$.
+  %267
+\item Writing $8=2^3$, this becomes $2^{6\sin^2\theta}+2^{6\cos^2\theta}=2^4$.
+
+  Let $x=\sin^2\theta$, so $\cos^2\theta=1-x$. Then $2^{6x}+2^{6-6x}=16$,
+  whose unique solution is $x=\tfrac12$.
+
+  Hence $\sin^2\theta=\tfrac12$, giving $\theta=\tfrac\pi4,\tfrac{3\pi}4,\tfrac{5\pi}4,\tfrac{7\pi}4$, so
+  $n(S)=4$.
+
+  Now $\sec A\csc A=\frac1{\sin A\cos A}=\frac{2}{\sin 2A}$ with $A=\tfrac\pi4+2\theta$, so each term equals
+  $\frac{2}{\sin(\tfrac\pi2+4\theta)}=\frac{2}{\cos 4\theta}$.
+
+  For all $\theta\in S$, $\cos(4\theta)=-1$, hence each term is $-2$ and
+  $\displaystyle\sum_{\theta\in S}\sec(\tfrac\pi4+2\theta)\csc(\tfrac\pi4+2\theta)=-8$.
+
+  Therefore the required value is $4+(-8)=-4$.
+  %268
+\item Let $\frac{\sin^{-1}x}{\alpha}=\frac{\cos^{-1}x}{\beta}=k$.
+  Then $\sin^{-1}x=k\alpha$ and $\cos^{-1}x=k\beta$.
+
+  Adding, $\sin^{-1}x+\cos^{-1}x=k(\alpha+\beta)$.
+
+  Since $\sin^{-1}x+\cos^{-1}x=\frac{\pi}{2}$, we get $k=\frac{\pi}{2(\alpha+\beta)}$.
+
+  Thus $\sin^{-1}x=\frac{\pi\alpha}{2(\alpha+\beta)}$.
+
+  Hence $\frac{2\pi\alpha}{\alpha+\beta}=4\sin^{-1}x$.
+
+  Therefore $\sin\frac{2\pi\alpha}{\alpha+\beta}=\sin(4\sin^{-1}x)$.
+
+  Using $\sin4A=4\sin A\cos A(1-2\sin^2A)$ with $\sin A=x$, we obtain
+  $\sin\frac{2\pi\alpha}{\alpha+\beta}=4x\sqrt{1-x^2}(1-2x^2)$.
+  %269
+\item From $2\sin^{2}\theta-\cos2\theta=0$ and $\cos2\theta=1-2\sin^{2}\theta$, we get
+  $2\sin^{2}\theta-(1-2\sin^{2}\theta)=0$, hence $4\sin^{2}\theta-1=0$ and $\sin\theta=\pm\frac12$.
+
+  From $2\cos^{2}\theta+3\sin\theta=0$ and $\cos^{2}\theta=1-\sin^{2}\theta$, we get
+  $2(1-\sin^{2}\theta)+3\sin\theta=0$, or $2\sin^{2}\theta-3\sin\theta-2=0$, which factors as
+  $(2\sin\theta+1)(\sin\theta-2)=0$. Thus $\sin\theta=-\frac12$.
+
+  Common solutions therefore satisfy $\sin\theta=-\frac12$. In $[0,2\pi]$, this gives
+  $\theta=\frac{7\pi}{6},\frac{11\pi}{6}$. Their sum is $\frac{7\pi}{6}+\frac{11\pi}{6}=3\pi$, so $k=3$.
+  %270
+\item We use the identity $\sin3x=4\sin x\sin(60^\circ-x)\sin(60^\circ+x)$, which for $x=10^\circ$ gives
+  $\sin50^\circ\sin70^\circ=\frac{\sin30^\circ}{4\sin10^\circ}=\frac{1}{8\sin10^\circ}$.
+
+  Also, $\sin40^\circ\sin20^\circ=\frac{\cos20^\circ-\cos60^\circ}{2}=\frac{\cos20^\circ-\tfrac12}{2}$.
+
+  Thus $\sin^2 10^\circ\sin20^\circ\sin40^\circ\sin50^\circ\sin70^\circ=\sin^2
+  10^\circ\cdot\frac{\cos20^\circ-\tfrac12}{2}\cdot\frac{1}{8\sin10^\circ}=\frac{\sin10^\circ\cos20^\circ}{16}-\frac{\sin10^\circ}{32}$.
+
+  Comparing with $\alpha-\frac{1}{16}\sin10^\circ$, we obtain
+
+  $\alpha=\frac{\sin10^\circ\cos20^\circ}{16}+\frac{\sin10^\circ}{32}=\frac{\sin10^\circ(2\cos20^\circ+1)}{32}$.
+
+  Using the identity $\sin3\theta=3\sin\theta-4\sin^3\theta$ at $\theta=10^\circ$ gives
+  $\sin10^\circ(2\cos20^\circ+1)=\frac12$, hence $\alpha=\frac{1}{64}$.
+
+  Therefore $\alpha^{-1}=64$ and $16+\alpha^{-1}=80$.
+  %271
+\item The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_26.pdf]
+  \stopplacefigure
+
+  The tower $PQ$ is vertical and has height $PQ=10$.
+  From the point $A$ on the ground, the angle of elevation of $P$ is $45^\circ$.
+  Hence $\tan 45^\circ=\frac{PQ}{AQ}$, which gives $AQ=10$.
+
+  Let $R$ be a point on $AQ$ such that $QR=x$.
+  Then $AR=10-x$.
+  Let $B$ be vertically above $R$ and let $BR=h$.
+
+  From the point $B$, the angle of elevation of $P$ is $60^\circ$.
+  Therefore $\tan 60^\circ=\frac{PQ-BR}{QR}=\frac{10-h}{x}$.
+  This gives $\sqrt3=\frac{10-h}{x}$ and hence $h=10-\sqrt3 x$.
+
+  In triangle $ABQ$, we are given that $\angle BAQ=30^\circ$.
+  Thus $\tan 30^\circ=\frac{BR}{AR}=\frac{h}{10-x}$.
+  So $\frac1{\sqrt3}=\frac{h}{10-x}$, giving $h=\frac{10-x}{\sqrt3}$.
+
+  Equating the two expressions for $h$, we obtain
+  $10-\sqrt3 x=\frac{10-x}{\sqrt3}$.
+  Multiplying by $\sqrt3$, we get
+  $10\sqrt3-3x=10-x$, so $2x=10(\sqrt3-1)$ and hence
+  $x=5(\sqrt3-1)$.
+
+  Therefore $h=\frac{10-x}{\sqrt3}=5(\sqrt3-1)$.
+  The distance $AB$ is
+  $d=\sqrt{AR^2+BR^2}=\sqrt{(10-x)^2+h^2}=10(\sqrt3-1)$.
+
+  The trapezium $PQRB$ has parallel sides $PQ$ and $BR$ and distance between them $QR=x$.
+  Hence its area is
+  $\alpha=\frac12(PQ+BR)\cdot QR=\frac12(10+h)x=25(2-\sqrt3)$.
+
+  Thus the required ordered pair is $(d,\alpha)=(10(\sqrt3-1),25(2-\sqrt3))$.
+  %272
+\item Let $S=\{\theta\in(0,\pi/2):\displaystyle\sum_{m=1}^9 \sec(\theta+(m-1)\pi/6)\sec(\theta+m\pi/6)=-8/\sqrt3\}$.
+
+  Using the identity $\sec x\sec y=\frac{\tan y-\tan x}{\sin(y-x)}$ for $x\neq y$, and noting that
+  $(\theta+m\pi/6)-(\theta+(m-1)\pi/6)=\pi/6$, we obtain
+
+  $\sec(\theta+(m-1)\pi/6)\sec(\theta+m\pi/6)=\frac{\tan(\theta+m\pi/6)-\tan(\theta+(m-1)\pi/6)}{\sin(\pi/6)}=2(\tan(\theta+m\pi/6)-\tan(\theta+(m-1)\pi/6))$.
+
+  Hence the sum:
+  $\displaystyle\sum_{m=1}^9 \sec(\theta+(m-1)\pi/6)\sec(\theta+m\pi/6)=2(\tan(\theta+3\pi/2)-\tan\theta)$.
+
+  Since $\tan(\theta+3\pi/2)=\tan(\theta+\pi/2)=-\cot\theta$, the condition becomes
+  $2(-\cot\theta-\tan\theta)=-8/\sqrt3$.
+
+  Simplifying, we get $\tan\theta+\cot\theta=4/\sqrt3$, or equivalently
+  $(\sin^2\theta+\cos^2\theta)/(\sin\theta\cos\theta)=4/\sqrt3$, which reduces to
+  $\sin\theta\cos\theta=\sqrt3/4$.
+
+  Thus $\sin(2\theta)=\sqrt3/2$, so $2\theta=\pi/3$ or $2\theta=2\pi/3$ within $(0,\pi)$.
+  Therefore $\theta=\pi/6$ or $\theta=\pi/3$, both of which lie in $(0,\pi/2)$.
+
+  Hence $S=\{\pi/6,\pi/3\}$ and $\displaystyle\sum_{\theta\in S}\theta=\pi/6+\pi/3=\pi/2$.
+  %273
+\item Note that $\frac{1}{1+n+n^2}=\frac{(n+1)-n}{1+n+n^2}$, and observe that
+  $\tan^{-1}\frac{1}{1+n+n^2}=\tan^{-1}\frac{(n+1)-n}{1+n(n+1)}$.
+
+  Using the identity $\tan^{-1}\frac{a-b}{1+ab}=\tan^{-1}a-\tan^{-1}b$, we obtain
+  $\tan^{-1}\frac{1}{1+n+n^2}=\tan^{-1}(n+1)-\tan^{-1}(n)$.
+
+  Thus the sum:
+  $\displaystyle\sum_{n=1}^{50}\tan^{-1}\frac{1}{1+n+n^2}=\tan^{-1}(51)-\tan^{-1}(1)$.
+
+  Since $\tan^{-1}(1)=\pi/4$, the sum equals $\tan^{-1}(51)-\pi/4$.
+
+  Using the identity $\cot(A-B)=\frac{1+\tan A\tan B}{\tan A-\tan B}$, we compute
+  $\cot(\tan^{-1}(51)-\pi/4)=\frac{1+51\cdot1}{51-1}=\frac{52}{50}=\frac{26}{25}$.
+  %274
+\item Let $\alpha=\sin36^\circ$.   Using the identity $\sin^2\theta=(1-\cos2\theta)/2$, we have
+  $\alpha^2=(1-\cos72^\circ)/2$.
+
+  From the well-known identity $\cos72^\circ=(\sqrt5-1)/4$, it follows that
+  $\alpha^2=(1-(\sqrt5-1)/4)/2=(5-\sqrt5)/8$.
+
+  Thus $8\alpha^2=5-\sqrt5$, so $\sqrt5=5-8\alpha^2$.
+  Squaring both sides gives
+  $5=(5-8\alpha^2)^2=25-80\alpha^2+64\alpha^4$.
+
+  Rearranging, we obtain
+  $64\alpha^4-80\alpha^2+20=0$, and dividing by $4$ yields
+  $16\alpha^4-20\alpha^2+5=0$.
+  %275
+\item Given that $\cos^{-1}x - 2\sin^{-1}x = \cos^{-1}2x$
+
+  $\Rightarrow \cos^{-1}x - 2\left(\frac{\pi}{2} - \cos^{-1}x\right) = \cos^{-1}2x$
+
+  $\Rightarrow 3\cos^{-1}x = \pi + \cos^{-1}2x\Rightarrow 4x^3 - 3x = -2x$
+
+  $\Rightarrow 4x^3 = x\Rightarrow x = 0, \pm\frac{1}{2}$
+
+  Sum of all the solutions is, therefore, zero.
+  %276
+\item Given that $7\cos^{2}\theta - 3\sin^{2}\theta - 2\cos^{2}2\theta = 2$
+
+  $\Rightarrow 4\cos^2\theta + 3\cos2\theta - 2\cos^{2}\theta = 2 \Rightarrow 2(1 + \cos2\theta) +
+  3\cos2\theta - 2\cos^{2}2\theta = 2$
+
+  $\Rightarrow 2\cos^{2}2\theta - 5\cos2\theta = 2\Rightarrow \cos2\theta = 0 \Rightarrow \theta = \frac{(2n
+    + 1)\pi}{4}$
+
+  For all four values of $\theta, x^{2} - 2\left(\tan^{2}\theta + \cot^{2}\theta\right)x + 6\sin^{2}\theta =
+  0$
+
+  $\Rightarrow x^2 - 4x + 3 = 0$. Therefore, sum of all the roots of four equations is $4\times4 = 16$.
+  %277
+\item $2\cos\left(\frac{x^2 + x}{6}\right)\le 2$ and $4^x + 4^{-x} \ge 2$.
+
+  The only solution exists at $x = 0$ for which equality holds.
+  %278
+\item Given that $3\cos^{2}2\theta + 6\cos2\theta - 10\cos^{2}\theta + 5 = 0$
+
+  $\Rightarrow 3\cos^{2}2\theta + 6\cos2\theta - 5(1 + \cos2\theta) + 5 = 0$
+
+  $\Rightarrow 3\cos^{2}2\theta + \cos2\theta = 0$
+
+  $\Rightarrow \cos2\theta = 0$ or $\cos2\theta = -\frac{1}{3}$
+
+  $\cos2\theta = 0$ gives $16$ solutions in $[-4\pi, 4\pi]$. Similarly, $\cos2\theta = -\frac{1}{3}$ gives
+  $16$ solutions.
+  %279
+\item $y = \cos^{2}\theta = 2\theta + \sqrt{2}$
+
+  We plot both the equations which is given below:
+
+  \startplacefigure
+    \externalfigure[17_27.pdf]
+  \stopplacefigure
+
+  From the graph it is clear that $\cos^2\theta$ and $2\theta + \sqrt{2}$ intersect at one point. Hence,
+  there is only one solution.
+  %280
+\item $\cos^{-1}\sqrt{\frac{2}{2 + \pi^{2}}} = \tan^{-1}\frac{\pi}{\sqrt{2}}$
+
+  $\sin^{-1}\frac{2\sqrt{2}\pi}{2 + \pi^{2}} = \sin^{-1}\left(\frac{2\times\frac{\pi}{\sqrt{2}}}{1
+  + \left(\frac{\pi}{\sqrt{2}}\right)^2}\right)$
+
+  $= \pi - 2\tan^{-1}\frac{\pi}{\sqrt{2}}$ and $\tan^{-1}\frac{\sqrt{2}}{\pi}
+  = \cot^{-1}\frac{\pi}{\sqrt{2}}$
+
+  Given expression becomes $\left(\frac{3}{2} - \frac{2}{4}\right)\tan^{-1}\frac{\pi}{\sqrt{2}}
+  + \frac{\pi}{4} + \cot^{-1}\frac{\pi}{\sqrt{2}}$
+
+  $= \tan^{-1}\frac{\pi}{\sqrt{2}} + \cot^{-1}\frac{\pi}{\sqrt{2}} + \frac{\pi}{4} = \frac{\pi}{2}
+  + \frac{\pi}{4} = \frac{3\pi}{4}$.
+  %281
+\item Clearly, circumcircle's center will be at mid-point of $BC$ or $(0.5, 1.5)$ and $C_2$ is $(r, r)$
+  (because inner circle touches $AB$ and $AC$).
+
+  Given the inner circle touches the circumcircle $\Rightarrow C_1C_2 = \left|r
+  - \frac{\sqrt{10}}{2}\right|$
+
+  $\Rightarrow \left(r - \frac{1}{2}\right)^2 + \left(r - \frac{3}{2}\right)^2 = \left(r
+  - \frac{\sqrt{10}}{2}\right)^2$
+
+  $\Rightarrow r = 4 - \sqrt{10}$.
+
+  The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_28.pdf]
+  \stopplacefigure
+  %282
+\item $\left(\frac{\sin\alpha}{\cos\beta} + \frac{\cos\beta}{\sin\alpha} + \frac{\cos\alpha}{\sin\beta}
+  + \frac{\sin\beta}{\cos\alpha}\right)^{2} = \left(\frac{\cos(\alpha - \beta)}{\cos\beta\sin\beta}
+  + \frac{\cos(\beta - \alpha)}{\sin\alpha\cos\alpha}\right)^{2}$
+
+  $= 4\cos^{2}(\alpha - \beta)\left(\frac{1}{\sin2\beta} + \frac{1}{\sin2\alpha}\right)^2$
+
+  $= \frac{16\cos^4(\alpha - \beta)\sin^2(\alpha + \beta)\times 4}{\left[\cos2(\alpha - \beta)
+      - \cos2(\alpha + \beta)\right]^2}$
+
+  $= 1$.
+  %283
+\item The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_29.pdf]
+  \stopplacefigure
+
+  $\angle PRQ = 70^\circ - 40^\circ = 30^\circ, \angle RQS = 70^\circ - 15^\circ = 55^\circ$
+
+  $\angle QSR = 180^\circ - 55^\circ - 70^\circ = 55^\circ$
+
+  $\therefore QR = RS = 1$
+
+  $\angle QPR = 180^\circ - 70^\circ - 30^\circ = 80^\circ$
+
+  Using sine rule in $\triangle PRQ, \frac{\alpha}{\sin30^\circ} = \frac{1}{\sin80^\circ}\Rightarrow \alpha
+  = \frac{1}{2\sin80^\circ}$
+
+  Using sine rule in $\triangle PRS, \frac{\beta}{\sin40^\circ}
+  = \frac{1}{\sin\theta}\Rightarrow \beta\sin\theta = \sin40^\circ$
+
+  $\Rightarrow 4\alpha\beta\sin\theta = \frac{4\sin40^\circ}{2\sin80^\circ} = \sec40^\circ$
+
+  $\sec3^\circ < \sec 40^\circ < \sec45^\circ \Rightarrow \frac{2}{\sqrt{3}} < \sec40^\circ < \sqrt{2}$.
+  %284
+\item The diagram is given below:
+
+  \startplacefigure
+    \externalfigure[17_30.pdf]
+  \stopplacefigure
+
+  $2(R + r)\sin\frac{\pi}{n} = 2r \Rightarrow \frac{R + r}{r} = \csc\frac{\pi}{n}$
+
+  $n = 4\Rightarrow R + r = \sqrt{2}r$
+
+  $n = 5\Rightarrow \frac{R + r}{r}\csc\frac{\pi}{5} < \csc\frac{\pi}{6}\Rightarrow r > R$
+
+  $n = 8\Rightarrow \frac{R + r}{r} = \csc\frac{\pi}{8} > csc\frac{\pi}{4}\Rightarrow R + r > \sqrt{2}r$
+
+  $n = 12\Rightarrow \frac{R + r}{r} = \csc\frac{\pi}{12} = \sqrt{2}\left(\sqrt{3} + 1\right)$
+
+  $\Rightarrow \sqrt{2}\left(\sqrt{3} + 1\right)r > R$.
 \stopitemize
