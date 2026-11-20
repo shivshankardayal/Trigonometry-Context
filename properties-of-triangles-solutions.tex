@@ -4000,3 +4000,418 @@
 
   Now it is trivial to prove the required equality.
 \stopitemize
+
+\subject{Challenging Problems}
+\startitemize[n, 1*broad]
+  %1
+\item We have $r^2 = \frac{\Delta^2}{s^2} = \frac{(s - a)(s - b)(s - c)}{s}$ and $abc = 4R\Delta = 4Rrs.$
+
+  Expanding, $(s - a)(s - b)(s - c) = s^3 - s^2(a + b + c) + s(ab + bc + ca) - abc = -s^3 + s(ab + bc + ca) - 4Rrs$
+
+  $\therefore r^2s = -s^3 + s(ab + bc + ca) - 4Rrs \Rightarrow ab + bc + ca = s^2 + r^2 + 4Rr$
+
+  $a^2 + b^2 + c^2 = (a + b + c)^2 - 2(ab + bc + ca) = 4s^2 - 2(s^2 + r^2 + 4Rr) = 2(s^2 - r^2 - 4Rr)$
+  %2
+\item $a^3 + b^3 + c^3 = (a + b + c)^3 - 3(a + b + c)(ab + bc + ca) + 3abc$
+
+  Using $a + b + c = 2s, ab + bc + ca = s^2 + r^2 + 4Rr$ (Problem 1) and $abc = 4Rrs,$
+
+  $a^3 + b^3 + c^3 = 8s^3 - 6s(s^2 + r^2 + 4Rr) + 12Rrs = 2s^3 - 6r^2s - 12Rrs = 2s(s^2 - 3r^2 - 6Rr)$
+  %3
+\item We know $\sin^2A + \sin^2B + \sin^2C = 2 + 2\cos A\cos B\cos C.$
+
+  Also $\sin^2A + \sin^2B + \sin^2C = \frac{a^2 + b^2 + c^2}{4R^2} = \frac{s^2 - r^2 - 4Rr}{2R^2}$ (Problem 1).
+
+  $\therefore \cos A\cos B\cos C = \frac{s^2 - r^2 - 4Rr - 4R^2}{4R^2} = \frac{s^2 - (2R + r)^2}{4R^2}$
+
+  The triangle is acute, right or obtuse according as $\cos A\cos B\cos C$ is positive, zero or negative, i.e. according as
+  $s >, =, < 2R + r.$
+  %4
+\item $\tan\frac{A}{2} = \frac{\Delta}{s(s - a)} = \frac{r_1}{s}$ etc. so the sum is $\frac{r_1 + r_2 + r_3}{s} = \frac{4R +
+  r}{s}$ since $r_1 + r_2 + r_3 = 4R + r.$
+
+  Let $x = \tan\frac{A}{2}, y = \tan\frac{B}{2}, z = \tan\frac{C}{2};$ then $xy + yz + zx = 1.$
+
+  $(x + y + z)^2\geq 3(xy + yz + zx) = 3 \Rightarrow \frac{4R + r}{s}\geq \sqrt{3}\Rightarrow 4R + r\geq \sqrt{3}s$
+
+  Equality holds iff $x = y = z,$ i.e. the triangle is equilateral.
+  %5
+\item $r_1r_2 = \frac{\Delta^2}{(s - a)(s - b)} = s(s - c).$ Similarly $r_2r_3 = s(s - a), r_3r_1 = s(s - b).$
+
+  $\therefore r_1r_2 + r_2r_3 + r_3r_1 = s(3s - 2s) = s^2$
+
+  $r_1^2 + r_2^2 + r_3^2 = (r_1 + r_2 + r_3)^2 - 2s^2 = (4R + r)^2 - 2s^2$
+  %6
+\item $r_1 - r = \Delta\left(\frac{1}{s - a} - \frac{1}{s}\right) = \frac{a\Delta}{s(s - a)}$
+
+  $r_2 + r_3 = \Delta\left(\frac{1}{s - b} + \frac{1}{s - c}\right) = \frac{a\Delta}{(s - b)(s - c)}$
+
+  $\therefore (r_1 - r)(r_2 + r_3) = \frac{a^2\Delta^2}{s(s - a)(s - b)(s - c)} = a^2$
+
+  The other two follow by symmetry.
+  %7
+\item $(b + c - a)(c + a - b)(a + b - c) = 8(s - a)(s - b)(s - c) = \frac{8\Delta^2}{s}$ and $abc = 4R\Delta.$
+
+  $\therefore \frac{abc}{(b + c - a)(c + a - b)(a + b - c)} = \frac{4R\Delta s}{8\Delta^2} = \frac{Rs}{2\Delta} =
+  \frac{R}{2r}$
+
+  Since $R\geq 2r$ (Euler), the ratio is $\geq 1,$ which gives the inequality; equality iff the triangle is equilateral.
+  %8
+\item $IA = r\,{\rm cosec}\frac{A}{2}$ etc. and $r = 4R\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}.$
+
+  $\therefore IA\cdot IB\cdot IC = \frac{r^3}{\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}} = r^3\cdot\frac{4R}{r} = 4Rr^2$
+
+  The tangent from $A$ to the in-circle is $s - a,$ so $IA^2 = (s - a)^2 + r^2.$
+
+  $\sum IA^2 = \sum (s - a)^2 + 3r^2 = 3s^2 - 4s^2 + (a^2 + b^2 + c^2) + 3r^2$
+
+  $= -s^2 + 2(s^2 - r^2 - 4Rr) + 3r^2 = s^2 + r^2 - 8Rr$ (using Problem 1).
+  %9
+\item $IA^2 = \frac{r^2}{\sin^2\frac{A}{2}} = \frac{\Delta^2}{s^2}\cdot\frac{bc}{(s - b)(s - c)} = \frac{bc(s - a)}{s}$
+
+  $\therefore \frac{IA^2}{bc} = \frac{s - a}{s}$ and similarly for the others.
+
+  Sum $= \frac{(s - a) + (s - b) + (s - c)}{s} = \frac{s}{s} = 1$
+  %10
+\item $A, I, I_1$ are collinear on the bisector of $A,$ with $AI = r\,{\rm cosec}\frac{A}{2}$ and $AI_1 = r_1{\rm
+  cosec}\frac{A}{2}.$
+
+  $\therefore AI\cdot AI_1 = \frac{rr_1}{\sin^2\frac{A}{2}}$
+
+  Now $rr_1 = \frac{\Delta^2}{s(s - a)} = (s - b)(s - c)$ and $\sin^2\frac{A}{2} = \frac{(s - b)(s - c)}{bc}.$
+
+  $\therefore AI\cdot AI_1 = bc.$ The other two follow similarly.
+  %11
+\item $AI_1 = r_1{\rm cosec}\frac{A}{2} = 4R\cos\frac{B}{2}\cos\frac{C}{2}, AO = R$ and $\angle OAI_1 = \frac{|B - C|}{2}$ (as in
+  the derivation of $OI$).
+
+  Let $x = \cos\frac{B}{2}\cos\frac{C}{2}, y = \sin\frac{B}{2}\sin\frac{C}{2},$ so $\cos\frac{B - C}{2} = x + y.$
+
+  $OI_1^2 = R^2 + 16R^2x^2 - 8R^2x(x + y) = R^2 + 8R^2x(x - y) = R^2 + 8R^2\cos\frac{B}{2}\cos\frac{C}{2}\cos\frac{B +
+  C}{2}$
+
+  $= R^2 + 2R\left(4R\sin\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}\right) = R^2 + 2Rr_1$
+
+  Adding with $OI^2 = R^2 - 2Rr$: $\sum = 4R^2 + 2R(r_1 + r_2 + r_3 - r) = 4R^2 + 2R\cdot 4R = 12R^2.$
+  %12
+\item $II_1 = a\sec\frac{A}{2} = 4R\sin\frac{A}{2}$ and $I_2I_3 = a\,{\rm cosec}\frac{A}{2} = 4R\cos\frac{A}{2}.$
+
+  $\sum\sin^2\frac{A}{2} = \frac{3 - (\cos A + \cos B + \cos C)}{2} = \frac{1}{2}\left(2 - \frac{r}{R}\right)$
+
+  $\therefore II_1^2 + II_2^2 + II_3^2 = 16R^2\cdot\frac{2R - r}{2R} = 8R(2R - r)$
+
+  $\sum\cos^2\frac{A}{2} = 3 - \sum\sin^2\frac{A}{2} = \frac{4R + r}{2R}$
+
+  $\therefore I_1I_2^2 + I_2I_3^2 + I_3I_1^2 = 16R^2\cdot\frac{4R + r}{2R} = 8R(4R + r)$
+  %13
+\item The angles of $I_1I_2I_3$ are $90^\circ - \frac{A}{2}, 90^\circ - \frac{B}{2}, 90^\circ - \frac{C}{2}$ and $I_2I_3 =
+  4R\cos\frac{A}{2}.$
+
+  Circum-radius $= \frac{I_2I_3}{2\sin\left(90^\circ - \frac{A}{2}\right)} = \frac{4R\cos\frac{A}{2}}{2\cos\frac{A}{2}} = 2R$
+
+  Area $= 2(2R)^2\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2} = 8R^2\cdot\frac{s}{4R} = 2Rs,$ since $s =
+  4R\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}.$
+
+  $\frac{2Rs}{\Delta} = \frac{2Rs}{rs} = \frac{2R}{r}\geq 4$ by Euler's inequality $R\geq 2r.$
+  %14
+\item The sides of the pedal triangle are $EF = a\cos A, FD = b\cos B, DE = c\cos C$ and its angles are $180^\circ - 2A,
+  180^\circ - 2B, 180^\circ - 2C.$
+
+  Circum-radius $= \frac{a\cos A}{2\sin 2A} = \frac{2R\sin A\cos A}{4\sin A\cos A} = \frac{R}{2}$
+
+  In-radius $= 4\cdot\frac{R}{2}\sin(90^\circ - A)\sin(90^\circ - B)\sin(90^\circ - C) = 2R\cos A\cos B\cos C$
+
+  Area of $DEF = 2\left(\frac{R}{2}\right)^2\sin 2A\sin 2B\sin 2C = 4R^2\sin A\sin B\sin C\cos A\cos B\cos C$
+
+  Since $\Delta = 2R^2\sin A\sin B\sin C,$ the ratio is $2\cos A\cos B\cos C.$
+  %15
+\item From the text, $IH^2 = 2r^2 - 4R^2\cos A\cos B\cos C.$ Using Problem 3,
+
+  $IH^2 = 2r^2 - s^2 + (2R + r)^2 = 4R^2 + 4Rr + 3r^2 - s^2$
+
+  For any point $P,$ $PA^2 + PB^2 + PC^2 = 3PG^2 + GA^2 + GB^2 + GC^2 = 3PG^2 + \frac{1}{3}(a^2 + b^2 + c^2).$ Taking $P = I,$
+  $IG^2 = \frac{1}{3}(IA^2 + IB^2 + IC^2) - \frac{1}{9}(a^2 + b^2 + c^2).$
+
+  By Problems 8 and 1, $IG^2 = \frac{s^2 + r^2 - 8Rr}{3} - \frac{2(s^2 - r^2 - 4Rr)}{9} = \frac{s^2 + 5r^2 - 16Rr}{9}$
+
+  $IG^2\geq 0 \Rightarrow s^2\geq 16Rr - 5r^2$ and $IH^2\geq 0\Rightarrow s^2\leq 4R^2 + 4Rr + 3r^2.$
+  %16
+\item In $\triangle OIH, IN$ is a median, so $IN^2 = \frac{1}{2}(OI^2 + IH^2) - \frac{1}{4}OH^2.$
+
+  $OI^2 = R^2 - 2Rr, IH^2 = 4R^2 + 4Rr + 3r^2 - s^2$ (Problem 15) and $OH^2 = 9R^2 - (a^2 + b^2 + c^2) = 9R^2 - 2(s^2 - r^2 -
+  4Rr).$
+
+  $IN^2 = \frac{10R^2 + 4Rr + 6r^2 - 2s^2 - 9R^2 + 2s^2 - 2r^2 - 8Rr}{4} = \frac{R^2 - 4Rr + 4r^2}{4}$
+
+  $\therefore IN = \frac{R}{2} - r$ (positive as $R\geq 2r$), i.e. the distance between the centers equals the difference of
+  the radii.
+  %17
+\item With $B = 60^\circ: \angle AOC = 2B = 120^\circ, \angle AIC = 90^\circ + \frac{B}{2} = 120^\circ$ and $\angle AHC =
+  180^\circ - B = 120^\circ.$
+
+  Hence $A, O, I, H, C$ lie on one circle (each of the circles $AOC, AIC, AHC$ has radius $\frac{AC}{2\sin 120^\circ} = R$
+  and is the reflection of the circumcircle in $AC$).
+
+  $AI$ bisects angle $A$ and $\angle BAO = \angle CAH = 90^\circ - C,$ so $\angle OAI = \angle IAH = \frac{|B - C|}{2}.$
+
+  Equal inscribed angles in the same circle stand on equal chords, so $OI = IH.$ (If $B = C,$ the triangle is equilateral
+  and $O = I = H.$)
+  %18
+\item The distances of $O$ from $BC, CA, AB$ are $R\cos A, R\cos B, R\cos C$ (all positive as the triangle is acute).
+
+  Sum $= R(\cos A + \cos B + \cos C) = R\left(1 + \frac{r}{R}\right) = R + r$
+  %19
+\item $AH = 2R|\cos A|$ etc. so $\sum AH^2 = 4R^2\sum\cos^2A = 4R^2\left(3 - \sum\sin^2A\right) = 12R^2 - (a^2 + b^2 +
+  c^2).$
+
+  For an acute triangle, $AH + BH + CH = 2R(\cos A + \cos B + \cos C) = 2R\left(1 + \frac{r}{R}\right) = 2(R + r).$
+  %20
+\item Let $\theta = \frac{\pi}{7},$ so $a = 2R\sin 4\theta, b = 2R\sin 2\theta, c = 2R\sin\theta$ and $\sin 4\theta = \sin
+  3\theta$ as $7\theta = \pi.$
+
+  $c(a + b) = 4R^2\sin\theta(\sin 4\theta + \sin 2\theta) = 4R^2\sin\theta\cdot 2\sin 3\theta\cos\theta = 4R^2\sin 2\theta\sin
+  3\theta = 4R^2\sin 2\theta\sin 4\theta = ab$
+
+  $\therefore \frac{1}{a} + \frac{1}{b} = \frac{1}{c}$
+
+  $8\sin\theta\cos\theta\cos 2\theta\cos 4\theta = \sin 8\theta = -\sin\theta\Rightarrow \cos A\cos B\cos C = -\frac{1}{8}$
+
+  $OH^2 = R^2(1 - 8\cos A\cos B\cos C) = 2R^2\Rightarrow OH = \sqrt{2}R$
+
+  $a^2 + b^2 + c^2 = 4R^2(2 + 2\cos A\cos B\cos C) = 4R^2\cdot\frac{7}{4} = 7R^2$
+  %21
+\item Left: $a^2 + b^2 + c^2\leq 9R^2$ (Problem 22) and $(a^2 + b^2 + c^2)\left(\frac{1}{a^2} + \frac{1}{b^2} +
+  \frac{1}{c^2}\right)\geq 9.$ Hence $\sum\frac{1}{a^2}\geq \frac{1}{R^2}.$
+
+  Right: let $x = \tan\frac{A}{2}, y = \tan\frac{B}{2}, z = \tan\frac{C}{2}$ with $xy + yz + zx = 1.$
+
+  $a = r\left(\cot\frac{B}{2} + \cot\frac{C}{2}\right) = \frac{r(y + z)}{yz}\Rightarrow \frac{1}{a^2} =
+  \frac{y^2z^2}{r^2(y + z)^2}\leq \frac{yz}{4r^2}$ since $(y + z)^2\geq 4yz.$
+
+  Adding, $\sum\frac{1}{a^2}\leq \frac{xy + yz + zx}{4r^2} = \frac{1}{4r^2}.$
+
+  In both places equality needs $a = b = c.$
+  %22
+\item From the text, $OG^2 = R^2 - \frac{1}{9}(a^2 + b^2 + c^2)\geq 0,$ so $a^2 + b^2 + c^2\leq 9R^2.$
+
+  Dividing by $4R^2$: $\sin^2A + \sin^2B + \sin^2C\leq \frac{9}{4},$ with equality iff $O = G,$ i.e. the triangle is
+  equilateral.
+  %23
+\item Put $x = s - a, y = s - b, z = s - c$ (all positive), so $a = y + z, b = z + x, c = x + y.$
+
+  The inequality is equivalent to $2(ab + bc + ca) - (a^2 + b^2 + c^2)\geq 4\sqrt{3}\Delta.$
+
+  L.H.S. $= 4(xy + yz + zx)$ and $\Delta = \sqrt{(x + y + z)xyz}.$
+
+  So we need $(xy + yz + zx)^2\geq 3xyz(x + y + z),$ i.e. $\sum x^2y^2\geq \sum (xy)(yz),$ which is true.
+
+  Equality iff $xy = yz = zx,$ i.e. the triangle is equilateral.
+  %24
+\item $h_1 = \frac{2\Delta}{a}$ etc., $r = \frac{\Delta}{s}.$ So $\sum h_1\geq 9r \iff (a + b + c)\left(\frac{1}{a} +
+  \frac{1}{b} + \frac{1}{c}\right)\geq 9,$ true by A.M.-H.M.
+
+  For the upper bound, $h_1\leq l_1 = \frac{2\sqrt{bc}}{b + c}\sqrt{s(s - a)}\leq \sqrt{s(s - a)},$ where $l_1$ is the
+  bisector of $A.$
+
+  By Cauchy-Schwarz, $\sum\sqrt{s(s - a)}\leq \sqrt{3s\sum(s - a)} = \sqrt{3}s.$ Equality in both iff equilateral.
+  %25
+\item $l_1 = \frac{2bc}{b + c}\cos\frac{A}{2} = \frac{2\sqrt{bc}}{b + c}\sqrt{s(s - a)}\leq \sqrt{s(s - a)}$ as $b + c\geq
+  2\sqrt{bc}.$
+
+  $\therefore l_1l_2l_3\leq s\sqrt{s}\sqrt{(s - a)(s - b)(s - c)} = s\Delta = rs^2,$ equality iff the triangle is equilateral.
+  %26
+\item Let $D$ be the mid-point of $BC.$ As the triangle is acute, $O$ lies inside and $OD = R\cos A.$
+
+  In $\triangle AOD,$ $m_1 = AD\leq AO + OD = R + R\cos A.$ Similarly for $m_2, m_3.$
+
+  $\therefore m_1 + m_2 + m_3\leq 3R + R(\cos A + \cos B + \cos C) = 3R + R + r = 4R + r$
+
+  Equality iff $A, O, D$ etc. are collinear for each median, i.e. the triangle is equilateral.
+  %27
+\item Let the medians $BE, CF$ meet at $G$ with $\angle BGC = 90^\circ.$ Then $BG^2 + CG^2 = a^2.$
+
+  $BG^2 + CG^2 = \frac{4}{9}(m_2^2 + m_3^2) = \frac{4a^2 + b^2 + c^2}{9} = a^2\Rightarrow b^2 + c^2 = 5a^2$
+
+  $\Delta = 3\,{\rm area}(BGC) = \frac{3}{2}BG\cdot CG\leq \frac{3}{4}(BG^2 + CG^2) = \frac{3}{4}a^2$
+
+  $\cot B + \cot C = \frac{(c^2 + a^2 - b^2) + (a^2 + b^2 - c^2)}{4\Delta} = \frac{a^2}{2\Delta}\geq \frac{2}{3}$
+
+  $\cot A = \frac{b^2 + c^2 - a^2}{4\Delta} = \frac{a^2}{\Delta}\geq \frac{4}{3}.$ Equality when $BG = CG,$ i.e. $b = c.$
+  %28
+\item In a triangle $\cot A\cot B + \cot B\cot C + \cot C\cot A = 1.$
+
+  $(\cot A + \cot B + \cot C)^2\geq 3(\cot A\cot B + \cot B\cot C + \cot C\cot A) = 3$
+
+  The sum is positive (at most one angle is obtuse and $\cot B + \cot C = \frac{\sin A}{\sin B\sin C} > 0$), so it is $\geq
+  \sqrt{3}.$
+
+  For the point $O$ we have $\cot\omega = \cot A + \cot B + \cot C\geq \sqrt{3} = \cot 30^\circ,$ so $\omega\leq 30^\circ.$
+  %29
+\item $a^2 = b^2 + c^2 - 2bc\cos A\geq 2bc - 2bc\cos A = 4bc\sin^2\frac{A}{2}$
+
+  $\therefore bc\leq \frac{a^2}{4\sin^2\frac{A}{2}}$
+
+  $\Delta = \frac{1}{2}bc\sin A\leq \frac{a^2\cdot 2\sin\frac{A}{2}\cos\frac{A}{2}}{8\sin^2\frac{A}{2}} =
+  \frac{a^2}{4}\cot\frac{A}{2},$ with equality iff $b = c.$
+  %30
+\item $a\cos A + b\cos B + c\cos C = R(\sin 2A + \sin 2B + \sin 2C) = 4R\sin A\sin B\sin C$
+
+  $= 4R\cdot\frac{abc}{8R^3} = \frac{abc}{2R^2} = \frac{4R\Delta}{2R^2} = \frac{2\Delta}{R} = \frac{2rs}{R}$
+
+  Since $R\geq 2r,$ this is $\leq s,$ with equality iff the triangle is equilateral.
+  %31
+\item Numerator $= \frac{2rs}{R}$ (Problem 30). Denominator $= \frac{ab + bc + ca}{2R}.$
+
+  So the condition becomes $\frac{4rs}{ab + bc + ca} = \frac{2s}{9R}\Rightarrow ab + bc + ca = 18Rr$
+
+  $\Rightarrow s^2 + r^2 + 4Rr = 18Rr\Rightarrow s^2 = 14Rr - r^2$ (Problem 1)
+
+  By Gerretsen (Problem 15), $14Rr - r^2\geq 16Rr - 5r^2\Rightarrow 4r^2\geq 2Rr\Rightarrow R\leq 2r.$
+
+  With $R\geq 2r$ we get $R = 2r,$ so the triangle is equilateral.
+  %32
+\item $r_1r_2r_3 = \frac{\Delta^3}{(s - a)(s - b)(s - c)} = \frac{\Delta^3 s}{\Delta^2} = \Delta s = rs^2$
+
+  So $rs^2 = 27r^3\Rightarrow s^2 = 27r^2\Rightarrow \Delta = rs = \frac{s^2}{3\sqrt{3}}.$
+
+  But $\Delta\leq \frac{s^2}{3\sqrt{3}}$ with equality only when $s - a = s - b = s - c$ (A.M.-G.M.). Hence $a = b = c.$
+  %33
+\item $l_2 = \frac{2ca}{c + a}\cos\frac{B}{2}, l_3 = \frac{2ab}{a + b}\cos\frac{C}{2}.$ Suppose $b > c,$ so $B > C.$
+
+  Then $\cos\frac{B}{2} < \cos\frac{C}{2}$ and $\frac{c}{c + a} - \frac{b}{a + b} = \frac{a(c - b)}{(c + a)(a + b)} < 0.$
+
+  $\therefore l_2 = 2a\cdot\frac{c}{c + a}\cos\frac{B}{2} < 2a\cdot\frac{b}{a + b}\cos\frac{C}{2} = l_3,$ a contradiction.
+
+  Similarly $b < c$ is impossible. Hence $b = c$ (Steiner-Lehmus theorem).
+  %34
+\item $\tan A + \tan B = \frac{\sin(A + B)}{\cos A\cos B} = \frac{\sin C}{\cos A\cos B} = \frac{2\sin\frac{C}{2}\cos\frac{C}{2}}{\cos
+  A\cos B}$
+
+  Equating with $\frac{2\cos\frac{C}{2}}{\sin\frac{C}{2}}$: $\sin^2\frac{C}{2} = \cos A\cos B\Rightarrow 1 - \cos C = 2\cos
+  A\cos B$
+
+  $\Rightarrow 1 + \cos(A + B) = 2\cos A\cos B\Rightarrow \cos(A - B) = 1\Rightarrow A = B.$
+  %35
+\item Let the bisector, median and altitude meet $BC, CA, AB$ at $D, E, F.$ Then $\frac{BD}{DC} = \frac{c}{b},
+  \frac{CE}{EA} = 1,$ and $\frac{AF}{FB} = \frac{b\cos A}{a\cos B}.$
+
+  By Ceva's theorem, concurrency gives $\frac{c}{b}\cdot 1\cdot\frac{b\cos A}{a\cos B} = 1\Rightarrow c\cos A = a\cos B.$
+
+  By the sine rule this is $\sin C\cos A = \sin A\cos B.$
+  %36
+\item $CX = a$ and $\angle ACX = C + 60^\circ.$ By cosine rule,
+
+  $AX^2 = a^2 + b^2 - 2ab\cos(C + 60^\circ) = a^2 + b^2 - ab\cos C + \sqrt{3}ab\sin C$
+
+  $= a^2 + b^2 - \frac{a^2 + b^2 - c^2}{2} + 2\sqrt{3}\Delta = \frac{1}{2}(a^2 + b^2 + c^2) + 2\sqrt{3}\Delta$
+
+  The expression is symmetric in $a, b, c,$ so $BY^2$ and $CZ^2$ have the same value; hence $AX = BY = CZ.$
+  %37
+\item $s = 21, \Delta = \sqrt{21\cdot 8\cdot 7\cdot 6} = 84, r = 4, R = \frac{abc}{4\Delta} = \frac{65}{8}, r_1 =
+  \frac{21}{2}, r_2 = 12, r_3 = 14.$
+
+  $OI^2 = R^2 - 2Rr = \frac{65}{64}\Rightarrow OI = \frac{\sqrt{65}}{8}$
+
+  $OH^2 = 9R^2 - (a^2 + b^2 + c^2) = \frac{38025}{64} - 590 = \frac{265}{64}\Rightarrow OH = \frac{\sqrt{265}}{8}$
+
+  $IH^2 = 4R^2 + 4Rr + 3r^2 - s^2 = \frac{17}{16}\Rightarrow IH = \frac{\sqrt{17}}{4}$
+
+  $IG^2 = \frac{s^2 + 5r^2 - 16Rr}{9} = \frac{1}{9}\Rightarrow IG = \frac{1}{3}$
+  %38
+\item $\cos A = \frac{3}{5}, \cos B = \frac{33}{65}, \cos C = \frac{5}{13}$ (acute triangle), $R = \frac{65}{8}, \Delta = 84.$
+
+  Circum-radius of pedal triangle $= \frac{R}{2} = \frac{65}{16}.$
+
+  In-radius $= 2R\cos A\cos B\cos C = \frac{65}{4}\cdot\frac{3}{5}\cdot\frac{33}{65}\cdot\frac{5}{13} = \frac{99}{52}.$
+
+  Perimeter $= a\cos A + b\cos B + c\cos C = \frac{2\Delta}{R} = \frac{1344}{65}.$
+  %39
+\item If $G$ is the centroid and $AD$ a median, extend $GD$ to $K$ with $DK = GD.$ Then $GBKC$ is a parallelogram and
+  $\triangle GKC$ has sides $\frac{2}{3}m_1, \frac{2}{3}m_2, \frac{2}{3}m_3$ and area $= {\rm area}(GBC) = \frac{\Delta}{3}.$
+
+  So the triangle with sides $m_1, m_2, m_3$ has area $\frac{9}{4}\cdot\frac{\Delta}{3} = \frac{3}{4}\Delta.$
+
+  Medians $9, 12, 15$ form a right triangle of area $54,$ so $\Delta = \frac{4}{3}\cdot 54 = 72.$
+
+  Sides: $a = \frac{2}{3}\sqrt{2m_2^2 + 2m_3^2 - m_1^2} = 2\sqrt{73}, b = 4\sqrt{13}, c = 10$ (opposite to the medians $9, 12,
+  15$ respectively).
+  %40
+\item $a = \frac{2\Delta}{3}, b = \frac{2\Delta}{4}, c = \frac{2\Delta}{6},$ so $a:b:c = 4:3:2.$ Let $a = 4t, b = 3t, c = 2t.$
+
+  By Heron, $\Delta = t^2\sqrt{\frac{9}{2}\cdot\frac{1}{2}\cdot\frac{3}{2}\cdot\frac{5}{2}} = \frac{3\sqrt{15}}{4}t^2.$ Also
+  $\Delta = \frac{1}{2}\cdot 2t\cdot 6 = 6t.$
+
+  $\therefore t = \frac{8}{\sqrt{15}},$ sides $\frac{32\sqrt{15}}{15}, \frac{8\sqrt{15}}{5}, \frac{16\sqrt{15}}{15},$ area
+  $= 6t = \frac{16\sqrt{15}}{5}.$
+
+  $\cos A = \frac{9 + 4 - 16}{12} = -\frac{1}{4} < 0,$ so $A$ is obtuse.
+  %41
+\item $r_1:r_2:r_3 = \frac{1}{s - a}:\frac{1}{s - b}:\frac{1}{s - c} = 1:2:3 \Rightarrow s - a:s - b:s - c = 6:3:2.$
+
+  Let $s - a = 6k, s - b = 3k, s - c = 2k;$ then $s = 11k, a = 5k, b = 8k, c = 9k.$ So $a:b:c = 5:8:9.$
+
+  $\frac{R}{r} = \frac{abc}{4(s - a)(s - b)(s - c)} = \frac{360}{4\cdot 36} = \frac{5}{2}.$ So $R:r = 5:2.$
+  %42
+\item $a + b + c = 2s, ab + bc + ca = s^2 + r^2 + 4Rr$ (Problem 1), $abc = 4R\Delta = 4Rrs.$ So $a, b, c$ are the roots of the
+  given cubic.
+
+  With $s = 21, r = 4, R = \frac{65}{8}$: $x^3 - 42x^2 + 587x - 2730 = 0.$
+
+  $(x - 13)(x - 14)(x - 15) = 0,$ so the sides are $13, 14, 15.$
+  %43
+\item Rotate the figure about $B$ through $60^\circ$ so that $A$ goes to $C$ and $P$ goes to $P'.$ Then $BP' = BP = 4,
+  \angle PBP' = 60^\circ,$ so $PP' = 4,$ and $CP' = AP = 3.$
+
+  In $\triangle PP'C,$ $3^2 + 4^2 = 5^2,$ so $\angle PP'C = 90^\circ.$ Also $\angle BP'P = 60^\circ,$ so $\angle BP'C =
+  150^\circ.$
+
+  $BC^2 = 4^2 + 3^2 - 2\cdot 4\cdot 3\cos 150^\circ = 25 + 12\sqrt{3}\Rightarrow$ side $= \sqrt{25 + 12\sqrt{3}}.$
+
+  Area $= \frac{\sqrt{3}}{4}(25 + 12\sqrt{3}) = 9 + \frac{25\sqrt{3}}{4}.$
+  %44
+\item Two triangles exist iff $b\sin A < a < b,$ i.e. $5 < a < 10.$ So $a = 6, 7, 8, 9:$ four values.
+
+  For $a = 7$: $c^2 - 2bc\cos A + b^2 - a^2 = 0\Rightarrow c^2 - 10\sqrt{3}c + 51 = 0$
+
+  $c = 5\sqrt{3}\pm 2\sqrt{6}$ (both positive).
+  %45
+\item $c_1, c_2$ are the roots of $c^2 - 2bc\cos A + (b^2 - a^2) = 0,$ so $c_1 + c_2 = 2b\cos A.$
+
+  Sum of areas $= \frac{1}{2}bc_1\sin A + \frac{1}{2}bc_2\sin A = \frac{1}{2}b\sin A\cdot 2b\cos A = \frac{1}{2}b^2\sin 2A.$
+  %46
+\item $c_1 + c_2 = 2b\cos A, c_1c_2 = b^2 - a^2.$
+
+  $c_1^2 + c_2^2 - 2c_1c_2\cos 2A = (c_1 + c_2)^2 - 2c_1c_2(1 + \cos 2A) = 4b^2\cos^2A - 4(b^2 - a^2)\cos^2A = 4a^2\cos^2A$
+  %47
+\item $S = 88,$ area $= \sqrt{63\cdot 49\cdot 36\cdot 28} = 1764.$
+
+  $25^2 + 60^2 = 65^2 = 39^2 + 52^2,$ so $\angle A = 90^\circ = \angle C$ and $BD = 65$ is a diameter; $R = \frac{65}{2}.$
+  (Check: area $= \frac{25\cdot 60}{2} + \frac{39\cdot 52}{2} = 750 + 1014 = 1764.$)
+
+  By Ptolemy, $AC\cdot BD = 25\cdot 52 + 39\cdot 60 = 3640\Rightarrow AC = 56.$
+  %48
+\item By the text, $\cos B = \frac{a^2 + b^2 - c^2 - d^2}{2(ab + cd)}$ and area $K = \frac{1}{2}(ab + cd)\sin B.$
+
+  From Problem 50, $AC^2 = \frac{(ac + bd)(ad + bc)}{ab + cd}.$
+
+  $R = \frac{AC}{2\sin B} = \frac{AC(ab + cd)}{4K}\Rightarrow R^2 = \frac{(ab + cd)(ac + bd)(ad + bc)}{16K^2}$
+
+  With $K^2 = (S - a)(S - b)(S - c)(S - d),$ the result follows.
+  %49
+\item Let the diagonals meet at $P$ with $\angle BPC = 90^\circ.$ Then $\angle ACB + \angle DBC = 90^\circ.$
+
+  $AB = 2R\sin\angle ACB, CD = 2R\sin\angle DBC = 2R\cos\angle ACB.$
+
+  $\therefore AB^2 + CD^2 = 4R^2.$ Similarly, using $\angle BDA$ and $\angle CAD$ (which sum to $90^\circ$ in $\triangle APD$),
+  $BC^2 + DA^2 = 4R^2.$
+  %50
+\item Since $B + D = 180^\circ,$ $\cos B = \frac{a^2 + b^2 - c^2 - d^2}{2(ab + cd)}.$
+
+  $AC^2 = a^2 + b^2 - 2ab\cos B = \frac{(a^2 + b^2)(ab + cd) - ab(a^2 + b^2 - c^2 - d^2)}{ab + cd} = \frac{cd(a^2 + b^2) +
+  ab(c^2 + d^2)}{ab + cd}$
+
+  $= \frac{(ac + bd)(ad + bc)}{ab + cd}.$ Similarly $BD^2 = \frac{(ac + bd)(ab + cd)}{ad + bc}.$
+
+  Dividing, $\frac{AC^2}{BD^2} = \frac{(ad + bc)^2}{(ab + cd)^2},$ so $\frac{AC}{BD} = \frac{ad + bc}{ab + cd}.$ (Multiplying
+  instead gives Ptolemy's theorem $AC\cdot BD = ac + bd.$)
+\stopitemize

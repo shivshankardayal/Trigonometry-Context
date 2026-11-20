@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+ymin=-1.6,ymax=1.6,
+xmin=-7.2,xmax=7.2,
+xtick=\empty,
+ytick=\empty,
+extra x ticks={-6.28319, -4.71239, -3.14159, -1.5708, 1.5708, 3.14159, 4.71239, 6.28319},
+extra x tick labels={$-2\pi$, $-\frac{3\pi}{2}$, $-\pi$, $-\frac{\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+extra y ticks={-1, 1},
+extra y tick labels={$-1$, $1$},
+every extra x tick/.style={
+    xticklabel style={anchor=north west},
+    grid=major,
+    major grid style={very thin,dashed,black}
+},
+axis lines = center,
+xlabel=$x$,ylabel=$y$,
+samples=200,
+]
+\addplot [black, domain=-6.28319:6.28319] {sin(deg(abs(x)))};
+\node at (axis cs:0.36, -0.16) {$O$} ;
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1684,3 +1684,467 @@
 
   Adding, we get $S = \tan^{-1}(n + 1)x - \tan^{-1}x = \tan^{-1}\frac{nx}{1 + (n + 1)x^2} =$ R.H.S.
 \stopitemize
+
+\subject{Challenging Problems}
+\startitemize[n, 1*broad]
+\item $\tan^{-1}\frac{2}{n^2} = \tan^{-1}\frac{(n + 1) - (n - 1)}{1 + (n + 1)(n - 1)} = \tan^{-1}(n + 1) - \tan^{-1}(n - 1)$
+
+  (valid as $(n + 1)(n - 1)\geq 0 > -1$)
+
+  $S_N = \tan^{-1}(N + 1) + \tan^{-1}N - \tan^{-1}1 - \tan^{-1}0$
+
+  As $N\to\infty, S = \frac{\pi}{2} + \frac{\pi}{2} - \frac{\pi}{4} = \frac{3\pi}{4}$
+
+\item For $n\geq 2,$ $\tan^{-1}\frac{2}{(n - 1)^2} - \tan^{-1}\frac{2}{(n + 1)^2} = \tan^{-1}\frac{8n/(n^2 - 1)^2}{1 + 4/(n^2 -
+  1)^2} = \tan^{-1}\frac{8n}{n^4 - 2n^2 + 5}$
+
+  Writing $a_m = \tan^{-1}\frac{2}{m^2},$ the terms for $n\geq 2$ telescope to $a_1 + a_2 = \tan^{-1}2 + \tan^{-1}\frac{1}{2} =
+  \frac{\pi}{2}$
+
+  The term for $n = 1$ is $\tan^{-1}2$
+
+  $\therefore S = \frac{\pi}{2} + \tan^{-1}2 = \frac{\pi}{2} + \frac{\pi}{2} - \tan^{-1}\frac{1}{2} = \pi - \tan^{-1}\frac{1}{2}$
+
+\item $\tan^{-1}\frac{1}{2n^2} = \tan^{-1}\frac{2}{4n^2} = \tan^{-1}\frac{(2n + 1) - (2n - 1)}{1 + (2n + 1)(2n - 1)}$
+
+  $= \tan^{-1}(2n + 1) - \tan^{-1}(2n - 1)$
+
+  $S = \lim_{n\to\infty}\tan^{-1}(2n + 1) - \tan^{-1}1 = \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$
+
+\item $\tan^{-1}2^n - \tan^{-1}2^{n - 1} = \tan^{-1}\frac{2^n - 2^{n - 1}}{1 + 2^{2n - 1}} = \tan^{-1}\frac{2^{n - 1}}{1 + 2^{2n - 1}}$
+
+  $S = \lim_{n\to\infty}\tan^{-1}2^n - \tan^{-1}1 = \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$
+
+\item From the given identity with $n = 2k + 1,$ $F_{2k}F_{2k + 2} = F_{2k + 1}^2 - 1$
+
+  $\tan^{-1}\frac{1}{F_{2k}} - \tan^{-1}\frac{1}{F_{2k + 2}} = \tan^{-1}\frac{F_{2k + 2} - F_{2k}}{F_{2k}F_{2k + 2} + 1} =
+  \tan^{-1}\frac{F_{2k + 1}}{F_{2k + 1}^2} = \tan^{-1}\frac{1}{F_{2k + 1}}$
+
+  Adding for $k = 1, 2, \ldots, n,$ $S_n = \tan^{-1}\frac{1}{F_2} - \tan^{-1}\frac{1}{F_{2n + 2}}$
+
+  As $F_{2n + 2}\to\infty, S = \tan^{-1}1 = \frac{\pi}{4}$
+
+\item Let $\alpha = \tan^{-1}\sqrt{r}, \beta = \tan^{-1}\sqrt{r - 1},$ so $0\leq \beta < \alpha < \frac{\pi}{2}$
+
+  $\sin(\alpha - \beta) = \frac{\sqrt{r}}{\sqrt{r + 1}}\cdot\frac{1}{\sqrt{r}} - \frac{1}{\sqrt{r + 1}}\cdot\frac{\sqrt{r -
+      1}}{\sqrt{r}} = \frac{\sqrt{r} - \sqrt{r - 1}}{\sqrt{r(r + 1)}}$
+
+  Since $0 < \alpha - \beta < \frac{\pi}{2},$ the $r$th term $= \tan^{-1}\sqrt{r} - \tan^{-1}\sqrt{r - 1}$
+
+  Adding, $S_n = \tan^{-1}\sqrt{n} - \tan^{-1}0 = \tan^{-1}\sqrt{n}$
+
+  Sum to infinity $= \lim_{n\to\infty}\tan^{-1}\sqrt{n} = \frac{\pi}{2}$
+
+\item $\tan^{-1}\frac{n + 1}{2} - \tan^{-1}\frac{n}{2} = \tan^{-1}\frac{\frac{1}{2}}{1 + \frac{n(n + 1)}{4}} =
+  \tan^{-1}\frac{2}{n^2 + n + 4}$
+
+  $S = \lim_{n\to\infty}\tan^{-1}\frac{n + 1}{2} - \tan^{-1}\frac{1}{2} = \frac{\pi}{2} - \tan^{-1}\frac{1}{2} = \tan^{-1}2$
+
+\item $1 + \sum_{k = 1}^n2k = n^2 + n + 1 > 0,$ so $\cot^{-1}(n^2 + n + 1) = \tan^{-1}\frac{1}{1 + n(n + 1)} = \tan^{-1}(n + 1) -
+  \tan^{-1}n$
+
+  Sum $= \tan^{-1}31 - \tan^{-1}1 = \tan^{-1}\frac{30}{32} = \tan^{-1}\frac{15}{16}$
+
+  Required value $= \cot\left(\tan^{-1}\frac{15}{16}\right) = \frac{16}{15}$
+
+\item Domain: $|x|\leq \frac{1}{6\sqrt{3}}.$ The sum is $-\frac{\pi}{2},$ so $x < 0.$
+
+  $\sin^{-1}6\sqrt{3}x = -\frac{\pi}{2} - \sin^{-1}6x \Rightarrow 6\sqrt{3}x = -\cos(\sin^{-1}6x) = -\sqrt{1 - 36x^2}$
+
+  Squaring, $108x^2 = 1 - 36x^2 \Rightarrow x^2 = \frac{1}{144}$
+
+  As $x < 0, x = -\frac{1}{12}.$ Check: $\sin^{-1}\left(-\frac{1}{2}\right) + \sin^{-1}\left(-\frac{\sqrt{3}}{2}\right) =
+  -\frac{\pi}{6} - \frac{\pi}{3} = -\frac{\pi}{2}$
+
+  ($x = \frac{1}{12}$ gives $+\frac{\pi}{2}$ and is extraneous.)
+
+\item Let $x = \tan\theta, -\frac{\pi}{2} < \theta < \frac{\pi}{2}.$
+
+  $\cos^{-1}\frac{1 - x^2}{1 + x^2} = \cos^{-1}(\cos2\theta) = 2|\theta|$
+
+  $\sin^{-1}\frac{2x}{1 + x^2} = \sin^{-1}(\sin2\theta) = 2\theta$ if $|x|\leq 1,$ $\pi - 2\theta$ if $x > 1,$ $-\pi - 2\theta$ if
+  $x < -1$
+
+  $-1\leq x < 0$: L.H.S. $= 0 \neq 4\theta.$ $0\leq x\leq 1$: L.H.S. $= 4\theta$
+
+  $x > 1$: L.H.S. $= \pi < 4\theta.$ $x < -1$: L.H.S. $= -\pi - 4\theta \neq 4\theta$ as $\theta < -\frac{\pi}{4}$
+
+  Hence $x\in[0, 1]$
+
+\item Let $x = \tan\theta.$ Then $\tan3\theta = \frac{3x - x^3}{1 - 3x^2}$
+
+  If $x > \frac{1}{\sqrt{3}},$ then $\frac{\pi}{6} < \theta < \frac{\pi}{2} \Rightarrow \frac{\pi}{2} < 3\theta <
+  \frac{3\pi}{2} \Rightarrow -\frac{\pi}{2} < 3\theta - \pi < \frac{\pi}{2}$
+
+  $\therefore \tan^{-1}\frac{3x - x^3}{1 - 3x^2} = \tan^{-1}\tan(3\theta - \pi) = 3\theta - \pi \Rightarrow 3\tan^{-1}x = \pi +
+  \tan^{-1}\frac{3x - x^3}{1 - 3x^2}$
+
+  If $x < -\frac{1}{\sqrt{3}},$ then $-\frac{3\pi}{2} < 3\theta < -\frac{\pi}{2},$ so $3\theta + \pi$ is the principal value and
+  $3\tan^{-1}x = -\pi + \tan^{-1}\frac{3x - x^3}{1 - 3x^2}$
+
+\item $4\pi\approx 12.566,$ so $12 - 4\pi\in\left(-\frac{\pi}{2}, 0\right)$
+
+  $\sin^{-1}(\sin12) = 12 - 4\pi,$ $\tan^{-1}(\tan12) = 12 - 4\pi,$ $\cos^{-1}(\cos12) = 4\pi - 12\in[0, \pi]$
+
+  Sum $= 12 - 4\pi$
+
+\item $\cot^{-1}(\cot(-5)) = 2\pi - 5\in(0, \pi)$
+
+  $\sec^{-1}(\sec6) = 2\pi - 6\in\left[0, \frac{\pi}{2}\right)$
+
+  ${\rm cosec}\,4 = {\rm cosec}(\pi - 4)$ and $\pi - 4\in\left[-\frac{\pi}{2}, 0\right),$ so ${\rm cosec}^{-1}({\rm
+  cosec}\,4) = \pi - 4$
+
+  Sum $= 5\pi - 15$
+
+\item $\cos10 = \sin\left(\frac{\pi}{2} - 10\right) = \sin\left(\frac{5\pi}{2} - 10\right) = \sin\left(\pi - \left(\frac{5\pi}{2} -
+  10\right)\right) = \sin\left(10 - \frac{3\pi}{2}\right)$
+
+  These do not lie in $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right];$ but $\sin\left(10 - \frac{3\pi}{2}\right) = \sin\left(10 -
+  \frac{3\pi}{2} - 2\pi\right) = \sin\left(10 - \frac{7\pi}{2}\right)$
+
+  $10 - \frac{7\pi}{2}\approx -0.9956\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
+
+  $\therefore \sin^{-1}(\cos10) = 10 - \frac{7\pi}{2}$
+
+\item Both sides have period $2\pi;$ take $x\in[0, 2\pi).$
+
+  $0\leq x\leq \frac{\pi}{2}$: both sides equal $x$
+
+  $\frac{\pi}{2} < x\leq \pi$: $\pi - x = x \Rightarrow x = \frac{\pi}{2},$ not in this interval.
+
+  $\pi < x\leq \frac{3\pi}{2}$: L.H.S. $= \pi - x < 0\leq$ R.H.S.; no solution.
+
+  $\frac{3\pi}{2} < x < 2\pi$: $x - 2\pi = 2\pi - x \Rightarrow x = 2\pi,$ not in this interval.
+
+  Hence $x\in\left[2k\pi, 2k\pi + \frac{\pi}{2}\right], k\in\mathbb{Z}$
+
+\item Domain $|x|\leq 1.$ Let $\theta = \tan^{-1}x\in\left[-\frac{\pi}{4}, \frac{\pi}{4}\right],$ so $2\theta\in\left[-\frac{\pi}{2},
+  \frac{\pi}{2}\right]$
+
+  Equation $\iff x = \sin2\theta \iff \tan\theta = 2\sin\theta\cos\theta$
+
+  $\iff \sin\theta(2\cos^2\theta - 1) = 0 \iff \sin\theta = 0$ or $\cos2\theta = 0$
+
+  $\theta = 0, \pm\frac{\pi}{4} \Rightarrow x = 0, 1, -1.$ Three solutions.
+
+\item Let $x = \tan\theta, -\frac{\pi}{2} < \theta < \frac{\pi}{2}.$ $\frac{1 + x}{1 - x} = \tan\left(\frac{\pi}{4} + \theta\right)$
+
+  If $x < 1,$ $\frac{\pi}{4} + \theta\in\left(-\frac{\pi}{4}, \frac{\pi}{2}\right)$ so L.H.S. $= \frac{\pi}{4} + \theta$
+
+  If $x > 1,$ $\frac{\pi}{4} + \theta\in\left(\frac{\pi}{2}, \frac{3\pi}{4}\right)$ so L.H.S. $= \frac{\pi}{4} + \theta - \pi$
+
+  Hence the identity holds iff $x < 1;$ for $x > 1,$ $\tan^{-1}\frac{1 + x}{1 - x} - \tan^{-1}x = -\frac{3\pi}{4}$
+
+\item Taking tangent: $\frac{2x}{1 - (x^2 - 1)} = \frac{8}{31} \Rightarrow 4x^2 + 31x - 8 = 0 \Rightarrow x = \frac{1}{4}$ or $x =
+  -8$
+
+  $x = -8$: L.H.S. $= \tan^{-1}(-7) + \tan^{-1}(-9) < -\frac{\pi}{2}$ while R.H.S. $> 0;$ extraneous.
+
+  $x = \frac{1}{4}$: $\tan^{-1}\frac{5}{4} + \tan^{-1}\left(-\frac{3}{4}\right) = \tan^{-1}\frac{1/2}{1 + 15/16} =
+  \tan^{-1}\frac{8}{31}$
+
+  Answer: $x = \frac{1}{4}$
+
+\item Let $x = \tan\theta.$ For $|x| < 1$: the terms are $2\theta, 2|\theta|, 2\theta$
+
+  For $0\leq x < 1$: $6\theta - 8\theta + 4\theta = 2\theta = \frac{\pi}{3} \Rightarrow \theta = \frac{\pi}{6}, x =
+  \frac{1}{\sqrt{3}}$
+
+  For $-1 < x < 0$: $6\theta + 8\theta + 4\theta = 18\theta < 0;$ no solution.
+
+  For $x > 1$: $3(\pi - 2\theta) - 8\theta + 2(2\theta - \pi) = \pi - 10\theta = \frac{\pi}{3} \Rightarrow \theta =
+  \frac{\pi}{15} < \frac{\pi}{4};$ rejected.
+
+  For $x < -1$: $3(-\pi - 2\theta) + 8\theta + 2(2\theta + \pi) = 6\theta - \pi < 0;$ no solution.
+
+  Answer: $x = \frac{1}{\sqrt{3}}$
+
+\item Taking tangent: $\frac{(x - 1)(x + 2) + (x + 1)(x - 2)}{(x - 2)(x + 2) - (x - 1)(x + 1)} = 1$
+
+  $\Rightarrow \frac{2x^2 - 4}{-3} = 1 \Rightarrow x^2 = \frac{1}{2} \Rightarrow x = \pm\frac{1}{\sqrt{2}}$
+
+  For both values $\frac{x - 1}{x - 2}\cdot\frac{x + 1}{x + 2} = \frac{x^2 - 1}{x^2 - 4} = \frac{1}{7} < 1$ and the sum of the
+  fractions is $\frac{2x^2 - 4}{x^2 - 4} = \frac{6}{7} > 0,$ so the sum of the angles lies in $\left(0, \frac{\pi}{2}\right)$
+
+  Hence both $x = \pm\frac{1}{\sqrt{2}}$ are valid.
+
+\item $\sin(\cot^{-1}y) = \frac{1}{\sqrt{1 + y^2}}$ for all real $y$ (since $\cot^{-1}y\in(0, \pi)$)
+
+  $\cos(\tan^{-1}x) = \frac{1}{\sqrt{1 + x^2}}$
+
+  $\Rightarrow 1 + (1 + x)^2 = 1 + x^2 \Rightarrow 2x + 1 = 0 \Rightarrow x = -\frac{1}{2}$
+
+\item Taking tangent: $\frac{6x - 6x^3}{1 - 11x^2} = 0 \Rightarrow x = 0, \pm1$
+
+  $x = 0$ gives $0;$ $x = -1$ gives a negative sum ($= -\pi$)
+
+  $x = 1$: $\tan^{-1}1 + \tan^{-1}2 + \tan^{-1}3 = \frac{\pi}{4} + \pi + \tan^{-1}\frac{5}{1 - 6} = \frac{\pi}{4} + \frac{3\pi}{4} = \pi$
+
+  Answer: $x = 1$
+
+\item $y = \sin^{-1}(\sin x)$ is a zig-zag of slope $\pm1$ between $-\frac{\pi}{2}$ and $\frac{\pi}{2};$ $y = \frac{x}{6}$
+  leaves this strip for $|x| > 3\pi.$ Both sides are odd; consider $x\geq 0.$
+
+  $x = 0$ is a root; on $\left(0, \frac{\pi}{2}\right]$ we have $x > \frac{x}{6}.$
+
+  On $\left[\frac{\pi}{2}, \frac{3\pi}{2}\right]$ the zig-zag falls from $\frac{\pi}{2}$ to $-\frac{\pi}{2}$: one root.
+
+  On $\left[\frac{3\pi}{2}, \frac{5\pi}{2}\right]$ it rises from $-\frac{\pi}{2}$ to $\frac{\pi}{2} > \frac{5\pi}{12}$: one root.
+
+  On $\left[\frac{5\pi}{2}, 3\pi\right]$ it falls from $\frac{\pi}{2}$ to $0$ while the line rises from $\frac{5\pi}{12}$ to
+  $\frac{\pi}{2}$: one root.
+
+  Total $= 1 + 2\times3 = 7$ solutions.
+
+\item Let $t = \tan^{-1}x\in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right);$ $\cot^{-1}x = \frac{\pi}{2} - t$
+
+  $t^2 + \left(\frac{\pi}{2} - t\right)^2 = 2\left(t - \frac{\pi}{4}\right)^2 + \frac{\pi^2}{8}$
+
+  Minimum $\frac{\pi^2}{8}$ at $t = \frac{\pi}{4};$ as $t\to-\frac{\pi}{2}$ it tends to $\frac{5\pi^2}{4}$ (not attained)
+
+  Range is $\left[\frac{\pi^2}{8}, \frac{5\pi^2}{4}\right) \Rightarrow 1\leq k < 10$
+
+\item Let $t = \sin^{-1}x\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right].$ Expression $= t\left(\frac{\pi}{2} - t\right) =
+  \frac{\pi^2}{16} - \left(t - \frac{\pi}{4}\right)^2$
+
+  Greatest value $\frac{\pi^2}{16}$ at $t = \frac{\pi}{4}$ i.e. $x = \frac{1}{\sqrt{2}}$
+
+  Least value at $t = -\frac{\pi}{2}$ (i.e. $x = -1$): $-\frac{\pi}{2}\cdot\pi = -\frac{\pi^2}{2}$
+
+\item $-1\leq \frac{2 - |x|}{4}\leq 1 \iff -2\leq |x|\leq 6 \iff -6\leq x\leq 6$
+
+  $3 - x > 0$ and $\log_{10}(3 - x)\neq 0 \Rightarrow x < 3, x\neq 2$
+
+  Domain $= [-6, 2)\cup(2, 3)$
+
+\item Let $x = \sin\theta, \theta\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right].$ Then $2x\sqrt{1 - x^2} = \sin2\theta$
+
+  If $\frac{1}{\sqrt{2}}\leq x\leq 1,$ $\frac{\pi}{2}\leq 2\theta\leq \pi \Rightarrow \pi - 2\theta\in\left[0,
+  \frac{\pi}{2}\right]$
+
+  $\therefore \sin^{-1}(\sin2\theta) = \sin^{-1}\sin(\pi - 2\theta) = \pi - 2\theta = \pi - 2\sin^{-1}x$
+
+  If $-1\leq x\leq -\frac{1}{\sqrt{2}},$ $-\pi\leq 2\theta\leq -\frac{\pi}{2} \Rightarrow -\pi - 2\theta\in\left[-\frac{\pi}{2},
+  0\right]$
+
+  $\therefore \sin^{-1}(\sin2\theta) = -\pi - 2\theta = -\pi - 2\sin^{-1}x$
+
+\item Let $x = \tan\theta, \theta\in\left(-\frac{\pi}{2}, \frac{\pi}{2}\right), \theta\neq 0.$ Then $\sqrt{1 + x^2} =
+  \sec\theta$ (as $\cos\theta > 0$)
+
+  $\frac{\sec\theta - 1}{\tan\theta} = \frac{1 - \cos\theta}{\sin\theta} = \tan\frac{\theta}{2}$
+
+  $\frac{\theta}{2}\in\left(-\frac{\pi}{4}, \frac{\pi}{4}\right) \Rightarrow$ L.H.S. $= \frac{\theta}{2} = \frac{1}{2}\tan^{-1}x$
+
+\item Let $x = \cos2\theta, \theta\in\left[0, \frac{\pi}{2}\right]$ so $\theta = \frac{1}{2}\cos^{-1}x$
+
+  $\sqrt{1 + x} = \sqrt{2}\cos\theta, \sqrt{1 - x} = \sqrt{2}\sin\theta$ (both non-negative)
+
+  Fraction $= \frac{\cos\theta - \sin\theta}{\cos\theta + \sin\theta} = \tan\left(\frac{\pi}{4} - \theta\right)$
+
+  $\frac{\pi}{4} - \theta\in\left[-\frac{\pi}{4}, \frac{\pi}{4}\right] \Rightarrow$ L.H.S. $= \frac{\pi}{4} - \frac{1}{2}\cos^{-1}x$
+
+\item Let $\alpha = \tan^{-1}\frac{4}{3},$ so $\cos\alpha = \frac{3}{5}, \sin\alpha = \frac{4}{5}$
+
+  $\frac{3\cos x + 4\sin x}{5} = \cos(x - \alpha) = \cos(\alpha - x)$
+
+  For $-\frac{\pi}{4}\leq x\leq \frac{\pi}{4},$ $\alpha - x\in\left[\alpha - \frac{\pi}{4}, \alpha + \frac{\pi}{4}\right]\subset[0,
+  \pi]$ (as $\frac{\pi}{4} < \alpha < \frac{\pi}{2}$)
+
+  $\therefore \cos^{-1}\cos(\alpha - x) = \alpha - x = \tan^{-1}\frac{4}{3} - x$
+
+\item $\frac{\sin x + \cos x}{\sqrt{2}} = \sin\left(x + \frac{\pi}{4}\right),$ and $x + \frac{\pi}{4}\in\left[\frac{\pi}{2},
+  \frac{3\pi}{2}\right]$
+
+  $\sin\left(x + \frac{\pi}{4}\right) = \sin\left(\frac{3\pi}{4} - x\right)$ with $\frac{3\pi}{4} - x\in\left[-\frac{\pi}{2},
+  \frac{\pi}{2}\right]$
+
+  $\therefore$ expression $= \frac{3\pi}{4} - x$
+
+\item $\frac{\cos x}{1 + \sin x} = \frac{\cos^2\frac{x}{2} - \sin^2\frac{x}{2}}{\left(\cos\frac{x}{2} + \sin\frac{x}{2}\right)^2} =
+  \frac{1 - \tan\frac{x}{2}}{1 + \tan\frac{x}{2}} = \tan\left(\frac{\pi}{4} - \frac{x}{2}\right)$
+
+  For $\frac{3\pi}{2} < x < 2\pi,$ $\frac{\pi}{4} - \frac{x}{2}\in\left(-\frac{3\pi}{4}, -\frac{\pi}{2}\right)$
+
+  Adding $\pi$: $\frac{5\pi}{4} - \frac{x}{2}\in\left(\frac{\pi}{4}, \frac{\pi}{2}\right)$
+
+  $\therefore$ expression $= \frac{5\pi}{4} - \frac{x}{2}$
+
+\item $\tan^{-1}(-2) + \tan^{-1}\left(-\frac{1}{2}\right) = -\left(\tan^{-1}2 + \tan^{-1}\frac{1}{2}\right) = -\frac{\pi}{2}$
+
+  $\cot^{-1}(-3) + \cot^{-1}\left(-\frac{1}{3}\right) = 2\pi - \left(\cot^{-1}3 + \cot^{-1}\frac{1}{3}\right) = 2\pi -
+  \frac{\pi}{2} = \frac{3\pi}{2}$
+
+  Sum $= \pi$
+
+\item $2\tan^{-1}\frac{1}{5} = \tan^{-1}\frac{2/5}{1 - 1/25} = \tan^{-1}\frac{5}{12}$
+
+  $4\tan^{-1}\frac{1}{5} = \tan^{-1}\frac{10/12}{1 - 25/144} = \tan^{-1}\frac{120}{119}$ (all angles here are less than
+  $\frac{\pi}{2}$)
+
+  $\tan^{-1}\frac{120}{119} - \tan^{-1}\frac{1}{239} = \tan^{-1}\frac{120\cdot239 - 119}{119\cdot239 + 120} =
+  \tan^{-1}\frac{28561}{28561} = \frac{\pi}{4}$
+
+\item Let $a = \tan^{-1}\frac{1}{18}, b = \tan^{-1}\frac{1}{57}, c = \tan^{-1}\frac{1}{239}, d = \tan^{-1}\frac{1}{5}$ (all
+  small positive angles, so the addition formula applies without correction)
+
+  $a + b = \tan^{-1}\frac{75/1026}{1025/1026} = \tan^{-1}\frac{3}{41},$ $2(a + b) = \tan^{-1}\frac{6/41}{1 - 9/1681} =
+  \tan^{-1}\frac{123}{836}$
+
+  $3a + 2b = \tan^{-1}\frac{\frac{1}{18} + \frac{123}{836}}{1 - \frac{123}{15048}} = \tan^{-1}\frac{3050}{14925} =
+  \tan^{-1}\frac{122}{597}$
+
+  $d + c = \tan^{-1}\frac{244/1195}{1194/1195} = \tan^{-1}\frac{122}{597}$
+
+  $\therefore 3a + 2b = c + d \Rightarrow 12a + 8b - 5c = 4(c + d) - 5c = 4d - c = \frac{\pi}{4}$ (by the previous problem)
+
+\item $\sin^{-1}\frac{4}{5} + \sin^{-1}\frac{12}{13}$: here $x, y > 0$ and $x^2 + y^2 = \frac{16}{25} + \frac{144}{169} > 1,$
+  so the sum exceeds $\frac{\pi}{2}$ (indeed $\sin^{-1}\frac{12}{13} > \cos^{-1}\frac{4}{5} = \sin^{-1}\frac{3}{5}$)
+
+  $\sin\left(\sin^{-1}\frac{4}{5} + \sin^{-1}\frac{12}{13}\right) = \frac{4}{5}\cdot\frac{5}{13} + \frac{12}{13}\cdot\frac{3}{5}
+  = \frac{56}{65}$
+
+  An angle in $\left(\frac{\pi}{2}, \pi\right)$ with sine $\frac{56}{65}$ is $\pi - \sin^{-1}\frac{56}{65}$
+
+  $\sin^{-1}\frac{56}{65}\leq \frac{\pi}{2}$ cannot equal a sum exceeding $\frac{\pi}{2}.$
+
+\item Let $\alpha = \tan^{-1}\frac{xy}{zr}$ etc. Writing $p = \frac{xy}{zr}, q = \frac{yz}{xr}, s = \frac{zx}{yr}$
+
+  $pq + qs + sp = \frac{y^2}{r^2} + \frac{z^2}{r^2} + \frac{x^2}{r^2} = 1$
+
+  $\tan(\alpha + \beta + \gamma) = \frac{p + q + s - pqs}{1 - (pq + qs + sp)}$ has zero denominator, so $\alpha + \beta + \gamma
+  = \frac{\pi}{2} + k\pi$
+
+  Each angle lies in $\left(0, \frac{\pi}{2}\right),$ so the sum lies in $\left(0, \frac{3\pi}{2}\right)$ and hence equals
+  $\frac{\pi}{2}$
+
+\item (a) Each $\sin^{-1}\leq \frac{\pi}{2},$ so the sum $= \frac{3\pi}{2}$ forces $x = y = z = 1.$ Value $= 3 - \frac{9}{3} = 0$
+
+  (b) Each $\cos^{-1}\leq \pi,$ so $x = y = z = -1.$ Then $xy + yz + zx = 3$ and $x + y + z = -3$
+
+\item $(\cot^{-1}x - 2)(\cot^{-1}x - 3) > 0 \Rightarrow \cot^{-1}x < 2$ or $\cot^{-1}x > 3$
+
+  Since $\cot^{-1}x$ is decreasing with range $(0, \pi)$ and $3 < \pi$:
+
+  $\cot^{-1}x < 2 \iff x > \cot2,$ and $\cot^{-1}x > 3 \iff x < \cot3$
+
+  Solution: $x\in(-\infty, \cot3)\cup(\cot2, \infty)$
+
+\item $[\cos^{-1}x]\in\{0, 1, 2, 3\}$ and $[\sin^{-1}x]\in\{-2, -1, 0, 1\},$ so the possible cases are
+
+  $[\sin^{-1}x] = 0, [\cos^{-1}x] = 0$: $0\leq\sin^{-1}x < 1$ and $0\leq\cos^{-1}x < 1 \Rightarrow \cos1 < x < \sin1$
+
+  $[\sin^{-1}x] = -1, [\cos^{-1}x] = 1$: $-\sin1\leq x < 0$ and $\cos2 < x\leq\cos1 \Rightarrow \cos2 < x < 0$
+
+  $[\sin^{-1}x] = -2, [\cos^{-1}x] = 2$: $-1\leq x < -\sin1$ and $\cos3 < x\leq\cos2 \Rightarrow \cos3 < x < -\sin1$
+
+  ($[\sin^{-1}x] = 1$ needs $[\cos^{-1}x] = -1$ and $[\cos^{-1}x] = 3$ needs $[\sin^{-1}x] = -3;$ both impossible.)
+
+  Solution: $x\in(\cos3, -\sin1)\cup(\cos2, 0)\cup(\cos1, \sin1)$
+
+\item Taking tangent: $\frac{(4x + 1) + (2x + 1)}{(2x + 1)(4x + 1) - 1} = \frac{2}{x^2} \Rightarrow \frac{6x + 2}{8x^2 + 6x} =
+  \frac{2}{x^2}$
+
+  $\Rightarrow x(3x^2 - 7x - 6) = 0 \Rightarrow x = 0, 3, -\frac{2}{3};$ $x = 0$ is outside the domain.
+
+  $x = -\frac{2}{3}$: L.H.S. $= \tan^{-1}(-3) + \tan^{-1}\left(-\frac{3}{5}\right) < 0 <$ R.H.S.; extraneous.
+
+  $x = 3$: $\tan^{-1}\frac{1}{7} + \tan^{-1}\frac{1}{13} = \tan^{-1}\frac{20/91}{90/91} = \tan^{-1}\frac{2}{9}$ (valid)
+
+  Answer: $x = 3$
+
+\item $\sec^{-1}u = \cos^{-1}\frac{1}{u};$ the equation is $\cos^{-1}\frac{a}{x} + \cos^{-1}\frac{1}{a} = \cos^{-1}\frac{b}{x} +
+  \cos^{-1}\frac{1}{b}$
+
+  $x = ab$ gives $\cos^{-1}\frac{1}{b} + \cos^{-1}\frac{1}{a}$ on both sides, so it is a solution.
+
+  Taking cosines of both sides: $\frac{1}{x} - \sqrt{1 - \frac{a^2}{x^2}}\sqrt{1 - \frac{1}{a^2}} = \frac{1}{x} - \sqrt{1 -
+    \frac{b^2}{x^2}}\sqrt{1 - \frac{1}{b^2}}$
+
+  $\Rightarrow (x^2 - a^2)(a^2 - 1)b^2 = (x^2 - b^2)(b^2 - 1)a^2 \Rightarrow x^2(b^2 - a^2) = a^2b^2(b^2 - a^2) \Rightarrow x =
+  \pm ab$
+
+  For $x = -ab$: L.H.S. $= \pi - \cos^{-1}\frac{1}{b} + \cos^{-1}\frac{1}{a}\neq \pi - \cos^{-1}\frac{1}{a} + \cos^{-1}\frac{1}{b}$
+  since $a\neq b$
+
+  Answer: $x = ab$
+
+\item (a) Let $\theta = \cot^{-1}\left(-\frac{3}{4}\right) = \pi - \cot^{-1}\frac{3}{4}\in\left(\frac{\pi}{2}, \pi\right),$ so
+  $\cos\theta = -\frac{3}{5}$
+
+  $\frac{\theta}{2}\in\left(\frac{\pi}{4}, \frac{\pi}{2}\right) \Rightarrow \sin\frac{\theta}{2} = +\sqrt{\frac{1 - \cos\theta}{2}}
+  = \sqrt{\frac{4}{5}} = \frac{2}{\sqrt{5}}$
+
+  (b) $2\cos^{-1}\frac{1}{5} + \sin^{-1}\frac{1}{5} = \cos^{-1}\frac{1}{5} + \frac{\pi}{2}$
+
+  $\cos\left(\frac{\pi}{2} + \cos^{-1}\frac{1}{5}\right) = -\sin\left(\cos^{-1}\frac{1}{5}\right) = -\frac{2\sqrt{6}}{5}$
+
+\item Domain: $-1\leq 3x - 2\leq 1 \Rightarrow \frac{1}{3}\leq x\leq 1$
+
+  L.H.S. $= 2\sin^{-1}x - \frac{\pi}{2}.$ Let $\sin^{-1}x = s;$ taking sines: $\sin\left(2s - \frac{\pi}{2}\right) = -\cos2s =
+  2x^2 - 1$
+
+  $\Rightarrow 2x^2 - 1 = 3x - 2 \Rightarrow 2x^2 - 3x + 1 = 0 \Rightarrow x = \frac{1}{2}, 1$
+
+  Since $x\geq \frac{1}{3}$ gives $2s - \frac{\pi}{2}\in\left[-\frac{\pi}{2}, \frac{\pi}{2}\right],$ no root is lost or gained.
+
+  Check: $x = \frac{1}{2}$: $\frac{\pi}{6} - \frac{\pi}{3} = -\frac{\pi}{6} = \sin^{-1}\left(-\frac{1}{2}\right);$ $x = 1$:
+  $\frac{\pi}{2} - 0 = \sin^{-1}1.$ Answer: $x = \frac{1}{2}, 1$
+
+\item For positive integers $\frac{1}{x}\cdot\frac{1}{y} < 1$ unless $x = y = 1$ (which gives $\frac{\pi}{2}$), so taking tangents
+
+  $\frac{x + y}{xy - 1} = \frac{1}{10} \Rightarrow xy - 10x - 10y - 1 = 0 \Rightarrow (x - 10)(y - 10) = 101$
+
+  $101$ is prime; positive solutions need $x - 10, y - 10$ both positive (if both negative then $x, y < 10$ and the product is
+  at most $81$)
+
+  $\therefore (x, y) = (11, 111), (111, 11)$
+
+\item As $a - b > 0, b - c > 0$: $\cot^{-1}\frac{ab + 1}{a - b} = \tan^{-1}\frac{a - b}{1 + ab} = \tan^{-1}a - \tan^{-1}b$
+
+  Similarly $\cot^{-1}\frac{bc + 1}{b - c} = \tan^{-1}b - \tan^{-1}c$
+
+  As $c - a < 0,$ $\cot^{-1}\frac{ca + 1}{c - a} = \pi + \tan^{-1}\frac{c - a}{1 + ca} = \pi + \tan^{-1}c - \tan^{-1}a$
+
+  Adding, the sum $= \pi$
+
+\item Let $x = \tan\theta, 0 < \theta < \frac{\pi}{4}$
+
+  $\frac{1 + x}{1 - x} = \tan\left(\frac{\pi}{4} + \theta\right)$ with $\frac{\pi}{4} + \theta\in\left(\frac{\pi}{4},
+  \frac{\pi}{2}\right)$ $\Rightarrow \alpha = \frac{\pi}{2} + 2\theta$
+
+  $\frac{1 - x^2}{1 + x^2} = \cos2\theta = \sin\left(\frac{\pi}{2} - 2\theta\right)$ with $\frac{\pi}{2} - 2\theta\in\left(0,
+  \frac{\pi}{2}\right)$ $\Rightarrow \beta = \frac{\pi}{2} - 2\theta$
+
+  $\alpha + \beta = \pi$
+
+\item Domain: $|x|\leq \frac{1}{2}.$ L.H.S. is increasing and R.H.S. is decreasing, so find the equality point.
+
+  Equality needs $\sin^{-1}x = \cos^{-1}2x\geq 0;$ let $s = \sin^{-1}x\in\left[0, \frac{\pi}{6}\right]$: $\cos s = 2\sin s
+  \Rightarrow \tan s = \frac{1}{2}$
+
+  $\Rightarrow x = \sin s = \frac{1}{\sqrt{5}}$
+
+  Solution: $-\frac{1}{2}\leq x\leq \frac{1}{\sqrt{5}}$
+
+\item Need $\sin x\neq 0,$ so $|\cos x| < 1$ and $2\tan^{-1}(\cos x) = \tan^{-1}\frac{2\cos x}{1 - \cos^2x} =
+  \tan^{-1}\frac{2\cos x}{\sin^2x}$
+
+  Equation $\iff \frac{2\cos x}{\sin^2x} = \frac{2}{\sin x} \iff \cos x = \sin x \iff \tan x = 1$
+
+  $x = n\pi + \frac{\pi}{4}, n\in\mathbb{Z}$ (all valid, e.g. $x = \frac{5\pi}{4}$ gives $-2\tan^{-1}\frac{1}{\sqrt{2}} =
+  \tan^{-1}(-2\sqrt{2})$ on both sides)
+
+\item Let $x = \tan\theta, \theta\in\left(-\frac{\pi}{4}, \frac{\pi}{4}\right), \theta\neq 0.$ Then $\tan^{-1}\frac{2x}{1 - x^2} =
+  2\theta$
+
+  If $0 < x < 1$: $\cot^{-1}\frac{1 - x^2}{2x} = \tan^{-1}\frac{2x}{1 - x^2} = 2\theta;$ $4\theta = \frac{\pi}{3} \Rightarrow x =
+  \tan\frac{\pi}{12} = 2 - \sqrt{3}$
+
+  If $-1 < x < 0$: the argument of $\cot^{-1}$ is negative, so $\cot^{-1}\frac{1 - x^2}{2x} = \pi + 2\theta$
+
+  $\pi + 4\theta = \frac{\pi}{3} \Rightarrow \theta = -\frac{\pi}{6} \Rightarrow x = -\frac{1}{\sqrt{3}}$
+
+  Answer: $x = 2 - \sqrt{3}$ or $x = -\frac{1}{\sqrt{3}}$
+\stopitemize

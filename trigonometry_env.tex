@@ -1,5 +1,8 @@
 % -*- mode: context; -*-
 \startenvironment trigonometry_env.tex
+  % Draw stretched math rules (fraction bars, radicals) as plain rules: the
+  % default glyph-based extensibles get wrong widths in this large document.
+  \disabledirectives[math.extensibles]
 %\setupbackend
 %  [format=PDF/X-4p,
 %   intent={ISO Coated v2 (ECI)},

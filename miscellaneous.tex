@@ -999,4 +999,766 @@ B + \cos B\cos C + \cos C\cos A$.
 \item Let a rectangle $ABCD$ of sides $2$ and $4$ inscribed in another rectangle $PQRS$ such that the
   vertices of the rectangle $ABCD$ lie on the sides of the rectangle $PQRS$. Let $a$ and $b$ be the sides of
   the rectangle $PQRS$ when its area is maximum. Then find $(a + b)^{2}$.
+  %304
+\item Let $n$ be a positive integer. Prove that $\tan^2\frac{k\pi}{2n + 1}$, $k = 1, 2, \ldots, n$ are the
+  roots of the equation
+  \startformula
+    \sum_{j = 0}^{n}(-1)^j\,{}^{2n + 1}C_{2j + 1}\,u^j = 0,
+  \stopformula
+  and hence prove that
+  \startformula
+    \tan\frac{\pi}{2n + 1}\tan\frac{2\pi}{2n + 1}\cdots\tan\frac{n\pi}{2n + 1} = \sqrt{2n + 1},
+  \stopformula
+  $\displaystyle\sum_{k = 1}^{n}\tan^2\frac{k\pi}{2n + 1} = n(2n + 1)$ and $\displaystyle\sum_{k =
+    1}^{n}\cot^2\frac{k\pi}{2n + 1} = \frac{n(2n - 1)}{3}$.
+  %305
+\item For every integer $n\geq 2$ prove that $\displaystyle\sum_{k = 1}^{n - 1}{\rm cosec}^2\frac{k\pi}{n}
+  = \frac{n^2 - 1}{3}$. Hence prove that $\tan^21^\circ + \tan^22^\circ + \tan^23^\circ + \cdots +
+  \tan^289^\circ = \frac{15931}{3}$.
+  %306
+\item For every integer $n\geq 2$ prove that $\displaystyle\sum_{k = 1}^{n - 1}{\rm cosec}^4\frac{k\pi}{n}
+  = \frac{(n^2 - 1)(n^2 + 11)}{45}$.
+  %307
+\item Prove that $\tan^4\frac{\pi}{7} + \tan^4\frac{2\pi}{7} + \tan^4\frac{3\pi}{7} = 371$ and
+  $\left(2 + \tan^2\frac{\pi}{7}\right)\left(2 + \tan^2\frac{2\pi}{7}\right)\left(2 + \tan^2\frac{3\pi}{7}\right)
+  = 169$.
+  %308
+\item For every positive integer $n$ prove that $\displaystyle\sum_{k = 1}^{n}\tan^2\frac{(2k - 1)\pi}{4n} =
+  n(2n - 1)$ and $\displaystyle\sum_{k = 1}^{n}\sec^2\frac{(2k - 1)\pi}{4n} = 2n^2$. Deduce that
+  $\tan^21^\circ + \tan^23^\circ + \tan^25^\circ + \cdots + \tan^289^\circ = 4005$.
+  %309
+\item Prove that for every positive integer $n$, $\sin n\theta = 2^{n - 1}\displaystyle\prod_{k = 0}^{n -
+    1}\sin\left(\theta + \frac{k\pi}{n}\right)$. Hence prove that $\displaystyle\sum_{k = 0}^{n -
+    1}\cot\left(\theta + \frac{k\pi}{n}\right) = n\cot n\theta$ and $\displaystyle\sum_{k = 0}^{n - 1}{\rm
+    cosec}^2\left(\theta + \frac{k\pi}{n}\right) = n^2{\rm cosec}^2n\theta$, whenever both sides are defined.
+  %310
+\item Prove that $\displaystyle\sum_{k = 0}^{n - 1}\tan\left(\theta + \frac{k\pi}{n}\right)$ equals
+  $n\tan n\theta$ when $n$ is odd and $-n\cot n\theta$ when $n$ is even (whenever both sides are defined). Deduce
+  that $\tan1^\circ + \tan5^\circ + \tan9^\circ + \cdots + \tan177^\circ = 45$.
+  %311
+\item Prove that $\displaystyle\prod_{k = 0}^{n - 1}\tan\left(\theta + \frac{k\pi}{n}\right) = (-1)^{\frac{n
+      - 1}{2}}\tan n\theta$ if $n$ is odd and $= (-1)^{\frac{n}{2}}$ if $n$ is even (whenever all the tangents
+  are defined). Deduce that
+  \startformula
+    \tan1^\circ\tan35^\circ\tan37^\circ\tan71^\circ\tan73^\circ = \tan5^\circ.
+  \stopformula
+  %312
+\item Let $N$ be an odd positive integer. Prove that $\displaystyle\sum_{k = 0}^{N - 1}\sec\left(\theta
+  + \frac{2k\pi}{N}\right) = (-1)^{\frac{N - 1}{2}}N\sec N\theta$ whenever $\cos N\theta\neq 0$. Deduce that
+  $\sec\frac{2\pi}{7} + \sec\frac{4\pi}{7} + \sec\frac{6\pi}{7} = -4$.
+  %313
+\item Prove that $\displaystyle\prod_{k = 1}^{n - 1}\sin\frac{k\pi}{n} = \frac{n}{2^{n - 1}}$ for every
+  integer $n\geq 2$, and hence prove that $\sin1^\circ\sin2^\circ\sin3^\circ\cdots\sin89^\circ =
+  \frac{3\sqrt{10}}{2^{89}}$.
+  %314
+\item Prove that $\displaystyle\prod_{k = 1}^{45}{\rm cosec}^2(2k - 1)^\circ = 2^{89}$.
+  %315
+\item Prove that $\displaystyle\prod_{k = 1}^{n}\cos\frac{k\pi}{2n + 1} = \frac{1}{2^n}$ and that
+  $\displaystyle\prod_{k = 1}^{n}\cos\frac{2k\pi}{2n + 1} = \frac{(-1)^{\lceil n/2\rceil}}{2^n}$, where $\lceil
+  x\rceil$ denotes the least integer not less than $x$.
+  %316
+\item Let $N = 2n + 1$ be an odd integer greater than $1$ and $P = \displaystyle\prod_{k = 1}^{n}\left(1
+  + 2\cos\frac{2k\pi}{N}\right)$. Prove that $P = 0$ if $3$ divides $N$, $P = 1$ if $N\equiv\pm 1$ (mod $12$),
+  and $P = -1$ if $N\equiv\pm 5$ (mod $12$).
+  %317
+\item Prove that $\tan6^\circ\tan42^\circ\tan66^\circ\tan78^\circ = 1$ and $\sin6^\circ\sin42^\circ\sin66^\circ
+  \sin78^\circ = \frac{1}{16}$.
+  %318
+\item (Niven) Let $r$ be a rational number. Prove that if $\cos r\pi$ is rational, then $\cos r\pi\in\left\{0,
+  \pm\frac{1}{2}, \pm 1\right\}$. Deduce that $\frac{1}{\pi}\cos^{-1}\frac{1}{3}$ is irrational.
+  %319
+\item Find all integers $n$ for which $\cos n^\circ$ is rational. Also prove, without using the previous
+  problem, that $\cos1^\circ$, $\sin1^\circ$ and $\tan1^\circ$ are irrational.
+  %320
+\item Let $r$ be a rational number such that $\tan r\pi$ is defined and rational. Prove that $\tan
+  r\pi\in\{0, 1, -1\}$. Find also all rational $r$ with $0\leq r\leq\frac{1}{2}$ for which $\sin^2r\pi$ is
+  rational.
+  %321
+\item Prove that $\cos20^\circ$ cannot be written in the form $a + b\sqrt{c}$ with $a, b, c$ rational and
+  $c\geq 0$. Prove the same for $\cos\frac{2\pi}{7}$.
+  %322
+\item Let $T_n$ be the polynomial with $T_n(\cos\theta) = \cos n\theta$. Prove that $T_n(x) = 2^{n -
+  1}\displaystyle\prod_{k = 1}^{n}\left(x - \cos\frac{(2k - 1)\pi}{2n}\right)$, and deduce that
+  $\displaystyle\prod_{k = 1}^{n}\sin\frac{(2k - 1)\pi}{4n} = \displaystyle\prod_{k = 1}^{n}\cos\frac{(2k -
+    1)\pi}{4n} = \frac{\sqrt{2}}{2^n}$.
+  %323
+\item Prove that for every $n\geq 1$, $2\cos n\theta = \displaystyle\sum_{k = 0}^{\lfloor
+    n/2\rfloor}(-1)^k\frac{n}{n - k}\,{}^{n - k}C_k\,(2\cos\theta)^{n - 2k}$. Hence express $2\cos9\theta$ as a
+  polynomial in $2\cos\theta$.
+  %324
+\item Let $T_n(\cos\theta) = \cos n\theta$ $(n\geq 2)$. Prove that the equation $T_n(x) = x$ has exactly $n$
+  distinct real roots and find them. Hence prove that if $f(x) = 2x^2 - 1$, then the equation
+  $f(f(\cdots f(x)\cdots)) = x$ ($m$ applications of $f$) has exactly $2^m$ distinct real roots.
+  %325
+\item Let $n = 2m + 1$ be odd and $T_n(\cos\theta) = \cos n\theta$. Prove that $T_n(x) - 1 = (x - 1)W(x)^2$,
+  where $W$ is a polynomial of degree $m$ whose roots are $\cos\frac{2k\pi}{n}$, $k = 1, 2, \ldots, m$. Find
+  $W$ explicitly for $n = 7$ and $n = 9$.
+  %326
+\item Prove that the five numbers $2\cos\frac{2k\pi}{11}$, $k = 1, 2, 3, 4, 5$ are the roots of $x^5 + x^4 -
+  4x^3 - 3x^2 + 3x + 1 = 0$. Deduce that $\cos\frac{\pi}{11} - \cos\frac{2\pi}{11} + \cos\frac{3\pi}{11}
+  - \cos\frac{4\pi}{11} + \cos\frac{5\pi}{11} = \frac{1}{2}$.
+  %327
+\item Prove that $2\cos\frac{2\pi}{15}$, $2\cos\frac{4\pi}{15}$, $2\cos\frac{8\pi}{15}$ and
+  $2\cos\frac{14\pi}{15}$ are the roots of $x^4 - x^3 - 4x^2 + 4x + 1 = 0$, and deduce that
+  $\cos\frac{2\pi}{15}\cos\frac{4\pi}{15}\cos\frac{8\pi}{15}\cos\frac{14\pi}{15} = \frac{1}{16}$.
+  %328
+\item Prove that each of the equations $x^3 + x^2 - 2x - 1 = 0$ and $x^3 - 3x + 1 = 0$ has three real roots,
+  and that if $\alpha$ is any root of either equation, then $\alpha^2 - 2$ is a root of the same equation
+  different from $\alpha$. Show also that $((\alpha^2 - 2)^2 - 2)^2 - 2 = \alpha$.
+  %329
+\item Prove that $\tan\frac{3\pi}{7} - 4\sin\frac{\pi}{7} = \sqrt{7}$.
+  %330
+\item Prove that $\tan\frac{\pi}{7}$, $\tan\frac{2\pi}{7}$, $\tan\frac{4\pi}{7}$ are the roots of $x^3
+  + \sqrt{7}x^2 - 7x + \sqrt{7} = 0$. In particular $\tan\frac{\pi}{7} + \tan\frac{2\pi}{7} + \tan\frac{4\pi}{7}
+  = \tan\frac{\pi}{7}\tan\frac{2\pi}{7}\tan\frac{4\pi}{7} = -\sqrt{7}$.
+  %331
+\item Prove that (i) ${\rm cosec}\frac{\pi}{7} = {\rm cosec}\frac{2\pi}{7} + {\rm cosec}\frac{3\pi}{7}$,
+  (ii) $\cos\frac{\pi}{7} - \cos\frac{2\pi}{7} + \cos\frac{3\pi}{7} = \frac{1}{2}$ and (iii)
+  $\sec\frac{\pi}{7} - \sec\frac{2\pi}{7} + \sec\frac{3\pi}{7} = 4$.
+  %332
+\item (Ramanujan) Prove that $\sqrt[3]{\cos\frac{2\pi}{7}} + \sqrt[3]{\cos\frac{4\pi}{7}}
+  + \sqrt[3]{\cos\frac{8\pi}{7}} = \sqrt[3]{\frac{5 - 3\sqrt[3]{7}}{2}}$, where all cube roots are real.
+  %333
+\item (Ramanujan) Prove that $\sqrt[3]{\cos\frac{2\pi}{9}} + \sqrt[3]{\cos\frac{4\pi}{9}}
+  + \sqrt[3]{\cos\frac{8\pi}{9}} = \sqrt[3]{\frac{3\sqrt[3]{9} - 6}{2}}$, i.e.
+  $\sqrt[3]{\cos40^\circ} + \sqrt[3]{\cos80^\circ} - \sqrt[3]{\cos20^\circ} = \sqrt[3]{\frac{3\sqrt[3]{9} -
+      6}{2}}$.
+  %334
+\item Let $a = \cos\frac{2\pi}{7}$, $b = \cos\frac{4\pi}{7}$, $c = \cos\frac{8\pi}{7}$. Prove that
+  $\frac{a}{b} + \frac{b}{c} + \frac{c}{a} = -4$ and $\frac{b}{a} + \frac{c}{b} + \frac{a}{c} = 3$. Hence prove
+  that $\sqrt[3]{\frac{a}{b}} + \sqrt[3]{\frac{b}{c}} + \sqrt[3]{\frac{c}{a}} = -\sqrt[3]{7}$ and
+  $\sqrt[3]{\frac{b}{a}} + \sqrt[3]{\frac{c}{b}} + \sqrt[3]{\frac{a}{c}} = 0$ (real cube roots).
+  %335
+\item Prove that $\sqrt[3]{\sec\frac{2\pi}{9}} + \sqrt[3]{\sec\frac{4\pi}{9}} + \sqrt[3]{\sec\frac{8\pi}{9}}
+  = \sqrt[3]{6\sqrt[3]{9} - 6}$ and $\sqrt[3]{\sec\frac{2\pi}{7}} + \sqrt[3]{\sec\frac{4\pi}{7}}
+  + \sqrt[3]{\sec\frac{8\pi}{7}} = \sqrt[3]{8 - 6\sqrt[3]{7}}$ (real cube roots).
+  %336
+\item Prove that $\sec40^\circ + \sec80^\circ - \sec20^\circ = 6$, $\sec^220^\circ + \sec^240^\circ
+  + \sec^280^\circ = 36$ and $\sec^420^\circ + \sec^440^\circ + \sec^480^\circ = 1104$.
+  %337
+\item Prove that $\tan20^\circ - \tan40^\circ + \tan80^\circ = 3\sqrt{3}$, $\tan^220^\circ + \tan^240^\circ
+  + \tan^280^\circ = 33$, $\tan10^\circ - \tan50^\circ + \tan70^\circ = \sqrt{3}$ and $\tan^210^\circ
+  + \tan^250^\circ + \tan^270^\circ = 9$.
+  %338
+\item Prove that $\sin\frac{2\pi}{11} + \sin\frac{6\pi}{11} + \sin\frac{8\pi}{11} + \sin\frac{10\pi}{11}
+  + \sin\frac{18\pi}{11} = \frac{\sqrt{11}}{2}$.
+  %339
+\item Prove that $\cos\frac{2\pi}{13} + \cos\frac{6\pi}{13} + \cos\frac{8\pi}{13} = \frac{\sqrt{13} - 1}{4}$
+  and $\cos\frac{4\pi}{13} + \cos\frac{10\pi}{13} + \cos\frac{12\pi}{13} = -\frac{\sqrt{13} + 1}{4}$.
+  %340
+\item Prove that the three numbers $2\cos\frac{2\pi}{13} + 2\cos\frac{10\pi}{13}$, $2\cos\frac{4\pi}{13}
+  + 2\cos\frac{6\pi}{13}$ and $2\cos\frac{8\pi}{13} + 2\cos\frac{12\pi}{13}$ are the roots of $x^3 + x^2 - 4x + 1
+  = 0$.
+  %341
+\item Let $n$ be an odd positive integer, $C = \displaystyle\sum_{k = 0}^{n - 1}\cos\frac{2\pi k^2}{n}$ and $S =
+  \displaystyle\sum_{k = 0}^{n - 1}\sin\frac{2\pi k^2}{n}$. Prove that $C^2 + S^2 = n$.
+  %342
+\item Prove that $\displaystyle\sum_{k = 0}^{n - 1}\cos\frac{2\pi k^2}{n} = \displaystyle\sum_{k = 0}^{n -
+    1}\sin\frac{2\pi k^2}{n} = 0$ whenever $n\equiv 2$ (mod $4$). Also prove that $\displaystyle\sum_{k =
+    0}^{7}\cos\frac{\pi k^2}{4} = \displaystyle\sum_{k = 0}^{7}\sin\frac{\pi k^2}{4} = 2\sqrt{2}$.
+  %343
+\item (Gauss) Prove that $\cos\frac{2\pi}{17} + \cos\frac{4\pi}{17} + \cos\frac{8\pi}{17} + \cos\frac{16\pi}{17}
+  = \frac{\sqrt{17} - 1}{4}$, and that $\cos\frac{2\pi}{17} + \cos\frac{8\pi}{17} = \frac{\sqrt{17} - 1
+    + \sqrt{34 - 2\sqrt{17}}}{8}$.
+  %344
+\item Prove that $2\cos\frac{\pi}{2^{n + 1}} = \sqrt{2 + \sqrt{2 + \cdots + \sqrt{2}}}$ and $2\sin\frac{\pi}{2^{n
+      + 1}} = \sqrt{2 - \sqrt{2 + \cdots + \sqrt{2}}}$, each containing $n$ square root signs. Prove also that
+  $2\cos\frac{\pi}{48} = \sqrt{2 + \sqrt{2 + \sqrt{2 + \sqrt{3}}}}$, and that $2^n\sqrt{2 - \sqrt{2 + \cdots
+      + \sqrt{2}}}$ ($n$ square root signs) tends to $\pi$ as $n\rightarrow\infty$.
+  %345
+\item Prove that $\displaystyle\sum_{k = 1}^{179}k\sin k^\circ = 90\cot\frac{1^\circ}{2}$, and that the average
+  of the numbers $2\sin2^\circ$, $4\sin4^\circ$, $6\sin6^\circ$, $\ldots$, $180\sin180^\circ$ is $\cot1^\circ$.
+  %346
+\item Find all triples of integers $(a, b, c)$ with $a + b + c = abc$. Hence find all triangles $ABC$ in
+  which $\tan A, \tan B, \tan C$ are all integers.
+  %347
+\item Prove that $\cos x + \cos y + \cos z = \sin x + \sin y + \sin z = 0$ if and only if $\cos(x - y) + \cos(y
+  - z) + \cos(z - x) = -\frac{3}{2}$. Under these conditions prove that $\sin^4x + \sin^4y + \sin^4z
+  = \frac{9}{8}$ and $\cos3x + \cos3y + \cos3z = 3\cos(x + y + z)$.
+  %348
+\item If $\tan\left(\frac{\pi}{4} + \frac{y}{2}\right) = \tan^3\left(\frac{\pi}{4} + \frac{x}{2}\right)$, prove
+  that $\sin y = \frac{\sin x\left(3 + \sin^2x\right)}{1 + 3\sin^2x}$.
+  %349
+\item If $x = \frac{\sin(\alpha - \beta)}{\sin(\alpha + \beta)}$, $y = \frac{\sin(\beta - \gamma)}{\sin(\beta
+  + \gamma)}$, $z = \frac{\sin(\gamma - \alpha)}{\sin(\gamma + \alpha)}$, prove that $x + y + z + xyz = 0$.
+  %350
+\item If $a, b, c$ are non-zero real numbers with $a + b + c = abc$, prove that $\frac{(a^2 - 1)(b^2 - 1)}{ab}
+  + \frac{(b^2 - 1)(c^2 - 1)}{bc} + \frac{(c^2 - 1)(a^2 - 1)}{ca} = 4$.
+  %351
+\item Let $0 < e < 1$ and $\tan\frac{\phi}{2} = \sqrt{\frac{1 + e}{1 - e}}\tan\frac{\theta}{2}$. Prove that
+  $\cos\phi = \frac{\cos\theta - e}{1 - e\cos\theta}$, $\sin\phi = \frac{\sqrt{1 - e^2}\sin\theta}{1 -
+    e\cos\theta}$ and $(1 - e\cos\theta)(1 + e\cos\phi) = 1 - e^2$.
+  %352
+\item Eliminate $\theta$ from $x = 2\cos\theta - \cos2\theta$, $y = 2\sin\theta - \sin2\theta$.
+  %353
+\item Let $x$ be real with $|x|\neq 1$. Prove that $\displaystyle\sum_{k = 0}^{n - 1}\frac{1 - x^2}{1 -
+    2x\cos\left(\theta + \frac{2k\pi}{n}\right) + x^2} = \frac{n\left(1 - x^{2n}\right)}{1 - 2x^n\cos n\theta
+    + x^{2n}}$. Deduce that $\displaystyle\sum_{k = 0}^{n - 1}\frac{1}{5 - 4\cos\frac{2k\pi}{n}} = \frac{n(2^n
+    + 1)}{3(2^n - 1)}$.
+  %354
+\item Find all real $x, y, z$ satisfying the system $\sin x + \sin y + \sin z = 0, \cos x + \cos y + \cos z = 0$.
+  Hence show that for every solution $\cos2x + \cos2y + \cos2z = 0, \sin^2x + \sin^2y + \sin^2z = \frac{3}{2}$
+  and $\sin3x = \sin3y = \sin3z$.
+  %355
+\item Find all real triples $(x, y, z)$ satisfying the system
+  \startformula\startalign
+    \NC 2x + x^2y \NC = y\NR
+    \NC 2y + y^2z \NC = z\NR
+    \NC 2z + z^2x \NC = x\NR
+  \stopalign\stopformula
+  and show that there are exactly seven of them.
+  %356
+\item Find the number of real triples $(x, y, z)$ satisfying $y = 2x^2 - 1, z = 2y^2 - 1, x = 2z^2 - 1$, and
+  list all of them in trigonometric form.
+  %357
+\item Find all real $x, y, z$ such that $x + y + z = \pi, \tan x\tan y = 2$ and $\tan x\tan z = 3$.
+  %358
+\item Find all real pairs $(x, y)$ satisfying $\sin x + \sin y = \sin(x + y)$ and $|x| + |y| = 1$.
+  %359
+\item Let $n\ge 3$ be an odd integer. Solve the equations (a) $\sin^nx + \cos^nx = 1$ and (b) $\sin^nx -
+  \cos^nx = 1$. (c) Solve $\sin^mx + \cos^mx = 1$ when $m\ge 4$ is an even integer. (In particular, solve
+  $\sin^{2017}x + \cos^{2017}x = 1$.)
+  %360
+\item Solve the equation $2^{\sin x} + 2^{\cos x} = 2^{1 - \frac{1}{\sqrt{2}}}$.
+  %361
+\item Solve the equation $(\sin x + \cos x)^{1 + \sin2x} = 2$ for $0\le x\le\pi$.
+  %362
+\item Find all real pairs $(x, y)$ satisfying $x^2 + 2x\sin(xy) + 1 = 0$.
+  %363
+\item Solve the equation $3^{\sin2x + 2\cos^2x} + 3^{1 - \sin2x + 2\sin^2x} = 28$.
+  %364
+\item Find the number of solutions of $\cos x\cos2x\cos4x\cos8x = \frac{1}{16}$ in the interval $[0, \pi]$.
+  %365
+\item Find the number of solutions of the equation $\sin2025x = \sin x$ in the interval $[0, 2\pi]$.
+  %366
+\item Find the number of solutions, and the sum of all solutions, of the equation $\cos x + \cos2x + \cos3x
+  + \cdots + \cos2024x = -\frac{1}{2}$ in the interval $[0, 2\pi]$.
+  %367
+\item Find the number of real solutions of the equation $\sin x = \frac{x}{100}$.
+  %368
+\item For every real $a$, find the number of solutions of $\sin^4x + \cos^4x + \sin2x + a = 0$ in the
+  interval $[0, \pi]$.
+  %369
+\item For every real $a$, find the number of solutions of $a\sin x + \cos2x = 2a - 7$ in the interval $[0,
+  2\pi]$.
+  %370
+\item For every real $a$, find the number of solutions of $\sin^6x + \cos^6x = a\left(\sin^4x +
+  \cos^4x\right)$ in the interval $[0, 2\pi]$.
+  %371
+\item Find all real values of $a$ for which the equations $a\cos2x + |a|\cos4x + \cos6x = 1$ and $\sin x\cos2x
+  = \sin2x\cos3x - \frac{1}{2}\sin5x$ have exactly the same set of real solutions.
+  %372
+\item Find all real values of $a$ for which the equation $\sqrt{a + \sqrt{a + \sin x}} = \sin x$ has a real
+  solution.
+  %373
+\item Find all real values of $a$ for which the equation $x^2 - 2a\sin(\cos x) + a^2 = 0$ has exactly one real
+  solution.
+  %374
+\item Find all real $a$ for which the greatest value of $\cos2x + a\sin x\ (x\in\mathbb{R})$ equals $2$.
+  %375
+\item Let $\theta$ be a rational multiple of $\pi$ such that $\cos\theta$ is rational. Prove that
+  $\cos\theta\in\left\{0, \pm\frac{1}{2}, \pm1\right\}$. Hence find all positive integers $n$ for which (a)
+  $\cos\frac{2\pi}{n}$ is rational, (b) $\sin\frac{\pi}{n}$ is rational, (c) $\tan^2\frac{\pi}{n}$ is rational
+  ($n\ge 3$).
+  %376
+\item Find all positive integers $n$ such that $\cos\frac{\pi}{n}\cos\frac{2\pi}{n}\cos\frac{4\pi}{n}
+  \cos\frac{8\pi}{n}\cos\frac{16\pi}{n} = \frac{1}{32}$.
+  %377
+\item Find all positive integers $n$ such that $\sin\frac{\pi}{2n} + \cos\frac{\pi}{2n} = \frac{\sqrt{n}}{2}$.
+  %378
+\item Solve (a) $\sin^{-1}x + \sin^{-1}2x = \frac{\pi}{3}$ and (b) $\sin^{-1}6x + \sin^{-1}6\sqrt{3}x =
+  -\frac{\pi}{2}$, rejecting all extraneous roots.
+  %379
+\item Solve the equation $\tan^{-1}(x - 1) + \tan^{-1}x + \tan^{-1}(x + 1) = \tan^{-1}3x$.
+  %380
+\item Solve the equation $\tan^{-1}x + \tan^{-1}2x + \tan^{-1}3x = \pi$.
+  %381
+\item Solve the equation $\tan^{-1}\frac{1}{2x + 1} + \tan^{-1}\frac{1}{4x + 1} = \tan^{-1}\frac{2}{x^2}$.
+  %382
+\item Solve the equation $\sin^{-1}x + \sin^{-1}(1 - x) = \cos^{-1}x$.
+  %383
+\item Find all real $x$ satisfying $\cos^{-1}x + \cos^{-1}\left(\frac{x}{2} + \frac{\sqrt{3 - 3x^2}}{2}\right)
+  = \frac{\pi}{3}$.
+  %384
+\item Solve over all real $x$: (a) $\cos^{-1}(\cos x) = \sin^{-1}(\sin x)$, (b) $\tan^{-1}(\tan x) =
+  \sin^{-1}(\sin x)$.
+  %385
+\item Prove that (a) $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{2}{n^2} = \frac{3\pi}{4}$ and (b)
+  $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{8n}{n^4 - 2n^2 + 5} = \frac{\pi}{2} + \tan^{-1}2$.
+  %386
+\item Prove that (a) $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{1}{2n^2} = \frac{\pi}{4}$ and (b)
+  $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{2}{n^2 + n + 4} = \tan^{-1}2$.
+  %387
+\item Let $F_0 = 0, F_1 = 1$ and $F_{n + 1} = F_n + F_{n - 1}$ be the Fibonacci numbers. Prove that
+  $\tan^{-1}\frac{1}{F_{2n}} = \tan^{-1}\frac{1}{F_{2n + 1}} + \tan^{-1}\frac{1}{F_{2n + 2}}$ for $n\ge 1$ and
+  hence that $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{1}{F_{2n + 1}} = \frac{\pi}{4}$.
+  %388
+\item Prove that $\displaystyle\sum_{n = 1}^\infty\sin^{-1}\frac{\sqrt{n} - \sqrt{n - 1}}{\sqrt{n(n + 1)}}
+  = \frac{\pi}{2}$.
+  %389
+\item (d'Alembert's equation) Find all continuous functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(x
+  + y) + f(x - y) = 2f(x)f(y)$ for all real $x, y$.
+  %390
+\item (a) Find all functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(x + y) + f(x - y) = 2f(x)\cos y$
+  for all real $x, y$. (b) Find all functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(x + y) - f(x -
+  y) = 2f(y)\cos x$ for all real $x, y$.
+  %391
+\item Find all continuous functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(x) + f(y) = f\left(\frac{x
+  + y}{1 - xy}\right)$ for all real $x, y$ with $xy < 1$.
+  %392
+\item (a) A function $f:\mathbb{R}\rightarrow\mathbb{R}$ satisfies $f(x + 1) + f(x - 1) = \sqrt{2}f(x)$ for
+  all real $x$. Prove that $f$ is periodic with period $8$. (b) If instead $f(x + 1) + f(x - 1) = \sqrt{3}f(x)$
+  for all real $x$, prove that $f$ is periodic with period $12$. Show by examples that the periods $8$ and $12$
+  cannot be replaced by smaller numbers in general.
+  %393
+\item Find all functions $f:\mathbb{R}\rightarrow\mathbb{R}$ such that $f(x)f(y) - f(x + y) = \sin x\sin y$
+  for all real $x, y$.
+  %394
+\item Let $a, b > 0$ and $-\frac{\pi}{2} < x < \frac{\pi}{2}$. Show that if $a > b$ then the least value of $a\sec
+  x - b\tan x$ is $\sqrt{a^2 - b^2}$, and find where it is attained. What happens when $a = b$ and when $a < b$?
+  %395
+\item For a real constant $k > 0$, find the greatest and the least values of $k(\cos x + \cos y) - \cos(x +
+  y)$, where $x, y$ vary over all real numbers.
+  %396
+\item Find the least value of $|\sin x + \cos x + \tan x + \cot x + \sec x + {\rm cosec}\, x|$ for real $x$
+  (where all the six functions are defined).
+  %397
+\item Find the greatest and the least values of $\sin x\cos y + \sin y\cos z + \sin z\cos x$ for real $x, y,
+  z$.
+  %398
+\item If $x$ and $y$ are real numbers such that $\sin x + \cos y = 1$, find the set of all possible values of
+  $\cos x + \sin y$.
+  %399
+\item For a positive integer $n$, find the least value of $\left(1 + \frac{1}{\sin^nx}\right)\left(1 +
+  \frac{1}{\cos^nx}\right)$ for $0 < x < \frac{\pi}{2}$.
+  %400
+\item Find the least possible value, over all real $a$ and $b$, of the greatest value of $\left|\cos^2x +
+  a\cos x + b\right|$ for real $x$; also find all $a, b$ for which it is attained.
+  %401
+\item Find the largest constant $c$ such that $|\cos x| + |\cos2x|\ge c$ for all real $x$.
+  %402
+\item Find the greatest and the least values of (a) $\sin x(1 + \cos x)$ and (b) $(1 + \sin x)(1 + \cos x)$,
+  without using calculus.
+  %403
+\item Let $k > 1$ and let $0\le y\le x < \frac{\pi}{2}$ with $\tan x = k\tan y$. Prove that the greatest value
+  of $x - y$ is $\sin^{-1}\frac{k - 1}{k + 1}$. In particular, find the greatest value of $x - y$ when $\tan x =
+  3\tan y$.
+  %404
+\item In a $\triangle ABC$ let $O, I$ be the circumcenter and the incenter and $I_1, I_2, I_3$ the excenters
+  opposite to $A, B, C$. Using trigonometry prove that (a) $OI^2 = R^2 - 2Rr$ (Euler), (b) $OI_1^2 = R^2 +
+  2Rr_1$, (c) $OI^2 + OI_1^2 + OI_2^2 + OI_3^2 = 12R^2$. Deduce that $R \geq 2r$, with equality only for
+  an equilateral triangle.
+  %405
+\item $O$ and $H$ are the circumcenter and the orthocenter of a $\triangle ABC$. Prove that $OH^2 = R^2(1 -
+  8\cos A\cos B\cos C) = 9R^2 - (a^2 + b^2 + c^2)$. Deduce that $OH < 3R$ and that the triangle is
+  acute-angled, right-angled or obtuse-angled according as $a^2 + b^2 + c^2$ is greater than, equal to or
+  less than $8R^2$.
+  %406
+\item In an acute-angled $\triangle ABC$ with incenter $I$ and orthocenter $H$, prove that $IH^2 = 2r^2 -
+  4R^2\cos A\cos B\cos C$.
+  %407
+\item In an acute-angled $\triangle ABC$ let $N$ be the midpoint of $OH$, where $O$ is the circumcenter and
+  $H$ the orthocenter. Using the results $OI^2 = R^2 - 2Rr, OH^2 = R^2(1 - 8\cos A\cos B\cos C)$ and $IH^2 =
+  2r^2 - 4R^2\cos A\cos B\cos C$, prove that $IN = \frac{R}{2} - r$. Given that the nine-point circle has
+  center $N$ and radius $\frac{R}{2}$, deduce that it touches the incircle (Feuerbach's theorem).
+  %408
+\item In any $\triangle ABC$ prove that $abc = 4Rrs, ab + bc + ca = s^2 + r^2 + 4Rr$ and $a^2 + b^2 + c^2
+  = 2(s^2 - r^2 - 4Rr)$. Hence show that $a, b, c$ are the roots of $t^3 - 2st^2 + (s^2 + r^2 + 4Rr)t -
+  4Rrs = 0$.
+  %409
+\item $G$ is the centroid, $I$ the incenter and $O$ the circumcenter of a $\triangle ABC$. Prove that
+  $IG^2 = \frac{1}{9}\left(s^2 + 5r^2 - 16Rr\right)$ and $OG^2 = R^2 - \frac{1}{9}(a^2 + b^2 + c^2)$. Deduce
+  Gerretsen's inequality $s^2 \geq 16Rr - 5r^2$.
+  %410
+\item (Morley's theorem) The trisectors of the angles of a $\triangle ABC$ adjacent to the side $BC$ meet at
+  $P$, those adjacent to $CA$ meet at $Q$ and those adjacent to $AB$ meet at $R'$. Prove that
+  $\triangle PQR'$ is equilateral with side $8R\sin\frac{A}{3}\sin\frac{B}{3}\sin\frac{C}{3}$.
+  %411
+\item On the sides $BC, CA, AB$ of an acute-angled $\triangle ABC$ isosceles triangles $A'BC, B'CA, C'AB$ are
+  erected outwards, each having base angles $\theta\ (0 < \theta < \frac{\pi}{2})$. Prove that $AA', BB',
+  CC'$ are concurrent. Deduce that the lines joining the vertices to the outer vertices of equilateral
+  triangles erected on the opposite sides are concurrent.
+  %412
+\item (Napoleon's theorem) Equilateral triangles are erected outwards on the sides of a $\triangle ABC$ and
+  $X, Y, Z$ are their centers. Prove that $\triangle XYZ$ is equilateral with $YZ^2 = \frac{a^2 + b^2 +
+  c^2}{6} + \frac{2\Delta}{\sqrt{3}}$. If $X', Y', Z'$ are the centers of the equilateral triangles erected
+  inwards, prove that $\triangle X'Y'Z'$ is also equilateral and that the difference of the areas of
+  $\triangle XYZ$ and $\triangle X'Y'Z'$ is $\Delta$.
+  %413
+\item All angles of $\triangle ABC$ are less than $120^\circ$ and $F$ is the point inside it for which
+  $\angle BFC = \angle CFA = \angle AFB = 120^\circ$ (the Fermat point). Prove that $(FA + FB + FC)^2 =
+  \frac{a^2 + b^2 + c^2}{2} + 2\sqrt{3}\Delta$.
+  %414
+\item (Erd\H{o}s--Mordell inequality) $P$ is a point inside a $\triangle ABC$ whose distances from $BC, CA,
+  AB$ are $x, y, z$. Prove that $PA + PB + PC \geq 2(x + y + z)$.
+  %415
+\item (Hadwiger--Finsler inequality) Prove that in any triangle $a^2 + b^2 + c^2 \geq 4\sqrt{3}\Delta + (a -
+  b)^2 + (b - c)^2 + (c - a)^2$, and deduce Weitzenb\"ock's inequality $a^2 + b^2 + c^2 \geq
+  4\sqrt{3}\Delta$.
+  %416
+\item $DEF$ is the pedal (orthic) triangle of an acute-angled $\triangle ABC$. Prove that (a) its sides are
+  $a\cos A, b\cos B, c\cos C$, (b) its perimeter is $a\cos A + b\cos B + c\cos C = 4R\sin A\sin B\sin C =
+  \frac{2\Delta}{R}$, (c) its circumradius is $\frac{R}{2}$, and (d) its inradius is $2R\cos A\cos B\cos C$.
+  %417
+\item For a point $P$ inside a $\triangle ABC$ the triangle formed by the feet of the perpendiculars from $P$
+  to the sides is called the pedal triangle of $P$. Prove that when $P$ is the circumcenter $O$, the incenter
+  $I$ and (for an acute-angled triangle) the orthocenter $H$, the area of the pedal triangle equals
+  $\frac{R^2 - OP^2}{4R^2}\Delta$.
+  %418
+\item $\Omega$ is a point inside $\triangle ABC$ such that $\angle\Omega AB = \angle\Omega BC = \angle\Omega CA
+  = \omega$ (the Brocard angle). Prove that $\cot\omega = \cot A + \cot B + \cot C = \frac{a^2 + b^2 +
+  c^2}{4\Delta}$ and hence that $\omega \leq 30^\circ$.
+  %419
+\item With $\Omega$ and $\omega$ as in the previous problem, prove that ${\rm cosec}^2\omega = {\rm
+  cosec}^2A + {\rm cosec}^2B + {\rm cosec}^2C$ and that $O\Omega = R\sqrt{1 - 4\sin^2\omega}$, where $O$ is
+  the circumcenter.
+  %420
+\item A convex quadrilateral $ABCD$ has sides $AB = a, BC = b, CD = c, DA = d$, semi-perimeter $s$ and area
+  $K$. Prove that $K^2 = (s - a)(s - b)(s - c)(s - d) - abcd\cos^2\frac{A + C}{2}$. Deduce Brahmagupta's
+  formula for a cyclic quadrilateral, show that among all quadrilaterals with given sides the cyclic one
+  has the greatest area, and find this greatest area when the sides are $1, 2, 3, 4$.
+  %421
+\item $ABCD$ is a cyclic quadrilateral with $AB = a, BC = b, CD = c, DA = d$ and area $K$. Prove that
+  $BD^2 = \frac{(ab + cd)(ac + bd)}{ad + bc}, AC^2 = \frac{(ac + bd)(ad + bc)}{ab + cd}$, and deduce
+  Ptolemy's theorem $AC\cdot BD = ac + bd$ and the circumradius $R = \frac{\sqrt{(ab + cd)(ac + bd)(ad +
+  bc)}}{4K}$.
+  %422
+\item A hexagon inscribed in a circle has three consecutive sides of length $3$ and the other three of
+  length $5$. Find the radius of the circle and the length of the chord that divides the hexagon into two
+  trapeziums, one with three sides of length $3$ and the other with three sides of length $5$.
+  %423
+\item $A_1A_2\ldots A_n$ is a regular polygon with $n\geq 4$ sides such that $\frac{1}{A_1A_2} =
+  \frac{1}{A_1A_3} + \frac{1}{A_1A_4}$. Find $n$, and for this $n$ prove that $A_1A_2^2 + A_1A_3^2 + A_1A_4^2
+  = 7R^2$, where $R$ is the circumradius.
+  %424
+\item The angles of a $\triangle ABC$ are $A = \frac{\pi}{7}, B = \frac{2\pi}{7}, C = \frac{4\pi}{7}$ (the
+  heptagonal triangle). Prove that (a) $b^2 - a^2 = ca, c^2 - b^2 = ab, c^2 - a^2 = bc$, (b) $(a^2 - b^2)(b^2
+  - c^2)(c^2 - a^2) = a^2b^2c^2$, (c) $\cos^2A + \cos^2B + \cos^2C = \frac{5}{4}$, and (d) $OH = \sqrt{2}R$.
+  %425
+\item Prove that in a $\triangle ABC, A = 2B$ if and only if $a^2 = b(b + c)$. Hence find the triangle with
+  integer sides and least perimeter in which one angle is twice another.
+  %426
+\item In a $\triangle ABC, A = 3B$. Prove that $a > b$ and $(a - b)^2(a + b) = bc^2$. Verify that the triangle
+  with sides $a = 10, b = 8, c = 3$ indeed has $A = 3B$.
+  %427
+\item (Langley's adventitious angles) In $\triangle ABC, \angle B = \angle C = 80^\circ$. $D$ is a point on
+  $CA$ with $\angle CBD = 60^\circ$ and $E$ is a point on $AB$ with $\angle BCE = 50^\circ$. Using trigonometry
+  find $\angle BDE$.
+  %428
+\item In $\triangle ABC, AB = AC$ and $\angle A = 20^\circ$. $D$ is a point on $AC$ such that $AD = BC$. Find
+  $\angle ABD$.
+  %429
+\item In $\triangle ABC, AB = AC$ and $\angle A = 80^\circ$. $P$ is a point inside the triangle such that
+  $\angle PBC = 10^\circ$ and $\angle PCB = 30^\circ$. Find $\angle PAB$.
+  %430
+\item (a) $AP, BP, CP$ are concurrent cevians of $\triangle ABC$. Prove that their reflections in the
+  respective internal angle bisectors are also concurrent. (b) The reflection of the median from $A$ in the
+  bisector of $A$ (the symmedian) meets $BC$ at $K$. Prove that $BK:KC = c^2:b^2$. (c) If $L$ is the point of
+  concurrence of the three symmedians, prove that the distances of $L$ from $BC, CA, AB$ are proportional to
+  $a, b, c$.
+  %431
+\item (Steiner--Lehmus theorem) Using trigonometry prove that if the internal bisectors of angles $B$ and $C$
+  of a $\triangle ABC$ (measured from the vertex to the opposite side) are equal, then $b = c$.
+  %432
+\item $O$ and $I$ are the circumcenter and the incenter of a $\triangle ABC$. Prove that (a) $AI\perp OI$ if
+  and only if $b + c = 2a$, and (b) $OI$ is parallel to $BC$ if and only if $\cos B + \cos C = 1$.
+  %433
+\item $I_1, I_2, I_3$ are the excenters and $I$ the incenter of $\triangle ABC$. Prove that (a) $I_2I_3 =
+  4R\cos\frac{A}{2}$, (b) the circumradius of $\triangle I_1I_2I_3$ is $2R$ and its area is $2Rs$, (c)
+  $AI\cdot BI\cdot CI = 4Rr^2$ and $II_1\cdot II_2\cdot II_3 = 16R^2r$, (d) the midpoint $M$ of the arc $BC$
+  not containing $A$ is equidistant from $B, C, I$ and $I_1$.
+  %434
+\item Prove that in any triangle (a) $r_1 + r_2 + r_3 - r = 4R$, (b) $r_1r_2 + r_2r_3 + r_3r_1 = s^2$, (c)
+  $(r_1 - r)(r_2 - r)(r_3 - r) = 4Rr^2$, (d) $r^2 + r_1^2 + r_2^2 + r_3^2 = 16R^2 - (a^2 + b^2 + c^2)$.
+  %435
+\item The medians through $B$ and $C$ of a $\triangle ABC$ are perpendicular. Prove that $b^2 + c^2 = 5a^2$,
+  that $\cot A = 2(\cot B + \cot C)$, and that $\cot A \geq \frac{4}{3}$.
+  %436
+\item $AD$ is the median of $\triangle ABC$ and $\angle ADC = \theta$. (a) Prove that $2\cot\theta = \cot B -
+  \cot C$. (b) If $AD\perp AB$, prove that $\tan A + 2\tan B = 0$. (c) If the altitude, the angle bisector
+  and the median from $A$ divide $\angle A$ into four equal parts, find the angles of the triangle.
+  %437
+\item The internal bisectors of the angles of $\triangle ABC$ meet the opposite sides at $D, E, F$. Prove
+  that the area of $\triangle DEF$ is $\frac{2abc\Delta}{(a + b)(b + c)(c + a)}$ and that it never exceeds
+  $\frac{\Delta}{4}$.
+  %438
+\item (Carnot) Prove that in an acute-angled triangle the sum of the distances of the circumcenter from the
+  three sides is $R + r$, and that it does not exceed $\frac{3R}{2}$. What is the corresponding result if $A$
+  is obtuse?
+  %439
+\item $A_1A_2\ldots A_{2n + 1}$ is a regular polygon with an odd number of sides and $P$ is any point on the
+  minor arc $A_{2n + 1}A_1$ of its circumcircle. Prove that $PA_1 + PA_3 + \cdots + PA_{2n + 1} = PA_2 + PA_4 +
+  \cdots + PA_{2n}$.
+  %440
+\item In an acute-angled $\triangle ABC, A = 60^\circ$. Prove that $B, C, O, I, H$ are concyclic and that $OI
+  = IH$, where $O, I, H$ are the circumcenter, incenter and orthocenter.
+  %441
+\item In a scalene $\triangle ABC$ in which neither $B$ nor $C$ is a right angle, the Euler line $OH$ makes an angle $\varphi$ with $BC$ (measured from the
+  direction $\overrightarrow{BC}$). Prove that $\tan\varphi = \frac{3 - \tan B\tan C}{\tan C - \tan B}$.
+  Deduce that the Euler line is parallel to $BC$ if and only if $\tan B\tan C = 3$.
+  %442
+\item In $\triangle ABC$ the angles $A$ and $B$ are acute. Prove that the internal bisector from $A$, the
+  median from $B$ and the altitude from $C$ are concurrent if and only if $\tan A = \frac{\sin C}{\cos B}$.
+  %443
+\item In a regular nonagon of side $a$ and circumradius $R$, $d_2, d_3, d_4$ are the lengths of the diagonals
+  $A_1A_3, A_1A_4, A_1A_5$. Prove that $d_4 - d_2 = a$ and $ad_2d_4 = R^2d_3$.
+  %444
+\item $ABCD$ is a cyclic quadrilateral with circumradius $R$ whose diagonals are perpendicular at $P$. Prove
+  that (a) $AB^2 + CD^2 = 4R^2$, (b) the distance of the circumcenter from $AB$ is $\frac{CD}{2}$, (c)
+  (Brahmagupta) the line through $P$ perpendicular to $BC$ bisects $AD$.
+  %445
+\item $ABCD$ is a quadrilateral which is both cyclic and has an incircle, with $AB = a, BC = b, CD = c, DA =
+  d$. Prove that its area is $\sqrt{abcd}$, its inradius is $\frac{2\sqrt{abcd}}{a + b + c + d}$, and
+  $\tan^2\frac{A}{2} = \frac{bc}{ad}$.
+  %446
+\item A vertical tower stands at the foot $O$ of a straight slope inclined at an unknown angle $\theta$ to the
+  horizontal. At points $P$ and $Q$ on the slope, at distances $a$ and $b$ from $O$ $(a > b)$, the tower
+  subtends angles $\alpha$ and $\beta$. Prove that $\tan\theta = \frac{b\cot\alpha - a\cot\beta}{a - b}$ and
+  that the height of the tower is $\frac{(a - b)\sec\theta}{\cot\alpha - \cot\beta}$.
+  %447
+\item From a point $A$ on level ground the angle of elevation of the top of a hill is $\alpha$. A man walks
+  a distance $d$ from $A$ towards the hill up a straight slope inclined at $\gamma$ to the horizontal $(\gamma
+  < \alpha)$, and then finds the elevation of the top to be $\beta$. Prove that the height of the hill is
+  $\frac{d\sin\alpha\sin(\beta - \gamma)}{\sin(\beta - \alpha)}$.
+  %448
+\item A statue of height $h$ stands on a pedestal of height $H$. Prove that if the statue subtends equal
+  angles at two points on the ground at distances $x_1$ and $x_2$ from the foot of the pedestal, then $x_1x_2
+  = H(H + h)$. Show that the greatest angle $\theta$ subtended by the statue at a point of the ground is
+  given by $\sin\theta = \frac{h}{2H + h}$.
+  %449
+\item An observer at a height $h$ above a lake finds the angle of elevation of a cloud to be $\alpha$ and the
+  angle of depression of its reflection in the lake to be $\beta$. Prove that the height of the cloud above
+  the lake is $\frac{h\sin(\alpha + \beta)}{\sin(\beta - \alpha)}$ and its distance from the observer is
+  $\frac{2h\cos\beta}{\sin(\beta - \alpha)}$.
+  %450
+\item A vertical pole of height $h$ stands on a horizontal plane containing an equilateral triangle of side
+  $a$. The angles of elevation of the top of the pole from the vertices are $\alpha, \beta, \gamma$. Prove
+  that $3\left[h^4\left(\cot^4\alpha + \cot^4\beta + \cot^4\gamma\right) + a^4\right] =
+  \left[h^2\left(\cot^2\alpha + \cot^2\beta + \cot^2\gamma\right) + a^2\right]^2$.
+  %451
+\item A balloon starts from a point $O$ on the ground, rising vertically with uniform speed $v$ while the wind
+  carries it horizontally with uniform speed $u$ directly away from an observer standing at a distance $d$
+  from $O$. At the ends of the first, second and third minutes the angles of elevation are $\alpha, \beta,
+  \gamma$. Prove that $\cot\alpha, 2\cot\beta, 3\cot\gamma$ are in A.P., and that the elevation of the
+  balloon increases with time but always stays below $\cot^{-1}(2\cot\beta - \cot\alpha)$.
+  %452
+\item From a point $A$ on level ground the angle of elevation of the top of a vertical tower is $30^\circ$. A
+  man walks $10$ m from $A$ along a straight line making an angle of $30^\circ$ with the line joining $A$ to the
+  foot of the tower, and then finds the angle of elevation to be $45^\circ$. Find all possible heights of the
+  tower.
+  %453
+\item The tangents to the circumcircle of an acute-angled $\triangle ABC$ at $A, B, C$ form the tangential
+  triangle. Prove that its sides are $R(\tan B + \tan C)$ etc., its area is $R^2\tan A\tan B\tan C$, its
+  circumradius is $\frac{R}{4\cos A\cos B\cos C}$, and its area is at least $3\sqrt{3}R^2$.
+  %454
+\item Let $A, B, C$ be the angles of a triangle and let $x, y, z$ be any real numbers. Prove that $x^2 + y^2 +
+  z^2\geq 2yz\cos A + 2zx\cos B + 2xy\cos C$, with equality if and only if $x:y:z = \sin A:\sin B:\sin
+  C$. Deduce that $\cos A + \cos B + \cos C\leq\frac{3}{2}$ and that for any positive reals $p, q, r$,
+  $p\cos A + q\cos B + r\cos C\leq\frac{1}{2}\left(\frac{qr}{p} + \frac{rp}{q} + \frac{pq}{r}\right)$.
+  %455
+\item Prove that in every $\triangle ABC$, $\cos A + \cos B + \cos C\leq\sin\frac{A}{2} + \sin\frac{B}{2} +
+  \sin\frac{C}{2}\leq\frac{3}{2}$, and that equality holds in either place only for the equilateral
+  triangle.
+  %456
+\item Prove that in every $\triangle ABC$, ${\rm cosec}\frac{A}{2} + {\rm cosec}\frac{B}{2} + {\rm
+    cosec}\frac{C}{2}\geq 6$ and ${\rm cosec}\frac{A}{2}{\rm cosec}\frac{B}{2}{\rm cosec}\frac{C}{2}\geq
+  8$. Hence prove that for every positive integer $m$, ${\rm cosec}^m\frac{A}{2} + {\rm cosec}^m\frac{B}{2}
+  + {\rm cosec}^m\frac{C}{2}\geq 3\cdot 2^m$.
+  %457
+\item Prove that in every $\triangle ABC$, $\cos A\cos B\cos C\leq(1 - \cos A)(1 - \cos B)(1 - \cos C)$,
+  i.e.\ $\cos A\cos B\cos C\leq 8\sin^2\frac{A}{2}\sin^2\frac{B}{2}\sin^2\frac{C}{2}$, with equality only
+  for the equilateral triangle.
+  %458
+\item Prove that in every $\triangle ABC$, $\sin^2A + \sin^2B + \sin^2C = 2 + 2\cos A\cos B\cos C$. Deduce
+  that the triangle is acute, right-angled or obtuse according as $\sin^2A + \sin^2B + \sin^2C$ is greater
+  than, equal to or less than $2$, and find the exact set of values taken by $\sin^2A + \sin^2B + \sin^2C$
+  (i) over all triangles, (ii) over acute triangles.
+  %459
+\item Let $A, B, C$ be the angles of a triangle and $x$ any real number. Prove that $\cos A + x(\cos B +
+  \cos C)\leq 1 + \frac{x^2}{2}$. When does equality hold?
+  %460
+\item Prove that in every $\triangle ABC$, $\sin2A + \sin2B + \sin2C\leq\sin A + \sin B + \sin C$, with
+  equality only for the equilateral triangle.
+  %461
+\item Prove that in every $\triangle ABC$, $\sin A + \sin B + \sin C\leq\cos\frac{A}{2} + \cos\frac{B}{2} +
+  \cos\frac{C}{2}\leq\frac{3\sqrt{3}}{2}$.
+  %462
+\item Prove Jordan's inequality $\frac{2x}{\pi}\leq\sin x\leq x$ for $0\leq x\leq\frac{\pi}{2}$ and use it
+  to prove that in every $\triangle ABC$, $1 < \sin\frac{A}{2} + \sin\frac{B}{2} + \sin\frac{C}{2}\leq
+  \frac{3}{2}$ and $2 < \cos\frac{A}{2} + \cos\frac{B}{2} + \cos\frac{C}{2}\leq\frac{3\sqrt{3}}{2}$. Show
+  that the constants $1$ and $2$ cannot be replaced by larger numbers.
+  %463
+\item Prove that in every acute-angled $\triangle ABC$, $2 < \sin A + \sin B + \sin C$ and $\sin A + \sin B
+  + \sin C > \cos A + \cos B + \cos C$. Show that $2$ is the best possible constant.
+  %464
+\item Let $x_1, x_2, \ldots, x_n\in[0, \pi]$. Prove that $\sin x_1 + \sin x_2 + \cdots + \sin x_n\leq
+  n\sin\frac{x_1 + x_2 + \cdots + x_n}{n}$ (first for $n = 2$, then for $n = 2^m$, then for all
+  $n$). Deduce that in a triangle $\sin A + \sin B + \sin C\leq\frac{3\sqrt{3}}{2}$ and $\sin A\sin B\sin
+  C\leq\frac{3\sqrt{3}}{8}$.
+  %465
+\item Prove that for every $x > 0$, $1 - \frac{x^2}{2} < \cos x < 1 - \frac{x^2}{2} + \frac{x^4}{24}$ and
+  $x - \frac{x^3}{6} < \sin x < x - \frac{x^3}{6} + \frac{x^5}{120}$. Hence evaluate
+  $\displaystyle\lim_{x\to 0}\frac{x - \sin x}{x^3}$ and $\displaystyle\lim_{x\to 0}\frac{1 - \cos
+    x}{x^2}$.
+  %466
+\item Prove that for $0 < x < \frac{\pi}{2}$, $(\cos x)^{1/3} < \frac{\sin x}{x} < \frac{2 + \cos
+    x}{3}$. (The right half is Cusa's inequality.)
+  %467
+\item Prove Wilker's inequality $\left(\frac{\sin x}{x}\right)^2 + \frac{\tan x}{x} > 2$ for $0 < x
+  < \frac{\pi}{2}$. Also prove that $\sin x\tan x > x^2$ in the same interval.
+  %468
+\item Prove that $|\sin a| + |\sin b|\geq|\sin(a - b)|$ for all real $a, b$, and hence prove that $|\sin1|
+  + |\sin2| + |\sin3| + \cdots + |\sin100| > 41$.
+  %469
+\item Prove that for every positive integer $n$, $|\cos1| + |\cos2| + \cdots + |\cos n|\geq\frac{n}{2}
+  - \frac{1}{2\sin1}$, and deduce that $|\cos1| + |\cos2| + \cdots + |\cos n| > \frac{n}{4}$ for every
+  $n\geq 1$.
+  %470
+\item Prove that for every real $x$ and every positive integer $n$, $\left|\displaystyle\sum_{k =
+    1}^n\frac{\sin kx}{k}\right|\leq 2\sqrt{2\pi}$.
+  %471
+\item (Fej\'er--Jackson) Prove that for every positive integer $n$ and every $x\in(0, \pi)$, $\sin x
+  + \frac{\sin2x}{2} + \frac{\sin3x}{3} + \cdots + \frac{\sin nx}{n} > 0$.
+  %472
+\item Let $x_1, x_2, \ldots, x_n$ ($n\geq 2$) be real numbers. Find the minimum value of
+  $\displaystyle\sum_{1\leq i < j\leq n}\cos(x_i - x_j)$ and prove that $\displaystyle\sum_{1\leq i < j\leq
+    n}\sin^2\frac{x_i - x_j}{2}\leq\frac{n^2}{4}$.
+  %473
+\item Let $a, b, A, B$ be real constants such that $f(x) = 1 + a\cos x + b\sin x + A\cos2x + B\sin2x\geq 0$
+  for every real $x$. Prove that $a^2 + b^2\leq 2$ and $A^2 + B^2\leq 1$, and show by examples that both
+  bounds can be attained.
+  %474
+\item Prove that $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{2}{n^2} = \frac{3\pi}{4}$ and
+  $\displaystyle\sum_{n = 1}^\infty\tan^{-1}\frac{8n}{n^4 - 2n^2 + 5} = \frac{\pi}{2} + \tan^{-1}2$.
+  %475
+\item Prove that for every real $x\neq 0$, $\displaystyle\prod_{k = 1}^\infty\frac{1 + 2\cos\frac{2x}{3^k}}{3}
+  = \frac{\sin x}{x}$, and deduce $\displaystyle\prod_{k = 1}^\infty\frac{3 - 4\sin^2\frac{x}{3^k}}{3}
+  = \frac{\sin x}{x}$.
+  %476
+\item Prove that $(2\cos\theta - 1)(2\cos2\theta - 1)(2\cos2^2\theta - 1)\cdots(2\cos2^{n - 1}\theta - 1) =
+  \frac{2\cos2^n\theta + 1}{2\cos\theta + 1}$ whenever $2\cos\theta + 1\neq 0$. Deduce that
+  $\displaystyle\prod_{k = 1}^\infty\left(2\cos\frac{x}{2^k} - 1\right) = \frac{1 + 2\cos x}{3}$ for all
+  real $x$, and that $\displaystyle\prod_{k = 0}^{n - 1}\left(2\cos\frac{2^{k + 1}\pi}{2^n + 1} - 1\right)
+  = 1$ for $n\geq 2$.
+  %477
+\item Prove that for every integer $n\geq 2$, $\displaystyle\sum_{k = 1}^{n - 1}\cot^2\frac{k\pi}{n}
+  = \frac{(n - 1)(n - 2)}{3}$ and $\displaystyle\sum_{k = 1}^{n - 1}{\rm cosec}^2\frac{k\pi}{n} = \frac{n^2
+    - 1}{3}$, using the polynomial whose roots are $\cot\frac{k\pi}{n}$.
+  %478
+\item Prove that for every integer $n\geq 2$, $\displaystyle\sum_{k = 1}^{n - 1}{\rm cosec}^4\frac{k\pi}{n}
+  = \frac{(n^2 - 1)(n^2 + 11)}{45}$.
+  %479
+\item Using $\displaystyle\sum_{k = 1}^m\cot^2\frac{k\pi}{2m + 1} = \frac{m(2m - 1)}{3}$ and the inequality
+  $\sin\theta < \theta < \tan\theta$, prove that $\displaystyle\sum_{k = 1}^\infty\frac{1}{k^2}
+  = \frac{\pi^2}{6}$. Deduce that $1 + \frac{1}{3^2} + \frac{1}{5^2} + \cdots = \frac{\pi^2}{8}$ and $1
+  - \frac{1}{2^2} + \frac{1}{3^2} - \frac{1}{4^2} + \cdots = \frac{\pi^2}{12}$.
+  %480
+\item Prove that $\displaystyle\sum_{k = 1}^m\cot^4\frac{k\pi}{2m + 1} = \frac{m(2m - 1)(4m^2 + 10m -
+    9)}{45}$ and deduce that $\displaystyle\sum_{k = 1}^\infty\frac{1}{k^4} = \frac{\pi^4}{90}$.
+  %481
+\item Prove that ${\rm cosec}^2x = \frac{1}{4^n}\displaystyle\sum_{k = 0}^{2^n - 1}{\rm cosec}^2\frac{x +
+    k\pi}{2^n}$ for every positive integer $n$ and every $x$ that is not a multiple of $\pi$. Hence prove
+  that $\displaystyle\sum_{k = -\infty}^{\infty}\frac{1}{(x + k\pi)^2} = {\rm cosec}^2x$, and deduce that
+  $\displaystyle\sum_{k = 0}^\infty\frac{1}{(2k + 1)^2} = \frac{\pi^2}{8}$ and that the sum of
+  $\frac{1}{n^2}$ over all positive integers $n$ not divisible by $3$ equals $\frac{4\pi^2}{27}$.
+  %482
+\item Using the result of the previous problem, prove that $\displaystyle\sum_{k = -\infty}^{\infty}\frac{(-1)^k}{(x +
+    k\pi)^2} = {\rm cosec}\,x\cot x$ for $x$ not a multiple of $\pi$, and deduce that $1 - \frac{1}{3^2}
+  - \frac{1}{5^2} + \frac{1}{7^2} + \frac{1}{9^2} - \frac{1}{11^2} - \frac{1}{13^2} + \frac{1}{15^2} +
+  \cdots = \frac{\pi^2}{8\sqrt{2}}$, the signs following the pattern $+, -, -, +$.
+  %483
+\item Let $N = 2m + 1$ be an odd positive integer. Prove that $\sin N\theta = N\sin\theta\displaystyle\prod_{k
+    = 1}^m\left(1 - \frac{\sin^2\theta}{\sin^2\frac{k\pi}{N}}\right)$, and use it to prove Euler's product
+  $\sin x = x\displaystyle\prod_{k = 1}^\infty\left(1 - \frac{x^2}{k^2\pi^2}\right)$ for every real $x$.
+  %484
+\item Using Euler's product $\sin x = x\displaystyle\prod_{k = 1}^\infty\left(1 - \frac{x^2}{k^2\pi^2}\right)$,
+  prove Wallis' product $\frac{\pi}{2} = \frac{2\cdot 2}{1\cdot 3}\cdot\frac{4\cdot 4}{3\cdot
+    5}\cdot\frac{6\cdot 6}{5\cdot 7}\cdots$ and evaluate $\displaystyle\prod_{k = 1}^\infty\left(1 -
+    \frac{1}{9k^2}\right)$, $\displaystyle\prod_{k = 1}^\infty\left(1 - \frac{1}{16k^2}\right)$ and
+  $\displaystyle\prod_{k = 1}^\infty\left(1 - \frac{1}{36k^2}\right)$.
+  %485
+\item Let $m, n$ be positive integers and $0\leq r < m$. Prove that $\displaystyle\sum_{k\equiv r\,({\rm
+      mod}\,m)}{}^nC_k = \frac{1}{m}\sum_{j = 0}^{m - 1}\left(2\cos\frac{j\pi}{m}\right)^n\cos\frac{(n -
+    2r)j\pi}{m}$, where the sum on the left is over all $k\in\{0, 1, \ldots, n\}$ with $k\equiv r$ (mod
+  $m$). Deduce that $\displaystyle\lim_{n\to\infty}\frac{1}{2^n}\sum_{k\equiv r\,({\rm mod}\,m)}{}^nC_k
+  = \frac{1}{m}$ and that $3\left({}^{100}C_0 + {}^{100}C_3 + {}^{100}C_6 + \cdots + {}^{100}C_{99}\right) =
+  2^{100} - 1$.
+  %486
+\item Prove that for every positive integer $n$, $\displaystyle\sum_{k = 0}^{n - 1}(-1)^k\cos^n\frac{k\pi}{n}
+  = \frac{n}{2^{n - 1}}$.
+  %487
+\item Let $\zeta = \cos\frac{2\pi}{n} + i\sin\frac{2\pi}{n}$ and $G_n = \displaystyle\sum_{k = 0}^{n -
+    1}\zeta^{k^2}$. Prove that $|G_n| = \sqrt{n}$ if $n$ is odd, $|G_n| = \sqrt{2n}$ if $4\mid n$ and $G_n =
+  0$ if $n\equiv 2$ (mod $4$). Deduce that for odd $n$, $\left(\displaystyle\sum_{k = 0}^{n -
+      1}\cos\frac{2\pi k^2}{n}\right)^2 + \left(\displaystyle\sum_{k = 0}^{n - 1}\sin\frac{2\pi
+      k^2}{n}\right)^2 = n$.
+  %488
+\item Let $T(x) = \cos nx + \displaystyle\sum_{j = 0}^{n - 1}(a_j\cos jx + b_j\sin jx)$, where $n\geq 1$ and
+  $a_j, b_j$ are real. Prove that $\displaystyle\max_x|T(x)|\geq 1$. Deduce that for every polynomial $p(t)
+  = t^n + c_{n - 1}t^{n - 1} + \cdots + c_0$ with real coefficients, $\displaystyle\max_{-1\leq t\leq
+    1}|p(t)|\geq\frac{1}{2^{n - 1}}$.
+  %489
+\item Prove that for every positive integer $n$ and every $x$ not a multiple of $2\pi$, $\frac{n + 1}{2} +
+  \displaystyle\sum_{k = 1}^n(n + 1 - k)\cos kx = \frac{\sin^2\frac{(n + 1)x}{2}}{2\sin^2\frac{x}{2}}$. Deduce
+  that $n\cos x + (n - 1)\cos2x + \cdots + 2\cos(n - 1)x + \cos nx\geq -\frac{n + 1}{2}$ for all real $x$,
+  and find when equality holds.
+  %490
+\item Let $n\geq 2$. Prove that $\displaystyle\sum_{k = 1}^{n - 1}k\cos\frac{2k\pi}{n} = -\frac{n}{2}$ and
+  $\displaystyle\sum_{k = 1}^{n - 1}k\sin\frac{2k\pi}{n} = -\frac{n}{2}\cot\frac{\pi}{n}$.
+  %491
+\item Given the identity $\sin n\phi = 2^{n - 1}\displaystyle\prod_{k = 0}^{n - 1}\sin\left(\phi
+    + \frac{k\pi}{n}\right)$, prove that $\displaystyle\sum_{k = 0}^{n - 1}\cot\left(\phi
+    + \frac{k\pi}{n}\right) = n\cot n\phi$ and $\displaystyle\sum_{k = 0}^{n - 1}{\rm cosec}^2\left(\phi
+    + \frac{k\pi}{n}\right) = n^2{\rm cosec}^2n\phi$. Deduce that $\displaystyle\sum_{k = 0}^{n - 1}\tan\left(\phi
+    + \frac{k\pi}{n}\right)$ equals $n\tan n\phi$ if $n$ is odd and $-n\cot n\phi$ if $n$ is even, and
+  hence that $\tan20^\circ - \tan40^\circ + \tan80^\circ = 3\sqrt{3}$.
+  %492
+\item Let $|a| < 1$. Prove that for every positive integer $n$ and every real $x$, $\displaystyle\sum_{k =
+    0}^{n - 1}\frac{1 - a^2}{1 - 2a\cos\left(x + \frac{2k\pi}{n}\right) + a^2} = \frac{n(1 - a^{2n})}{1 -
+    2a^n\cos nx + a^{2n}}$. Deduce a closed form for $\displaystyle\sum_{k = 0}^{n - 1}\frac{1}{5 -
+    4\cos\left(x + \frac{2k\pi}{n}\right)}$.
+  %493
+\item Let $m, n$ be positive integers with $n > 2m$. Prove that for every real $x$, $\displaystyle\sum_{k =
+    0}^{n - 1}\cos^{2m}\left(x + \frac{2k\pi}{n}\right) = \frac{n}{4^m}\,{}^{2m}C_m$, independent of
+  $x$. Show by an example that the condition $n > 2m$ cannot be dropped, and find $\displaystyle\sum_{k =
+    0}^{6}\cos^6\left(x + \frac{2k\pi}{7}\right)$.
+  %494
+\item Let $n\geq 2$ and $\zeta_k = \cos\frac{2k\pi}{n} + i\sin\frac{2k\pi}{n}$. Show that the numbers $y_k
+  = \frac{1}{1 - \zeta_k}$, $k = 1, 2, \ldots, n - 1$, are exactly the roots of $(y - 1)^n = y^n$, that they
+  all lie on the line ${\rm Re}\,y = \frac{1}{2}$, and that $\displaystyle\sum_{k = 1}^{n - 1}\frac{1}{(1 -
+    \zeta_k)^2} = -\frac{(n - 1)(n - 5)}{12}$. Hence give a second proof that $\displaystyle\sum_{k = 1}^{n
+    - 1}\cot^2\frac{k\pi}{n} = \frac{(n - 1)(n - 2)}{3}$.
+  %495
+\item Prove that $\displaystyle\lim_{n\to\infty}n\sin(2\pi e\cdot n!) = 2\pi$, where $e = \displaystyle\sum_{k =
+    0}^\infty\frac{1}{k!}$.
+  %496
+\item Prove that $\displaystyle\sum_{k = 1}^n\sin\frac{k\pi}{n} = \cot\frac{\pi}{2n}$, and hence that
+  $\displaystyle\lim_{n\to\infty}\frac{1}{n}\sum_{k = 1}^n\sin\frac{k\pi}{n} = \frac{2}{\pi}$. Prove further
+  that $\displaystyle\lim_{n\to\infty}n^2\left(\frac{2}{\pi} - \frac{1}{n}\sum_{k = 1}^n\sin\frac{k\pi}{n}\right)
+  = \frac{\pi}{6}$.
+  %497
+\item Prove that $\displaystyle\lim_{n\to\infty}\prod_{k = 1}^n\cos\frac{\sqrt{k}}{n} = e^{-1/4}$.
+  %498
+\item Prove that $\displaystyle\lim_{x\to 0}\left(\frac{1}{\sin^2x} - \frac{1}{x^2}\right) = \frac{1}{3}$,
+  $\displaystyle\lim_{x\to 0}\frac{1}{x}\left(\frac{1}{x} - \cot x\right) = \frac{1}{3}$ and
+  $\displaystyle\lim_{x\to 0}\left(\frac{\sin x}{x}\right)^{1/x^2} = e^{-1/6}$.
+  %499
+\item Let $b_n = \sqrt{2 - \sqrt{2 + \sqrt{2 + \cdots + \sqrt{2}}}}$ with $n$ square-root signs in all ($n\geq
+  2$). Prove that $b_n = 2\sin\frac{\pi}{2^{n + 1}}$ and that $\displaystyle\lim_{n\to\infty}2^nb_n = \pi$.
+  %500
+\item Let $p_n = 2n\sin\frac{\pi}{n}$ and $P_n = 2n\tan\frac{\pi}{n}$ be the perimeters of the regular
+  $n$-gons inscribed in and circumscribed about a circle of diameter $2$. Prove that
+  $\displaystyle\lim_{n\to\infty}n^2(2\pi - p_n) = \frac{\pi^3}{3}$ and
+  $\displaystyle\lim_{n\to\infty}n^2(P_n - 2\pi) = \frac{2\pi^3}{3}$.
+  %501
+\item Prove that $\displaystyle\lim_{n\to\infty}\sin^2\left(\pi\sqrt{n^2 + n}\right) = 1$ and
+  $\displaystyle\lim_{n\to\infty}n\left|\sin\left(\pi\sqrt{n^2 + 1}\right)\right| = \frac{\pi}{2}$, where
+  $n$ runs through positive integers. Does $\displaystyle\lim_{n\to\infty}n\sin\left(\pi\sqrt{n^2 +
+      1}\right)$ exist?
+  %502
+\item Prove that $\displaystyle\lim_{n\to\infty}\frac{1}{n\ln n}\sum_{k = 1}^{n - 1}{\rm cosec}\frac{k\pi}{n}
+  = \frac{2}{\pi}$.
+  %503
+\item Let $S_n = \displaystyle\sum_{k = 1}^n\tan^{-1}\frac{2}{k^2}$. Prove that
+  $\displaystyle\lim_{n\to\infty}n\left(\frac{3\pi}{4} - S_n\right) = 2$.
 \stopitemize

@@ -1,0 +1,37 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}
+[
+ymin=-1.6,ymax=1.6,
+xmin=-0.6,xmax=7.2,
+xtick=\empty,
+ytick=\empty,
+extra x ticks={1.5708, 3.14159, 4.71239, 6.28319},
+extra x tick labels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+extra y ticks={-1, 1},
+extra y tick labels={$-1$, $1$},
+every extra x tick/.style={
+    xticklabel style={anchor=north west},
+    grid=major,
+    major grid style={very thin,dashed,black}
+},
+axis lines = center,
+xlabel=$x$,ylabel=$y$,
+samples=200,
+]
+\addplot [black, only marks, mark=*, mark options={fill=black}] coordinates {(0,0)};
+\addplot [black] coordinates {(0,0) (1.5708,0)};
+\addplot [black, only marks, mark=*, mark options={fill=white}] coordinates {(1.5708,0)};
+\addplot [black, only marks, mark=*, mark options={fill=black}] coordinates {(1.5708,1)};
+\addplot [black] coordinates {(1.5708,0) (3.14159,0)};
+\addplot [black, only marks, mark=*, mark options={fill=black}] coordinates {(3.14159,0)};
+\addplot [black, only marks, mark=*, mark options={fill=white}] coordinates {(3.14159,-1)};
+\addplot [black] coordinates {(3.14159,-1) (6.28319,-1)};
+\addplot [black, only marks, mark=*, mark options={fill=white}] coordinates {(6.28319,-1)};
+\addplot [black, only marks, mark=*, mark options={fill=black}] coordinates {(6.28319,0)};
+\node at (axis cs:0.195, -0.16) {$O$} ;
+\end{axis}
+\end{tikzpicture}
+\end{document}

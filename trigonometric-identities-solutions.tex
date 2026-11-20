@@ -782,3 +782,397 @@
 
   Thus, $\sin 3A\sin(B - C) + \sin 3B\sin(C - A) + \sin3C\sin(A - B) = 0$
 \stopitemize
+
+\subject{Challenging Problems}
+\startitemize[n, 1*broad]
+\item Let $P = \cos A\cos B\cos C$. If $P \leq 0$ there is nothing to prove. If $P > 0$ then all the angles are acute
+  (at most one angle can be obtuse), so $\cos C > 0$.
+
+  $2P = \cos C[\cos(A - B) + \cos(A + B)] = \cos C[\cos(A - B) - \cos C] \leq \cos C(1 - \cos C)$
+
+  $= \frac{1}{4} - \left(\cos C - \frac{1}{2}\right)^2 \leq \frac{1}{4}$
+
+  $\therefore P \leq \frac{1}{8}$. Equality holds iff $A = B$ and $\cos C = \frac{1}{2},$ i.e. the triangle is
+  equilateral.
+
+\item $2\sin\frac{A}{2}\sin\frac{B}{2} = \cos\frac{A - B}{2} - \cos\frac{A + B}{2} \leq 1 - \sin\frac{C}{2}$
+
+  $\therefore 2\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2} \leq \sin\frac{C}{2}\left(1 - \sin\frac{C}{2}\right) =
+  \frac{1}{4} - \left(\sin\frac{C}{2} - \frac{1}{2}\right)^2 \leq \frac{1}{4}$
+
+  $\therefore 0 < \sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2} \leq \frac{1}{8}$
+
+  Since $\cos A + \cos B + \cos C = 1 + 4\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2},$ we get $1 < \cos A + \cos B +
+  \cos C \leq 1 + \frac{4}{8} = \frac{3}{2}$.
+
+\item We have proved that $\sin^2A + \sin^2B + \sin^2C = 2 + 2\cos A\cos B\cos C$.
+
+  By problem 1, $\cos A\cos B\cos C \leq \frac{1}{8}$
+
+  $\therefore \sin^2A + \sin^2B + \sin^2C \leq 2 + \frac{2}{8} = \frac{9}{4}$, equality for an equilateral triangle.
+
+\item For $0 < u, v < 2\pi$ with $u + v < 2\pi$: $\sin u + \sin v = 2\sin\frac{u + v}{2}\cos\frac{u - v}{2} \leq
+  2\sin\frac{u + v}{2},$ with equality iff $u = v$.
+
+  $\therefore \sin A + \sin B + \sin C + \sin\frac{\pi}{3} \leq 2\sin\frac{A + B}{2} + 2\sin\frac{C + \frac{\pi}{3}}{2}$
+
+  $\leq 4\sin\frac{A + B + C + \frac{\pi}{3}}{4} = 4\sin\frac{\pi}{3}$
+
+  $\therefore \sin A + \sin B + \sin C \leq 3\sin\frac{\pi}{3} = \frac{3\sqrt{3}}{2}$
+
+  Equality needs $A = B, C = \frac{\pi}{3}$ and $A + B = C + \frac{\pi}{3},$ i.e. $A = B = C = \frac{\pi}{3}$.
+
+\item $\sin A, \sin B, \sin C$ are positive, so by A.M.--G.M. inequality and problem 4,
+
+  $\sin A\sin B\sin C \leq \left(\frac{\sin A + \sin B + \sin C}{3}\right)^3 \leq \left(\frac{\sqrt{3}}{2}\right)^3 =
+  \frac{3\sqrt{3}}{8}$
+
+  Equality holds for an equilateral triangle.
+
+\item Let $x = \tan\frac{A}{2}, y = \tan\frac{B}{2}, z = \tan\frac{C}{2}$, all positive. We know $xy + yz + zx = 1$.
+
+  $(x + y + z)^2 - 3(xy + yz + zx) = \frac{1}{2}[(x - y)^2 + (y - z)^2 + (z - x)^2] \geq 0$
+
+  $\therefore (x + y + z)^2 \geq 3 \Rightarrow x + y + z \geq \sqrt{3}$, equality for an equilateral triangle.
+
+\item With $x, y, z$ as in problem 6, $xy, yz, zx$ are positive, so by A.M.--G.M. inequality
+
+  $1 = xy + yz + zx \geq 3(xy.yz.zx)^{1/3} = 3(xyz)^{2/3}$
+
+  $\therefore xyz \leq 3^{-3/2} = \frac{1}{3\sqrt{3}}$
+
+\item We know that $\cot\frac{A}{2} + \cot\frac{B}{2} + \cot\frac{C}{2} = \cot\frac{A}{2}\cot\frac{B}{2}\cot\frac{C}{2}
+  = \frac{1}{\tan\frac{A}{2}\tan\frac{B}{2}\tan\frac{C}{2}}$
+
+  By problem 7 this is $\geq 3\sqrt{3}$, so the least value is $3\sqrt{3},$ attained for an equilateral triangle.
+
+\item Let $x = \tan A, y = \tan B, z = \tan C,$ all positive, and $x + y + z = xyz$.
+
+  By A.M.--G.M. inequality, $xyz = x + y + z \geq 3(xyz)^{1/3} \Rightarrow (xyz)^{2/3} \geq 3$
+
+  $\therefore \tan A\tan B\tan C \geq 3\sqrt{3}$, equality for an equilateral triangle.
+
+\item $\tan^2A + \tan^2B + \tan^2C \geq \frac{(\tan A + \tan B + \tan C)^2}{3} = \frac{(\tan A\tan B\tan C)^2}{3}$
+
+  By problem 9, $\tan A\tan B\tan C \geq 3\sqrt{3}$
+
+  $\therefore \tan^2A + \tan^2B + \tan^2C \geq \frac{27}{3} = 9$
+
+\item $(\cot A + \cot B + \cot C)^2 = \cot^2A + \cot^2B + \cot^2C + 2(\cot A\cot B + \cot B\cot C + \cot C\cot A)$
+
+  $= \cot^2A + \cot^2B + \cot^2C + 2 \geq 1 + 2 = 3$ [we have proved $\cot^2A + \cot^2B + \cot^2C \geq 1$]
+
+  Also $\cot A + \cot B + \cot C = \frac{1 + \cos A\cos B\cos C}{\sin A\sin B\sin C} > 0$ (see problem 42) as $\cos
+  A\cos B\cos C > -1$.
+
+  $\therefore \cot A + \cot B + \cot C \geq \sqrt{3}$
+
+\item All secants are positive. By A.M.--G.M. inequality and problem 1,
+
+  $\sec A + \sec B + \sec C \geq \frac{3}{(\cos A\cos B\cos C)^{1/3}} \geq \frac{3}{(1/8)^{1/3}} = 6$
+
+\item By A.M.--G.M. inequality and problem 5,
+
+  ${\rm cosec}\,A + {\rm cosec}\,B + {\rm cosec}\,C \geq \frac{3}{(\sin A\sin B\sin C)^{1/3}} \geq
+  \frac{3}{\frac{\sqrt{3}}{2}} = 2\sqrt{3}$
+
+\item By A.M.--G.M. inequality and problem 2,
+
+  ${\rm cosec}\,\frac{A}{2} + {\rm cosec}\,\frac{B}{2} + {\rm cosec}\,\frac{C}{2} \geq
+  \frac{3}{\left(\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\right)^{1/3}} \geq \frac{3}{\frac{1}{2}} = 6$
+
+\item For any real $p, q, r$ we have $pq + qr + rp \leq \frac{(p + q + r)^2}{3}$.
+
+  $\therefore \cos A\cos B + \cos B\cos C + \cos C\cos A \leq \frac{(\cos A + \cos B + \cos C)^2}{3}$
+
+  By problem 2, $0 < \cos A + \cos B + \cos C \leq \frac{3}{2}$, so the R.H.S. $\leq \frac{9}{4}.\frac{1}{3} =
+  \frac{3}{4}$
+
+\item $\sin A\sin B + \sin B\sin C + \sin C\sin A \leq \frac{(\sin A + \sin B + \sin C)^2}{3} \leq
+  \frac{1}{3}.\frac{27}{4} = \frac{9}{4}$ (problem 4)
+
+  Greatest value $= \frac{9}{4}$, attained for an equilateral triangle.
+
+\item $\sin A + \sin B = 2\sin\frac{A + B}{2}\cos\frac{A - B}{2} = 2\cos\frac{C}{2}\cos\frac{A - B}{2} \leq
+  2\cos\frac{C}{2}$
+
+  Similarly $\sin B + \sin C \leq 2\cos\frac{A}{2}$ and $\sin C + \sin A \leq 2\cos\frac{B}{2}$
+
+  Adding, $2(\sin A + \sin B + \sin C) \leq 2\left(\cos\frac{A}{2} + \cos\frac{B}{2} + \cos\frac{C}{2}\right)$.
+  Equality iff $A = B = C$.
+
+\item $\cos A + \cos B = 2\cos\frac{A + B}{2}\cos\frac{A - B}{2} = 2\sin\frac{C}{2}\cos\frac{A - B}{2} \leq
+  2\sin\frac{C}{2}$
+
+  Similarly $\cos B + \cos C \leq 2\sin\frac{A}{2}$ and $\cos C + \cos A \leq 2\sin\frac{B}{2}$
+
+  Adding and dividing by $2$ we get the result. Equality iff $A = B = C$.
+
+\item We have proved that $\sin\frac{A}{2} + \sin\frac{B}{2} + \sin\frac{C}{2} = 1 + 4\sin\frac{B + C}{4}\sin\frac{C +
+  A}{4}\sin\frac{A + B}{4}$, and each factor is positive, so the sum is $> 1$.
+
+  For the upper bound, using $\sin u + \sin v \leq 2\sin\frac{u + v}{2}$ $(0 < u, v < \pi)$:
+
+  $\sin\frac{A}{2} + \sin\frac{B}{2} + \sin\frac{C}{2} + \sin\frac{\pi}{6} \leq 2\sin\frac{A + B}{4} + 2\sin\frac{C +
+    \frac{\pi}{3}}{4}$
+
+  $\leq 4\sin\frac{A + B + C + \frac{\pi}{3}}{8} = 4\sin\frac{\pi}{6} = 2$
+
+  $\therefore \sin\frac{A}{2} + \sin\frac{B}{2} + \sin\frac{C}{2} \leq 2 - \frac{1}{2} = \frac{3}{2}$
+
+\item We have proved that $\frac{\sin 2A + \sin 2B + \sin 2C}{\sin A + \sin B + \sin C} =
+  8\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}$
+
+  By problem 2, R.H.S. $\leq 1$. Since $\sin A + \sin B + \sin C > 0$,
+
+  $\sin 2A + \sin 2B + \sin 2C \leq \sin A + \sin B + \sin C$
+
+\item $2\cos A\cos B = \cos(A - B) + \cos(A + B) \leq 1 - \cos C = 2\sin^2\frac{C}{2}$
+
+  $\therefore \cos A\cos B \leq \sin^2\frac{C}{2}$, and similarly for the other pairs.
+
+  If $\cos A\cos B\cos C \leq 0$ the result is obvious. Otherwise all three cosines are positive and multiplying the
+  three inequalities,
+
+  $(\cos A\cos B\cos C)^2 \leq \left(\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}\right)^2$. Taking positive square
+  roots gives the result.
+
+\item We have proved that $(\cot A + \cot B)(\cot B + \cot C)(\cot C + \cot A) = {\rm cosec}\,A\,{\rm cosec}\,B\,{\rm
+    cosec}\,C$
+
+  $= \frac{1}{\sin A\sin B\sin C} \geq \frac{8}{3\sqrt{3}}$ by problem 5.
+
+\item $\cos 2A + \cos 2B = 2\cos(A + B)\cos(A - B) = -2\cos C\cos(A - B)$
+
+  $\cos 2C = 2\cos^2C - 1 = -2\cos C\cos(A + B) - 1$
+
+  $\therefore \cos 2A + \cos 2B + \cos 2C = -1 - 2\cos C[\cos(A - B) + \cos(A + B)] = -1 - 4\cos A\cos B\cos C$
+
+  $\geq -1 - \frac{4}{8} = -\frac{3}{2}$ by problem 1.
+
+\item Let $s = \sin\frac{A}{2}$. $\cos B + \cos C = 2\sin\frac{A}{2}\cos\frac{B - C}{2} \leq 2s$ and $\cos A = 1 - 2s^2$
+
+  $\therefore 2\cos A + 3(\cos B + \cos C) \leq 2 - 4s^2 + 6s = \frac{17}{4} - \left(2s - \frac{3}{2}\right)^2 \leq
+  \frac{17}{4}$
+
+  Greatest value $= \frac{17}{4}$, attained when $B = C$ and $\sin\frac{A}{2} = \frac{3}{4}$, i.e. $\cos A =
+  -\frac{1}{8}$, $B = C = \frac{\pi - A}{2}$.
+
+\item $\sin B\sin C = \frac{1}{2}[\cos(B - C) - \cos(B + C)] = \frac{1}{2}[\cos(B - C) + \cos A] \leq \frac{1 + \cos
+  A}{2}$
+
+  $\therefore \sin A + \sin B\sin C \leq \frac{1}{2} + \sin A + \frac{1}{2}\cos A \leq \frac{1}{2} + \sqrt{1 +
+    \frac{1}{4}} = \frac{1 + \sqrt{5}}{2}$
+
+  Greatest value $= \frac{1 + \sqrt{5}}{2}$, attained when $\tan A = 2$ and $B = C = \frac{\pi - A}{2}$.
+
+\item $\left(-1, \frac{1}{8}\right]$.
+
+  Upper bound is problem 1. Since $\cos^2A + \cos^2B + \cos^2C = 1 - 2\cos A\cos B\cos C$ and each $\cos^2 < 1$, we get
+  $1 - 2\cos A\cos B\cos C < 3 \Rightarrow \cos A\cos B\cos C > -1$.
+
+  Taking $B = C = \theta, A = \pi - 2\theta$, the product is $-\cos 2\theta\cos^2\theta$, which varies continuously from
+  $-1$ (as $\theta \to 0$) to $\frac{1}{8}$ (at $\theta = \frac{\pi}{3}$), so every value of $\left(-1,
+  \frac{1}{8}\right]$ is taken.
+
+\item $\sin A\sin B = \frac{1}{2}[\cos(A - B) - \cos(A + B)] \leq \frac{1}{2}[1 - \cos(A + B)] = \frac{1}{2}(1 - \sin
+  C)$
+
+  $\therefore \sin A\sin B\sin C \leq \frac{1}{2}\sin C(1 - \sin C) = \frac{1}{8} - \frac{1}{2}\left(\sin C -
+  \frac{1}{2}\right)^2 \leq \frac{1}{8}$
+
+  Equality when $A = B = C = \frac{\pi}{6}$.
+
+\item $\cos 2A + \cos 2B = 2\cos(A + B)\cos(A - B) = 2\sin C\cos(A - B)$
+
+  $\cos 2C = 1 - 2\sin^2C = 1 - 2\sin C\cos(A + B)$
+
+  $\therefore \cos 2A + \cos 2B + \cos 2C = 1 + 2\sin C[\cos(A - B) - \cos(A + B)] = 1 + 4\sin A\sin B\sin C$
+
+  For positive $A, B, C$, by problem 27 this is $\leq 1 + \frac{4}{8} = \frac{3}{2}$.
+
+\item We have proved that $\sin^2A + \sin^2B + \sin^2C = 2 + 2\cos A\cos B\cos C$
+
+  $\therefore 2 = 2 + 2\cos A\cos B\cos C \Rightarrow \cos A\cos B\cos C = 0$
+
+  Hence one of $A, B, C$ is $90^\circ$, i.e. the triangle is right angled.
+
+\item $\sin^2A + \sin^2B = \sin C = \sin(A + B) = \sin A\cos B + \cos A\sin B$
+
+  $\Rightarrow \sin A(\sin A - \cos B) + \sin B(\sin B - \cos A) = 0$
+
+  $\Rightarrow \sin A\left[\sin A - \sin\left(\frac{\pi}{2} - B\right)\right] + \sin B\left[\sin B -
+  \sin\left(\frac{\pi}{2} - A\right)\right] = 0$
+
+  If $A + B > \frac{\pi}{2}$ then $A > \frac{\pi}{2} - B$ and $B > \frac{\pi}{2} - A$ (all in $(0, \frac{\pi}{2})$),
+  so both brackets are positive and L.H.S. $> 0$. If $A + B < \frac{\pi}{2}$, both brackets are negative.
+
+  $\therefore A + B = \frac{\pi}{2} \Rightarrow C = 90^\circ$
+
+\item Since $\sin A\sin B > 0$ and $\sin C \leq 1,$
+
+  $1 = \cos A\cos B + \sin A\sin B\sin C \leq \cos A\cos B + \sin A\sin B = \cos(A - B) \leq 1$
+
+  So equality holds throughout: $\sin C = 1$ and $\cos(A - B) = 1$
+
+  $\therefore C = 90^\circ, A = B = 45^\circ$
+
+\item $\sin 3A + \sin 3B = 2\sin\frac{3(A + B)}{2}\cos\frac{3(A - B)}{2} = -2\cos\frac{3C}{2}\cos\frac{3(A - B)}{2}$
+  $\left[\because \frac{3(A + B)}{2} = \frac{3\pi}{2} - \frac{3C}{2}\right]$
+
+  $\sin 3C = 2\sin\frac{3C}{2}\cos\frac{3C}{2} = -2\cos\frac{3C}{2}\cos\frac{3(A + B)}{2}$
+
+  $\therefore \sin 3A + \sin 3B + \sin 3C = -2\cos\frac{3C}{2}\left[\cos\frac{3(A - B)}{2} + \cos\frac{3(A +
+    B)}{2}\right] = -4\cos\frac{3A}{2}\cos\frac{3B}{2}\cos\frac{3C}{2}$
+
+  So one of the cosines is zero, say $\cos\frac{3A}{2} = 0$. As $0 < \frac{3A}{2} < \frac{3\pi}{2},$ $\frac{3A}{2} =
+  \frac{\pi}{2} \Rightarrow A = 60^\circ$.
+
+\item $\cos 3A + \cos 3B = 2\cos\frac{3(A + B)}{2}\cos\frac{3(A - B)}{2} = -2\sin\frac{3C}{2}\cos\frac{3(A - B)}{2}$
+
+  $\cos 3C = 1 - 2\sin^2\frac{3C}{2} = 1 + 2\sin\frac{3C}{2}\cos\frac{3(A + B)}{2}$
+
+  $\therefore \cos 3A + \cos 3B + \cos 3C = 1 - 2\sin\frac{3C}{2}\left[\cos\frac{3(A - B)}{2} - \cos\frac{3(A +
+    B)}{2}\right] = 1 - 4\sin\frac{3A}{2}\sin\frac{3B}{2}\sin\frac{3C}{2}$
+
+  So one of the sines is zero, say $\sin\frac{3A}{2} = 0$. As $0 < \frac{3A}{2} < \frac{3\pi}{2},$ $\frac{3A}{2} = \pi
+  \Rightarrow A = 120^\circ$.
+
+\item $\cot\frac{A}{2} + \cot\frac{C}{2} = \frac{\sin\frac{A + C}{2}}{\sin\frac{A}{2}\sin\frac{C}{2}} =
+  \frac{\cos\frac{B}{2}}{\sin\frac{A}{2}\sin\frac{C}{2}} = 2\cot\frac{B}{2}$
+
+  $\Rightarrow \sin\frac{B}{2} = 2\sin\frac{A}{2}\sin\frac{C}{2} \Rightarrow \cos\frac{A + C}{2} =
+  2\sin\frac{A}{2}\sin\frac{C}{2} \Rightarrow \cos\frac{A}{2}\cos\frac{C}{2} = 3\sin\frac{A}{2}\sin\frac{C}{2}$
+
+  $\therefore \cos\frac{A - C}{2} = 4\sin\frac{A}{2}\sin\frac{C}{2} = 2\sin\frac{B}{2}$
+
+  $\sin A + \sin C = 2\cos\frac{B}{2}\cos\frac{A - C}{2} = 4\sin\frac{B}{2}\cos\frac{B}{2} = 2\sin B$
+
+\item Let $\tan A = k, \tan B = 2k, \tan C = 3k$. Since $\tan A + \tan B + \tan C = \tan A\tan B\tan C,$
+
+  $6k = 6k^3 \Rightarrow k^2 = 1$. $k = -1$ would make all three angles obtuse, which is impossible.
+
+  $\therefore k = 1$: $A = 45^\circ, B = \tan^{-1}2, C = \tan^{-1}3$.
+
+\item $\cos A = -\cos(B + C) = \sin B\sin C - \cos B\cos C = \cos B\cos C$
+
+  $\Rightarrow \sin B\sin C = 2\cos B\cos C \Rightarrow \tan B\tan C = 2$
+
+  $\tan A = -\tan(B + C) = -\frac{\tan B + \tan C}{1 - \tan B\tan C} = -\frac{\tan B + \tan C}{1 - 2} = \tan B + \tan C$
+
+\item Let $X = 2A, Y = 2B, Z = 2C$ so that $X + Y + Z = 2\pi$.
+
+  $\sin 2X + \sin 2Y = 2\sin(X + Y)\cos(X - Y) = -2\sin Z\cos(X - Y)$
+
+  $\sin 2Z = 2\sin Z\cos Z = 2\sin Z\cos(X + Y)$
+
+  $\therefore$ L.H.S. $= -2\sin Z[\cos(X - Y) - \cos(X + Y)] = -4\sin X\sin Y\sin Z = -4\sin 2A\sin 2B\sin 2C$
+
+\item With $X = 2A, Y = 2B, Z = 2C,$ $X + Y + Z = 2\pi$.
+
+  $\cos 2X + \cos 2Y = 2\cos(X + Y)\cos(X - Y) = 2\cos Z\cos(X - Y)$
+
+  $\cos 2Z = 2\cos^2Z - 1 = 2\cos Z\cos(X + Y) - 1$
+
+  $\therefore$ L.H.S. $= 2\cos Z[\cos(X - Y) + \cos(X + Y)] - 1 = 4\cos 2A\cos 2B\cos 2C - 1$
+
+\item $\sin^3A\cos(B - C) = \sin^2A\sin(B + C)\cos(B - C) = \frac{1}{2}\sin^2A(\sin 2B + \sin 2C)$
+
+  $\therefore$ L.H.S. $= \frac{1}{2}\sum \sin^2A(\sin 2B + \sin 2C) = 3\sin A\sin B\sin C$
+
+  using the identity proved earlier in this chapter.
+
+\item $\cos A\cos(B - C) = -\cos(B + C)\cos(B - C) = -(\cos^2B - \sin^2C) = \sin^2C - \cos^2B$
+
+  Summing cyclically, L.H.S. $= (\sin^2A + \sin^2B + \sin^2C) - (\cos^2A + \cos^2B + \cos^2C)$
+
+  $= 3 - 2(\cos^2A + \cos^2B + \cos^2C) = 3 - 2(1 - 2\cos A\cos B\cos C) = 1 + 4\cos A\cos B\cos C$
+
+\item $\sin^2A\sin(B - C) = \sin A\sin(B + C)\sin(B - C) = \sin A(\sin^2B - \sin^2C)$
+
+  Let $a = \sin A, b = \sin B, c = \sin C$. L.H.S. $= a(b^2 - c^2) + b(c^2 - a^2) + c(a^2 - b^2)$
+
+  This vanishes when $a = b$, $b = c$ or $c = a$, so it equals $k(a - b)(b - c)(c - a)$; comparing the coefficients of
+  $bc^2$ gives $k = 1$.
+
+  $\therefore$ L.H.S. $= (\sin A - \sin B)(\sin B - \sin C)(\sin C - \sin A)$
+
+\item $\cot A + \cot B + \cot C = \frac{\cos A\sin B\sin C + \cos B\sin C\sin A + \cos C\sin A\sin B}{\sin A\sin B\sin
+  C}$
+
+  $\cos A = -\cos(B + C) = \sin B\sin C - \cos B\cos C \Rightarrow \sin B\sin C = \cos A + \cos B\cos C$
+
+  $\therefore \cos A\sin B\sin C = \cos^2A + \cos A\cos B\cos C$
+
+  Numerator $= \cos^2A + \cos^2B + \cos^2C + 3\cos A\cos B\cos C = 1 + \cos A\cos B\cos C$
+
+\item $\sin B + \sin C - \sin A = 2\cos\frac{A}{2}\cos\frac{B - C}{2} - 2\sin\frac{A}{2}\cos\frac{A}{2} =
+  2\cos\frac{A}{2}\left[\cos\frac{B - C}{2} - \cos\frac{B + C}{2}\right]$
+
+  $= 4\cos\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}$, and similarly for the other two factors.
+
+  Also $\sin A + \sin B + \sin C = 4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}$
+
+  $\therefore$ L.H.S. $= 256\cos^2\frac{A}{2}\cos^2\frac{B}{2}\cos^2\frac{C}{2}\sin^2\frac{A}{2}\sin^2\frac{B}{2}
+  \sin^2\frac{C}{2} = 4\left(8\prod\sin\frac{A}{2}\cos\frac{A}{2}\right)^2 = 4\sin^2A\sin^2B\sin^2C$
+
+\item We know $\cot\frac{A}{2} + \cot\frac{B}{2} + \cot\frac{C}{2} = \cot\frac{A}{2}\cot\frac{B}{2}\cot\frac{C}{2} =
+  \frac{\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2}}{\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2}}$
+
+  Now $4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2} = \sin A + \sin B + \sin C$ and
+  $4\sin\frac{A}{2}\sin\frac{B}{2}\sin\frac{C}{2} = \cos A + \cos B + \cos C - 1$
+
+  Dividing gives the result.
+
+\item Since $\tan A\tan B\tan C = \tan A + \tan B + \tan C,$ $\frac{\tan A}{\tan B\tan C} = \frac{\tan^2A}{\tan A\tan
+  B\tan C} = \frac{\tan^2A}{\tan A + \tan B + \tan C}$
+
+  $\therefore$ L.H.S. $= \frac{\tan^2A + \tan^2B + \tan^2C}{\tan A + \tan B + \tan C} = \frac{(\sum\tan A)^2 - 2\sum\tan
+  A\tan B}{\sum\tan A}$
+
+  $= \tan A + \tan B + \tan C - \frac{2(\tan A\tan B + \tan B\tan C + \tan C\tan A)}{\tan A\tan B\tan C}$
+
+  $= \tan A + \tan B + \tan C - 2(\cot C + \cot A + \cot B)$
+
+\item Since $xy + yz + zx = 1,$ $1 + x^2 = x^2 + xy + yz + zx = (x + y)(x + z)$
+
+  $\therefore \frac{x}{1 + x^2} = \frac{x}{(x + y)(x + z)} = \frac{x(y + z)}{(x + y)(y + z)(z + x)}$
+
+  Summing, L.H.S. $= \frac{x(y + z) + y(z + x) + z(x + y)}{(x + y)(y + z)(z + x)} = \frac{2(xy + yz + zx)}{(x + y)(y +
+    z)(z + x)} = \frac{2}{(x + y)(y + z)(z + x)}$
+
+\item Put $x = \tan\alpha, y = \tan\beta, z = \tan\gamma$ with $\alpha, \beta, \gamma \in \left(0, \frac{\pi}{2}\right)$.
+  Then $1 - xy = z(x + y) > 0$ and $\tan(\alpha + \beta) = \frac{x + y}{1 - xy} = \frac{1}{z} = \cot\gamma$
+
+  $\therefore \alpha + \beta + \gamma = \frac{\pi}{2}$, i.e. $2\alpha + 2\beta + 2\gamma = \pi$.
+
+  $\frac{1}{1 + x^2} = \cos^2\alpha$ and $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 2 + 2\sin\alpha\sin\beta\sin\gamma$
+  (proved earlier for half angles of a triangle)
+
+  $\leq 2 + \frac{2}{8} = \frac{9}{4}$ by problem 2.
+
+\item Put $x = \tan A, y = \tan B, z = \tan C$ with $A, B, C \in \left(0, \frac{\pi}{2}\right)$. From $x + y + z =
+  xyz,$ $z(xy - 1) = x + y > 0 \Rightarrow xy > 1$.
+
+  $\tan(A + B) = \frac{x + y}{1 - xy} = -z = -\tan C$ and $\frac{\pi}{2} < A + B < \pi$ $\therefore A + B + C = \pi$
+
+  $\frac{1}{\sqrt{1 + x^2}} = \cos A$ etc., so L.H.S. $= \cos A + \cos B + \cos C \leq \frac{3}{2}$ by problem 2.
+
+\item Let $A = \frac{\pi}{7}, B = \frac{2\pi}{7}, C = \frac{4\pi}{7}$; then $A + B + C = \pi$ and $\cos^2A + \cos^2B +
+  \cos^2C = 1 - 2\cos A\cos B\cos C$
+
+  $\cos A\cos B\cos C = \frac{8\sin A\cos A\cos 2A\cos 4A}{8\sin A} = \frac{\sin 8A}{8\sin A} = \frac{\sin(\pi +
+    \frac{\pi}{7})}{8\sin\frac{\pi}{7}} = -\frac{1}{8}$
+
+  $\therefore \cos^2\frac{\pi}{7} + \cos^2\frac{2\pi}{7} + \cos^2\frac{4\pi}{7} = 1 + \frac{2}{8} = \frac{5}{4}$
+
+\item $\sin^3A = \frac{3\sin A - \sin 3A}{4}$
+
+  $\therefore \sin^3A + \sin^3B + \sin^3C = \frac{3}{4}(\sin A + \sin B + \sin C) - \frac{1}{4}(\sin 3A + \sin 3B + \sin
+  3C)$
+
+  $= \frac{3}{4}.4\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2} - \frac{1}{4}\left(-4\cos\frac{3A}{2}\cos\frac{3B}{2}
+  \cos\frac{3C}{2}\right)$ (see problem 32)
+
+  $= 3\cos\frac{A}{2}\cos\frac{B}{2}\cos\frac{C}{2} + \cos\frac{3A}{2}\cos\frac{3B}{2}\cos\frac{3C}{2}$
+\stopitemize
